@@ -32,3 +32,6 @@ flutter:
     - assets/images/Pure_SVGs/
     - assets/images/Mechanics_SVGs/
     - assets/images/Statistics_SVGs/
+    - assets/images/Mechanics_PNGs/
+    - assets/images/Pure_PNGs/
+    - assets/images/Statistics_PNGs/

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -23,6 +24,7 @@ class QuestionScreen extends StatefulWidget {
 
 class _QuestionScreenState extends State<QuestionScreen> {
   final ScrollController _scrollController = ScrollController();
+  final GlobalKey _feedbackKey = GlobalKey();
 
   late Map<String, dynamic> _currentQuestion;
   List<Map<String, dynamic>> _options = [];
@@ -31,12 +33,20 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   bool _optionsUnlocked = false; 
   int? _selectedOptionIndex;
+  int? _disabledOptionIndex; // For ambering out the first failed choice
   bool _isSubmitted = false;
   int _attemptCount = 0; 
   String? _feedbackText;
   bool _isCorrect = false;
   bool _showModelAnswer = false;
   int _revealedStepsCount = 1;
+
+  // Attempt History for Database Logging
+  String? _firstChoiceText;
+  bool? _firstChoiceCorrect;
+  String? _secondChoiceText;
+  bool? _secondChoiceCorrect;
+  bool _choseNoneOfAbove = false;
 
   Set<int> _expandedStepIndices = <int>{0};
   bool _allExpanded = false;
@@ -53,13 +63,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
     super.dispose();
   }
 
-  void _scrollToBottom() {
+  // Smooth scroll specifically to bring the feedback banner and model answer into comfortable view
+  void _scrollToFeedback() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (_scrollController.hasClients) {
-        _scrollController.animateTo(
-          _scrollController.position.maxScrollExtent,
-          duration: const Duration(milliseconds: 400),
+      if (_feedbackKey.currentContext != null) {
+        Scrollable.ensureVisible(
+          _feedbackKey.currentContext!,
+          duration: const Duration(milliseconds: 450),
           curve: Curves.easeOutCubic,
+          alignment: 0.1, // Positions feedback banner near the top of the viewport
         );
       }
     });
@@ -98,7 +110,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
     choices.add({
       'ans': 'None of the Above',
       'is_correct': 0,
-      'feedback': 'Concept revision is recommended. Study the model answer below.',
+      'feedback': "Concept revision needed. Take your time to study each step of the model answer below.",
     });
 
     if (q['bradley_insight'] != null) {
@@ -109,6 +121,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
       _options = choices;
       _optionsUnlocked = false;
       _selectedOptionIndex = null;
+      _disabledOptionIndex = null;
       _isSubmitted = false;
       _attemptCount = 0;
       _feedbackText = null;
@@ -117,9 +130,14 @@ class _QuestionScreenState extends State<QuestionScreen> {
       _revealedStepsCount = 1;
       _expandedStepIndices = <int>{0};
       _allExpanded = false;
+
+      _firstChoiceText = null;
+      _firstChoiceCorrect = null;
+      _secondChoiceText = null;
+      _secondChoiceCorrect = null;
+      _choseNoneOfAbove = false;
     });
 
-    // Reset scroll to top for new question
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.jumpTo(0);
@@ -131,29 +149,98 @@ class _QuestionScreenState extends State<QuestionScreen> {
     if (_selectedOptionIndex == null) return;
     final selected = _options[_selectedOptionIndex!];
     final isCorrectChoice = selected['is_correct'] == 1;
+    final isNoneChoice = _selectedOptionIndex == _options.length - 1;
+    final qId = _currentQuestion['id']?.toString() ?? '000000';
+
+    if (isNoneChoice) {
+      _choseNoneOfAbove = true;
+    }
 
     setState(() {
-      if (isCorrectChoice) {
-        _isCorrect = true;
-        _isSubmitted = true;
-        _feedbackText = selected['feedback'];
-        _showModelAnswer = true;
-      } else if (_attemptCount == 0) {
-        _attemptCount = 1;
-        _feedbackText = "${selected['feedback']}\n\nCheck your working and take a Second Chance!";
-        _selectedOptionIndex = null;
-      } else {
+      // ----------------------------------------------------
+      // CASE 1: NONE OF THE ABOVE (Immediate Model Answer Unlock)
+      // ----------------------------------------------------
+      if (isNoneChoice) {
+        HapticFeedback.heavyImpact();
         _isCorrect = false;
         _isSubmitted = true;
-        _feedbackText = "${selected['feedback']}\n\nStudy the textbook model answer below.";
         _showModelAnswer = true;
+        _feedbackText = selected['feedback'];
+
+        widget.dbHelper.recordAttempt(
+          questionId: qId,
+          firstChoiceText: 'None of the Above',
+          firstChoiceCorrect: false,
+          choseNoneOfAbove: true,
+          viewedModelAnswer: true,
+        );
+      }
+      // ----------------------------------------------------
+      // CASE 2: FIRST ATTEMPT
+      // ----------------------------------------------------
+      else if (_attemptCount == 0) {
+        _firstChoiceText = selected['ans'];
+        _firstChoiceCorrect = isCorrectChoice;
+
+        if (isCorrectChoice) {
+          HapticFeedback.mediumImpact();
+          _isCorrect = true;
+          _isSubmitted = true;
+          _feedbackText = selected['feedback'];
+          _showModelAnswer = true;
+
+          widget.dbHelper.recordAttempt(
+            questionId: qId,
+            firstChoiceText: _firstChoiceText!,
+            firstChoiceCorrect: true,
+            choseNoneOfAbove: false,
+            viewedModelAnswer: true,
+          );
+        } else {
+          // Missed on attempt 1 -> Amber-out this choice and prompt second chance
+          HapticFeedback.heavyImpact();
+          _attemptCount = 1;
+          _disabledOptionIndex = _selectedOptionIndex;
+          _selectedOptionIndex = null;
+          _feedbackText = "${selected['feedback']}\n\nCheck your working and take a Second Chance!";
+        }
+      }
+      // ----------------------------------------------------
+      // CASE 3: SECOND ATTEMPT
+      // ----------------------------------------------------
+      else {
+        _secondChoiceText = selected['ans'];
+        _secondChoiceCorrect = isCorrectChoice;
+        _isSubmitted = true;
+        _showModelAnswer = true;
+
+        if (isCorrectChoice) {
+          HapticFeedback.mediumImpact();
+          _isCorrect = true;
+          _feedbackText = "Good recovery! That's more like it — you've proved to yourself you can do it.";
+        } else {
+          HapticFeedback.heavyImpact();
+          _isCorrect = false;
+          _feedbackText = "Don't worry — this concept clearly needs revision. Take your time to study each step of the model answer below.";
+        }
+
+        widget.dbHelper.recordAttempt(
+          questionId: qId,
+          firstChoiceText: _firstChoiceText ?? '',
+          firstChoiceCorrect: false,
+          secondChoiceText: _secondChoiceText,
+          secondChoiceCorrect: isCorrectChoice,
+          choseNoneOfAbove: _choseNoneOfAbove,
+          viewedModelAnswer: true,
+        );
       }
     });
 
-    _scrollToBottom();
+    _scrollToFeedback();
   }
 
   void _loadDifferentBoardQuestion() async {
+    HapticFeedback.selectionClick();
     final nextQ = await widget.dbHelper.fetchDifferentBoardQuestion(_currentQuestion);
     if (nextQ != null) {
       _loadQuestionData(nextQ);
@@ -167,6 +254,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   void _loadGroupProgressionQuestion() async {
+    HapticFeedback.selectionClick();
     final nextQ = await widget.dbHelper.fetchGroupProgressionQuestion(_currentQuestion);
     if (nextQ != null) {
       _loadQuestionData(nextQ);
@@ -209,6 +297,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   void _showDiagramSheet(BuildContext context, String imgPath) {
+    HapticFeedback.selectionClick();
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -344,7 +433,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      // Dedicated Question Image (Placed FIRST like "Figure 1")
                       if (_hasDedicatedImage(rawImg) && rawImg is String) ...[
                         _buildVectorImage(rawImg),
                         const SizedBox(height: 14),
@@ -399,8 +487,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
                     onPressed: () {
+                      HapticFeedback.mediumImpact();
                       setState(() => _optionsUnlocked = true);
-                      _scrollToBottom();
+                      _scrollToFeedback();
                     },
                     child: const Text(
                       "I've worked it out on paper — Show Options",
@@ -416,20 +505,25 @@ class _QuestionScreenState extends State<QuestionScreen> {
               if (_optionsUnlocked) ...[
                 ...List.generate(_options.length, (index) {
                   final isSelected = _selectedOptionIndex == index;
+                  final isDisabled = _disabledOptionIndex == index;
                   final isNoneOfAbove = index == _options.length - 1;
 
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10.0),
                     child: Material(
-                      color: isSelected ? Colors.indigo.shade50 : Colors.white,
+                      color: isDisabled
+                          ? Colors.amber.shade50
+                          : (isSelected ? Colors.indigo.shade50 : Colors.white),
                       borderRadius: BorderRadius.circular(12),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: isSelected
-                                ? Colors.indigo.shade600
-                                : (isNoneOfAbove ? Colors.grey.shade400 : Colors.grey.shade300),
-                            width: isSelected ? 2.0 : 1.0,
+                            color: isDisabled
+                                ? Colors.amber.shade400
+                                : (isSelected
+                                    ? Colors.indigo.shade600
+                                    : (isNoneOfAbove ? Colors.grey.shade400 : Colors.grey.shade300)),
+                            width: (isSelected || isDisabled) ? 2.0 : 1.0,
                           ),
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -437,10 +531,26 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           value: index,
                           groupValue: _selectedOptionIndex,
                           activeColor: Colors.indigo.shade700,
-                          title: _renderMixedContent(_options[index]['ans']),
-                          onChanged: _isSubmitted
+                          title: Opacity(
+                            opacity: isDisabled ? 0.6 : 1.0,
+                            child: _renderMixedContent(_options[index]['ans']),
+                          ),
+                          subtitle: isDisabled
+                              ? Text(
+                                  "Tried on Attempt 1 (Incorrect)",
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.amber.shade800,
+                                  ),
+                                )
+                              : null,
+                          onChanged: (_isSubmitted || isDisabled)
                               ? null
-                              : (v) => setState(() => _selectedOptionIndex = v),
+                              : (v) {
+                                  HapticFeedback.lightImpact();
+                                  setState(() => _selectedOptionIndex = v);
+                                },
                         ),
                       ),
                     ),
@@ -458,9 +568,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       ),
                       onPressed: _selectedOptionIndex == null ? null : _submitChoice,
-                      child: const Text(
-                        "Submit Answer",
-                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      child: Text(
+                        _attemptCount == 0 ? "Submit Answer" : "Submit Second Chance",
+                        style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -468,20 +578,35 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ],
 
               // ------------------------------------
-              // STEP 11: DIAGNOSTIC FEEDBACK
+              // STEP 11: DIAGNOSTIC FEEDBACK BANNER (Targeted Scroll Landmark)
               // ------------------------------------
               if (_feedbackText != null) ...[
                 const SizedBox(height: 18),
                 Container(
+                  key: _feedbackKey, // Auto-scroll target anchor
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: _isCorrect ? const Color(0xFFF0FDF4) : const Color(0xFFFFFBEB),
                     border: Border.all(
                       color: _isCorrect ? const Color(0xFF86EFAC) : const Color(0xFFFCD34D),
+                      width: 1.5,
                     ),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: _renderMixedContent(_feedbackText!),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Icon(
+                        _isCorrect ? Icons.check_circle : Icons.lightbulb_outline,
+                        color: _isCorrect ? const Color(0xFF16A34A) : Colors.amber.shade800,
+                        size: 22,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: _renderMixedContent(_feedbackText!),
+                      ),
+                    ],
+                  ),
                 ),
               ],
 
@@ -509,6 +634,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                       ),
                       onPressed: () {
+                        HapticFeedback.selectionClick();
                         setState(() {
                           _allExpanded = !_allExpanded;
                           if (_allExpanded) {
@@ -523,9 +649,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 8),
 
-                // Step Drawers
+                // Step Drawers (True Accordion: Opening drawer closes prior drawer unless unfolded)
                 ...List.generate(_revealedStepsCount.clamp(0, _steps.length), (i) {
-                  final isExpanded = (_expandedStepIndices ?? <int>{}).contains(i);
+                  final isExpanded = _expandedStepIndices.contains(i);
                   final isFinal = i == _steps.length - 1;
 
                   return Container(
@@ -543,14 +669,23 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        // Drawer Header (Tap to Open / Close)
                         InkWell(
                           onTap: () {
+                            HapticFeedback.selectionClick();
                             setState(() {
-                              if (_expandedStepIndices.contains(i)) {
-                                _expandedStepIndices.remove(i);
+                              if (_allExpanded) {
+                                if (isExpanded) {
+                                  _expandedStepIndices.remove(i);
+                                } else {
+                                  _expandedStepIndices.add(i);
+                                }
                               } else {
-                                _expandedStepIndices.add(i);
+                                // Accordion behavior: close others, open this one
+                                if (isExpanded) {
+                                  _expandedStepIndices.clear();
+                                } else {
+                                  _expandedStepIndices = <int>{i};
+                                }
                               }
                             });
                           },
@@ -585,7 +720,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           ),
                         ),
 
-                        // Drawer Content (Visible only when expanded)
                         if (isExpanded)
                           Padding(
                             padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
@@ -614,15 +748,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(vertical: 12),
                       ),
                       onPressed: () {
+                        HapticFeedback.lightImpact();
                         setState(() {
                           _revealedStepsCount++;
                           if (!_allExpanded) {
+                            // Focus on newly revealed drawer
                             _expandedStepIndices = <int>{_revealedStepsCount - 1};
                           } else {
                             _expandedStepIndices.add(_revealedStepsCount - 1);
                           }
                         });
-                        _scrollToBottom();
                       },
                       label: Text(
                         "Reveal Step ${_revealedStepsCount + 1} of ${_steps.length}",
@@ -776,7 +911,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   // ----------------------------------------------------
-  // HTML + TEXTBOOK LATEX + VECTOR SVG RENDERER
+  // HTML + TEXTBOOK LATEX + VECTOR SVG/PNG RENDERER
   // ----------------------------------------------------
   Widget _renderMixedContent(String rawData) {
     return HtmlWidget(

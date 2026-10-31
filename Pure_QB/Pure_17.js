@@ -12,7 +12,7 @@ window.ALEVEL_QUESTIONS = [
         "Volume of Revolution",
         "Trigonometric Integration"
     ],
-    "img": "images/Pure_SVGs/004801.svg",
+    "img": "images/Pure_PNGs/004801.png",
     "question": "The diagram shows a sketch of the curves $y = \\sin 3x$ and $y = \\cos 3x$ for $0 \\le x \\le \\dfrac{ \\pi }{ 2 }$. The curves intersect at the points $A$ and $B$, enclosing a region $R$.<br><br><strong>(i)</strong> Show that the x-coordinates of the points $A$ and $B$ are $\\dfrac{ \\pi }{ 12 }$ and $\\dfrac{ 5\\pi }{ 12 }$.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> A company is designing a trophy base. The base can be modelled as the solid formed when the area bounded by the circle $x^2 + y^2 = 9$, the y-axis, and the vertical line $x = 2$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of this trophy base.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of the curves $y = \\sin 3x$ and $y = \\cos 3x$, equate them:\\begin{aligned} &\\sin 3x = \\cos 3x \\cr &\\dfrac{ \\sin 3x }{ \\cos 3x } = 1 \\cr &\\tan 3x = 1 \\end{aligned}Solve for $3x$ in the interval $0 \\le 3x \\le \\dfrac{ 3\\pi }{ 2 }$, which gives:\\begin{aligned} &3x = \\dfrac{ \\pi }{ 4 }, \\ \\dfrac{ 5\\pi }{ 4 } \\cr &x = \\dfrac{ \\pi }{ 12 }, \\ \\dfrac{ 5\\pi }{ 12 } \\end{aligned}Thus, the x-coordinates of $A$ and $B$ are $\\dfrac{ \\pi }{ 12 }$ and $\\dfrac{ 5\\pi }{ 12 }$.",
@@ -54,7 +54,7 @@ window.ALEVEL_QUESTIONS = [
         "Volume of Revolution",
         "Exponential Integration"
     ],
-    "img": "images/Pure_SVGs/004802.svg",
+    "img": "images/Pure_PNGs/004802.png",
     "question": "The diagram shows the region $R$ bounded by the curves $y = x^2$ and $y = 8 - x^2$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection of the two curves.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> The base of a stone pillar can be modelled as the solid formed when the region bounded by the curve $y = \\mathrm{e}^x$, the x-axis, the y-axis, and the vertical line $x = \\ln 3$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of this pillar base.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of the curves $y = x^2$ and $y = 8 - x^2$, equate them:\\begin{aligned} &x^2 = 8 - x^2 \\cr &2x^2 = 8 \\cr &x^2 = 4 \\cr &x = \\pm 2 \\end{aligned}Substitute $x = \\pm 2$ into $y = x^2$:\\begin{aligned} &y = (\\pm 2)^2 \\cr &y = 4 \\end{aligned}Thus, the coordinates of the points of intersection are $(-2, 4)$ and $(2, 4)$.",
@@ -95,7 +95,7 @@ window.ALEVEL_QUESTIONS = [
         "Area Between Curves",
         "Volume of Revolution"
     ],
-    "img": "images/Pure_SVGs/004803.svg",
+    "img": "images/Pure_PNGs/004803.png",
     "question": "The diagram shows the region $R$ bounded by the straight line $y = x$ and the curve $y = 4x - x^2$.<br><br><strong>(i)</strong> Find the coordinates of the points of intersection of the line and the curve.<br><br><strong>(ii)</strong> Calculate the exact area of the region $R$.<br><br><strong>(iii)</strong> A plastic container lid can be modelled as the solid formed when the region bounded by the curve $y = \\sqrt{x}$, the x-axis, and the vertical line $x = 4$ is rotated through $360^\\circ$ about the x-axis. Find the exact volume of the lid.",
     "steps": [
         "<strong>Part (i):</strong> To find the points of intersection of $y = x$ and $y = 4x - x^2$, equate them:\\begin{aligned} &x = 4x - x^2 \\cr &x^2 - 3x = 0 \\cr &x(x - 3) = 0 \\end{aligned}This gives $x = 0$ and $x = 3$.<br><br>Substitute these into $y = x$:<br><br>• When $x = 0$, $y = 0$.<br>• When $x = 3$, $y = 3$.<br><br>Thus, the coordinates of the points of intersection are $(0, 0)$ and $(3, 3)$.",

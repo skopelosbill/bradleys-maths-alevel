@@ -223,7 +223,7 @@ window.ALEVEL_QUESTIONS = [
         "Census",
         "Box Plot Interpretation"
     ],
-    "img": "images/Statistics_SVGs/050056.svg",
+    "img": "images/Statistics_PNGs/050056.png",
     "question": "Marcus studies employee commute times to a logistics hub. He stands at the staff entrance from 07:45 to 07:55 one morning and asks workers their journey time.<br><br><strong>(a)</strong> State the sampling method Marcus used.<br><strong>(b)</strong> Describe an alternative non-random sampling method Marcus could use for a sample of $40$ workers.<br><br>Hannah asks every worker at the hub their commute time, $x$ minutes.<br><br><strong>(c)</strong> State the data selection process Hannah used.<br><br>Hannah's results are shown in the box plot, with summary statistics:$$n = 90$$ $$ \\sum x = 4050$$  $$\\sum x^2 = 236250$$<strong>(d)</strong> Write down the interquartile range (IQR) from the diagram.<br><strong>(e)</strong> Calculate the mean and standard deviation.<br><strong>(f)</strong> Recommend whether to use mean and standard deviation or median and IQR.<br><br>Two employees move house: Liam's commute decreases from $80\\text{ to }34\\text{ min}$; Priya's commute decreases from $65\\text{ to }36\\text{ min}$. Hannah redraws the box plot and only changes two values.<br><br><strong>(g)</strong> State which two values on the box plot change, and whether each increases or decreases.",
     "steps": [
         "<strong>(a) Identifying Marcus's Sampling Method:</strong><br><br>Marcus samples whoever is conveniently available at a specific location and time.<br><br>This is <strong>opportunity sampling</strong> (or convenience sampling).",
@@ -268,7 +268,7 @@ window.ALEVEL_QUESTIONS = [
         "Outlier Boundaries",
         "Distribution Comparisons"
     ],
-    "img": "images/Statistics_SVGs/050057.svg",
+    "img": "images/Statistics_PNGs/050057.png",
     "question": "A company surveys the commute distance, $d\\text{ km}$, for employees travelling by <strong>Train</strong> or <strong>Car</strong>, shown in the parallel box plots.<br><br><strong>(a)</strong> From the diagram, estimate:<br><strong>(i)</strong> the median distance for Train commuters;<br><strong>(ii)</strong> the interquartile range for Car commuters.<br><br><strong>(b)</strong> Show that the Train commute distance of $88\\text{ km}$ is an outlier.<br><br><strong>(c)</strong> Compare the two distributions by making two distinct contextual comments.<br><br><strong>(d)</strong> Describe the skewness of the Car commute distribution, justifying your answer.",
     "steps": [
         "<strong>(a) Reading Values from the Box Plots:</strong><br><br><strong>(i)</strong> From the Train box plot, read the median line:\\begin{aligned} \\text{Median}_{\\text{Train}} \\approx 44\\text{ km} \\end{aligned}<strong>(ii)</strong> From the Car box plot, read the quartiles:\\begin{aligned} Q_1 &= 24\\text{ km} \\cr Q_3 &= 42\\text{ km} \\end{aligned}Calculate the IQR for Car commuters:\\begin{aligned} \\text{IQR}_{\\text{Car}} &= 42 - 24 \\cr &= 18\\text{ km} \\end{aligned}",
@@ -1436,7 +1436,7 @@ window.ALEVEL_QUESTIONS = [
         "Radar Diagrams",
         "Comparative Demographics"
     ],
-    "img": "images/Statistics_SVGs/050086.svg",
+    "img": "images/Statistics_PNGs/050086.png",
     "question": "The radar diagrams illustrate census population figures for two Local Authorities: Camden (an urban London borough) and North Norfolk (a rural district).<br><br>Each radius represents an age group:<br>Radius 1: 0–17<br>Radius 2: 18–29<br>Radius 3: 30–44<br>Radius 4: 45–59<br>Radius 5: 60–74<br>Radius 6: 75+<br><br>The distance of each dot from the centre represents the number of people in the relevant age group.<br><br><strong>(a)</strong> The scales on the two diagrams are different. State an advantage and a disadvantage of using different scales in order to make comparisons between the ages of people in these two Local Authorities.<br><br><strong>(b)</strong> Approximately how many people aged 45 to 59 were there in Camden?<br><br><strong>(c)</strong> State the two main differences between the age profiles of the two Local Authorities.<br><br><strong>(d)</strong> A demographer claims that, assuming minimal migration into or out of the regions, future census results are likely to show an increase in the number of primary school-age children in Camden and a decrease in North Norfolk. Use the radar diagrams to give a demographic justification for this claim.",
     "steps": [
         "<strong>(a) Advantage and Disadvantage of Different Scales:</strong><br><br><strong>Advantage:</strong> It allows the overall shape and relative age distribution of each population to be clearly seen, preventing the smaller population (North Norfolk) from being compressed into an unreadable dot at the centre.<br><br><strong>Disadvantage:</strong> It can be visually misleading: Camden's polygon may look similar in size to North Norfolk's despite Camden having a vastly larger population, making direct comparisons of absolute population numbers difficult.",
@@ -1477,7 +1477,7 @@ window.ALEVEL_QUESTIONS = [
         "Comparative Box Plots",
         "Outlier Boundaries"
     ],
-    "img": "images/Statistics_SVGs/050087.svg",
+    "img": "images/Statistics_PNGs/050087.png",
     "question": "The comparative box plots show the distributions of daily maximum gust (measured in knots) recorded at two meteorological weather stations, Camborne (a coastal station) and Leeming (an inland station), over a sample period.<br><br>The key summary statistics for Camborne are $Q_1 = 14$, $\\text{Median} = 18$, and $Q_3 = 22$, with an extreme value plotted at $35\\text{ knots}$. For Leeming, $Q_1 = 8$, $\\text{Median} = 11$, and $Q_3 = 15$.<br><br><strong>(a)</strong> An outlier is defined as any value that lies more than $1.5 \\times \\text{IQR}$ above the upper quartile ($Q_3$) or below the lower quartile ($Q_1$). Show that the recorded gust of $35\\text{ knots}$ at Camborne is an outlier.<br><br><strong>(b)</strong> Compare the wind speed distributions of Camborne and Leeming by making two distinct comparisons in context (one regarding location and one regarding spread).<br><br><strong>(c)</strong> State, with a reason, whether the distribution of daily maximum gust at Leeming is positively skewed, negatively skewed, or approximately symmetric.",
     "steps": [
         "<strong>(a) Outlier Calculation for Camborne:</strong><br><br>First calculate the interquartile range for Camborne:\\begin{aligned} \\text{IQR} &= Q_3 - Q_1 \\cr &= 22 - 14 \\cr &= 8 \\end{aligned}Calculate the upper outlier boundary:\\begin{aligned} \\text{Upper limit} &= Q_3 + 1.5 \\times \\text{IQR} \\cr &= 22 + 1.5(8) \\cr &= 22 + 12 \\cr &= 34\\text{ knots} \\end{aligned}Since $35 > 34$, the observation at $35\\text{ knots}$ lies above the upper outlier boundary and is confirmed as an outlier.",
@@ -1517,7 +1517,7 @@ window.ALEVEL_QUESTIONS = [
         "Cumulative Frequency",
         "Interquartile Range"
     ],
-    "img": "images/Statistics_SVGs/050088.svg",
+    "img": "images/Statistics_PNGs/050088.png",
     "question": "The diagram shows cumulative frequency curves representing the daily commute times (in minutes) for representative samples of workers in Town A (an outer suburban town) and Town B (a compact urban town).<br><br><strong>(a)</strong> Estimate the median daily commute time for workers in:<br><strong>(i)</strong> Town A<br><strong>(ii)</strong> Town B<br><br><strong>(b)</strong> Estimate the interquartile range (IQR) of commute times for workers in Town A.<br><br><strong>(c)</strong> A transport planner claims that workers in Town B generally experience shorter and more consistent commute times than workers in Town A. State whether the data support this claim, justifying your response using your answers from parts <strong>(a)</strong> and <strong>(b)</strong>.<br><br><strong>(d)</strong> Estimate the percentage of workers in Town A whose daily commute exceeds $45\\text{ minutes}$.",
     "steps": [
         "<strong>(a) Estimating Median Commute Times:</strong><br><br>The median corresponds to a cumulative frequency of $50\\%$.<br><br><strong>(i) Town A:</strong> Reading across from $50\\%$ to the blue curve and down to the horizontal axis gives approximately $37\\text{ minutes}$ (accept $36$ to $38\\text{ minutes}$).<br><br><strong>(ii) Town B:</strong> Reading across from $50\\%$ to the red curve gives approximately $20\\text{ minutes}$ (accept $19$ to $21\\text{ minutes}$).",
@@ -1558,7 +1558,7 @@ window.ALEVEL_QUESTIONS = [
         "Population Pyramids",
         "Demographic Comparison"
     ],
-    "img": "images/Statistics_SVGs/050089.svg",
+    "img": "images/Statistics_PNGs/050089.png",
     "question": "The back-to-back horizontal bar chart (population pyramid) displays the percentage age distributions of residents living in two distinct electoral wards: University Ward and Coastal Ward.<br><br><strong>(a)</strong> State the modal age category for:<br><strong>(i)</strong> University Ward<br><strong>(ii)</strong> Coastal Ward<br><br><strong>(b)</strong> Determine the total percentage of residents aged 60 and over in:<br><strong>(i)</strong> University Ward<br><strong>(ii)</strong> Coastal Ward<br><br><strong>(c)</strong> Give one distinct planning implication for local public service providers (such as healthcare, transport, or education) that arises directly from the demographic differences between these two wards.",
     "steps": [
         "<strong>(a) Modal Age Categories:</strong><br><br>The modal category is represented by the longest horizontal bar for each ward:<br><strong>(i) University Ward:</strong> The longest bar is in the <strong>18–29</strong> age category ($36\\%$).<br><br><strong>(ii) Coastal Ward:</strong> The longest bar is in the <strong>60–74</strong> age category ($25\\%$).",
@@ -1598,7 +1598,7 @@ window.ALEVEL_QUESTIONS = [
         "Comparative Histograms",
         "Linear Interpolation"
     ],
-    "img": "images/Statistics_SVGs/050090.svg",
+    "img": "images/Statistics_PNGs/050090.png",
     "question": "The histograms illustrate the weekly supermarket expenditure per person (in £) for random samples of $100$ residents each from District A and District B.<br><br><strong>(a)</strong> Using the frequency densities shown in the diagram for District A:<br><strong>(i)</strong> Show that the total frequency of District A is $100$.<br><strong>(ii)</strong> Calculate an estimate for the mean weekly expenditure per person in District A.<br><br><strong>(b)</strong> For District B, use linear interpolation on the histogram data to calculate an estimate of the median weekly expenditure per person. Give your answer to 3 significant figures.<br><br><strong>(c)</strong> State, with reference to the shapes of the distributions, why the median and interquartile range are generally preferred over the mean and standard deviation for comparing household expenditures.",
     "steps": [
         "<strong>(a)(i) Total Frequency for District A:</strong><br><br>Calculate the frequency of each bar as $\\text{Frequency} = \\text{Class width} \\times \\text{Frequency density}$:\\begin{aligned} &\\text{Class } [0, 10): \\quad 10 \\times 2.4 = 24 \\cr &\\text{Class } [10, 20): \\quad 10 \\times 4.8 = 48 \\cr &\\text{Class } [20, 30): \\quad 10 \\times 2.0 = 20 \\cr &\\text{Class } [30, 50): \\quad 20 \\times 0.4 = 8 \\end{aligned}Summing the frequencies:\\begin{aligned} 24 + 48 + 20 + 8 = 100 \\end{aligned}",

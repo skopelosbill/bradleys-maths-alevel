@@ -445,7 +445,7 @@ window.ALEVEL_QUESTIONS = [
         "subtopic": [
                 "Cosine Rule"
         ],
-        "img": "images/Pure_SVGs/004611.svg",
+        "img": "images/Pure_PNGs/004611.png",
         "question": "The diagram shows a triangle $ABC$ where $AB = 25\\text{ cm}$, $AC = 18\\text{ cm}$, and the included angle is $\\angle BAC = 72^\\circ$.<br><br><strong>(i)</strong> Find the length of $BC$, giving your answer to $2$ decimal places.<br><strong>(ii)</strong> Hence find the perimeter of triangle $ABC$, giving your answer to $2$ decimal places.",
         "steps": [
                 "<strong>(i)</strong> Apply the Cosine Rule:\\begin{aligned} &BC^2 \\cr &\\quad = AB^2 + AC^2 \\cr &\\qquad - 2(AB)(AC)\\cos(\\angle BAC) \\end{aligned}",
@@ -487,7 +487,7 @@ window.ALEVEL_QUESTIONS = [
                 "Cosine Rule",
                 "Trig Area Formula"
         ],
-        "img": "images/Pure_SVGs/004612.svg",
+        "img": "images/Pure_PNGs/004612.png",
         "question": "The diagram shows a triangle $XYZ$ where the side lengths are $XY = 12\\text{ cm}$, $XZ = 15\\text{ cm}$, and $YZ = 10\\text{ cm}$.<br><br><strong>(i)</strong> Find the size of the angle $\\angle YXZ$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the area of triangle $XYZ$, giving your answer to $1$ decimal place.",
         "steps": [
                 "<strong>(i)</strong> Rearrange the Cosine Rule to isolate $\\cos(\\angle YXZ)$:\\begin{aligned} &\\cos(\\angle YXZ) \\cr &\\quad = \\dfrac{XY^2 + XZ^2 - YZ^2}{2(XY)(XZ)} \\end{aligned}",
@@ -528,7 +528,7 @@ window.ALEVEL_QUESTIONS = [
                 "Sine Rule",
                 "Trig Area Formula"
         ],
-        "img": "images/Pure_SVGs/004613.svg",
+        "img": "images/Pure_PNGs/004613.png",
         "question": "The diagram shows a triangle $PQR$ where the side lengths are $PQ = 8\\text{ cm}$ and $QR = 6\\text{ cm}$, and the angle is $\\angle QPR = 40^\\circ$.<br><br><strong>(i)</strong> Show that there are two possible values for the angle $\\angle PRQ$, and find both values to $1$ decimal place.<br><strong>(ii)</strong> Given that the angle $\\angle PRQ$ is obtuse, find the area of triangle $PQR$, giving your answer to $1$ decimal place.",
         "steps": [
                 "<strong>(i)</strong> Apply the Sine Rule:\\begin{aligned} &\\dfrac{\\sin(\\angle PRQ)}{PQ} = \\dfrac{\\sin(\\angle QPR)}{QR} \\end{aligned}",
@@ -571,7 +571,7 @@ window.ALEVEL_QUESTIONS = [
                 "Pythagoras",
                 "Cosine rule"
         ],
-        "img": "images/Pure_SVGs/004614.svg",
+        "img": "images/Pure_PNGs/004614.png",
         "question": "The diagram shows a coordinate grid containing triangle $ABC$ with vertices $A(1, 2)$, $B(5, 5)$, and $C(2, 6)$.<br><br><strong>(i)</strong> Find the exact lengths of the sides $AB$, $BC$, and $AC$.<br><strong>(ii)</strong> Hence find the size of the angle $\\angle ABC$, giving your answer to the nearest degree.",
         "steps": [
                 "<strong>(i)</strong> Apply the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$:<br><br>• Side $AB$:\\begin{aligned} &AB = \\sqrt{(5 - 1)^2 + (5 - 2)^2} \\cr &\\quad = \\sqrt{4^2 + 3^2} \\cr &\\quad = \\sqrt{16 + 9} \\cr &\\quad = 5 \\end{aligned}",
@@ -614,7 +614,7 @@ window.ALEVEL_QUESTIONS = [
                 "Bearings",
                 "Cosine rule"
         ],
-        "img": "images/Pure_SVGs/004615.svg",
+        "img": "images/Pure_PNGs/004615.png",
         "question": "The diagram shows the journey of a ship sailing $15\\text{ km}$ from port $P$ on a bearing of $060^\\circ$ to a point $A$. It then changes course and sails $12\\text{ km}$ on a bearing of $130^\\circ$ to a point $B$.<br><br><strong>(i)</strong> Find the distance of the ship from port $P$ when it is at point $B$, giving your answer to $1$ decimal place.<br><strong>(ii)</strong> Find the bearing of $B$ from port $P$, giving your answer to the nearest degree.",
         "steps": [
                 "<strong>(i)</strong> Find the interior angle $\\angle PAB$ using parallel North lines:<br><br>• Alternate angle from the North line at $P$: $060^\\circ$<br><br>• Angle East of South at $A$: $180^\\circ - 130^\\circ = 50^\\circ$<br><br>Summing these angles gives:\\begin{aligned} &\\angle PAB = 60^\\circ + 50^\\circ \\cr &\\quad = 110^\\circ \\end{aligned}",
@@ -853,7 +853,7 @@ window.ALEVEL_QUESTIONS = [
         "subtopic": [
                 "Small Angle Approximation"
         ],
-        "img": "images/Pure_SVGs/004621.svg",
+        "img": "images/Pure_PNGs/004621.png",
         "question": "The diagram shows a circle with centre $O$ and radius $1$ unit. Points $A$ and $B$ lie on the circle such that angle $\\angle AOB = \\theta$ radians, where $\\theta$ is a small angle. Point $C$ lies on $AO$ such that $BC$ is perpendicular to $AO$.<br><br>Show that, when $\\theta$ is small, the length of $AC$ can be approximated by:<br><br>\\begin{aligned} &AC \\approx \\dfrac{1}{2}\\theta^2 \\end{aligned}",
         "steps": [
                 "Write down the geometric relationships along radius $OA$:\\begin{aligned} &AO = 1 \\cr &OC = AO\\cos\\theta \\cr &OC = \\cos\\theta \\end{aligned}",
@@ -1055,7 +1055,7 @@ window.ALEVEL_QUESTIONS = [
                 "Curved Graphs",
                 "Differentiation"
         ],
-        "img": "images/Pure_SVGs/004626.svg",
+        "img": "images/Pure_PNGs/004626.png",
         "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = x - 3 + \\dfrac{1}{x - 4}$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
         "steps": [
                 "<strong>(i) Finding the stationary points:</strong><br>Differentiate $y = x - 3 + \\dfrac{1}{x - 4}$ with respect to $x$:\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = 1 - \\dfrac{1}{(x - 4)^2} \\end{aligned}",
@@ -1101,7 +1101,7 @@ window.ALEVEL_QUESTIONS = [
                 "Curved Graphs",
                 "Differentiation"
         ],
-        "img": "images/Pure_SVGs/004627.svg",
+        "img": "images/Pure_PNGs/004627.png",
         "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = 2x - 1 + \\dfrac{8}{x - 1}$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Determine the coordinates of the stationary points on the curve.<br><strong>(ii)</strong> Determine the nature of each stationary point.<br><strong>(iii)</strong> Write down the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
         "steps": [
                 "<strong>(i) Finding the stationary points:</strong><br>Differentiate $y = 2x - 1 + \\dfrac{8}{x - 1}$ with respect to $x$:\\begin{aligned} &\\dfrac{\\text{d}y}{\\text{d}x} = 2 - \\dfrac{8}{(x - 1)^2} \\end{aligned}",
@@ -1147,7 +1147,7 @@ window.ALEVEL_QUESTIONS = [
                 "Curved Graphs",
                 "Differentiation"
         ],
-        "img": "images/Pure_SVGs/004628.svg",
+        "img": "images/Pure_PNGs/004628.png",
         "question": "In this question you must show detailed reasoning.<br><br>A curve has equation $y = \\dfrac{x^2 + 3}{x - 1}$.<br>The curve is shown in the diagram.<br><br><strong>(i)</strong> Express the equation of the curve in the form $y = ax + b + \\dfrac{c}{x - 1}$, where $a$, $b$, and $c$ are integers.<br><strong>(ii)</strong> Determine the coordinates and nature of the stationary points on the curve.<br><strong>(iii)</strong> State the equation of the vertical asymptote.<br><strong>(iv)</strong> Deduce the set of values of $x$ for which the curve is concave upwards.",
         "steps": [
                 "<strong>(i) Expressing the curve in the given form:</strong><br>Rewrite the numerator $x^2 + 3$ to facilitate division by $(x - 1)$:\\begin{aligned} &x^2 + 3 \\cr &\\quad = (x^2 - 1) + 4 \\cr &\\quad = (x - 1)(x + 1) + 4 \\end{aligned}",
@@ -1286,7 +1286,7 @@ window.ALEVEL_QUESTIONS = [
                 "Exponential and Logarithmic Functions and Graphs",
                 "Modelling and Applications"
         ],
-        "img": "images/Pure_SVGs/004631.svg",
+        "img": "images/Pure_PNGs/004631.png",
         "question": "In this question you must show detailed reasoning.<br><br>A video-sharing platform launched on 1 September 2020. The owners of the platform report the number of active users, $n$, at the start of each month. They believe that the relationship between $n$ and the number of months after launch, $t$, can be modelled by $n = a \\times 2^{kt}$, where $a$ and $k$ are constants.<br><br><strong>(i)</strong> Show that, according to the model, the graph of $\\log_{10} n$ against $t$ is a straight line.<br><strong>(ii)</strong> The diagram shows a plot of the values of $t$ and $\\log_{10} n$ for the first seven months after launch, along with a line of best fit. Use this line of best fit to find estimates of the values of $a$ and $k$.<br><strong>(iii)</strong> The owners of the platform want to estimate the date on which they would report that the platform has $250,000$ active users. Use the model to estimate this date.<br><strong>(iv)</strong> Give a reason why this model may not be appropriate for large values of $t$.",
         "steps": [
                 "<strong>(i) Linearising the exponential model:</strong><br>Start with the exponential model equation:\\begin{aligned} &n = a \\times 2^{kt} \\end{aligned}",

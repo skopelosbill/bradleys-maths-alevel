@@ -438,7 +438,7 @@ window.ALEVEL_QUESTIONS = [
         "Equilibrium of a rigid rod",
         "Principle of moments"
     ],
-    "img": "images/Mechanics_SVGs/012161.svg",
+    "img": "images/Mechanics_PNGs/012161.png",
     "question": "The diagram shows a light rod $AB$ of length $3\\text{ m}$ hanging vertically in equilibrium.<br><br>Parallel horizontal forces of $24\\text{ N}$ and $36\\text{ N}$ act to the left at the top end $A$ and bottom end $B$ respectively. The rod is held in equilibrium by a single horizontal force of magnitude $F\\text{ N}$ acting to the right at a point $C$, located a distance of $x\\text{ m}$ below $A$.<br><br><strong>(a)</strong> Find the value of $F$.<br><br><strong>(b)</strong> Find the value of $x$.",
     "steps": [
         "<strong>(a) Resolve horizontal forces:</strong><br><br>For translational equilibrium, the resultant horizontal force must be zero:\\begin{aligned} &F - 24 - 36 = 0 \\cr &F = 24 + 36 \\cr &F = 60\\text{ N} \\end{aligned}",
@@ -478,7 +478,7 @@ window.ALEVEL_QUESTIONS = [
         "Knife-edge supports",
         "Parallel vertical forces"
     ],
-    "img": "images/Mechanics_SVGs/012162.svg",
+    "img": "images/Mechanics_PNGs/012162.png",
     "question": "The diagram shows a uniform beam $AB$ of length $5.0\\text{ m}$ and weight $120\\text{ N}$ resting horizontally in equilibrium on two smooth knife-edge supports at $C$ and $D$.<br><br>The support at $C$ is $1.0\\text{ m}$ from $A$, and the support at $D$ is $1.0\\text{ m}$ from $B$. A vertical downward load of $80\\text{ N}$ is placed at a point $P$ on the beam, where $AP = 3.5\\text{ m}$.<br><br><strong>(a)</strong> Calculate the normal reaction force exerted on the beam by the support at $C$.<br><br><strong>(b)</strong> Calculate the normal reaction force exerted on the beam by the support at $D$.",
     "steps": [
         "<strong>(a) Take moments about support $D$:</strong><br><br>The beam is uniform, so its weight of $120\\text{ N}$ acts at its midpoint, $2.5\\text{ m}$ from $A$.<br><br>Distance from $A$ to support $D$ is $5.0 - 1.0 = 4.0\\text{ m}$.<br><br>Distances from pivot $D$:<br>• Support $C$: $4.0 - 1.0 = 3.0\\text{ m}$<br>• Midpoint (weight): $4.0 - 2.5 = 1.5\\text{ m}$<br>• Load $P$: $4.0 - 3.5 = 0.5\\text{ m}$<br><br>Taking moments about $D$:\\begin{aligned} &3.0 R_C - 120(1.5) \\cr &\\quad - 80(0.5) = 0 \\cr &3.0 R_C - 180 - 40 = 0 \\cr &3.0 R_C = 220 \\cr &R_C = \\dfrac{220}{3} \\approx 73.3\\text{ N} \\end{aligned}",
@@ -518,7 +518,7 @@ window.ALEVEL_QUESTIONS = [
         "Centre of mass",
         "Suspended bodies"
     ],
-    "img": "images/Mechanics_SVGs/012163.svg",
+    "img": "images/Mechanics_PNGs/012163.png",
     "question": "The diagram shows a non-uniform rod $AB$ of length $4\\text{ m}$ and weight $150\\text{ N}$ suspended horizontally in equilibrium by two light vertical strings attached to its ends $A$ and $B$.<br><br>A load of weight $50\\text{ N}$ is attached to the rod at a point $C$, where $AC = 1\\text{ m}$. The tension in the vertical string attached at $B$ is measured to be $110\\text{ N}$.<br><br><strong>(a)</strong> Find the tension in the vertical string attached at $A$.<br><br><strong>(b)</strong> Find the distance of the centre of mass of the rod from end $A$.",
     "steps": [
         "<strong>(a) Resolve vertical forces:</strong><br><br>For vertical equilibrium, the sum of upward tensions equals the sum of downward weights:\\begin{aligned} &T_A + T_B = 150 + 50 \\cr &T_A + 110 = 200 \\cr &T_A = 90\\text{ N} \\end{aligned}",
@@ -558,7 +558,7 @@ window.ALEVEL_QUESTIONS = [
         "Resolving forces at an angle",
         "Equilibrium of non-parallel forces"
     ],
-    "img": "images/Mechanics_SVGs/012164.svg",
+    "img": "images/Mechanics_PNGs/012164.png",
     "question": "The diagram shows a uniform horizontal beam $AB$ of mass $8\\text{ kg}$ and length $2\\text{ m}$, smoothly hinged to a vertical wall at end $A$. The beam is held in a horizontal position in equilibrium by a light wire attached to $B$ and to a point $C$ on the wall vertically above $A$. The wire is inclined at an angle of $30^\\circ$ to the beam.<br><br>A load of mass $12\\text{ kg}$ is suspended from a point $D$ on the beam, where $AD = 1.5\\text{ m}$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the wire.<br><br><strong>(b)</strong> Find the magnitude of the resultant force exerted on the beam by the hinge at $A$, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Find the tension in the wire:</strong><br><br>Calculate the weights acting on the beam:<br>• Beam weight: $W_B = 8(9.8) = 78.4\\text{ N}$ at midpoint ($1.0\\text{ m}$ from $A$)<br>• Load weight: $W_L = 12(9.8) = 117.6\\text{ N}$ at $1.5\\text{ m}$ from $A$<br><br>Taking moments about hinge $A$:\\begin{aligned} &(T\\sin 30^\\circ) \\times 2 \\cr &\\quad - 78.4(1.0) \\cr &\\quad - 117.6(1.5) = 0 \\cr &T(2 \\times 0.5) - 78.4 - 176.4 = 0 \\cr &T = 254.8\\text{ N} \\cr &T \\approx 255\\text{ N} \\end{aligned}",
@@ -598,7 +598,7 @@ window.ALEVEL_QUESTIONS = [
         "Limiting equilibrium",
         "Friction and normal reaction"
     ],
-    "img": "images/Mechanics_SVGs/012165.svg",
+    "img": "images/Mechanics_PNGs/012165.png",
     "question": "The diagram shows a uniform ladder $AB$ of mass $20\\text{ kg}$ and length $4\\text{ m}$ resting in equilibrium with its upper end $B$ against a smooth vertical wall and its lower end $A$ on rough horizontal ground. The ladder is inclined at an angle of $60^\\circ$ to the horizontal ground.<br><br>A person of mass $60\\text{ kg}$ stands on the ladder at a point $P$, where $AP = 3\\text{ m}$. The ladder is in limiting equilibrium.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the normal reaction force exerted on the ladder by the vertical wall at $B$, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the coefficient of friction $\\mu$ between the ladder and the ground, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Take moments about base $A$:</strong><br><br>The wall is smooth, so the reaction at $B$ is entirely horizontal, $N_B$.<br><br>Weights acting on the ladder:<br>• Ladder weight: $20g = 196\\text{ N}$ at midpoint ($2\\text{ m}$ from $A$)<br>• Person weight: $60g = 588\\text{ N}$ at $3\\text{ m}$ from $A$<br><br>Taking moments about $A$:\\begin{aligned} &N_B(4\\sin 60^\\circ) \\cr &\\quad - 20g(2\\cos 60^\\circ) \\cr &\\quad - 60g(3\\cos 60^\\circ) = 0 \\cr &N_B\\left(4 \\times \\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\quad = (40g + 180g)(0.5) \\cr &2\\sqrt{3} N_B = 110g \\cr &N_B = \\dfrac{110(9.8)}{2\\sqrt{3}} \\cr &N_B \\approx 311\\text{ N} \\end{aligned}",
@@ -638,7 +638,7 @@ window.ALEVEL_QUESTIONS = [
         "Trajectory equation",
         "Range and clearance"
     ],
-    "img": "images/Mechanics_SVGs/012166.svg",
+    "img": "images/Mechanics_PNGs/012166.png",
     "question": "The diagram shows Peter throwing a tennis ball horizontally with speed $15\\text{ m s}^{-1}$ from the flat roof of a building, at a height of $6.0\\text{ m}$ above horizontal ground. The ball flies over a vertical perimeter wall of height $2.5\\text{ m}$ situated a horizontal distance of $d\\text{ m}$ from the building.<br><br>The origin $O$ is taken on the ground directly beneath the point of projection, with the positive $x$-axis horizontal in the direction of the throw and the positive $y$-axis vertically upwards.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the time taken for the ball to reach the ground.<br><br><strong>(b)</strong> Find the Cartesian equation of the trajectory of the ball in the form $y = a - bx^2$, where $a$ and $b$ are constants to be determined.<br><br><strong>(c)</strong> Find the range of possible values of $d$ for which the ball clears the perimeter wall.",
     "steps": [
         "<strong>(a) Time to reach the ground:</strong><br><br>Considering vertical motion downwards from the roof ($s_y = 6.0\\text{ m}$, $u_y = 0$, $a_y = 9.8\\text{ m s}^{-2}$):\\begin{aligned} &s_y = u_y t + \\dfrac{1}{2}gt^2 \\cr &6.0 = 4.9t^2 \\cr &t^2 = \\dfrac{6.0}{4.9} \\cr &t = \\sqrt{\\dfrac{60}{49}} \\cr &t \\approx 1.11\\text{ s} \\end{aligned}",
@@ -679,7 +679,7 @@ window.ALEVEL_QUESTIONS = [
         "Impact velocity",
         "Direction of motion"
     ],
-    "img": "images/Mechanics_SVGs/012167.svg",
+    "img": "images/Mechanics_PNGs/012167.png",
     "question": "The diagram shows a pebble projected horizontally with an initial speed of $16\\text{ m s}^{-1}$ from a point $P$ at the top of a vertical cliff of height $45\\text{ m}$ above the sea. The pebble travels under gravity and strikes the sea at point $S$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Calculate the time taken for the pebble to travel from $P$ to the sea surface at $S$.<br><br><strong>(b)</strong> Calculate the horizontal distance from the base of the cliff to the impact point $S$.<br><br><strong>(c)</strong> Calculate the speed and the acute angle $\\theta$ below the horizontal at which the pebble strikes the sea, giving both values to $3$ significant figures.",
     "steps": [
         "<strong>(a) Time of flight:</strong><br><br>Considering vertical motion downwards ($s_y = 45\\text{ m}$, $u_y = 0$, $a_y = 9.8\\text{ m s}^{-2}$):\\begin{aligned} &s_y = \\dfrac{1}{2}gt^2 \\cr &45 = 4.9t^2 \\cr &t^2 = \\dfrac{45}{4.9} \\cr &t = \\sqrt{\\dfrac{450}{49}} \\cr &t \\approx 3.03\\text{ s} \\end{aligned}",
@@ -720,7 +720,7 @@ window.ALEVEL_QUESTIONS = [
         "Trajectory equation",
         "Barrier clearance"
     ],
-    "img": "images/Mechanics_SVGs/012168.svg",
+    "img": "images/Mechanics_PNGs/012168.png",
     "question": "The diagram shows a ball projected with initial speed $20\\text{ m s}^{-1}$ at an angle $\\alpha$ above the horizontal from a point $A$, which is $3.0\\text{ m}$ above horizontal ground. The ball passes over a vertical wall of height $4.0\\text{ m}$ situated a horizontal distance of $12\\text{ m}$ from $A$.<br><br>Given that $\\tan\\alpha = \\dfrac{3}{4}$:<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the Cartesian equation of the trajectory of the ball, taking the origin on the ground directly below the launch point, is:<br>$$y = 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2$$<br><strong>(b)</strong> Calculate the clearance height of the ball above the top of the wall as it passes over it.<br><br><strong>(c)</strong> Determine whether the ball is ascending or descending as it passes over the wall.",
     "steps": [
         "<strong>(a) Derive trajectory equation:</strong><br><br>From $\\tan\\alpha = \\dfrac{3}{4}$, a right-angled triangle gives $\\cos\\alpha = \\dfrac{4}{5} = 0.8$ and $\\sin\\alpha = \\dfrac{3}{5} = 0.6$.<br><br>Initial velocity components:\\begin{aligned} u_x &= 20\\cos\\alpha \\cr &= 16\\text{ m s}^{-1} \\cr u_y &= 20\\sin\\alpha \\cr &= 12\\text{ m s}^{-1} \\end{aligned}<br>Horizontal displacement: $x = 16t \\implies t = \\dfrac{x}{16}$.<br><br>Vertical displacement with initial height $y_0 = 3.0\\text{ m}$:\\begin{aligned} y &= 3 + u_y t - \\dfrac{1}{2}gt^2 \\cr &= 3 + 12\\left(\\dfrac{x}{16}\\right) \\cr &\\quad - 4.9\\left(\\dfrac{x}{16}\\right)^2 \\cr &= 3 + \\dfrac{3}{4}x - \\dfrac{4.9}{256}x^2 \\cr &= 3 + \\dfrac{3}{4}x - \\dfrac{49}{2560}x^2 \\end{aligned}",
@@ -761,7 +761,7 @@ window.ALEVEL_QUESTIONS = [
         "2D kinematics",
         "Passing through a fixed coordinate"
     ],
-    "img": "images/Mechanics_SVGs/012169.svg",
+    "img": "images/Mechanics_PNGs/012169.png",
     "question": "The diagram shows a small ball projected from the origin $O$ on horizontal ground with initial velocity $\\mathbf{u} = (u_x\\mathbf{i} + u_y\\mathbf{j})\\text{ m s}^{-1}$. The ball moves freely under gravity and passes cleanly through the centre of a target hoop located at position $(12\\mathbf{i} + 5\\mathbf{j})\\text{ m}$ after $0.8\\text{ s}$.<br><br>The unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ are directed horizontally and vertically upwards respectively.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$, so acceleration $\\mathbf{a} = -9.8\\mathbf{j}\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the initial velocity vector $\\mathbf{u}$ of the ball.<br><br><strong>(b)</strong> Find the speed of the ball as it passes through the hoop, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Initial velocity vector $\\mathbf{u}$:</strong><br><br>Using $\\mathbf{r}(t) = \\mathbf{u}t + \\dfrac{1}{2}\\mathbf{a}t^2$ with $\\mathbf{a} = -9.8\\mathbf{j}\\text{ m s}^{-2}$:<br><br>Horizontal component at $t = 0.8\\text{ s}$:\\begin{aligned} &u_x(0.8) = 12 \\cr &u_x = \\dfrac{12}{0.8} \\cr &u_x = 15\\text{ m s}^{-1} \\end{aligned}<br>Vertical component at $t = 0.8\\text{ s}$:\\begin{aligned} &u_y(0.8) - 4.9(0.8^2) = 5 \\cr &0.8u_y - 3.136 = 5 \\cr &0.8u_y = 8.136 \\cr &u_y = \\dfrac{8.136}{0.8} \\cr &u_y = 10.17\\text{ m s}^{-1} \\end{aligned}<br>Therefore:\\begin{aligned} \\mathbf{u} = (15\\mathbf{i} + 10.17\\mathbf{j})\\text{ m s}^{-1} \\end{aligned}",
@@ -801,7 +801,7 @@ window.ALEVEL_QUESTIONS = [
         "Intersection of paths",
         "Distance along slope"
     ],
-    "img": "images/Mechanics_SVGs/012170.svg",
+    "img": "images/Mechanics_PNGs/012170.png",
     "question": "The diagram shows a particle projected horizontally with speed $14\\text{ m s}^{-1}$ from the brow of a hill at point $O$. The profile of the hill is modelled as a uniform plane sloping downwards at an angle $\\beta$ below the horizontal, where $\\tan\\beta = \\dfrac{1}{3}$.<br><br>The particle travels freely under gravity and lands on the slope at point $P$.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the time of flight of the particle from $O$ to $P$.<br><br><strong>(b)</strong> Find the straight-line distance $OP$ along the slope, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Time of flight:</strong><br><br>Taking $O$ as the origin with positive $x$ horizontally and positive $y$ vertically upwards:\\begin{aligned} x &= 14t \\cr y &= -\\dfrac{1}{2}gt^2 \\cr &= -4.9t^2 \\end{aligned}<br>The slope falls with gradient $-\\tan\\beta = -\\dfrac{1}{3}$, giving line equation:\\begin{aligned} y = -\\dfrac{1}{3}x \\end{aligned}<br>At landing point $P$:\\begin{aligned} &-4.9t^2 = -\\dfrac{1}{3}(14t) \\cr &4.9t = \\dfrac{14}{3} \\cr &t = \\dfrac{14}{3 \\times 4.9} \\cr &t = \\dfrac{140}{147} \\cr &t = \\dfrac{20}{21} \\approx 0.952\\text{ s} \\end{aligned}",
@@ -841,7 +841,7 @@ window.ALEVEL_QUESTIONS = [
         "Limiting equilibrium",
         "Friction"
     ],
-    "img": "images/Mechanics_SVGs/012171.svg",
+    "img": "images/Mechanics_PNGs/012171.png",
     "question": "The diagram shows a fixed triangular wedge resting on horizontal ground. Block $A$ of mass $5.0\\text{ kg}$ rests on the left face, which is inclined at $30^\\circ$ to the horizontal. Block $B$ of mass $6.0\\text{ kg}$ rests on the right face, which is inclined at $45^\\circ$ to the horizontal.<br><br>The two blocks are connected by a light inextensible string that passes over a small, smooth pulley fixed at the apex of the wedge. The parts of the string on either side of the pulley lie parallel to the lines of greatest slope of the respective faces.<br><br>The right face is smooth, while the left face is rough. Block $A$ is in limiting equilibrium and is on the point of sliding up the plane.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the string, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the coefficient of friction $\\mu$ between Block $A$ and the left face of the wedge, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Tension in the string:</strong><br><br>Consider Block $B$ ($6.0\\text{ kg}$) resting in equilibrium on the smooth $45^\\circ$ slope.<br><br>Resolving parallel to the slope for Block $B$:\\begin{aligned} T &= m_B g\\sin 45^\\circ \\cr &= 6.0(9.8)\\left(\\dfrac{\\sqrt{2}}{2}\\right) \\cr &\\approx 41.6\\text{ N} \\end{aligned}",
@@ -881,7 +881,7 @@ window.ALEVEL_QUESTIONS = [
         "Double inclined plane",
         "Acceleration and tension"
     ],
-    "img": "images/Mechanics_SVGs/012172.svg",
+    "img": "images/Mechanics_PNGs/012172.png",
     "question": "The diagram shows a fixed triangular wedge with faces inclined at $30^\\circ$ and $60^\\circ$ to the horizontal. Particle $P$ of mass $3.0\\text{ kg}$ rests on the left face ($30^\\circ$), which is smooth. Particle $Q$ of mass $5.0\\text{ kg}$ rests on the right face ($60^\\circ$), which is rough with a coefficient of friction $\\mu = 0.25$.<br><br>The particles are connected by a light inextensible string passing over a small, smooth pulley at the apex. The string lies in a vertical plane containing the lines of greatest slope of both faces. The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that particle $Q$ accelerates down the right face and find the magnitude of the acceleration $a$, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the tension in the string during the motion, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Find system acceleration $a$:</strong><br><br>Forces on $Q$ ($5.0\\text{ kg}$) down the $60^\\circ$ slope:<br>• Downward weight component: $5.0(9.8)\\sin 60^\\circ \\approx 42.435\\text{ N}$<br>• Normal reaction: $R_Q = 5.0(9.8)\\cos 60^\\circ = 24.5\\text{ N}$<br>• Friction opposing motion: $F_Q = 0.25(24.5) = 6.125\\text{ N}$<br><br>Force on $P$ ($3.0\\text{ kg}$) down the smooth $30^\\circ$ slope:<br>• Downward weight component: $3.0(9.8)\\sin 30^\\circ = 14.7\\text{ N}$<br><br>Net driving force along the string:\\begin{aligned} F_{\\text{net}} &= 42.435 - 6.125 - 14.7 \\cr &= 21.61\\text{ N} > 0 \\end{aligned}<br>Since $F_{\\text{net}} > 0$, particle $Q$ accelerates down the right face.<br><br>Applying Newton's second law to the whole system:\\begin{aligned} &(m_P + m_Q)a = F_{\\text{net}} \\cr &(3.0 + 5.0)a = 21.61 \\cr &8.0a = 21.61 \\cr &a = \\dfrac{21.61}{8.0} \\cr &a \\approx 2.70\\text{ m s}^{-2} \\end{aligned}",
@@ -921,7 +921,7 @@ window.ALEVEL_QUESTIONS = [
         "Range of equilibrium",
         "Limiting friction"
     ],
-    "img": "images/Mechanics_SVGs/012173.svg",
+    "img": "images/Mechanics_PNGs/012173.png",
     "question": "The diagram shows a block $A$ of mass $8.0\\text{ kg}$ resting on a rough plane inclined at $30^\\circ$ to the horizontal. Block $A$ is connected to a block $B$ of mass $M\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley fixed at the top of the incline. Block $B$ hangs freely vertically downwards.<br><br>The coefficient of friction between Block $A$ and the inclined plane is $\\mu = 0.40$. The system is in equilibrium with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the minimum value of $M$ for which Block $A$ does not slip down the plane.<br><br><strong>(b)</strong> Find the maximum value of $M$ for which Block $A$ does not slip up the plane.",
     "steps": [
         "<strong>(a) Minimum mass $M$ (impending slip down):</strong><br><br>Normal reaction on Block $A$:\\begin{aligned} R &= 8.0(9.8)\\cos 30^\\circ \\cr &= 78.4\\left(\\dfrac{\\sqrt{3}}{2}\\right) \\cr &\\approx 67.896\\text{ N} \\end{aligned}<br>Maximum available friction:\\begin{aligned} F_{\\text{max}} &= \\mu R \\cr &= 0.40(67.896) \\cr &\\approx 27.158\\text{ N} \\end{aligned}<br>Component of weight down the plane:\\begin{aligned} W_\\parallel &= 8.0(9.8)\\sin 30^\\circ \\cr &= 39.2\\text{ N} \\end{aligned}<br>For minimum $M$, Block $A$ is on the point of slipping down, so friction acts up the plane:\\begin{aligned} &T_{\\text{min}} + F_{\\text{max}} = W_\\parallel \\cr &T_{\\text{min}} = 39.2 - 27.158 \\cr &T_{\\text{min}} = 12.042\\text{ N} \\end{aligned}<br>Since $T = Mg$:\\begin{aligned} &9.8M_{\\text{min}} = 12.042 \\cr &M_{\\text{min}} = \\dfrac{12.042}{9.8} \\cr &M_{\\text{min}} \\approx 1.23\\text{ kg} \\end{aligned}",
@@ -961,7 +961,7 @@ window.ALEVEL_QUESTIONS = [
         "Symmetrical wedge",
         "Vector resolution"
     ],
-    "img": "images/Mechanics_SVGs/012174.svg",
+    "img": "images/Mechanics_PNGs/012174.png",
     "question": "The diagram shows a symmetrical triangular wedge fixed to horizontal ground, with both faces inclined at $40^\\circ$ to the horizontal. Two blocks, $M_1$ and $M_2$, each of mass $4.0\\text{ kg}$, rest on the smooth faces of the wedge.<br><br>The blocks are connected by a light inextensible string passing over a small, smooth pulley fixed at the apex. The string lies parallel to the lines of greatest slope on both sides, and the system is in equilibrium.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension $T$ in the string.<br><br><strong>(b)</strong> State the direction and calculate the magnitude of the resultant force exerted by the string on the pulley, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Tension in the string:</strong><br><br>Considering either block resting in equilibrium on a smooth $40^\\circ$ slope:\\begin{aligned} T &= mg\\sin 40^\\circ \\cr &= 4.0(9.8)\\sin 40^\\circ \\cr &= 39.2\\sin 40^\\circ \\cr &\\approx 25.2\\text{ N} \\end{aligned}",
@@ -1001,7 +1001,7 @@ window.ALEVEL_QUESTIONS = [
         "String becoming slack",
         "Multi-stage motion"
     ],
-    "img": "images/Mechanics_SVGs/012175.svg",
+    "img": "images/Mechanics_PNGs/012175.png",
     "question": "The diagram shows a block $P$ of mass $2.0\\text{ kg}$ resting on a rough plane inclined at $30^\\circ$ to the horizontal, with coefficient of friction $\\mu = 0.20$. Block $P$ is connected to a block $Q$ of mass $4.0\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley at the top of the incline.<br><br>Block $Q$ hangs vertically at a height of $1.2\\text{ m}$ above horizontal ground. The system is released from rest from this position with the string taut. Block $Q$ descends and hits the ground without rebounding.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Assume block $P$ does not reach the pulley.]</em><br><br><strong>(a)</strong> Find the speed of block $Q$ immediately before it strikes the ground.<br><br><strong>(b)</strong> Find the further distance block $P$ travels up the plane after block $Q$ hits the ground before coming momentarily to rest, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Speed before impact:</strong><br><br>Frictional force on Block $P$:\\begin{aligned} R_P &= 2.0(9.8)\\cos 30^\\circ \\cr &\\approx 16.974\\text{ N} \\cr F_P &= 0.20(16.974) \\cr &\\approx 3.395\\text{ N} \\end{aligned}<br>Applying Newton's second law to the connected system before impact:\\begin{aligned} &m_Q g - (m_P g\\sin 30^\\circ + F_P) \\cr & \\qquad \\qquad= (m_P + m_Q)a_1 \\cr &4.0(9.8) - (2.0(9.8)(0.5) + 3.395) \\cr & \\qquad \\qquad = 6.0a_1 \\cr &39.2 - (9.8 + 3.395) = 6.0a_1 \\cr &26.005 = 6.0a_1 \\cr &a_1 \\approx 4.334\\text{ m s}^{-2} \\end{aligned}<br>Speed when Block $Q$ strikes the ground ($s = 1.2\\text{ m}$):\\begin{aligned} v^2 &= u^2 + 2a_1 s \\cr &= 0 + 2(4.334)(1.2) \\cr &\\approx 10.402 \\cr v &\\approx 3.23\\text{ m s}^{-1} \\end{aligned}",
@@ -1045,7 +1045,7 @@ window.ALEVEL_QUESTIONS = [
     "question": "The velocity of an electric car, $v\\text{ m s}^{-1}$ at time $t$ seconds, is being modelled for the interval $0 \\le t \\le 20$. Initially the car has velocity $4\\text{ m s}^{-1}$ and it accelerates to $10\\text{ m s}^{-1}$ in $4$ seconds.<br><br>In <strong>Model A</strong>, the acceleration is assumed to be uniform throughout the motion.<br><br><strong>(a)</strong> Find an expression for the velocity of the car at time $t$ using Model A, and explain briefly why this model is unrealistic in the long term.<br><br>Model A is refined so that the acceleration remains constant until the car reaches a top speed of $16\\text{ m s}^{-1}$, after which the velocity remains constant.<br><br><strong>(b)</strong> Find the time at which the acceleration changes, and sketch a velocity-time graph for the car over the interval $0 \\le t \\le 20$, showing clearly the coordinates of all key points.<br><br><strong>(c)</strong> Calculate the displacement of the car in the first $20$ seconds according to this refined Model A.<br><br>In <strong>Model B</strong>, the velocity of the car is given by:<br>\\begin{aligned} v(t) &= 4 + 0.5625t^2 \\cr &\\quad - 0.046875t^3,\\text{ }(0 \\le t \\le 8) \\cr v(t) &= 16,\\text{ }(8 < t \\le 20) \\end{aligned}<br><br><strong>(d)</strong> Show that Model B gives consistent values with Model A for the velocity at $t = 4\\text{ s}$ and $t = 8\\text{ s}$.<br><br><strong>(e)</strong> Explain, by considering the acceleration immediately before $t = 8\\text{ s}$, why Model B is a more realistic physical model than refined Model A.<br><br><strong>(f)</strong> Show that Model B gives the same displacement as refined Model A over the first $20$ seconds.",
     "steps": [
         "<strong>(a) Model A:</strong><br><br>Constant acceleration:\\begin{aligned} a &= \\dfrac{10 - 4}{4} \\cr &= 1.5\\text{ m s}^{-2} \\end{aligned}<br>Velocity expression:\\begin{aligned} v(t) &= u + at \\cr &= 4 + 1.5t \\end{aligned}<br>This model is unrealistic in the long term because the velocity increases without limit, which is physically impossible for a motor vehicle.",
-        "<strong>(b) Refined Model A:</strong><br><br>Time to reach $16\\text{ m s}^{-1}$:\\begin{aligned} 4 + 1.5t &= 16 \\cr 1.5t &= 12 \\cr t &= 8\\text{ s} \\end{aligned}<br>The acceleration changes at $t = 8\\text{ s}$.<br><br><img src='images/Mechanics_SVGs/012176_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+        "<strong>(b) Refined Model A:</strong><br><br>Time to reach $16\\text{ m s}^{-1}$:\\begin{aligned} 4 + 1.5t &= 16 \\cr 1.5t &= 12 \\cr t &= 8\\text{ s} \\end{aligned}<br>The acceleration changes at $t = 8\\text{ s}$.<br><br><img src='images/Mechanics_PNGs/012176_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
         "<strong>(c) Displacement for refined Model A:</strong><br><br>The area under the $v$-$t$ graph consists of a trapezium from $t = 0$ to $8$ and a rectangle from $t = 8$ to $20$:\\begin{aligned} s_1 &= \\dfrac{4 + 16}{2} \\times 8 \\cr &= 80\\text{ m} \\cr s_2 &= 16 \\times (20 - 8) \\cr &= 192\\text{ m} \\cr s &= 80 + 192 \\cr &= 272\\text{ m} \\end{aligned}",
         "<strong>(d) Model B consistency:</strong><br><br>At $t = 4\\text{ s}$:\\begin{aligned} v(4) &= 4 + 0.5625(16) \\cr &\\quad - 0.046875(64) \\cr &= 4 + 9 - 3 \\cr &= 10\\text{ m s}^{-1} \\end{aligned}<br>At $t = 8\\text{ s}$:\\begin{aligned} v(8) &= 4 + 0.5625(64) \\cr &\\quad - 0.046875(512) \\cr &= 4 + 36 - 24 \\cr &= 16\\text{ m s}^{-1} \\end{aligned}<br>Both values match Model A exactly.",
         "<strong>(e) Acceleration at $t = 8\\text{ s}$:</strong><br><br>Differentiating Model B for $0 \\le t \\le 8$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 1.125t - 0.140625t^2 \\end{aligned}<br>At $t = 8\\text{ s}$:\\begin{aligned} a(8) &= 1.125(8) - 0.140625(64) \\cr &= 9 - 9 \\cr &= 0\\text{ m s}^{-2} \\end{aligned}<br>Model B is more realistic because the acceleration transitions smoothly to zero at the cruising speed, whereas refined Model A has an instantaneous drop from $1.5\\text{ m s}^{-2}$ to $0$.",
@@ -1088,7 +1088,7 @@ window.ALEVEL_QUESTIONS = [
     "img": false,
     "question": "The motion of a high-speed train over a $40$-second test run is modelled in three successive stages:<br>\\begin{aligned} v(t) &= 2t,\\text{ }(0 \\le t \\le 12) \\cr v(t) &= 24,\\text{ }(12 < t \\le 30) \\cr v(t) &= 24 - 0.24(t - 30)^2,\\cr & \\qquad\\text{ }(30 < t \\le 40) \\end{aligned}<br>where $v\\text{ m s}^{-1}$ is the velocity of the train at time $t$ seconds.<br><br><strong>(a)</strong> Sketch the velocity-time graph for the train for $0 \\le t \\le 40$, showing the coordinates of the vertices between the stages and the final state at $t = 40\\text{ s}$.<br><br><strong>(b)</strong> Show that the acceleration of the train is continuous at $t = 30\\text{ s}$.<br><br><strong>(c)</strong> Calculate the total distance travelled by the train during the $40$-second run.",
     "steps": [
-        "<strong>(a) Velocity-time graph:</strong><br><br>Vertices between stages:<br>• Start: $(0, 0)$<br>• End of stage 1: $(12, 24)$<br>• End of stage 2: $(30, 24)$<br>• End of stage 3: $v(40) = 24 - 0.24(100) = 0$, giving $(40, 0)$<br><br><img src='images/Mechanics_SVGs/012177_ans.svg' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+        "<strong>(a) Velocity-time graph:</strong><br><br>Vertices between stages:<br>• Start: $(0, 0)$<br>• End of stage 1: $(12, 24)$<br>• End of stage 2: $(30, 24)$<br>• End of stage 3: $v(40) = 24 - 0.24(100) = 0$, giving $(40, 0)$<br><br><img src='images/Mechanics_PNGs/012177_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
         "<strong>(b) Continuity of acceleration at $t = 30\\text{ s}$:</strong><br><br>For $12 < t \\le 30$, velocity is constant, so:\\begin{aligned} a_1(t) = 0\\text{ m s}^{-2} \\end{aligned}<br>For $30 < t \\le 40$, differentiating with respect to $t$:\\begin{aligned} a_2(t) &= \\dfrac{\\text{d}}{\\text{d}t}\\big[24 - 0.24(t - 30)^2\\big] \\cr &= -0.48(t - 30) \\end{aligned}<br>Evaluating at $t = 30\\text{ s}$:\\begin{aligned} a_2(30) &= -0.48(0) \\cr &= 0\\text{ m s}^{-2} \\end{aligned}<br>Since $\\lim_{t \\to 30^-} a(t) = \\lim_{t \\to 30^+} a(t) = 0$, the acceleration is continuous at $t = 30\\text{ s}$.",
         "<strong>(c) Total distance travelled:</strong><br><br>Stage 1 (triangle):\\begin{aligned} s_1 &= \\dfrac{1}{2}(12)(24) \\cr &= 144\\text{ m} \\end{aligned}<br>Stage 2 (rectangle):\\begin{aligned} s_2 &= (30 - 12) \\times 24 \\cr &= 432\\text{ m} \\end{aligned}<br>Stage 3 (calculus):\\begin{aligned} s_3 &= \\int_{30}^{40} \\big[24 - 0.24(t - 30)^2\\big]\\,\\text{d}t \\cr &= \\Big[24(t - 30) - 0.08(t - 30)^3\\Big]_{30}^{40} \\cr &= 24(10) - 0.08(1000) \\cr &= 240 - 80 \\cr &= 160\\text{ m} \\end{aligned}<br>Total distance:\\begin{aligned} s_{\\text{total}} &= 144 + 432 + 160 \\cr &= 736\\text{ m} \\end{aligned}",
         "Final Answer: (a) $(0,0)$, $(12,24)$, $(30,24)$, $(40,0)$, (b) $a(30) = 0\\text{ m s}^{-2}$, (c) $736\\text{ m}$"
@@ -1126,7 +1126,7 @@ window.ALEVEL_QUESTIONS = [
         "Asymptotic terminal velocity",
         "Definite integration"
     ],
-    "img": "images/Mechanics_SVGs/012178.svg",
+    "img": "images/Mechanics_PNGs/012178.png",
     "question": "The diagram shows two mathematical models proposed for the velocity $v\\text{ m s}^{-1}$ of a skydiver in a wind tunnel over the first $20$ seconds of flight.<br><br>In <strong>Model A</strong>, the skydiver accelerates uniformly from rest to a terminal velocity $V_{\\max} = 28\\text{ m s}^{-1}$ in $10\\text{ s}$, after which the velocity remains constant.<br><br>In <strong>Model B</strong>, atmospheric drag is taken into account and the velocity is modelled by:<br>$$v(t) = 28(1 - \\text{e}^{-0.1t}),\\text{ for } t \\ge 0$$<br><strong>(a)</strong> State the initial acceleration predicted by Model B at $t = 0$.<br><br><strong>(b)</strong> Find the time taken under Model B for the skydiver to reach a velocity of $20\\text{ m s}^{-1}$, giving your answer to $3$ significant figures.<br><br><strong>(c)</strong> Calculate the displacement of the skydiver during the first $20$ seconds according to Model B, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Initial acceleration under Model B:</strong><br><br>Differentiating $v(t) = 28 - 28\\text{e}^{-0.1t}$ with respect to $t$:\\begin{aligned} a(t) &= \\dfrac{\\text{d}v}{\\text{d}t} \\cr &= 28(0.1\\text{e}^{-0.1t}) \\cr &= 2.8\\text{e}^{-0.1t} \\end{aligned}<br>At $t = 0$:\\begin{aligned} a(0) &= 2.8\\text{e}^{0} \\cr &= 2.8\\text{ m s}^{-2} \\end{aligned}",
@@ -1167,7 +1167,7 @@ window.ALEVEL_QUESTIONS = [
         "Calculus from a-t to v-t",
         "Definite integration"
     ],
-    "img": "images/Mechanics_SVGs/012179.svg",
+    "img": "images/Mechanics_PNGs/012179.png",
     "question": "The diagram shows the acceleration-time ($a$-$t$) graph for a racing car during a $10$-second performance test. The car starts from rest at the origin at time $t = 0$.<br><br>The acceleration $a\\text{ m s}^{-2}$ at time $t$ seconds is defined by:<br>\\begin{aligned} a(t) &= 1.5t,\\text{ }(0 \\le t \\le 2) \\cr a(t) &= 3,\\text{ }(2 < t \\le 7) \\cr a(t) &= 10 - t,\\text{ }(7 < t \\le 10) \\end{aligned}<br><strong>(a)</strong> Using the area under the acceleration-time graph, find the maximum velocity reached by the car during the test.<br><br><strong>(b)</strong> By integration, find an expression for the displacement of the car during the first stage ($0 \\le t \\le 2$), and hence find the distance travelled in the first $2$ seconds.<br><br><strong>(c)</strong> Calculate the total displacement of the car at $t = 10\\text{ s}$, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Maximum velocity from area:</strong><br><br>The car starts from rest ($u = 0$), so the maximum velocity at $t = 10\\text{ s}$ equals the total area under the $a$-$t$ graph:<br>• Triangle 1 ($0 \\le t \\le 2$): $\\frac{1}{2}(2)(3) = 3\\text{ m s}^{-1}$<br>• Rectangle ($2 < t \\le 7$): $(7 - 2) \\times 3 = 15\\text{ m s}^{-1}$<br>• Triangle 2 ($7 < t \\le 10$): $\\frac{1}{2}(10 - 7)(3) = 4.5\\text{ m s}^{-1}$<br><br>Total area:\\begin{aligned} v_{\\max} &= 3 + 15 + 4.5 \\cr &= 22.5\\text{ m s}^{-1} \\end{aligned}",
@@ -1208,7 +1208,7 @@ window.ALEVEL_QUESTIONS = [
         "Reversing direction",
         "Distance vs displacement"
     ],
-    "img": "images/Mechanics_SVGs/012180.svg",
+    "img": "images/Mechanics_PNGs/012180.png",
     "question": "The diagram shows the velocity-time graph of a remote-controlled drone moving along a straight track for $0 \\le t \\le 10$. The drone begins with velocity $6\\text{ m s}^{-1}$ at $t = 0$, decelerates uniformly to come momentarily to rest at $t = 4\\text{ s}$, continues to accelerate in the opposite direction until $t = 7\\text{ s}$ when its velocity is $-4\\text{ m s}^{-1}$, and then maintains this constant velocity until $t = 10\\text{ s}$.<br><br><strong>(a)</strong> Find the acceleration of the drone during the first $4$ seconds.<br><br><strong>(b)</strong> Find the displacement of the drone from its starting point at $t = 10\\text{ s}$.<br><br><strong>(c)</strong> Find the total distance travelled by the drone during the entire $10$-second journey.",
     "steps": [
         "<strong>(a) Acceleration during the first $4$ seconds:</strong><br><br>Using the gradient of the velocity-time graph:\\begin{aligned} a &= \\dfrac{v(4) - v(0)}{4 - 0} \\cr &= \\dfrac{0 - 6}{4} \\cr &= -1.5\\text{ m s}^{-2} \\end{aligned}",
@@ -1451,7 +1451,7 @@ window.ALEVEL_QUESTIONS = [
         "Newton's second law",
         "Modelling assumptions"
     ],
-    "img": "images/Mechanics_SVGs/012186.svg",
+    "img": "images/Mechanics_PNGs/012186.png",
     "question": "The diagram shows two objects, $A$ and $B$, of mass $4\\text{ kg}$ and $6\\text{ kg}$ respectively, connected by a light inextensible string passing over a small, light, smooth pulley fixed at the edge of a smooth horizontal table. Object $A$ rests on the horizontal table and object $B$ hangs freely vertically below the pulley.<br><br>Initially, the objects are held at rest with the string taut. The system is then released.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the acceleration of object $A$ and the tension in the string.<br><br><strong>(b)</strong> State briefly what effect a rough pulley would have on the tension in the two parts of the string.",
     "steps": [
         "<strong>(a) Acceleration and tension:</strong><br><br>Applying Newton's second law ($F = ma$) to each object:<br>• For hanging object $B$ downwards:\\begin{aligned} &6g - T = 6a \\cr &6(9.8) - T = 6a \\cr &58.8 - T = 6a \\end{aligned}<br>• For object $A$ along the smooth table:\\begin{aligned} T = 4a \\end{aligned}<br>Adding the two equations eliminates $T$:\\begin{aligned} &58.8 = 10a \\cr &a = \\dfrac{58.8}{10} \\cr &a = 5.88\\text{ m s}^{-2} \\end{aligned}<br>Substitute $a = 5.88\\text{ m s}^{-2}$ to find tension $T$:\\begin{aligned} T &= 4(5.88) \\cr &= 23.52\\text{ N} \\cr &\\approx 23.5\\text{ N} \\end{aligned}",
@@ -1491,7 +1491,7 @@ window.ALEVEL_QUESTIONS = [
         "Friction and normal reaction",
         "Acceleration"
     ],
-    "img": "images/Mechanics_SVGs/012187.svg",
+    "img": "images/Mechanics_PNGs/012187.png",
     "question": "The diagram shows a block $P$ of mass $5\\text{ kg}$ resting on a rough horizontal table. Block $P$ is connected to a block $Q$ of mass $3\\text{ kg}$ by a light inextensible string passing over a small, smooth pulley fixed at the edge of the table. Block $Q$ hangs freely vertically below the pulley.<br><br>The coefficient of friction between block $P$ and the table is $\\mu = 0.25$. The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Show that the system moves, and calculate the magnitude of the acceleration of the blocks, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the tension in the string during the motion, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Verification of motion and acceleration:</strong><br><br>Normal reaction on block $P$:\\begin{aligned} R_P &= 5(9.8) \\cr &= 49\\text{ N} \\end{aligned}<br>Maximum available friction:\\begin{aligned} F_{\\text{max}} &= \\mu R_P \\cr &= 0.25(49) \\cr &= 12.25\\text{ N} \\end{aligned}<br>Downward weight of hanging block $Q$:\\begin{aligned} W_Q &= 3(9.8) \\cr &= 29.4\\text{ N} \\end{aligned}<br>Since $W_Q > F_{\\text{max}}$ ($29.4\\text{ N} > 12.25\\text{ N}$), the driving force overcomes static friction and the system moves.<br><br>Equation of motion for the system:\\begin{aligned} &W_Q - F_{\\text{max}} = (m_P + m_Q)a \\cr &29.4 - 12.25 = 8a \\cr &17.15 = 8a \\cr &a = \\dfrac{17.15}{8} \\cr &a \\approx 2.14\\text{ m s}^{-2} \\end{aligned}",
@@ -1531,7 +1531,7 @@ window.ALEVEL_QUESTIONS = [
         "Constant acceleration formulae",
         "Impact with the floor"
     ],
-    "img": "images/Mechanics_SVGs/012188.svg",
+    "img": "images/Mechanics_PNGs/012188.png",
     "question": "The diagram shows a block $M_1$ of mass $3\\text{ kg}$ on a smooth horizontal table, connected by a light inextensible string passing over a small, smooth pulley at the edge of the table to a block $M_2$ of mass $2\\text{ kg}$ hanging freely.<br><br>Block $M_2$ is initially held at rest at a height of $h = 1.5\\text{ m}$ above horizontal ground. The system is released from rest with the string taut. Block $M_2$ descends and strikes the ground without rebounding.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$. Assume block $M_1$ does not reach the pulley.]</em><br><br><strong>(a)</strong> Find the speed of block $M_2$ immediately before it strikes the ground, giving your answer to $3$ significant figures.<br><br><strong>(b)</strong> Find the time taken for block $M_2$ to reach the ground from release, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Acceleration and impact speed:</strong><br><br>Applying Newton's second law to the system before impact:\\begin{aligned} &m_2 g = (m_1 + m_2)a \\cr &2(9.8) = (3 + 2)a \\cr &19.6 = 5a \\cr &a = 3.92\\text{ m s}^{-2} \\end{aligned}<br>Using $v^2 = u^2 + 2as$ with $u = 0$ and $s = 1.5\\text{ m}$:\\begin{aligned} v^2 &= 0 + 2(3.92)(1.5) \\cr &= 11.76 \\cr v &= \\sqrt{11.76} \\cr &\\approx 3.43\\text{ m s}^{-1} \\end{aligned}",
@@ -1571,7 +1571,7 @@ window.ALEVEL_QUESTIONS = [
         "Vector addition of tensions",
         "Right-angled pulley"
     ],
-    "img": "images/Mechanics_SVGs/012189.svg",
+    "img": "images/Mechanics_PNGs/012189.png",
     "question": "The diagram shows a block $A$ of mass $2\\text{ kg}$ resting on a smooth horizontal table. Block $A$ is connected to a block $B$ of mass $3\\text{ kg}$ by a light inextensible string passing over a small, light, smooth pulley fixed at the corner of the table. Block $B$ hangs freely vertically downwards.<br><br>The system is released from rest with the string taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the tension in the string during the motion.<br><br><strong>(b)</strong> State the direction and calculate the magnitude of the resultant force exerted by the string on the pulley, giving your answer to $3$ significant figures.",
     "steps": [
         "<strong>(a) Tension in the string:</strong><br><br>Applying Newton's second law to the system:\\begin{aligned} &m_B g = (m_A + m_B)a \\cr &3(9.8) = (2 + 3)a \\cr &29.4 = 5a \\cr &a = 5.88\\text{ m s}^{-2} \\end{aligned}<br>For block $A$ on the smooth table:\\begin{aligned} T &= m_A a \\cr &= 2(5.88) \\cr &= 11.76\\text{ N} \\cr &\\approx 11.8\\text{ N} \\end{aligned}",
@@ -1611,7 +1611,7 @@ window.ALEVEL_QUESTIONS = [
         "Three connected bodies",
         "Simultaneous equations"
     ],
-    "img": "images/Mechanics_SVGs/012190.svg",
+    "img": "images/Mechanics_PNGs/012190.png",
     "question": "The diagram shows a block $C$ of mass $5\\text{ kg}$ resting on a smooth horizontal table. Block $C$ is connected by two separate light inextensible strings passing over smooth pulleys at opposite edges of the table to two hanging blocks, $A$ and $B$, of mass $2\\text{ kg}$ and $7\\text{ kg}$ respectively. Both blocks $A$ and $B$ hang freely vertically downwards.<br><br>The system is released from rest with both strings taut.<br><em>[Take $g = 9.8\\text{ m s}^{-2}$.]</em><br><br><strong>(a)</strong> Find the magnitude of the acceleration of the system.<br><br><strong>(b)</strong> Find the tension in the string attached to block $A$ and the tension in the string attached to block $B$.",
     "steps": [
         "<strong>(a) Acceleration of the system:</strong><br><br>Block $B$ ($7\\text{ kg}$) is heavier than block $A$ ($2\\text{ kg}$), so block $B$ accelerates downwards, block $C$ moves to the right, and block $A$ accelerates upwards.<br><br>Applying Newton's second law to each block:<br>• For block $B$ (downwards): $7g - T_B = 7a$<br>• For block $C$ (rightwards): $T_B - T_A = 5a$<br>• For block $A$ (upwards): $T_A - 2g = 2a$<br><br>Summing all three equations eliminates both internal tensions:\\begin{aligned} &7g - 2g = (7 + 5 + 2)a \\cr &5g = 14a \\cr &5(9.8) = 14a \\cr &49 = 14a \\cr &a = \\dfrac{49}{14} \\cr &a = 3.5\\text{ m s}^{-2} \\end{aligned}",

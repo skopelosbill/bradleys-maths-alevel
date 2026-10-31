@@ -8,6 +8,7 @@ import 'models/filter_state.dart';
 class DatabaseHelper {
   static Database? _db;
   static List<Map<String, dynamic>>? _jsonCache;
+  static final List<Map<String, dynamic>> _webAttempts = [];
 
   Future<Database> get database async {
     if (_db != null) return _db!;
@@ -210,7 +211,6 @@ class DatabaseHelper {
             }
           }
         } catch (_) {
-          // If not valid JSON, treat as comma-separated or single string
           final parts = raw.split(',');
           for (var p in parts) {
             final s = p.trim();
@@ -263,7 +263,6 @@ class DatabaseHelper {
         return matches.first;
       }
 
-      // No silent fallback! Returns null so the UI can notify the student
       return null;
     }
 
@@ -309,10 +308,83 @@ class DatabaseHelper {
   }
 
   // ==========================================
+  // ATTEMPT RECORDING & PROGRESS TRACKING
+  // ==========================================
+
+  Future<void> recordAttempt({
+    required String questionId,
+    required String firstChoiceText,
+    required bool firstChoiceCorrect,
+    String? secondChoiceText,
+    bool? secondChoiceCorrect,
+    bool choseNoneOfAbove = false,
+    bool viewedModelAnswer = false,
+  }) async {
+    final record = {
+      'user_id': 1,
+      'question_id': questionId,
+      'first_choice_text': firstChoiceText,
+      'first_choice_correct': firstChoiceCorrect ? 1 : 0,
+      'second_choice_text': secondChoiceText,
+      'second_choice_correct': secondChoiceCorrect == null ? null : (secondChoiceCorrect ? 1 : 0),
+      'chose_none_of_above': choseNoneOfAbove ? 1 : 0,
+      'viewed_model_answer': viewedModelAnswer ? 1 : 0,
+    };
+
+    if (kIsWeb) {
+      _webAttempts.add(record);
+      debugPrint("[WEB PROGRESS] Recorded attempt for Q#$questionId (Correct: $firstChoiceCorrect)");
+      return;
+    }
+
+    try {
+      final db = await database;
+      await db.insert('user_attempts', record);
+      debugPrint("[DB PROGRESS] Saved attempt for Q#$questionId to user_attempts");
+    } catch (e) {
+      debugPrint("[DB PROGRESS ERROR] Could not save attempt: $e");
+    }
+  }
+
+  Future<Map<String, int>> getUserStats() async {
+    if (kIsWeb) {
+      final total = _webAttempts.length;
+      final correct = _webAttempts.where((a) => a['first_choice_correct'] == 1).length;
+      final uniqueMastered = _webAttempts
+          .where((a) => a['first_choice_correct'] == 1 || a['second_choice_correct'] == 1)
+          .map((a) => a['question_id'])
+          .toSet()
+          .length;
+      return {
+        'total_attempts': total,
+        'first_try_correct': correct,
+        'unique_mastered': uniqueMastered,
+      };
+    }
+
+    try {
+      final db = await database;
+      final totalRes = await db.rawQuery('SELECT COUNT(*) as count FROM user_attempts');
+      final correctRes = await db.rawQuery('SELECT COUNT(*) as count FROM user_attempts WHERE first_choice_correct = 1');
+      final uniqueRes = await db.rawQuery(
+        'SELECT COUNT(DISTINCT question_id) as count FROM user_attempts WHERE first_choice_correct = 1 OR second_choice_correct = 1'
+      );
+
+      return {
+        'total_attempts': Sqflite.firstIntValue(totalRes) ?? 0,
+        'first_try_correct': Sqflite.firstIntValue(correctRes) ?? 0,
+        'unique_mastered': Sqflite.firstIntValue(uniqueRes) ?? 0,
+      };
+    } catch (e) {
+      debugPrint("[DB STATS ERROR] $e");
+      return {'total_attempts': 0, 'first_try_correct': 0, 'unique_mastered': 0};
+    }
+  }
+
+  // ==========================================
   // STEP 12: SMART BRANCHING QUERIES
   // ==========================================
 
-  // Option A: Similar question from a DIFFERENT exam board (Subtopic Priority with Topic Fallback)
   Future<Map<String, dynamic>?> fetchDifferentBoardQuestion(Map<String, dynamic> currentQ) async {
     final currentId = currentQ['id']?.toString() ?? '';
     final currentBoard = currentQ['board']?.toString() ?? '';
@@ -320,14 +392,12 @@ class DatabaseHelper {
     final level = currentQ['level']?.toString() ?? '';
     final topic = currentQ['topic']?.toString() ?? '';
 
-    // Extract the primary subtopic if available
     final List<dynamic> rawSubtopics = currentQ['subtopic'] is List ? currentQ['subtopic'] : [];
     final String? primarySubtopic = rawSubtopics.isNotEmpty ? rawSubtopics.first.toString() : null;
 
     if (kIsWeb) {
       final data = await _loadWebData();
 
-      // Base candidate filter: different ID, different Board, same Branch & Level
       var baseCandidates = data.where((q) {
         if (q['id']?.toString() == currentId) return false;
         if (q['board']?.toString() == currentBoard) return false;
@@ -336,7 +406,6 @@ class DatabaseHelper {
         return true;
       }).toList();
 
-      // Priority 1: Exact Subtopic Match across different boards
       if (primarySubtopic != null && primarySubtopic.isNotEmpty) {
         var subtopicMatches = baseCandidates.where((q) {
           final qSubtopics = q['subtopic'] is List ? q['subtopic'] as List : [];
@@ -349,7 +418,6 @@ class DatabaseHelper {
         }
       }
 
-      // Priority 2 (Fallback): Match by Topic across different boards
       var topicMatches = baseCandidates.where((q) => q['topic'] == topic).toList();
       if (topicMatches.isNotEmpty) {
         topicMatches.shuffle();
@@ -359,10 +427,8 @@ class DatabaseHelper {
       return null;
     }
 
-    // Native SQLite implementation
     final db = await database;
 
-    // Priority 1: Exact Subtopic Match
     if (primarySubtopic != null && primarySubtopic.isNotEmpty) {
       final subtopicRes = await db.query(
         'questions',
@@ -374,7 +440,6 @@ class DatabaseHelper {
       if (subtopicRes.isNotEmpty) return subtopicRes.first;
     }
 
-    // Priority 2 (Fallback): Match by Topic
     final topicRes = await db.query(
       'questions',
       where: 'id != ? AND board != ? AND branch = ? AND level = ? AND topic = ?',
@@ -385,7 +450,6 @@ class DatabaseHelper {
     return topicRes.isNotEmpty ? topicRes.first : null;
   }
 
-  // Option B: Progression question from the SAME ID group (Twin / Cousin)
   Future<Map<String, dynamic>?> fetchGroupProgressionQuestion(Map<String, dynamic> currentQ) async {
     final currentId = currentQ['id']?.toString() ?? '';
     final groupId = currentQ['group_id']?.toString() ?? '';
@@ -401,7 +465,6 @@ class DatabaseHelper {
       }).toList();
 
       if (matches.isNotEmpty) {
-        // Return the next sequential question in this group if possible
         matches.sort((a, b) => (a['id']?.toString() ?? '').compareTo(b['id']?.toString() ?? ''));
         return matches.first;
       }

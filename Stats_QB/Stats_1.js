@@ -11,7 +11,7 @@ window.ALEVEL_QUESTIONS = [
         "Scatter Diagrams",
         "Types of Correlation"
     ],
-    "img": "images/Statistics_SVGs/050001.svg",
+    "img": "images/Statistics_PNGs/050001.png",
     "question": "The diagram shows a scatter diagram plotted for two variables, $x$ and $y$.<br><br>Which of the options below best describes the correlation shown in the diagram?",
     "steps": [
         "<strong>Analysing the Direction of Correlation:</strong><br><br>As the variable $x$ increases, the values of $y$ generally increase from left to right.<br><br>An upward trend from bottom-left to top-right indicates a positive correlation.",
@@ -50,7 +50,7 @@ window.ALEVEL_QUESTIONS = [
         "Cumulative Frequency",
         "Interquartile Range"
     ],
-    "img": "images/Statistics_SVGs/050002.svg",
+    "img": "images/Statistics_PNGs/050002.png",
     "question": "The cumulative frequency diagram shows the distribution of times, $t$ minutes, taken by a sample of $100$ commuters to travel to work.<br><br><strong>(a)</strong> Use the diagram to estimate the median journey time.<br><br><strong>(b)</strong> Use the diagram to estimate the interquartile range (IQR).<br><br><strong>(c)</strong> A commuter is considered to have had an unusually long journey if their travel time exceeds $45\\text{ minutes}$. Estimate the percentage of commuters in this sample who had an unusually long journey.",
     "steps": [
         "<strong>(a) Estimating the Median:</strong><br><br>For a sample size of $n = 100$, the median corresponds to a cumulative frequency of:\\begin{aligned} \\text{CF} &= \\dfrac{100}{2} \\cr &= 50 \\end{aligned}Reading horizontally from $50$ on the vertical axis across to the curve, and then vertically down to the horizontal axis, gives:\\begin{aligned} \\text{Median} \\approx 29\\text{ minutes} \\end{aligned}",
@@ -91,7 +91,7 @@ window.ALEVEL_QUESTIONS = [
         "Frequency Density",
         "Modal Class"
     ],
-    "img": "images/Statistics_SVGs/050003.svg",
+    "img": "images/Statistics_PNGs/050003.png",
     "question": "The histogram displays the distribution of mass, $m$ kilograms, of a sample of parcels processed at a distribution depot.<br><br><strong>(a)</strong> Calculate the total number of parcels in the sample.<br><br><strong>(b)</strong> Estimate the number of parcels in the sample with a mass between $15\\text{ kg}$ and $30\\text{ kg}$.<br><br><strong>(c)</strong> State the modal class for this distribution.",
     "steps": [
         "<strong>(a) Calculating the Total Frequency:</strong><br><br>In a histogram, frequency is given by the area of each bar:\\begin{aligned}& \\text{Frequency}\\cr &\\qquad= \\text{Class Width} \\times \\text{Frequency Density} \\end{aligned}Calculate the frequency for each of the four intervals:<br><br>For $10 \\le m < 20$:\\begin{aligned} f_1 &= 10 \\times 1.4 \\cr &= 14 \\end{aligned}For $20 \\le m < 25$:\\begin{aligned} f_2 &= 5 \\times 3.6 \\cr &= 18 \\end{aligned}For $25 \\le m < 35$:\\begin{aligned} f_3 &= 10 \\times 2.4 \\cr &= 24 \\end{aligned}For $35 \\le m \\le 50$:\\begin{aligned} f_4 &= 15 \\times 0.8 \\cr &= 12 \\end{aligned}Summing the frequencies gives the total number of parcels:\\begin{aligned} \\text{Total} &= 14 + 18 + 24 + 12 \\cr &= 68 \\end{aligned}",
@@ -132,7 +132,7 @@ window.ALEVEL_QUESTIONS = [
         "Outliers",
         "Comparing Distributions"
     ],
-    "img": "images/Statistics_SVGs/050004.svg",
+    "img": "images/Statistics_PNGs/050004.png",
     "question": "The parallel box plots show the test score distributions of two groups of students, Group A and Group B.<br><br>An outlier is defined as any value that lies more than $1.5 \\times \\text{IQR}$ below $Q_1$ or above $Q_3$.<br><br><strong>(a)</strong> State the score of the outlier identified in Group B.<br><br><strong>(b)</strong> Show, by calculation, that this score satisfies the definition of an outlier.<br><br><strong>(c)</strong> Compare the performance of the two groups by making two separate comments in context.",
     "steps": [
         "<strong>(a) Identifying the Outlier:</strong><br><br>In Group B, an isolated cross is plotted at the low end of the scale.<br><br>Reading its position from the score axis gives:\\begin{aligned} \\text{Outlier score} = 12 \\end{aligned}",
@@ -173,7 +173,7 @@ window.ALEVEL_QUESTIONS = [
         "Independence",
         "Conditional Probability"
     ],
-    "img": "images/Statistics_SVGs/050005.svg",
+    "img": "images/Statistics_PNGs/050005.png",
     "question": "The Venn diagram shows the probabilities associated with two events, $A$ and $B$, within a sample space $\\mathscr{E}$.<br><br><strong>(a)</strong> Find $\\text{P}(A \\cup B)$.<br><br><strong>(b)</strong> Determine, with full mathematical justification, whether events $A$ and $B$ are independent.<br><br><strong>(c)</strong> Calculate the conditional probability $\\text{P}(A \\mid B')$, giving your answer as a simplified fraction.",
     "steps": [
         "<strong>(a) Finding $\\text{P}(A \\cup B)$:</strong><br><br>Sum the probabilities across the three mutually exclusive regions comprising $A \\cup B$:\\begin{aligned} \\text{P}(A \\cup B) &= 0.32 + 0.18 + 0.26 \\cr &= 0.76 \\end{aligned}Alternatively, subtract the exterior probability from $1$:\\begin{aligned} \\text{P}(A \\cup B) &= 1 - 0.24 \\cr &= 0.76 \\end{aligned}",
@@ -1235,7 +1235,7 @@ window.ALEVEL_QUESTIONS = [
         "Type I Error",
         "Data Interpretation"
     ],
-    "img": "images/Statistics_SVGs/050031.svg",
+    "img": "images/Statistics_PNGs/050031.png",
     "question": "The graph shows the amount of sugar, in grams, purchased and brought into the home per person per week in England between 2001&ndash;02 and 2014, based on a national household food survey.<br><br>Toby believes that the amount of sugar consumed by people in England decreased greatly during this period. Sarah says that this is not necessarily the case.<br><br><strong>(a)</strong> Explain two reasons why Sarah may be correct, with reference to how dietary data is collected and consumed.<br><br><strong>(b)</strong> The mean amount of butter purchased per person per week in 2014 was $42.5\\text{ grams}$, with standard deviation $14.0\\text{ grams}$. In 2018, a random sample of $784$ people had a mean of $43.6\\text{ grams}$.<br><br>Test at the $5\\%$ level whether the mean amount of butter purchased has changed, assuming $\\sigma$ remains $14.0\\text{ grams}$.<br><br><strong>(c)</strong> In another test for cheese purchases, $H_0$ is rejected at the $5\\%$ level. With reference to the $5\\%$ level, explain why there may not have been a genuine change.",
     "steps": [
         "<strong>(a) Two Reasons Why Sarah May Be Correct:</strong><br><br><strong>1. Purchases versus Consumption:</strong> The survey records food <em>purchased</em> and brought into the home, not food actually <em>consumed</em>. Significant amounts of purchased sugar may be wasted, discarded, or used for non-dietary purposes.<br><br><strong>2. Exclusion of Food Eaten Out:</strong> The graph shows household grocery purchases only, ignoring sugar consumed outside the home in cafes, restaurants, takeaways, and pre-packaged snacks.",
