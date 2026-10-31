@@ -751,15 +751,15 @@ window.ALEVEL_QUESTIONS = [
   ],
   "pi_options": [
     {
-      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{2} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{2}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation gradient equals} \\cr &\\quad \\text{exact derivative at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 4, \\, c = 1 \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{2} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{2}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation} \\cr &\\quad \\text{gradient equals exact derivative} \\cr &\\quad \\text{at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 4, \\, c = 1 \\end{aligned}",
       "feedback": "Check the Chain Rule when differentiating $2\\tan 3y$. The inner derivative of $3y$ contributes a factor of 3, giving $\\frac{\\text{d}x}{\\text{d}y} = 6\\sec^2 3y$, not $2\\sec^2 3y$."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation gradient equals} \\cr &\\quad \\text{exact derivative at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 12, \\, c = -3 \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation} \\cr &\\quad \\text{gradient equals exact derivative} \\cr &\\quad \\text{at the origin} \\cr &\\textbf{(c) } a = 2, \\, b = 12, \\, c = -3 \\end{aligned}",
       "feedback": "Check the trigonometric identity for $\\sec^2\\theta$. The correct Pythagorean identity is $\\sec^2\\theta = 1 + \\tan^2\\theta$, not $1 - \\tan^2\\theta$. This produces $+3x^2$ in the denominator."
     },
     {
-      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation gradient equals} \\cr &\\quad \\text{exact derivative at the origin} \\cr &\\textbf{(c) } a = 1, \\, b = 6, \\, c = 3 \\end{aligned}",
+      "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{6} \\cr &\\textbf{(b)(i) } y \\approx \\dfrac{1}{6}x \\cr &\\textbf{(b)(ii) } \\text{Linear approximation} \\cr &\\quad \\text{gradient equals exact derivative} \\cr &\\quad \\text{at the origin} \\cr &\\textbf{(c) } a = 1, \\, b = 6, \\, c = 3 \\end{aligned}",
       "feedback": "Check your squaring in Part (c). When substituting $\\tan 3y = \\frac{x}{2}$, squaring yields $\\left(\\frac{x}{2}\\right)^2 = \\frac{x^2}{4}$, not $\\frac{x^2}{2}$. Clearing the denominator produces $a = 2, b = 12, c = 3$."
     }
   ],
