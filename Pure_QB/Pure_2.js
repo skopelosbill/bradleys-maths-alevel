@@ -1136,162 +1136,165 @@ window.ALEVEL_QUESTIONS = [
                 }
         },
         {
-                "id": "004077",
-                "group_id": "004076",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Graph transformations",
-                "subtopic": [
-                        "Transformations of Graphs"
-                ],
-                "img": false,
-                "question": "The graph of $$y = 4^x$$ is transformed by a stretch in the $y$-direction, scale factor 4.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 4 \\times 4^x$$(b)$$ y = 4^{\\frac{x}{4}}$$(c)$$ y = \\dfrac{1}{4} \\times 4^x$$(d)$$ y = 4^{4x}$$",
-                "steps": [
-                        "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 4^x\\end{aligned}",
-                        "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 4$$",
-                        "Finally, apply this rule to scale the entire function.",
-                        "Final Answer: $$(a) y = 4 \\times 4^x$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(b) y = 4^{\\frac{x}{4}}$$",
-                                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $4$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $4$ multiplies the entire function by $4$."
-                        },
-                        {
-                                "ans": "$$(c) y = \\dfrac{1}{4} \\times 4^x$$",
-                                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/4$. Remember that a stretch of scale factor $4$ in the $y$-direction scales the function by a factor of $4$ directly."
-                        },
-                        {
-                                "ans": "$$(d) y = 4^{4x}$$",
-                                "feedback": "This is a common error where a horizontal stretch with scale factor $1/4$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
-                        "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
-                }
-        },
-        {
-                "id": "004078",
-                "group_id": "004076",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Graph transformations",
-                "subtopic": [
-                        "Transformations of Graphs"
-                ],
-                "img": false,
-                "question": "The graph of $$y = 2^x$$ is transformed by a stretch in the $y$-direction, scale factor 2.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 2^{2x}$$(b)$$ y = 2 \\times 2^x$$(c)$$ y = 2^{\\frac{x}{2}}$$(d)$$ y = \\dfrac{1}{2} \\times 2^x$$",
-                "steps": [
-                        "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 2^x\\end{aligned}",
-                        "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 2$$",
-                        "Finally, apply this rule to scale the entire function.",
-                        "Final Answer: $$(b) y = 2 × 2^x$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(a) y = 2^{2x}$$",
-                                "feedback": "This is a common error where a horizontal stretch with scale factor $1/2$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
-                        },
-                        {
-                                "ans": "$$(c) y = 2^{\\frac{x}{2}}$$",
-                                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $2$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $2$ is a vertical change and multiplies the entire function by $2$."
-                        },
-                        {
-                                "ans": "$$(d) y = \\dfrac{1}{2} \\times 2^x$$",
-                                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/2$. Remember that a stretch of scale factor $2$ in the $y$-direction scales the function by a factor of $2$ directly."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
-                        "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
-                }
-        },
-        {
-                "id": "004079",
-                "group_id": "004076",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Graph transformations",
-                "subtopic": [
-                        "Transformations of Graphs"
-                ],
-                "img": false,
-                "question": "The graph of $$y = 6^x$$ is transformed by a stretch in the $y$-direction, scale factor 6.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 6^{\\frac{x}{6}}$$(b)$$ y = \\dfrac{1}{6} \\times 6^x$$(c)$$ y = 6^{6x}$$(d)$$ y = 6 \\times 6^x$$",
-                "steps": [
-                        "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 6^x\\end{aligned}",
-                        "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 6$$",
-                        "Finally, apply this rule to scale the entire function.",
-                        "Final Answer: $$(d) y = 6 \\times 6^x$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(a) y = 6^{\\frac{x}{6}}$$",
-                                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $6$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $6$ is a vertical change and multiplies the entire function by $6$."
-                        },
-                        {
-                                "ans": "$$(b) y = \\dfrac{1}{6} \\times 6^x$$",
-                                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/6$. Remember that a stretch of scale factor $6$ in the $y$-direction scales the function by a factor of $6$ directly."
-                        },
-                        {
-                                "ans": "$$(c) y = 6^{6x}$$",
-                                "feedback": "This is a common error where a horizontal stretch with scale factor $1/6$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
-                        "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
-                }
-        },
-        {
-                "id": "004080",
-                "group_id": "004076",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Algebra and Functions",
-                "topic": "Graph transformations",
-                "subtopic": [
-                        "Transformations of Graphs"
-                ],
-                "img": false,
-                "question": "The graph of $$y = 7^x$$ is transformed by a stretch in the $y$-direction, scale factor 7.<br><br>State the equation of the transformed graph.<br><br>Choose the correct answer from the options below:<br><br>(a)$$ y = 7 \\times 7^x$$(b)$$ y = 7^{\\frac{x}{7}}$$(c)$$ y = \\dfrac{1}{7} \\times 7^x$$(d)$$ y = 7^{7x}$$",
-                "steps": [
-                        "First, identify the original function: \\begin{aligned}y &= f(x) \\cr&= 7^x\\end{aligned}",
-                        "Next, recall that a stretch in the $y$-direction with scale factor $k$ transforms the function $f(x)$ to $k \\times f(x)$<br><br> Here, $$k = 7$$",
-                        "Finally, apply this rule to scale the entire function.",
-                        "Final Answer: $$(a) y = 7 \\times 7^x$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(b) y = 7^{\\frac{x}{7}}$$",
-                                "feedback": "This error occurs when attempting a stretch in the $x$-direction with scale factor $7$ instead of the $y$-direction. A stretch in the $y$-direction scale factor $7$ multiplies the entire function by $7$."
-                        },
-                        {
-                                "ans": "$$(c) y = \\dfrac{1}{7} \\times 7^x$$",
-                                "feedback": "This incorrect answer represents a vertical stretch with scale factor $1/7$. Remember that a stretch of scale factor $7$ in the $y$-direction scales the function by a factor of $7$ directly."
-                        },
-                        {
-                                "ans": "$$(d) y = 7^{7x}$$",
-                                "feedback": "This is a common error where a horizontal stretch with scale factor $1/7$ is applied to the input variable $x$. A vertical stretch affects the entire function from the outside, not just the exponent."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Inside vs Outside Transformations",
-                        "content": "Remembering that changes 'outside' the main function affect the $y$-direction directly (e.g. $k f(x)$) while changes 'inside' the function affect the $x$-direction inversely (e.g. $f(kx)$) is probably the safest rule of thumb for graph transformations. Always write down the general formula $y = k f(x)$ first to guide your steps."
-                }
-        },
-        {
+    "id": "004077",
+    "group_id": "004076",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graph transformations",
+    "subtopic": [
+      "Transformations of Graphs"
+    ],
+    "img": false,
+    "question": "The curve with equation $y = f(x)$ has a maximum turning point at $P(-6, 4)$ and crosses the $y$-axis at $(0, 2)$.<br><br>The curve is transformed to the curve with equation:$$y = f(2x) - 3$$<strong>(a)</strong> State the coordinates of the transformed turning point $P'$.<br><br><strong>(b)</strong> State the coordinates of the new $y$-intercept.",
+    "steps": [
+      "<strong>Part (a): Transforming the turning point $P(-6, 4)$</strong><br><br>Break the transformation $y = f(2x) - 3$ into independent horizontal and vertical effects:",
+      "1. <strong>Horizontal effect:</strong> $f(2x)$ represents a stretch in the $x$-direction with scale factor $\\dfrac{1}{2}$.<br>Divide the original $x$-coordinate by $2$:\\begin{aligned} x' &= \\dfrac{-6}{2} \\cr &= -3 \\end{aligned}",
+      "2. <strong>Vertical effect:</strong> The $-3$ outside represents a translation by $\\begin{pmatrix} 0 \\\\ -3 \\end{pmatrix}$.<br>Subtract $3$ from the original $y$-coordinate:\\begin{aligned} y' &= 4 - 3 \\cr &= 1 \\end{aligned}Therefore, the transformed turning point is $P'(-3, 1)$.",
+      "<strong>Part (b): Finding the new $y$-intercept</strong><br><br>The original $y$-intercept is at $x = 0$, where $f(0) = 2$.<br><br>Evaluate the transformed equation at $x = 0$:\\begin{aligned} y &= f(2(0)) - 3 \\cr &= f(0) - 3 \\cr &= 2 - 3 \\cr &= -1 \\end{aligned}Therefore, the new $y$-intercept is $(0, -1)$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } P'(-3, 1) \\cr &\\textbf{(b) } (0, -1) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } P'(-12, 1) \\cr &\\textbf{(b) } (0, -1) \\end{aligned}",
+        "feedback": "Remember that changes inside the function affect $x$ inversely! For $f(2x)$, you divide the $x$-coordinate by 2 (scale factor $\\frac{1}{2}$), giving $-6 \\div 2 = -3$, not $-6 \\times 2 = -12$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } P'(-3, 1) \\cr &\\textbf{(b) } (0, 2) \\end{aligned}",
+        "feedback": "Don't forget to apply the vertical translation $-3$ to the $y$-intercept. While the horizontal stretch leaves $x = 0$ unchanged, the curve still shifts down by 3 units, so $2 - 3 = -1$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } P'(-3, 7) \\cr &\\textbf{(b) } (0, 5) \\end{aligned}",
+        "feedback": "A minus sign outside the function means a downward shift: $y - 3$. You have added 3 instead of subtracting 3 from the $y$-coordinates."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Coordinate Mapping",
+      "content": "For any combined transformation $y = a f(bx + c) + d$, treat the coordinates independently: $x \\to \\frac{x - c}{b}$ and $y \\to ay + d$. Keeping $x$ (inside/inverse) and $y$ (outside/direct) separate prevents arithmetic slips on exam day."
+    }
+  },
+  {
+    "id": "004078",
+    "group_id": "004076",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graph transformations",
+    "subtopic": [
+      "Transformations of Graphs"
+    ],
+    "img": false,
+    "question": "The curve $C_1$ has equation $y = 2^x$.<br><br>The curve $C_2$ is obtained by translating $C_1$ by the vector $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$.<br><br><strong>(a)</strong> Write down the equation of $C_2$ in the form $y = 2^{x+a}$.<br><br><strong>(b)</strong> Hence, show that $C_2$ can also be obtained from $C_1$ by a single stretch, stating the direction and scale factor.",
+    "steps": [
+      "<strong>Part (a): Applying the vector translation</strong><br><br>A horizontal translation by vector $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$ shifts the graph $3$ units in the negative $x$-direction.<br><br>Replace $x$ with $(x - (-3)) = (x + 3)$:\\begin{aligned} y &= 2^{x+3} \\end{aligned}",
+      "<strong>Part (b): Connecting to a stretch</strong><br><br>Apply the laws of indices to split the exponent:\\begin{aligned} y &= 2^{x+3} \\cr &= 2^3 \\times 2^x \\cr &= 8 \\times 2^x \\end{aligned}",
+      "Comparing $y = 8 \\times 2^x$ to the standard stretch form $y = k f(x)$ shows that $k = 8$.<br><br>Therefore, $C_2$ can be obtained by a stretch in the $y$-direction with scale factor $8$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } y = 2^{x+3} \\cr &\\textbf{(b) } \\text{Stretch in the } y\\text{-direction,} \\cr &\\quad \\text{scale factor } 8 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } y = 2^{x+3} \\cr &\\textbf{(b) } \\text{Stretch in the } y\\text{-direction,} \\cr &\\quad \\text{scale factor } 6 \\end{aligned}",
+        "feedback": "Be careful with index laws: $2^3$ means $2 \\times 2 \\times 2 = 8$, not $2 \\times 3 = 6$. The scale factor of the vertical stretch is 8."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } y = 2^{x-3} \\cr &\\textbf{(b) } \\text{Stretch in the } y\\text{-direction,} \\cr &\\quad \\text{scale factor } \\dfrac{1}{8} \\end{aligned}",
+        "feedback": "A translation by vector $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$ shifts the graph to the left, which requires replacing $x$ with $x + 3$, not $x - 3$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } y = 2^{x+3} \\cr &\\textbf{(b) } \\text{Stretch in the } x\\text{-direction,} \\cr &\\quad \\text{scale factor } 8 \\end{aligned}",
+        "feedback": "Because the multiplier $8$ sits on the outside multiplying the entire function ($y = 8 \\times 2^x$), the stretch is in the $y$-direction (vertical), not the $x$-direction."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Exponential Equivalence",
+      "content": "For exponential functions $y = b^x$, a horizontal translation is algebraically identical to a vertical stretch! Because $b^{x+c} = b^c \\times b^x$, shifting left by $c$ units produces the exact same curve as stretching vertically by a factor of $b^c$."
+    }
+  },
+  {
+    "id": "004079",
+    "group_id": "004076",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graph transformations",
+    "subtopic": [
+      "Transformations of Graphs"
+    ],
+    "img": false,
+    "question": "The curve $C$ has equation:$$y = \\dfrac{1}{x - 2} + 3$$<strong>(a)</strong> State the equations of the two asymptotes of $C$.<br><br><strong>(b)</strong> Describe fully the single transformation that maps the curve $y = \\dfrac{1}{x}$ onto the curve $y = \\dfrac{1}{x - 2}$.<br><br><strong>(c)</strong> Find the coordinates of the point where $C$ intersects the $x$-axis.",
+    "steps": [
+      "<strong>Part (a): Finding the asymptotes</strong><br><br>The base curve $y = \\dfrac{1}{x}$ has asymptotes at $x = 0$ and $y = 0$.<br><br>For $y = \\dfrac{1}{x - 2} + 3$:",
+      "1. The denominator cannot be zero, giving a vertical asymptote at:\\begin{aligned} x - 2 &= 0 \\implies x = 2 \\end{aligned}",
+      "2. As $x \\to \\pm\\infty$, $\\dfrac{1}{x-2} \\to 0$, giving a horizontal asymptote at:\\begin{aligned} y = 3 \\end{aligned}",
+      "<strong>Part (b): Describing the transformation</strong><br><br>Replacing $x$ with $x - 2$ shifts the curve $2$ units in the positive $x$-direction.<br><br>Full description: <strong>Translation by vector $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$</strong>.",
+      "<strong>Part (c): Intersecting the $x$-axis</strong><br><br>Set $y = 0$ and solve for $x$:\\begin{aligned} 0 &= \\dfrac{1}{x - 2} + 3 \\cr -3 &= \\dfrac{1}{x - 2} \\cr x - 2 &= -\\dfrac{1}{3} \\cr x &= 2 - \\dfrac{1}{3} \\cr x &= \\dfrac{5}{3} \\end{aligned}Therefore, the coordinates of the $x$-intercept are $\\left(\\dfrac{5}{3}, 0\\right)$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } x = 2, \\, y = 3 \\cr &\\textbf{(b) } \\text{Translation by vector } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} \\cr &\\textbf{(c) } \\left(\\dfrac{5}{3}, 0\\right) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } x = -2, \\, y = 3 \\cr &\\textbf{(b) } \\text{Translation by vector } \\begin{pmatrix} -2 \\\\ 0 \\end{pmatrix} \\cr &\\textbf{(c) } \\left(\\dfrac{5}{3}, 0\\right) \\end{aligned}",
+        "feedback": "Watch the direction of horizontal shifts: replacing $x$ with $x - 2$ shifts the graph 2 units to the right (positive $x$-direction), giving the vertical asymptote $x = 2$ and translation vector $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } x = 2, \\, y = 3 \\cr &\\textbf{(b) } \\text{Translation by vector } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix} \\cr &\\textbf{(c) } \\left(\\dfrac{7}{3}, 0\\right) \\end{aligned}",
+        "feedback": "Check your algebra when solving $x - 2 = -\\frac{1}{3}$. Adding 2 to both sides gives $x = 2 - \\frac{1}{3} = \\frac{5}{3}$, not $2 + \\frac{1}{3} = \\frac{7}{3}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } x = 3, \\, y = 2 \\cr &\\textbf{(b) } \\text{Translation by vector } \\begin{pmatrix} 0 \\\\ 2 \\end{pmatrix} \\cr &\\textbf{(c) } \\left(\\dfrac{5}{3}, 0\\right) \\end{aligned}",
+        "feedback": "Don't swap the asymptotes: the vertical asymptote is governed by the denominator ($x = 2$) and the horizontal asymptote by the constant offset ($y = 3$)."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Tracking Asymptotes",
+      "content": "When translating reciprocal graphs, track the intersection of the asymptotes $(0,0)$. Shifting by $\\begin{pmatrix} h \\\\ k \\end{pmatrix}$ moves the asymptote intersection directly to $(h, k)$, giving you the lines $x = h$ and $y = k$ immediately."
+    }
+  },
+  {
+    "id": "004080",
+    "group_id": "004076",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Algebra and Functions",
+    "topic": "Graph transformations",
+    "subtopic": [
+      "Transformations of Graphs"
+    ],
+    "img": false,
+    "question": "The curve with equation $y = x^2 - 4x + 7$ is transformed onto the curve $y = g(x)$ by the following sequence of two transformations:<br><br>1. A stretch in the $x$-direction with scale factor $\\dfrac{1}{2}$, followed by<br>2. A reflection in the $x$-axis.<br><br><strong>(a)</strong> Find an expression for $g(x)$ in the form $ax^2 + bx + c$, where $a, b, c$ are integers.<br><br><strong>(b)</strong> State the coordinates of the turning point of $y = g(x)$, and determine whether it is a maximum or a minimum.",
+    "steps": [
+      "<strong>Part (a): Applying the sequence of transformations</strong><br><br><strong>Step 1: Stretch in the $x$-direction, scale factor $\\dfrac{1}{2}$</strong><br>Replace every $x$ with $2x$:\\begin{aligned} y_1 &= (2x)^2 - 4(2x) + 7 \\cr &= 4x^2 - 8x + 7 \\end{aligned}",
+      "<strong>Step 2: Reflection in the $x$-axis</strong><br>Multiply the entire resulting function by $-1$:\\begin{aligned} g(x) &= -(4x^2 - 8x + 7) \\cr &= -4x^2 + 8x - 7 \\end{aligned}Comparing with $ax^2 + bx + c$ gives $a = -4, b = 8, c = -7$.",
+      "<strong>Part (b): Finding the turning point</strong><br><br>Complete the square for $g(x)$:\\begin{aligned} g(x) &= -4(x^2 - 2x) - 7 \\cr &= -4\\left[(x - 1)^2 - 1\\right] - 7 \\cr &= -4(x - 1)^2 + 4 - 7 \\cr &= -4(x - 1)^2 - 3 \\end{aligned}",
+      "From this form, the vertex is at $(1, -3)$.<br><br>Since the coefficient of $x^2$ is negative ($a = -4 < 0$), the parabola opens downwards, meaning the turning point is a <strong>maximum</strong>.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } g(x) = -4x^2 + 8x - 7 \\cr &\\textbf{(b) } \\text{Maximum at } (1, -3) \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } g(x) = -2x^2 + 8x - 7 \\cr &\\textbf{(b) } \\text{Maximum at } (2, 1) \\end{aligned}",
+        "feedback": "Remember to square the entire bracket: $(2x)^2 = 4x^2$, not $2x^2$. This error carries through to give an incorrect vertex."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } g(x) = -4x^2 + 8x + 7 \\cr &\\textbf{(b) } \\text{Maximum at } (1, 11) \\end{aligned}",
+        "feedback": "A reflection in the $x$-axis negates the ENTIRE function: $-(4x^2 - 8x + 7) = -4x^2 + 8x - 7$. You forgot to change the sign of the constant $+7$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } g(x) = -4x^2 + 8x - 7 \\cr &\\textbf{(b) } \\text{Minimum at } (1, -3) \\end{aligned}",
+        "feedback": "Reflecting in the $x$-axis inverts the parabola: the original curve had a minimum vertex, so reflecting it turns the vertex into a maximum."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Order of Transformations",
+      "content": "Always follow the specified order of transformations step by step. When applying a reflection in the $x$-axis, place parentheses around the entire preceding expression: $y \\to -[f(x)]$. This ensures the minus sign distributes correctly across all terms, especially the constant."
+    }
+  },        {
                 "id": "004081",
                 "group_id": "004081",
                 "board": "AQA",
