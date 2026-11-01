@@ -1731,170 +1731,180 @@ window.ALEVEL_QUESTIONS = [
                         "content": "A very common trap when differentiating parametric equations with negative exponential powers like $2^{-t}$ is forgetting to multiply by the negative coefficient from the inner chain rule. Always write out $\\frac{d}{dt}(a^{-t}) = -a^{-t} \\ln(a)$ explicitly to avoid sign errors."
                 }
         },
-        {
-                "id": "004092",
-                "group_id": "004091",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Parametric Differentiation",
-                        "Parametric Equations"
-                ],
-                "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 3^{-t} + 2$$<br>$$y = 2 \\times 3^t - 4$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
-                "steps": [
-                        "First, differentiate $y = 2 \\times 3^t - 4$ and $x = 3 \\times 3^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(3) 3^{-t}$$",
-                        "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{2 \\ln(3) 3^t}{-3 \\ln(3) 3^{-t}} \\cr&= -\\dfrac{2}{3} \\times 3^{2t}\\end{aligned}",
-                        "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}3^{-t} &= \\dfrac{x-2}{3} \\cr3^t &= \\dfrac{3}{x-2}\\end{aligned}",
-                        "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 4 &= 2 \\times \\dfrac{3}{x-2} \\cr(y + 4)(x - 2) &= 6 \\cr xy + 4x - 2y &= 14\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 3^{2t},\\cr\\text{(b) } xy + 4x - 2y &= 14\\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{t},$$ $$\\text{(b) } xy + 4x - 2y = 14$$",
-                                "feedback": "In Part (a), you probably made an index error during division. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the power of the exponential term becomes $2t$. Part (b) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 3^{2t},$$ $$\\text{(b) } xy - 2x + 4y = 14$$",
-                                "feedback": "In Part (b), you probably made a sign error or transposed the coefficients when expanding $(y + 4)(x - 2) = 6$. The correct expansion yields $xy - 2y + 4x - 8 = 6$, which simplifies to $xy + 4x - 2y = 14$. Part (a) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 3^{2t},$$ $$\\text{(b) } xy + 4x - 2y = 6$$",
-                                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made a sign error during transposition or expansion of the bracket constant."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Simplifying Exponential Transpositions",
-                        "content": "When rearranging equations like $x - 2 = 3 \\times 3^{-t}$, write $3^{-t}$ as $\\frac{1}{3^t}$ to isolate the term easily. Taking the reciprocal of both sides is probably the fastest way to get $3^t = \\frac{3}{x-2}$ without sign or fraction slips."
-                }
-        },
-        {
-                "id": "004093",
-                "group_id": "004091",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Parametric Differentiation",
-                        "Parametric Equations"
-                ],
-                "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 5 \\times 2^{-t} + 1$$<br>$$y = 4 \\times 2^t - 3$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
-                "steps": [
-                        "First, differentiate $y = 4 \\times 2^t - 3$ and $x = 5 \\times 2^{-t} + 1$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -5 \\ln(2) 2^{-t}$$",
-                        "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{4 \\ln(2) 2^t}{-5 \\ln(2) 2^{-t}} \\cr&= -\\dfrac{4}{5} \\times 2^{2t}\\end{aligned}",
-                        "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}2^{-t} &= \\dfrac{x-1}{5} \\cr2^t &= \\dfrac{5}{x-1}\\end{aligned}",
-                        "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 3 &= 4 \\times \\dfrac{5}{x-1} \\cr(y + 3)(x - 1) &= 20 \\cr xy + 3x - y &= 23\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{4}{5} \\times 2^{2t},\\cr \\text{(b) } xy + 3x - y r&= 23\\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{t},$$ $$\\text{(b) } xy + 3x - y = 23$$",
-                                "feedback": "In Part (a), you probably made an index calculation slip during division. Dividing $2^t$ by $2^{-t}$ results in $2^{t - (-t)} = 2^{2t}$, not $2^t$. Part (b) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{4}{5} \\times 2^{2t},$$ $$\\text{(b) } xy + 3x - y = 17$$",
-                                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 3)(x - 1) = 20$. The expansion yields $xy - y + 3x - 3 = 20$, which rearranges to $xy + 3x - y = 23$. Part (a) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{4}{5} \\times 2^{2t},$$ $$\\text{(b) } xy - y + 3x = 17$$",
-                                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made transposition or expansion constant sign errors."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Logarithm Elimination",
-                        "content": "A deeper look at the Cartesian elimination method shows why it is so effective here. Since $2^{-t}$ and $2^t$ are multiplicative inverses, their product is exactly $1$. Multiplying $(x-1)/5$ by $(y+3)/4$ is probably the most elegant way to see that $\\frac{x-1}{5} \\times \\frac{y+3}{4} = 1 \\implies (x-1)(y+3) = 20$ directly."
-                }
-        },
-        {
-                "id": "004094",
-                "group_id": "004091",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Parametric Differentiation",
-                        "Parametric Equations"
-                ],
-                "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 2 \\times 3^{-t} + 5$$<br>$$y = 4 \\times 3^t - 1$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
-                "steps": [
-                        "First, differentiate $y = 4 \\times 3^t - 1$ and $x = 2 \\times 3^{-t} + 5$ with respect to $t$: $$\\dfrac{dy}{dt} = 4 \\ln(3) 3^t$$ and $$\\dfrac{dx}{dt} = -2 \\ln(3) 3^{-t}$$",
-                        "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{4 \\ln(3) 3^t}{-2 \\ln(3) 3^{-t}} \\cr&= -2 \\times 3^{2t}\\end{aligned}",
-                        "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}3^{-t} &= \\dfrac{x-5}{2} \\cr3^t &= \\dfrac{2}{x-5}\\end{aligned}",
-                        "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 1 &= 4 \\times \\dfrac{2}{x-5} \\cr(y + 1)(x - 5) &= 8 \\cr xy + x - 5y &= 13\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -2 \\times 3^{2t}, \\cr \\text{(b) } xy + x - 5y &= 13\\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{t},$$ $$\\text{(b) } xy + x - 5y = 13$$",
-                                "feedback": "In Part (a), you probably made an index division error. Since $3^t \\div 3^{-t} = 3^{t - (-t)} = 3^{2t}$, the exponent must be $2t$. Part (b) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -2 \\times 3^{2t},$$ $$\\text{(b) } xy + x - 5y = 3$$",
-                                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 1)(x - 5) = 8$. The expansion yields $xy - 5y + x - 5 = 8$, which simplifies to $xy + x - 5y = 13$. Part (a) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = 2 \\times 3^{2t},$$ $$\\text{(b) } xy + x - 5y = 3$$",
-                                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $3^{-t}$. In Part (b), you probably made sign transposition errors when expanding and simplifying the constant."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Expanding Algebraic Fractions",
-                        "content": "A common error is to try to expand $(y+1)(x-5) = 8$ and get a negative term in $xy$. Make sure you expand each term in the brackets carefully: $y \\times x = xy$, $y \\times (-5) = -5y$, $1 \\times x = x$, and $1 \\times (-5) = -5$."
-                }
-        },
-        {
-                "id": "004095",
-                "group_id": "004091",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Parametric Differentiation",
-                        "Parametric Equations"
-                ],
-                "img": false,
-                "question": "A curve is defined by the parametric equations:<br>$$x = 3 \\times 2^{-t} + 2$$<br>$$y = 2 \\times 2^t - 6$$<br><br><strong>(a)</strong> Find an expression for $\\dfrac{dy}{dx}$<br><br><strong>(b)</strong> find the Cartesian equation of the curve in the form $xy + ax + by = c$, where $a$, $b$, and $c$ are integers.",
-                "steps": [
-                        "First, differentiate $y = 2 \\times 2^t - 6$ and $x = 3 \\times 2^{-t} + 2$ with respect to $t$: $$\\dfrac{dy}{dt} = 2 \\ln(2) 2^t$$ and $$\\dfrac{dx}{dt} = -3 \\ln(2) 2^{-t}$$",
-                        "Next, use the chain rule, $$\\dfrac{dy}{dx} = \\dfrac{\\frac{dy}{dt}}{\\frac{dx}{dt}}$$, to obtain Part (a): \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{2 \\ln(2) 2^t}{-3 \\ln(2) 2^{-t}} \\cr&= -\\dfrac{2}{3} \\times 2^{2t}\\end{aligned}",
-                        "To find Part (b), rearrange the parametric equations to isolate the exponential terms: \\begin{aligned}2^{-t} &= \\dfrac{x-2}{3} \\cr2^t &= \\dfrac{3}{x-2}\\end{aligned}",
-                        "Substitute this into the $y$ equation and expand: \\begin{aligned}y + 6 &= 2 \\times \\dfrac{3}{x-2} \\cr(y + 6)(x - 2) &= 6 \\cr xy + 6x - 2y &= 18\\end{aligned}",
-                        "Final Answer: \\begin{aligned}\\text{(a) } \\dfrac{dy}{dx} &= -\\dfrac{2}{3} \\times 2^{2t},\\cr \\text{(b) } xy + 6x - 2y &= 18\\end{aligned}"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{t},$$ $$\\text{(b) } xy + 6x - 2y = 18$$",
-                                "feedback": "In Part (a), you probably made an index division error. Since $2^t \\div 2^{-t} = 2^{t - (-t)} = 2^{2t}$, the exponent must be $2t$. Part (b) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = -\\dfrac{2}{3} \\times 2^{2t},$$ $$\\text{(b) } xy + 6x - 2y = 6$$",
-                                "feedback": "In Part (b), you probably made a sign error when expanding $(y + 6)(x - 2) = 6$. The expansion yields $xy - 2y + 6x - 12 = 6$, which simplifies to $xy + 6x - 2y = 18$. Part (a) is correct."
-                        },
-                        {
-                                "ans": "$$\\text{(a) } \\dfrac{dy}{dx} = \\dfrac{2}{3} \\times 2^{2t},$$ $$\\text{(b) } xy - 2y + 6x = 6$$",
-                                "feedback": "In Part (a), you probably missed the negative sign from the derivative of $2^{-t}$. In Part (b), you probably made a sign transposition error when simplifying the constant terms."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Sanity Checking the Cartesian Equation",
-                        "content": "A quick sanity check for your final Cartesian equation is probably to substitute a simple value for $t$, like $t=0$, back into the original equations. This yields $x = 5$ and $y = -4$. Substitute $(5, -4)$ into your Cartesian equation: $5(-4) + 6(5) - 2(-4) = -20 + 30 + 8 = 18$, which correctly matches."
-                }
-        },
+      {
+    "id": "004092",
+    "group_id": "004091",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Parametric Differentiation",
+      "Parametric Equations"
+    ],
+    "img": false,
+    "question": "A curve $C$ is defined by the parametric equations:$$x = 3\\cos t, \\quad y = 2\\sin t \\quad (0 \\le t < 2\\pi)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $t = \\dfrac{\\pi}{4}$, giving your answer in the form $2x + 3y = k\\sqrt{2}$ where $k$ is an integer.<br><br><strong>(c)</strong> Find a Cartesian equation for $C$ in the form $\\dfrac{x^2}{p} + \\dfrac{y^2}{q} = 1$.",
+    "steps": [
+      "<strong>Part (a): Parametric differentiation</strong><br><br>Differentiate $x$ and $y$ with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= -3\\sin t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 2\\cos t \\end{aligned}",
+      "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\frac{\\text{d}y}{\\text{d}t}}{\\frac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{2\\cos t}{-3\\sin t} \\cr &= -\\dfrac{2}{3}\\cot t \\end{aligned}",
+      "<strong>Part (b): Equation of the tangent at $t = \\dfrac{\\pi}{4}$</strong><br><br>Find the coordinates of the point:\\begin{aligned} x &= 3\\cos\\left(\\dfrac{\\pi}{4}\\right) = \\dfrac{3\\sqrt{2}}{2} \\cr y &= 2\\sin\\left(\\dfrac{\\pi}{4}\\right) = \\sqrt{2} \\end{aligned}",
+      "Evaluate the gradient at $t = \\dfrac{\\pi}{4}$:\\begin{aligned} m &= -\\dfrac{2}{3}\\cot\\left(\\dfrac{\\pi}{4}\\right) \\cr &= -\\dfrac{2}{3} \\end{aligned}",
+      "Use the point-slope formula:\\begin{aligned} y - \\sqrt{2} &= -\\dfrac{2}{3}\\left(x - \\dfrac{3\\sqrt{2}}{2}\\right) \\cr 3(y - \\sqrt{2}) &= -2x + 3\\sqrt{2} \\cr 3y - 3\\sqrt{2} &= -2x + 3\\sqrt{2} \\cr 2x + 3y &= 6\\sqrt{2} \\end{aligned}Thus $k = 6$.",
+      "<strong>Part (c): Finding the Cartesian equation</strong><br><br>Isolate the trigonometric terms:\\begin{aligned} \\cos t &= \\dfrac{x}{3} \\cr \\sin t &= \\dfrac{y}{2} \\end{aligned}Use the Pythagorean identity $\\cos^2 t + \\sin^2 t = 1$:\\begin{aligned} \\left(\\dfrac{x}{3}\\right)^2 + \\left(\\dfrac{y}{2}\\right)^2 &= 1 \\cr \\dfrac{x^2}{9} + \\dfrac{y^2}{4} &= 1 \\end{aligned}Therefore $p = 9$ and $q = 4$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } -\\dfrac{2}{3}\\cot t \\cr &\\textbf{(b) } 2x + 3y = 6\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -\\dfrac{3}{2}\\tan t \\cr &\\textbf{(b) } 3x + 2y = 6\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1 \\end{aligned}",
+        "feedback": "Check your derivative quotient! $\\frac{\\text{d}y}{\\text{d}x} = \\frac{\\text{d}y/\\text{d}t}{\\text{d}x/\\text{d}t} = \\frac{2\\cos t}{-3\\sin t} = -\\frac{2}{3}\\cot t$. Inverting the fraction as $\\frac{\\text{d}x/\\text{d}t}{\\text{d}y/\\text{d}t}$ gives $-\\frac{3}{2}\\tan t$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -\\dfrac{2}{3}\\cot t \\cr &\\textbf{(b) } 2x + 3y = 3\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1 \\end{aligned}",
+        "feedback": "Check your expansion when finding the tangent equation. Multiplying out gives $3(y - \\sqrt{2}) = -2x + 3\\sqrt{2} \\implies 3y - 3\\sqrt{2} = -2x + 3\\sqrt{2}$. Adding $3\\sqrt{2}$ to both sides yields $6\\sqrt{2}$, not $3\\sqrt{2}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -\\dfrac{2}{3}\\cot t \\cr &\\textbf{(b) } 2x + 3y = 6\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{3} + \\dfrac{y^2}{2} = 1 \\end{aligned}",
+        "feedback": "Remember to square the denominators when eliminating the parameter: $\\left(\\frac{x}{3}\\right)^2 = \\frac{x^2}{9}$ and $\\left(\\frac{y}{2}\\right)^2 = \\frac{y^2}{4}$. Do not leave them as $3$ and $2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Ellipse Parameters",
+      "content": "Parametric equations of the form $x = a\\cos t, y = b\\sin t$ describe an ellipse. The identity $\\cos^2 t + \\sin^2 t = 1$ is the standard mathematical tool for eliminating the parameter $t$, immediately producing the Cartesian equation $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$."
+    }
+  },
+  {
+    "id": "004093",
+    "group_id": "004091",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Parametric Differentiation",
+      "Parametric Equations"
+    ],
+    "img": false,
+    "question": "A curve $C$ is defined by:$$x = 2\\sin t, \\quad y = 3\\cos 2t \\quad \\left(-\\frac{\\pi}{2} \\le t \\le \\frac{\\pi}{2}\\right)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the stationary point of $C$.<br><br><strong>(c)</strong> Find the Cartesian equation of $C$ in the form $y = a + bx^2$, stating its domain.",
+    "steps": [
+      "<strong>Part (a): Parametric differentiation</strong><br><br>Differentiate with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 2\\cos t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= -6\\sin 2t \\end{aligned}",
+      "Apply the double-angle identity $\\sin 2t = 2\\sin t \\cos t$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}t} &= -6(2\\sin t \\cos t) \\cr &= -12\\sin t \\cos t \\end{aligned}",
+      "Divide the derivatives:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{-12\\sin t \\cos t}{2\\cos t} \\cr &= -6\\sin t \\end{aligned}",
+      "<strong>Part (b): Finding the stationary point</strong><br><br>Set $\\dfrac{\\text{d}y}{\\text{d}x} = 0$:\\begin{aligned} -6\\sin t &= 0 \\implies t = 0 \\end{aligned}Substitute $t = 0$ into the original equations:\\begin{aligned} x &= 2\\sin(0) = 0 \\cr y &= 3\\cos(0) = 3 \\end{aligned}Therefore, the stationary point is $(0, 3)$.",
+      "<strong>Part (c): Cartesian equation and domain</strong><br><br>Use the double-angle identity $\\cos 2t = 1 - 2\\sin^2 t$:\\begin{aligned} y &= 3(1 - 2\\sin^2 t) \\cr &= 3 - 6\\sin^2 t \\end{aligned}From $x = 2\\sin t$, we have $\\sin t = \\dfrac{x}{2}$:\\begin{aligned} y &= 3 - 6\\left(\\dfrac{x}{2}\\right)^2 \\cr &= 3 - 6\\left(\\dfrac{x^2}{4}\\right) \\cr &= 3 - \\dfrac{3}{2}x^2 \\end{aligned}",
+      "For $-\\dfrac{\\pi}{2} \\le t \\le \\dfrac{\\pi}{2}$, $-1 \\le \\sin t \\le 1$.<br><br>Therefore, $-2 \\le x \\le 2$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } -6\\sin t \\cr &\\textbf{(b) } (0, 3) \\cr &\\textbf{(c) } y = 3 - \\dfrac{3}{2}x^2, \\quad -2 \\le x \\le 2 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -3\\tan 2t \\cr &\\textbf{(b) } (0, 3) \\cr &\\textbf{(c) } y = 3 - \\dfrac{3}{2}x^2, \\quad -2 \\le x \\le 2 \\end{aligned}",
+        "feedback": "You cannot combine arguments of different frequencies directly! $\\frac{-6\\sin 2t}{2\\cos t} \\ne -3\\tan 2t$. You must expand $\\sin 2t = 2\\sin t \\cos t$ so that the $\\cos t$ terms cancel, leaving $-6\\sin t$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -6\\sin t \\cr &\\textbf{(b) } (0, 3) \\cr &\\textbf{(c) } y = 3 - 6x^2, \\quad -2 \\le x \\le 2 \\end{aligned}",
+        "feedback": "Check your substitution in Part (c): $\\sin t = \\frac{x}{2}$, so $\\sin^2 t = \\frac{x^2}{4}$. Multiplying by $6$ gives $6\\left(\\frac{x^2}{4}\\right) = \\frac{3}{2}x^2$, not $6x^2$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } -6\\sin t \\cr &\\textbf{(b) } (0, 3) \\cr &\\textbf{(c) } y = 3 - \\dfrac{3}{2}x^2, \\quad x \\in \\mathbb{R} \\end{aligned}",
+        "feedback": "Don't forget the domain restriction! Because $x = 2\\sin t$ and $t \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$, $x$ is bounded strictly between $-2$ and $2$. The Cartesian parabola only exists on $-2 \\le x \\le 2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Cartesian Domain Restrictions",
+      "content": "A very common penalty on A-Level papers is omitting the domain when converting to a Cartesian equation. Because $\\sin t$ and $\\cos t$ are oscillating and bounded, the Cartesian curve is often only a finite segment of the full polynomial graph."
+    }
+  },
+  {
+    "id": "004094",
+    "group_id": "004091",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Parametric Differentiation",
+      "Parametric Equations"
+    ],
+    "img": false,
+    "question": "A curve $C$ is defined by:$$x = t + \\dfrac{1}{t}, \\quad y = t - \\dfrac{1}{t} \\quad (t > 0)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find a Cartesian equation of $C$ in the form $x^2 - y^2 = c$, where $c$ is a constant.<br><br><strong>(c)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x}{y}$.",
+    "steps": [
+      "<strong>Part (a): Differentiating with respect to $t$</strong><br><br>Rewrite using negative indices:\\begin{aligned} x &= t + t^{-1} \\cr y &= t - t^{-1} \\end{aligned}",
+      "Differentiate each with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 1 - t^{-2} = \\dfrac{t^2 - 1}{t^2} \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 1 + t^{-2} = \\dfrac{t^2 + 1}{t^2} \\end{aligned}",
+      "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\frac{t^2 + 1}{t^2}}{\\frac{t^2 - 1}{t^2}} \\cr &= \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}",
+      "<strong>Part (b): Finding the Cartesian equation</strong><br><br>Square both expressions:\\begin{aligned} x^2 &= \\left(t + \\dfrac{1}{t}\\right)^2 = t^2 + 2 + \\dfrac{1}{t^2} \\cr y^2 &= \\left(t - \\dfrac{1}{t}\\right)^2 = t^2 - 2 + \\dfrac{1}{t^2} \\end{aligned}",
+      "Subtract $y^2$ from $x^2$:\\begin{aligned} x^2 - y^2 &= \\left(t^2 + 2 + \\dfrac{1}{t^2}\\right) - \\left(t^2 - 2 + \\dfrac{1}{t^2}\\right) \\cr &= 2 - (-2) \\cr &= 4 \\end{aligned}Therefore, the Cartesian equation is $x^2 - y^2 = 4$.",
+      "<strong>Part (c): Showing $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x}{y}$</strong><br><br>Express the ratio $\\dfrac{x}{y}$ in terms of $t$:\\begin{aligned} \\dfrac{x}{y} &= \\dfrac{t + \\frac{1}{t}}{t - \\frac{1}{t}} \\cr &= \\dfrac{\\frac{t^2 + 1}{t}}{\\frac{t^2 - 1}{t}} \\cr &= \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}This is identical to the parametric derivative found in Part (a).",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{t^2 + 1}{t^2 - 1} \\cr &\\textbf{(b) } x^2 - y^2 = 4 \\cr &\\textbf{(c) } \\text{Shown via } \\dfrac{x}{y} = \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{t^2 - 1}{t^2 + 1} \\cr &\\textbf{(b) } x^2 - y^2 = 4 \\cr &\\textbf{(c) } \\text{Shown via } \\dfrac{x}{y} = \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}",
+        "feedback": "Remember that $\\frac{\\text{d}y}{\\text{d}x} = \\frac{\\text{d}y/\\text{d}t}{\\text{d}x/\\text{d}t}$. Since $\\frac{\\text{d}y}{\\text{d}t} = 1 + t^{-2}$, the $(t^2+1)$ term must be in the numerator, not the denominator."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{t^2 + 1}{t^2 - 1} \\cr &\\textbf{(b) } x^2 - y^2 = 2 \\cr &\\textbf{(c) } \\text{Shown via } \\dfrac{x}{y} = \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}",
+        "feedback": "Check your binomial expansion when subtracting: $(t + 1/t)^2 = t^2 + 2 + 1/t^2$ and $(t - 1/t)^2 = t^2 - 2 + 1/t^2$. Subtracting gives $2 - (-2) = 4$, not $2$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{t^2 + 1}{t^2 - 1} \\cr &\\textbf{(b) } x^2 + y^2 = 4 \\cr &\\textbf{(c) } \\text{Shown via } \\dfrac{x}{y} = \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}",
+        "feedback": "Adding $x^2 + y^2$ gives $2t^2 + 2/t^2$, which does not eliminate $t$! You must subtract $x^2 - y^2$ so that the $t^2$ and $1/t^2$ terms cancel out, leaving the constant 4."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Difference of Two Squares Elimination",
+      "content": "Whenever you see reciprocal conjugate pairs like $(t + 1/t)$ and $(t - 1/t)$, squaring and subtracting eliminates the variable terms completely: $(A + B)^2 - (A - B)^2 = 4AB$. Here $AB = t(1/t) = 1$, instantly yielding the hyperbola $x^2 - y^2 = 4$."
+    }
+  },
+  {
+    "id": "004095",
+    "group_id": "004091",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Parametric Differentiation",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ is defined by the parametric equations:$$x = t^3 - 3t, \\quad y = t^2 - 4 \\quad (t \\in \\mathbb{R})$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the two points on $C$ where the tangent is vertical.<br><br><strong>(c)</strong> Find an equation of the normal to $C$ at the point where $t = 2$, giving your answer in the form $ax + by + c = 0$ where $a, b, c$ are integers.",
+    "steps": [
+      "<strong>Part (a): Finding $\\dfrac{\\text{d}y}{\\text{d}x}$</strong><br><br>Differentiate $x$ and $y$ with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 3t^2 - 3 \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 2t \\end{aligned}",
+      "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2t}{3t^2 - 3} \\cr &= \\dfrac{2t}{3(t^2 - 1)} \\end{aligned}",
+      "<strong>Part (b): Points where the tangent is vertical</strong><br><br>A tangent is vertical when the denominator of the gradient is zero ($\\dfrac{\\text{d}x}{\\text{d}t} = 0$) and $\\dfrac{\\text{d}y}{\\text{d}t} \\ne 0$:\\begin{aligned} 3t^2 - 3 &= 0 \\cr t^2 &= 1 \\cr t &= \\pm 1 \\end{aligned}",
+      "Find the coordinates for each value of $t$:<br><br>• For $t = 1$:\\begin{aligned} x &= 1^3 - 3(1) = -2 \\cr y &= 1^2 - 4 = -3 \\implies (-2, -3) \\end{aligned}<br>• For $t = -1$:\\begin{aligned} x &= (-1)^3 - 3(-1) = 2 \\cr y &= (-1)^2 - 4 = -3 \\implies (2, -3) \\end{aligned}",
+      "<strong>Part (c): Equation of the normal at $t = 2$</strong><br><br>Find the point on the curve when $t = 2$:\\begin{aligned} x &= 2^3 - 3(2) = 2 \\cr y &= 2^2 - 4 = 0 \\end{aligned}So the point is $(2, 0)$.",
+      "Evaluate the tangent gradient at $t = 2$:\\begin{aligned} m_t &= \\dfrac{2(2)}{3(2^2 - 1)} \\cr &= \\dfrac{4}{3(3)} \\cr &= \\dfrac{4}{9} \\end{aligned}",
+      "The normal gradient is the negative reciprocal:\\begin{aligned} m_n &= -\\dfrac{9}{4} \\end{aligned}",
+      "Use the point-slope formula with $(2, 0)$ and $m_n = -\\dfrac{9}{4}$:\\begin{aligned} y - 0 &= -\\dfrac{9}{4}(x - 2) \\cr 4y &= -9x + 18 \\cr 9x + 4y - 18 &= 0 \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{2t}{3(t^2 - 1)} \\cr &\\textbf{(b) } (-2, -3) \\text{ and } (2, -3) \\cr &\\textbf{(c) } 9x + 4y - 18 = 0 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{3(t^2 - 1)}{2t} \\cr &\\textbf{(b) } (-2, -3) \\text{ and } (2, -3) \\cr &\\textbf{(c) } 9x + 4y - 18 = 0 \\end{aligned}",
+        "feedback": "Remember that $\\frac{\\text{d}y}{\\text{d}x} = \\frac{\\text{d}y/\\text{d}t}{\\text{d}x/\\text{d}t}$. Since $y = t^2 - 4$, its derivative $2t$ must be on the numerator."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{2t}{3(t^2 - 1)} \\cr &\\textbf{(b) } (-2, -3) \\text{ and } (2, -3) \\cr &\\textbf{(c) } 4x - 9y - 8 = 0 \\end{aligned}",
+        "feedback": "You found the equation of the tangent instead of the normal! The tangent uses $m = \\frac{4}{9}$. The normal requires the perpendicular gradient $m = -\\frac{9}{4}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{2t}{3(t^2 - 1)} \\cr &\\textbf{(b) } (0, -4) \\cr &\\textbf{(c) } 9x + 4y - 18 = 0 \\end{aligned}",
+        "feedback": "Setting $\\frac{\\text{d}y}{\\text{d}t} = 0 \\implies 2t = 0 \\implies t = 0$ finds horizontal tangents, not vertical tangents! Vertical tangents occur when the denominator $\\frac{\\text{d}x}{\\text{d}t} = 0$, giving $t = \\pm 1$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Vertical vs Horizontal Tangents",
+      "content": "Always be clear on the difference: a horizontal tangent occurs where the numerator $\\frac{\\text{d}y}{\\text{d}t} = 0$ (gradient is 0), whereas a vertical tangent occurs where the denominator $\\frac{\\text{d}x}{\\text{d}t} = 0$ (gradient is undefined)."
+    }
+  },
         {
         "id": "004096",
         "group_id": "004096",
