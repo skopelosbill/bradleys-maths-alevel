@@ -1545,7 +1545,7 @@ window.ALEVEL_QUESTIONS = [
       "Inverse Functions"
     ],
     "img": false,
-    "question": "The function $f$ is defined by:$$f(x) = \\dfrac{2x + 5}{x - 3}, \\quad x \\in \\mathbb{R}, \\, x \\ne 3$$<strong>(a)</strong> Find an expression for $f^{-1}(x)$.<br><br><strong>(b)</strong> State the domain of $f^{-1}(x)$.",
+    "question": "The function $f$ is defined by:$$f(x) = \\dfrac{2x + 5}{x - 3},$$ $$ x \\in \\mathbb{R}, \\, x \\ne 3$$<strong>(a)</strong> Find an expression for $f^{-1}(x)$.<br><br><strong>(b)</strong> State the domain of $f^{-1}(x)$.",
     "steps": [
       "<strong>Part (a): Finding the inverse function</strong><br><br>Set $y = \\dfrac{2x + 5}{x - 3}$ and rearrange for $x$:\\begin{aligned} y(x - 3) &= 2x + 5 \\cr yx - 3y &= 2x + 5 \\cr yx - 2x &= 3y + 5 \\cr x(y - 2) &= 3y + 5 \\cr x &= \\dfrac{3y + 5}{y - 2} \\end{aligned}Interchanging $x$ and $y$ gives:\\begin{aligned} f^{-1}(x) &= \\dfrac{3x + 5}{x - 2} \\end{aligned}",
       "<strong>Part (b): Determining the domain of $f^{-1}(x)$</strong><br><br>The domain of $f^{-1}$ is the range of $f$.<br><br>Consider the horizontal asymptote of $f(x)$ as $x \\to \\pm\\infty$:\\begin{aligned} f(x) &= \\dfrac{2 + \\frac{5}{x}}{1 - \\frac{3}{x}} \\to 2 \\end{aligned}Since $f(x)$ can never equal $2$, the range of $f$ is $y \\ne 2$.<br><br>Alternatively, the denominator of $f^{-1}(x)$ cannot be zero:\\begin{aligned} x - 2 \\ne 0 \\implies x \\ne 2 \\end{aligned}Therefore, the domain of $f^{-1}(x)$ is $x \\in \\mathbb{R}, \\, x \\ne 2$.",
@@ -1583,7 +1583,7 @@ window.ALEVEL_QUESTIONS = [
       "Inverse Functions"
     ],
     "img": false,
-    "question": "The function $g$ is defined by:$$g(x) = x^2 - 6x + 13, \\quad x \\in \\mathbb{R}, \\, x \\ge 3$$<strong>(a)</strong> Explain why the restriction $x \\ge 3$ is necessary for $g^{-1}(x)$ to exist.<br><br><strong>(b)</strong> Find an expression for $g^{-1}(x)$ and state its domain.",
+    "question": "The function $g$ is defined by:$$g(x) = x^2 - 6x + 13,$$ $$x \\in \\mathbb{R}, \\, x \\ge 3$$<strong>(a)</strong> Explain why the restriction $x \\ge 3$ is necessary for $g^{-1}(x)$ to exist.<br><br><strong>(b)</strong> Find an expression for $g^{-1}(x)$ and state its domain.",
     "steps": [
       "<strong>Part (a): Reason for the domain restriction</strong><br><br>Complete the square for $g(x)$:\\begin{aligned} g(x) &= (x - 3)^2 - 9 + 13 \\cr &= (x - 3)^2 + 4 \\end{aligned}The parabola has its minimum turning point at $(3, 4)$.<br><br>For all real numbers, a quadratic is a many-to-one function, which does not have an inverse. Restricting the domain to $x \\ge 3$ ensures $g$ is a <strong>one-to-one function</strong>, allowing an inverse to exist.",
       "<strong>Part (b): Finding $g^{-1}(x)$ and its domain</strong><br><br>Set $y = (x - 3)^2 + 4$ and rearrange for $x$:\\begin{aligned} y - 4 &= (x - 3)^2 \\cr x - 3 &= \\pm\\sqrt{y - 4} \\end{aligned}Since the domain of $g$ is $x \\ge 3$, we take the positive square root:\\begin{aligned} x &= 3 + \\sqrt{y - 4} \\end{aligned}Therefore:\\begin{aligned} g^{-1}(x) &= 3 + \\sqrt{x - 4} \\end{aligned}",
@@ -1622,7 +1622,7 @@ window.ALEVEL_QUESTIONS = [
       "Inverse Functions"
     ],
     "img": false,
-    "question": "The function $h$ is defined by:$$h(x) = 2\\ln(x + 1) - 4, \\quad x \\in \\mathbb{R}, \\, x > -1$$<strong>(a)</strong> State the range of $h(x)$.<br><br><strong>(b)</strong> Find an expression for $h^{-1}(x)$, and state its domain.<br><br><strong>(c)</strong> Find the exact value of $x$ for which $h^{-1}(x) = 0$.",
+    "question": "The function $h$ is defined by:$$h(x) = 2\\ln(x + 1) - 4,$$ $$x \\in \\mathbb{R}, \\, x > -1$$<strong>(a)</strong> State the range of $h(x)$.<br><br><strong>(b)</strong> Find an expression for $h^{-1}(x)$, and state its domain.<br><br><strong>(c)</strong> Find the exact value of $x$ for which $h^{-1}(x) = 0$.",
     "steps": [
       "<strong>Part (a): Stating the range of $h(x)$</strong><br><br>As $x \\to -1$, $\\ln(x + 1) \\to -\\infty$, and as $x \\to \\infty$, $\\ln(x + 1) \\to +\\infty$.<br><br>Therefore, the range of $h(x)$ is all real numbers:\\begin{aligned} h(x) \\in \\mathbb{R} \\end{aligned}",
       "<strong>Part (b): Finding $h^{-1}(x)$ and its domain</strong><br><br>Set $y = 2\\ln(x + 1) - 4$ and rearrange for $x$:\\begin{aligned} y + 4 &= 2\\ln(x + 1) \\cr \\dfrac{y + 4}{2} &= \\ln(x + 1) \\cr \\text{e}^{\\frac{y + 4}{2}} &= x + 1 \\cr x &= \\text{e}^{\\frac{y + 4}{2}} - 1 \\end{aligned}Therefore:\\begin{aligned} h^{-1}(x) &= \\text{e}^{\\frac{x + 4}{2}} - 1 \\end{aligned}Since the domain of $h^{-1}$ equals the range of $h$, the domain is $x \\in \\mathbb{R}$.",
@@ -1646,7 +1646,7 @@ window.ALEVEL_QUESTIONS = [
     "bradley_insight": {
       "type": "pro-tip",
       "title": "The Head Teacher's Eye: Solving Inverse Roots Quickly",
-      "content": "To solve $h^{-1}(x) = 0$, you can bypass the inverse equation entirely! By definition, $h^{-1}(x) = 0 \\iff h(0) = x$. Evaluating $h(0) = 2\\ln(1) - 4 = 0 - 4 = -4$ immediately gives $x = -4$ in a single line of working."
+      "content": "To solve $h^{-1}(x) = 0$, you can bypass the inverse equation entirely! By definition, $h^{-1}(x) = 0 \\iff h(0) = x$. Evaluating $$h(0) = 2\\ln(1) - 4$$ $$= 0 - 4 = -4$$ immediately gives $x = -4$ in a single line of working."
     }
   },
   {
@@ -1661,7 +1661,7 @@ window.ALEVEL_QUESTIONS = [
       "Inverse Functions"
     ],
     "img": false,
-    "question": "The function $f$ is defined by:$$f(x) = \\sqrt{2x + 15}, \\quad x \\in \\mathbb{R}, \\, x \\ge -\\frac{15}{2}$$<strong>(a)</strong> Find an expression for $f^{-1}(x)$ and state its domain.<br><br><strong>(b)</strong> State the geometric relationship between the graphs of $y = f(x)$ and $y = f^{-1}(x)$.<br><br><strong>(c)</strong> Hence, solve the equation $f(x) = f^{-1}(x)$.",
+    "question": "The function $f$ is defined by:$$f(x) = \\sqrt{2x + 15},$$ $$x \\in \\mathbb{R}, \\, x \\ge -\\frac{15}{2}$$<strong>(a)</strong> Find an expression for $f^{-1}(x)$ and state its domain.<br><br><strong>(b)</strong> State the geometric relationship between the graphs of $y = f(x)$ and $y = f^{-1}(x)$.<br><br><strong>(c)</strong> Hence, solve the equation $f(x) = f^{-1}(x)$.",
     "steps": [
       "<strong>Part (a): Finding $f^{-1}(x)$ and its domain</strong><br><br>Set $y = \\sqrt{2x + 15}$ and rearrange for $x$:\\begin{aligned} y^2 &= 2x + 15 \\cr 2x &= y^2 - 15 \\cr x &= \\dfrac{y^2 - 15}{2} \\end{aligned}Therefore:\\begin{aligned} f^{-1}(x) &= \\dfrac{x^2 - 15}{2} \\end{aligned}",
       "The principal square root yields non-negative values, so the range of $f$ is $y \\ge 0$.<br><br>Since the domain of $f^{-1}$ equals the range of $f$, the domain is $x \\ge 0$.",
