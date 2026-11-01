@@ -1744,7 +1744,7 @@ window.ALEVEL_QUESTIONS = [
       "Parametric Equations"
     ],
     "img": false,
-    "question": "A curve $C$ is defined by the parametric equations:$$x = 3\\cos t, \\quad y = 2\\sin t \\quad (0 \\le t < 2\\pi)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $t = \\dfrac{\\pi}{4}$, giving your answer in the form $2x + 3y = k\\sqrt{2}$ where $k$ is an integer.<br><br><strong>(c)</strong> Find a Cartesian equation for $C$ in the form $\\dfrac{x^2}{p} + \\dfrac{y^2}{q} = 1$.",
+    "question": "A curve $C$ is defined by the parametric equations:$$x = 3\\cos t,$$ $$y = 2\\sin t \\quad (0 \\le t < 2\\pi)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $t = \\dfrac{\\pi}{4}$, giving your answer in the form $2x + 3y = k\\sqrt{2}$ where $k$ is an integer.<br><br><strong>(c)</strong> Find a Cartesian equation for $C$ in the form $\\dfrac{x^2}{p} + \\dfrac{y^2}{q} = 1$.",
     "steps": [
       "<strong>Part (a): Parametric differentiation</strong><br><br>Differentiate $x$ and $y$ with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= -3\\sin t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 2\\cos t \\end{aligned}",
       "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\frac{\\text{d}y}{\\text{d}t}}{\\frac{\\text{d}x}{\\text{d}t}} \\cr &= \\dfrac{2\\cos t}{-3\\sin t} \\cr &= -\\dfrac{2}{3}\\cot t \\end{aligned}",
@@ -1761,7 +1761,7 @@ window.ALEVEL_QUESTIONS = [
       },
       {
         "ans": "\\begin{aligned} &\\textbf{(a) } -\\dfrac{2}{3}\\cot t \\cr &\\textbf{(b) } 2x + 3y = 3\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1 \\end{aligned}",
-        "feedback": "Check your expansion when finding the tangent equation. Multiplying out gives $3(y - \\sqrt{2}) = -2x + 3\\sqrt{2} \\implies 3y - 3\\sqrt{2} = -2x + 3\\sqrt{2}$. Adding $3\\sqrt{2}$ to both sides yields $6\\sqrt{2}$, not $3\\sqrt{2}$."
+        "feedback": "Check your expansion when finding the tangent equation. Multiplying out gives $$3(y - \\sqrt{2}) = -2x + 3\\sqrt{2}$$ $$\\implies 3y - 3\\sqrt{2} = -2x + 3\\sqrt{2}$$. Adding $3\\sqrt{2}$ to both sides yields $6\\sqrt{2}$, not $3\\sqrt{2}$."
       },
       {
         "ans": "\\begin{aligned} &\\textbf{(a) } -\\dfrac{2}{3}\\cot t \\cr &\\textbf{(b) } 2x + 3y = 6\\sqrt{2} \\cr &\\textbf{(c) } \\dfrac{x^2}{3} + \\dfrac{y^2}{2} = 1 \\end{aligned}",
@@ -1787,7 +1787,7 @@ window.ALEVEL_QUESTIONS = [
       "Parametric Equations"
     ],
     "img": false,
-    "question": "A curve $C$ is defined by:$$x = 2\\sin t, \\quad y = 3\\cos 2t \\quad \\left(-\\frac{\\pi}{2} \\le t \\le \\frac{\\pi}{2}\\right)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the stationary point of $C$.<br><br><strong>(c)</strong> Find the Cartesian equation of $C$ in the form $y = a + bx^2$, stating its domain.",
+    "question": "A curve $C$ is defined by:$$x = 2\\sin t,$$ $4y = 3\\cos 2t \\quad \\left(-\\frac{\\pi}{2} \\le t \\le \\frac{\\pi}{2}\\right)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the stationary point of $C$.<br><br><strong>(c)</strong> Find the Cartesian equation of $C$ in the form $y = a + bx^2$, stating its domain.",
     "steps": [
       "<strong>Part (a): Parametric differentiation</strong><br><br>Differentiate with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 2\\cos t \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= -6\\sin 2t \\end{aligned}",
       "Apply the double-angle identity $\\sin 2t = 2\\sin t \\cos t$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}t} &= -6(2\\sin t \\cos t) \\cr &= -12\\sin t \\cos t \\end{aligned}",
@@ -1830,13 +1830,13 @@ window.ALEVEL_QUESTIONS = [
       "Parametric Equations"
     ],
     "img": false,
-    "question": "A curve $C$ is defined by:$$x = t + \\dfrac{1}{t}, \\quad y = t - \\dfrac{1}{t} \\quad (t > 0)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find a Cartesian equation of $C$ in the form $x^2 - y^2 = c$, where $c$ is a constant.<br><br><strong>(c)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x}{y}$.",
+    "question": "A curve $C$ is defined by:$$x = t + \\dfrac{1}{t},$$ $$y = t - \\dfrac{1}{t} \\quad (t > 0)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find a Cartesian equation of $C$ in the form $x^2 - y^2 = c$, where $c$ is a constant.<br><br><strong>(c)</strong> Show that $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x}{y}$.",
     "steps": [
       "<strong>Part (a): Differentiating with respect to $t$</strong><br><br>Rewrite using negative indices:\\begin{aligned} x &= t + t^{-1} \\cr y &= t - t^{-1} \\end{aligned}",
       "Differentiate each with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 1 - t^{-2} = \\dfrac{t^2 - 1}{t^2} \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 1 + t^{-2} = \\dfrac{t^2 + 1}{t^2} \\end{aligned}",
       "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{\\frac{t^2 + 1}{t^2}}{\\frac{t^2 - 1}{t^2}} \\cr &= \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}",
       "<strong>Part (b): Finding the Cartesian equation</strong><br><br>Square both expressions:\\begin{aligned} x^2 &= \\left(t + \\dfrac{1}{t}\\right)^2 = t^2 + 2 + \\dfrac{1}{t^2} \\cr y^2 &= \\left(t - \\dfrac{1}{t}\\right)^2 = t^2 - 2 + \\dfrac{1}{t^2} \\end{aligned}",
-      "Subtract $y^2$ from $x^2$:\\begin{aligned} x^2 - y^2 &= \\left(t^2 + 2 + \\dfrac{1}{t^2}\\right) - \\left(t^2 - 2 + \\dfrac{1}{t^2}\\right) \\cr &= 2 - (-2) \\cr &= 4 \\end{aligned}Therefore, the Cartesian equation is $x^2 - y^2 = 4$.",
+      "Subtract $y^2$ from $x^2$:\\begin{aligned} x^2 - y^2 &= \\left(t^2 + 2 + \\dfrac{1}{t^2}\\right)\\cr & \\quad - \\left(t^2 - 2 + \\dfrac{1}{t^2}\\right) \\cr &= 2 - (-2) \\cr &= 4 \\end{aligned}Therefore, the Cartesian equation is $x^2 - y^2 = 4$.",
       "<strong>Part (c): Showing $\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x}{y}$</strong><br><br>Express the ratio $\\dfrac{x}{y}$ in terms of $t$:\\begin{aligned} \\dfrac{x}{y} &= \\dfrac{t + \\frac{1}{t}}{t - \\frac{1}{t}} \\cr &= \\dfrac{\\frac{t^2 + 1}{t}}{\\frac{t^2 - 1}{t}} \\cr &= \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}This is identical to the parametric derivative found in Part (a).",
       "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{t^2 + 1}{t^2 - 1} \\cr &\\textbf{(b) } x^2 - y^2 = 4 \\cr &\\textbf{(c) } \\text{Shown via } \\dfrac{x}{y} = \\dfrac{t^2 + 1}{t^2 - 1} \\end{aligned}"
     ],
@@ -1873,7 +1873,7 @@ window.ALEVEL_QUESTIONS = [
       "Tangents and Normals"
     ],
     "img": false,
-    "question": "A curve $C$ is defined by the parametric equations:$$x = t^3 - 3t, \\quad y = t^2 - 4 \\quad (t \\in \\mathbb{R})$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the two points on $C$ where the tangent is vertical.<br><br><strong>(c)</strong> Find an equation of the normal to $C$ at the point where $t = 2$, giving your answer in the form $ax + by + c = 0$ where $a, b, c$ are integers.",
+    "question": "A curve $C$ is defined by the parametric equations:$$x = t^3 - 3t,$$ $$y = t^2 - 4 \\quad (t \\in \\mathbb{R})$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$ in terms of $t$.<br><br><strong>(b)</strong> Find the coordinates of the two points on $C$ where the tangent is vertical.<br><br><strong>(c)</strong> Find an equation of the normal to $C$ at the point where $t = 2$, giving your answer in the form $ax + by + c = 0$ where $a, b, c$ are integers.",
     "steps": [
       "<strong>Part (a): Finding $\\dfrac{\\text{d}y}{\\text{d}x}$</strong><br><br>Differentiate $x$ and $y$ with respect to $t$:\\begin{aligned} \\dfrac{\\text{d}x}{\\text{d}t} &= 3t^2 - 3 \\cr \\dfrac{\\text{d}y}{\\text{d}t} &= 2t \\end{aligned}",
       "Apply the chain rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{2t}{3t^2 - 3} \\cr &= \\dfrac{2t}{3(t^2 - 1)} \\end{aligned}",
