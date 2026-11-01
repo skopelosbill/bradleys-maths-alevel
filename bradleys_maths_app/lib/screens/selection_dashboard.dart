@@ -17,6 +17,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // Current Step: 0 = Board, 1 = Level, 2 = Branch, 3 = Major Area, 4 = Topic, 5 = Subtopic
   int _currentStep = 0;
 
+  // Revision Mode Toggle
+  bool _includeMastered = false;
+
   final List<String> _boards = [
     'Random',
     'Edexcel',
@@ -46,12 +49,14 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   List<String> _subtopics = ['Random'];
   bool _isLoading = false;
 
-  // Live Stats State
+  // Live Stats & Mastery Dictionaries
   Map<String, int> _userStats = {
     'total_attempts': 0,
     'first_try_correct': 0,
     'unique_mastered': 0,
   };
+  Map<String, Map<String, int>> _topicMastery = {};
+  Map<String, Map<String, int>> _subtopicMastery = {};
 
   @override
   void initState() {
@@ -66,6 +71,27 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       setState(() {
         _userStats = stats;
       });
+    }
+  }
+
+  Future<void> _loadMasteryForCurrentStep() async {
+    if (_currentStep == 4) {
+      final tStats = await _dbHelper.getTopicMasteryStats(
+        board: _filter.board,
+        level: _filter.level,
+        branch: _filter.branch,
+        majorArea: _filter.majorArea,
+      );
+      if (mounted) setState(() => _topicMastery = tStats);
+    } else if (_currentStep == 5) {
+      final sStats = await _dbHelper.getSubtopicMasteryStats(
+        board: _filter.board,
+        level: _filter.level,
+        branch: _filter.branch,
+        majorArea: _filter.majorArea,
+        topic: _filter.topic,
+      );
+      if (mounted) setState(() => _subtopicMastery = sStats);
     }
   }
 
@@ -109,6 +135,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         _topics = ['Random', ...topics];
         _subtopics = ['Random', ...subs];
       });
+      _loadMasteryForCurrentStep();
     }
   }
 
@@ -119,7 +146,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onBoardTapped(String boardName) {
     setState(() {
       _filter.board = boardName == 'Random' ? null : boardName;
-      _currentStep = 1; // Instant cut to Level
+      _currentStep = 1;
     });
     _loadTaxonomy();
   }
@@ -127,7 +154,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onLevelTapped(String levelName) {
     setState(() {
       _filter.level = levelName == 'Random' ? null : levelName;
-      _currentStep = 2; // Instant cut to Branch
+      _currentStep = 2;
     });
     _loadTaxonomy();
   }
@@ -135,7 +162,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onBranchTapped(String branchName) {
     setState(() {
       _filter.setBranch(branchName == 'Random' ? null : branchName);
-      _currentStep = 3; // Instant cut to Major Area
+      _currentStep = 3;
     });
     _loadTaxonomy();
   }
@@ -143,7 +170,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onMajorAreaTapped(String areaName) async {
     setState(() {
       _filter.setMajorArea(areaName == 'Random' ? null : areaName);
-      _currentStep = 4; // Instant cut to Topic
+      _currentStep = 4;
     });
 
     final topics = await _dbHelper.getTopics(
@@ -153,9 +180,17 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       majorArea: _filter.majorArea,
     );
 
+    final tStats = await _dbHelper.getTopicMasteryStats(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+      majorArea: _filter.majorArea,
+    );
+
     if (mounted) {
       setState(() {
         _topics = ['Random', ...topics];
+        _topicMastery = tStats;
       });
     }
   }
@@ -163,7 +198,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onTopicTapped(String topicName) async {
     setState(() {
       _filter.setTopic(topicName == 'Random' ? null : topicName);
-      _currentStep = 5; // Instant cut to Subtopic
+      _currentStep = 5;
     });
 
     final subs = await _dbHelper.getSubtopics(
@@ -174,21 +209,43 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       topic: _filter.topic,
     );
 
+    final sStats = await _dbHelper.getSubtopicMasteryStats(
+      board: _filter.board,
+      level: _filter.level,
+      branch: _filter.branch,
+      majorArea: _filter.majorArea,
+      topic: _filter.topic,
+    );
+
     if (mounted) {
       setState(() {
         _subtopics = ['Random', ...subs];
+        _subtopicMastery = sStats;
       });
     }
   }
 
   void _onSubtopicTapped(String subtopicName) {
     _filter.subtopic = subtopicName == 'Random' ? null : subtopicName;
-    _launchQuestion(); // Final step: Launch straight into question!
+
+    // Check if fully mastered and not currently in revision mode
+    if (!_includeMastered && subtopicName != 'Random') {
+      final stats = _subtopicMastery[subtopicName];
+      final total = stats?['total'] ?? 0;
+      final mastered = stats?['mastered'] ?? 0;
+      if (total > 0 && mastered == total) {
+        _showTopicMasteredDialog(subtopicName);
+        return;
+      }
+    }
+
+    _launchQuestion();
   }
 
   void _stepBack() {
     if (_currentStep > 0) {
       setState(() => _currentStep--);
+      _loadMasteryForCurrentStep();
     }
   }
 
@@ -197,11 +254,60 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     _launchQuestion();
   }
 
-  Future<void> _launchQuestion() async {
+  // ----------------------------------------------------
+  // SMART REVISIT DIALOG
+  // ----------------------------------------------------
+
+  Future<void> _showTopicMasteredDialog(String topicTitle) async {
+    return showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: const Row(
+          children: [
+            Icon(Icons.stars, color: Color(0xFF16A34A), size: 24),
+            SizedBox(width: 8),
+            Text("Topic Mastered! 🎉", style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+          ],
+        ),
+        content: Text(
+          "You have successfully solved all questions in '$topicTitle'.\n\nWould you like to enter Exam Revision Mode to practice them again?",
+          style: const TextStyle(fontSize: 13, height: 1.4, color: Colors.black87),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text("Cancel", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF16A34A),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+            ),
+            onPressed: () {
+              Navigator.of(ctx).pop();
+              _launchQuestion(forceIncludeMastered: true);
+            },
+            child: const Text("Practice Mastered", style: TextStyle(fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ----------------------------------------------------
+  // QUESTION LAUNCHER
+  // ----------------------------------------------------
+
+  Future<void> _launchQuestion({bool forceIncludeMastered = false}) async {
     setState(() => _isLoading = true);
 
     try {
-      final question = await _dbHelper.fetchQuestion(_filter);
+      final question = await _dbHelper.fetchQuestion(
+        _filter,
+        includeMastered: _includeMastered || forceIncludeMastered,
+      );
       setState(() => _isLoading = false);
 
       if (question != null && mounted) {
@@ -214,9 +320,20 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
             ),
           ),
         );
-        // Refresh live stats immediately upon returning to the dashboard
+        // Refresh live stats & topic completion upon return
         _loadStats();
+        _loadMasteryForCurrentStep();
       } else if (mounted) {
+        // If no question found, check if student completed them all
+        if (!_includeMastered && !forceIncludeMastered) {
+          final reviewCheck = await _dbHelper.fetchQuestion(_filter, includeMastered: true);
+          if (reviewCheck != null && mounted) {
+            _showTopicMasteredDialog(
+              _filter.subtopic ?? _filter.topic ?? _filter.majorArea ?? 'this selection',
+            );
+            return;
+          }
+        }
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('No question matched this combination.')),
         );
@@ -268,13 +385,17 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           : Center(
               child: Container(
                 constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     // Live Stats Ribbon
                     _buildStatsRibbon(),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 8),
+
+                    // Exam Revision Mode Toggle Banner
+                    _buildRevisionToggleBanner(),
+                    const SizedBox(height: 8),
 
                     // Live Breadcrumb Trail
                     _buildBreadcrumbHeader(),
@@ -302,7 +423,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     final int accuracy = total > 0 ? ((correct / total) * 100).round() : 0;
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -325,7 +446,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               accentColor: Colors.teal.shade700,
             ),
           ),
-          Container(width: 1, height: 28, color: Colors.grey.shade200),
+          Container(width: 1, height: 26, color: Colors.grey.shade200),
           Expanded(
             child: _buildStatCell(
               label: "1st-Try Acc.",
@@ -334,7 +455,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               accentColor: Colors.indigo.shade700,
             ),
           ),
-          Container(width: 1, height: 28, color: Colors.grey.shade200),
+          Container(width: 1, height: 26, color: Colors.grey.shade200),
           Expanded(
             child: _buildStatCell(
               label: "Attempts",
@@ -360,12 +481,12 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, size: 14, color: accentColor),
+            Icon(icon, size: 13, color: accentColor),
             const SizedBox(width: 4),
             Text(
               value,
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: accentColor,
               ),
@@ -382,6 +503,53 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           ),
         ),
       ],
+    );
+  }
+
+  // ----------------------------------------------------
+  // EXAM REVISION MODE TOGGLE (328px USABLE WIDTH)
+  // ----------------------------------------------------
+
+  Widget _buildRevisionToggleBanner() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: _includeMastered ? const Color(0xFFF0FDF4) : Colors.white,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: _includeMastered ? const Color(0xFF16A34A) : Colors.grey.shade300,
+        ),
+      ),
+      child: Row(
+        children: [
+          Icon(
+            _includeMastered ? Icons.autorenew : Icons.filter_alt_outlined,
+            size: 16,
+            color: _includeMastered ? const Color(0xFF15803D) : Colors.indigo.shade700,
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              _includeMastered ? "Exam Revision Mode (All Questions)" : "Practice Mode (Unsolved Only)",
+              style: TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.bold,
+                color: _includeMastered ? const Color(0xFF15803D) : Colors.black87,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 24,
+            child: Switch.adaptive(
+              value: _includeMastered,
+              activeColor: const Color(0xFF16A34A),
+              onChanged: (val) {
+                setState(() => _includeMastered = val);
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -476,6 +644,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           items: _topics,
           onSelected: _onTopicTapped,
           activeItem: _filter.topic,
+          masteryData: _topicMastery,
         );
       case 5:
         return _buildStep(
@@ -485,6 +654,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           items: _subtopics,
           onSelected: _onSubtopicTapped,
           activeItem: _filter.subtopic,
+          masteryData: _subtopicMastery,
         );
       default:
         return const SizedBox.shrink();
@@ -492,7 +662,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // GENERIC STEP LIST BUILDER (LARGE THUMB-FRIENDLY CARDS)
+  // GENERIC STEP LIST BUILDER (WITH RULE B GREEN MASTERY)
   // ----------------------------------------------------
 
   Widget _buildStep({
@@ -502,6 +672,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     required List<String> items,
     required Function(String) onSelected,
     String? activeItem,
+    Map<String, Map<String, int>>? masteryData,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -530,20 +701,41 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               final isRandom = item == 'Random';
               final isCurrent = (activeItem ?? 'Random') == item;
 
+              // Rule B Mastery Calculation
+              final stats = (masteryData != null && !isRandom) ? masteryData[item] : null;
+              final total = stats?['total'] ?? 0;
+              final mastered = stats?['mastered'] ?? 0;
+              final isCompleted = total > 0 && mastered == total;
+
+              // Visual styling
+              Color cardBg = Colors.white;
+              Color borderColor = Colors.grey.shade300;
+              Color textColor = Colors.black87;
+
+              if (isRandom) {
+                cardBg = Colors.indigo.shade50;
+                borderColor = Colors.indigo.shade300;
+                textColor = Colors.indigo.shade900;
+              } else if (isCompleted) {
+                cardBg = const Color(0xFFF0FDF4); // Soft Emerald
+                borderColor = const Color(0xFF86EFAC); // Mint Green border
+                textColor = const Color(0xFF14532D); // Deep Green text
+              } else if (isCurrent) {
+                borderColor = Colors.indigo.shade600;
+              }
+
               return Material(
-                color: isRandom ? Colors.indigo.shade50 : Colors.white,
+                color: cardBg,
                 borderRadius: BorderRadius.circular(12),
                 child: InkWell(
                   onTap: () => onSelected(item),
                   borderRadius: BorderRadius.circular(12),
                   child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: isRandom
-                            ? Colors.indigo.shade300
-                            : (isCurrent ? Colors.indigo.shade600 : Colors.grey.shade300),
-                        width: (isCurrent && !isRandom) ? 2.0 : 1.0,
+                        color: borderColor,
+                        width: (isCompleted || (isCurrent && !isRandom)) ? 1.5 : 1.0,
                       ),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -551,19 +743,66 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                       children: [
                         if (isRandom) ...[
                           Icon(Icons.shuffle, color: Colors.indigo.shade700, size: 20),
-                          const SizedBox(width: 12),
+                          const SizedBox(width: 10),
                         ],
                         Expanded(
                           child: Text(
                             isRandom ? "Any / Random (All)" : item,
                             style: TextStyle(
                               fontSize: 14,
-                              fontWeight: isRandom || isCurrent ? FontWeight.bold : FontWeight.w500,
-                              color: isRandom ? Colors.indigo.shade900 : Colors.black87,
+                              fontWeight: isRandom || isCompleted || isCurrent ? FontWeight.bold : FontWeight.w500,
+                              color: textColor,
                             ),
                           ),
                         ),
-                        Icon(Icons.chevron_right, color: Colors.grey.shade400, size: 20),
+                        // Mastery Indicator Badges
+                        if (isCompleted) ...[
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFDCFCE7),
+                              borderRadius: BorderRadius.circular(6),
+                              border: Border.all(color: const Color(0xFF86EFAC)),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.check, size: 12, color: Color(0xFF15803D)),
+                                const SizedBox(width: 2),
+                                Text(
+                                  "$mastered/$total",
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF15803D),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ] else if (mastered > 0) ...[
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade100,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Text(
+                              "$mastered/$total",
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey.shade700,
+                              ),
+                            ),
+                          ),
+                        ],
+                        const SizedBox(width: 4),
+                        Icon(
+                          Icons.chevron_right,
+                          color: isCompleted ? const Color(0xFF15803D) : Colors.grey.shade400,
+                          size: 20,
+                        ),
                       ],
                     ),
                   ),
