@@ -1294,7 +1294,8 @@ window.ALEVEL_QUESTIONS = [
       "title": "The Head Teacher's Eye: Order of Transformations",
       "content": "Always follow the specified order of transformations step by step. When applying a reflection in the $x$-axis, place parentheses around the entire preceding expression: $y \\to -[f(x)]$. This ensures the minus sign distributes correctly across all terms, especially the constant."
     }
-  },        {
+  },  
+        {
                 "id": "004081",
                 "group_id": "004081",
                 "board": "AQA",
@@ -1334,161 +1335,164 @@ window.ALEVEL_QUESTIONS = [
                 }
         },
         {
-                "id": "004082",
-                "group_id": "004081",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and Series",
-                "topic": "Sequences",
-                "subtopic": [
-                        "Periodic Sequences"
-                ],
-                "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.<br><br>State the period of this sequence.",
-                "steps": [
-                        "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence to identify the pattern: \\begin{aligned}U_1 &= 0, \\cr U_2 &= -1, \\cr U_3 &= 0, \\cr U_4 &= 1, \\cr U_5 &= 0\\end{aligned}",
-                        "Finally, identify the repeating cycle, which is $0, -1, 0, 1$, and note that the length of this repeating pattern is $4$.",
-                        "Final Answer: $$ 4$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$ 2\\pi$$",
-                                "feedback": "This incorrect option is probably a confusion with the continuous period of a trigonometric function. Remember that the period of a sequence must be a whole integer $T$ representing the number of discrete steps before the sequence repeats."
-                        },
-                        {
-                                "ans": "$$ 8$$",
-                                "feedback": "This error probably arises from doubling the correct period. Write out the first few terms of the sequence and identify the earliest term where the pattern starts repeating to locate the smallest positive integer period."
-                        },
-                        {
-                                "ans": "$$ \\pi$$",
-                                "feedback": "This error is probably a confusion with the period of continuous trigonometric graphs. Always calculate the first four or five terms of the sequence to make the discrete repeating cycle visible on your page."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Generating the First Few Terms",
-                        "content": "If you ever find yourself uncertain about the trigonometric formula, simply write down the first few terms of the sequence (e.g. $U_1, U_2, U_3, \\dots$). Seeing the repeating pattern of numbers on your page is probably the quickest and safest way to confirm the period."
-                }
-        },
-        {
-                "id": "004083",
-                "group_id": "004081",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and Series",
-                "topic": "Sequences",
-                "subtopic": [
-                        "Periodic Sequences"
-                ],
-                "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.<br><br>State the period of this sequence.",
-                "steps": [
-                        "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{3}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence to observe the periodic pattern: \\begin{aligned}U_1 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_2 &= \\dfrac{\\sqrt{3}}{2}, \\cr U_3 &= 0, \\cr U_4 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_5 &= -\\dfrac{\\sqrt{3}}{2}, \\cr U_6 &= 0, \\cr U_7 &= \\dfrac{\\sqrt{3}}{2}\\end{aligned}",
-                        "Finally, identify the repeating cycle, which is $\\dfrac{\\sqrt{3}}{2}, \\dfrac{\\sqrt{3}}{2}, 0, -\\dfrac{\\sqrt{3}}{2}, -\\dfrac{\\sqrt{3}}{2}, 0$, and note that the pattern repeats every $6$ terms.",
-                        "Final Answer: $$ 6$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$ 2\\pi$$",
-                                "feedback": "This error probably occurs by confusing the period of the sequence with the continuous period of the sine function. The period of a sequence must always be a positive integer $T$."
-                        },
-                        {
-                                "ans": "$$ 3$$",
-                                "feedback": "This is a common error from dividing the numerator coefficient by $\\pi$ instead of using the full continuous period relation. Calculating the first few terms of the sequence will show that the cycle repeats every 6 terms."
-                        },
-                        {
-                                "ans": "$$ 6\\pi$$",
-                                "feedback": "This incorrect option combines both the integer period of 6 and the continuous function period $\\pi$. The period of a discrete sequence must be a plain whole number with no factor of $\\pi$ attached."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "deeper",
-                        "title": "The Head Teacher's Eye: Why the Period is Integer-Valued",
-                        "content": "Trigonometric functions are periodic in real numbers with a period of $2\\pi$. For a discrete sequence $U_n$, the period $T$ is the smallest positive integer that satisfies $U_{n+T} = U_n$. Because $n$ only takes integer values, the sequence samples the continuous curve at discrete intervals, which is why the continuous period $2\\pi$ must scale to a whole number."
-                }
-        },
-        {
-                "id": "004084",
-                "group_id": "004081",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and Series",
-                "topic": "Sequences",
-                "subtopic": [
-                        "Periodic Sequences"
-                ],
-                "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
-                "steps": [
-                        "First, write down the sequence formula: $$U_n = \\cos\\left(\\dfrac{2n\\pi}{3}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= -\\dfrac{1}{2}, \\cr U_2 &= -\\dfrac{1}{2},\\cr U_3 &= 1,\\cr U_4 &= -\\dfrac{1}{2}\\end{aligned}",
-                        "Finally, identify the repeating cycle, which is $-\\dfrac{1}{2}, -\\dfrac{1}{2}, 1$, and note that the length of this repeating pattern is $3$.",
-                        "Final Answer: $$ 3$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$ 2\\pi$$",
-                                "feedback": "This error probably arises from stating the continuous period of a standard trigonometric function rather than finding the discrete integer period of the sequence."
-                        },
-                        {
-                                "ans": "$$ 6$$",
-                                "feedback": "This error probably arises from dividing by $\\pi/3$ instead of the full coefficient of $2\\pi/3$. Write down the first few values of $U_n$ to confirm that the pattern repeats every 3 terms."
-                        },
-                        {
-                                "ans": "$$ \\pi$$",
-                                "feedback": "This is a common error that probably results from confusing the discrete sequence period with the continuous period of functions like $\\cos(2x)$. A discrete sequence period is always a positive integer."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Fractions in Coefficient Arguments",
-                        "content": "Watch out when the coefficient of $n$ contains a multiplier in the numerator, such as $\\frac{2\\pi}{3}$. This scales the period down to 3. If you make a slip and divide by $\\pi/3$ instead, you will obtain an incorrect period of 6. Double-check your division of fractions carefully."
-                }
-        },
-        {
-                "id": "004085",
-                "group_id": "004081",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "A",
-                "major_area": "Sequences and Series",
-                "topic": "Sequences",
-                "subtopic": [
-                        "Periodic Sequences"
-                ],
-                "img": false,
-                "question": "A periodic sequence is defined by $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.<br><br>State the period of this sequence.",
-                "steps": [
-                        "First, write down the sequence formula: $$U_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)$$.",
-                        "Next, calculate the first few terms of the sequence: \\begin{aligned}U_1 &= \\dfrac{1}{\\sqrt{2}},\\cr U_2 &= 1,\\cr U_3 &= \\dfrac{1}{\\sqrt{2}},\\cr U_4 &= 0,\\cr U_5 &= -\\dfrac{1}{\\sqrt{2}},\\cr U_6 &= -1,\\cr U_7 &= -\\dfrac{1}{\\sqrt{2}},\\cr U_8 &= 0,\\cr U_9 &= \\dfrac{1}{\\sqrt{2}}\\end{aligned}",
-                        "Finally, identify the repeating cycle of terms and note that the pattern completes its cycle and starts repeating every $8$ terms.",
-                        "Final Answer: $$ 8$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$ 2\\pi$$",
-                                "feedback": "This is a common error that probably results from confusing the discrete sequence period with the continuous period of the trigonometric function. The period of a sequence must be a plain positive integer."
-                        },
-                        {
-                                "ans": "$$ 4$$",
-                                "feedback": "This error probably arises from dividing $2\\pi$ by the denominator of 4, rather than dividing by the full coefficient of $\\pi/4$. Remember to divide the continuous period $2\\pi$ by the variable's coefficient."
-                        },
-                        {
-                                "ans": "$$ 4\\pi$$",
-                                "feedback": "This incorrect answer is probably a confusion between discrete sequence period calculations and continuous graph period modifications. The period of a discrete sequence is always a clean whole number."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Simple Formula Strategy",
-                        "content": "For any sequence defined by $U_n = \\sin(\\omega n)$ or $\\cos(\\omega n)$ where $\\omega = \\frac{\\pi}{d}$, the period is simply given by $\\frac{2\\pi}{\\omega} = 2d$. Memorising this relation is probably the most efficient shortcut for these direct exam questions."
-                }
-        },
+    "id": "004082",
+    "group_id": "004081",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences",
+    "subtopic": [
+      "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "A sequence is defined for $n \\ge 1$ by:$$U_n = \\sin\\left(\\dfrac{n\\pi}{2}\\right)$$<strong>(a)</strong> Write down the first $4$ terms of the sequence, and state its period $k$.<br><br><strong>(b)</strong> Hence, evaluate the finite sum:$$\\sum_{n=1}^{100} U_n$$",
+    "steps": [
+      "<strong>Part (a): Evaluating the first 4 terms</strong><br><br>Substitute $n = 1, 2, 3, 4$ into the formula:\\begin{aligned} U_1 &= \\sin\\left(\\dfrac{\\pi}{2}\\right) = 1 \\cr U_2 &= \\sin(\\pi) = 0 \\cr U_3 &= \\sin\\left(\\dfrac{3\\pi}{2}\\right) = -1 \\cr U_4 &= \\sin(2\\pi) = 0 \\end{aligned}The sequence repeats the cycle $1, 0, -1, 0$.<br><br>The smallest repeating length is $4$, so the period is $k = 4$.",
+      "<strong>Part (b): Evaluating the sum of 100 terms</strong><br><br>Find the sum of one complete cycle of $4$ terms:\\begin{aligned} S_{\\text{cycle}} &= 1 + 0 + (-1) + 0 \\cr &= 0 \\end{aligned}",
+      "The total number of terms is $100$.<br><br>Determine how many full cycles are contained in $100$ terms:\\begin{aligned} 100 \\div 4 &= 25 \\text{ full cycles} \\end{aligned}Since every complete cycle sums to $0$:\\begin{aligned} \\sum_{n=1}^{100} U_n &= 25 \\times 0 \\cr &= 0 \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } 1, 0, -1, 0 \\quad (k = 4) \\cr &\\textbf{(b) } 0 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1, 0, -1, 0 \\quad (k = 2) \\cr &\\textbf{(b) } 0 \\end{aligned}",
+        "feedback": "Check the period: although $0$ appears twice, the sequence alternates between $+1$ and $-1$ on odd terms. A complete cycle requires 4 terms ($1, 0, -1, 0$) before repeating, so $k = 4$, not $2$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1, 0, -1, 0 \\quad (k = 4) \\cr &\\textbf{(b) } 25 \\end{aligned}",
+        "feedback": "Check the sum of one cycle: $1 + 0 + (-1) + 0 = 0$. The sum of each cycle is 0, not 1, so 25 cycles sum to $25 \\times 0 = 0$, not 25."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1, 0, -1, 0 \\quad (k = 4) \\cr &\\textbf{(b) } 1 \\end{aligned}",
+        "feedback": "Check your cycle count: $100$ divides exactly by $4$ with no remainder ($100 = 25 \\times 4$). There is no leftover $U_1$ term, so the sum is strictly $0$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Summing Periodic Sequences",
+      "content": "To sum any periodic sequence $\\sum_{n=1}^{N} U_n$, calculate the sum of one full period first. Divide $N$ by the period length $k$: multiply the quotient by the cycle sum, then add any remaining terms individually."
+    }
+  },
+  {
+    "id": "004083",
+    "group_id": "004081",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences",
+    "subtopic": [
+      "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "A sequence is defined by the recurrence relation:$$U_1 = 3, \\quad U_{n+1} = \\dfrac{1}{1 - U_n} \\quad (n \\ge 1)$$<strong>(a)</strong> Show that this sequence is periodic, and state its period.<br><br><strong>(b)</strong> Evaluate:$$\\sum_{n=1}^{50} U_n$$giving your answer as an exact simplified fraction.",
+    "steps": [
+      "<strong>Part (a): Finding the terms of the sequence</strong><br><br>Calculate the terms sequentially:\\begin{aligned} U_1 &= 3 \\cr U_2 &= \\dfrac{1}{1 - 3} = -\\dfrac{1}{2} \\cr U_3 &= \\dfrac{1}{1 - \\left(-\\frac{1}{2}\\right)} = \\dfrac{1}{\\frac{3}{2}} = \\dfrac{2}{3} \\cr U_4 &= \\dfrac{1}{1 - \\frac{2}{3}} = \\dfrac{1}{\\frac{1}{3}} = 3 \\end{aligned}Since $U_4 = U_1$, the terms repeat in cycles of $3$ ($3, -\\frac{1}{2}, \\frac{2}{3}$). The sequence is periodic with period $3$.",
+      "<strong>Part (b): Evaluating the sum of 50 terms</strong><br><br>Calculate the sum of one complete cycle of $3$ terms:\\begin{aligned} S_{\\text{cycle}} &= 3 + \\left(-\\dfrac{1}{2}\\right) + \\dfrac{2}{3} \\cr &= \\dfrac{18 - 3 + 4}{6} \\cr &= \\dfrac{19}{6} \\end{aligned}",
+      "Determine the number of full cycles in $50$ terms:\\begin{aligned} 50 &= 16 \\times 3 + 2 \\end{aligned}This gives $16$ full cycles, plus the first $2$ remainder terms ($U_1$ and $U_2$).",
+      "Calculate the total sum:\\begin{aligned} \\sum_{n=1}^{50} U_n &= 16\\left(\\dfrac{19}{6}\\right) + U_1 + U_2 \\cr &= \\dfrac{152}{3} + 3 - \\dfrac{1}{2} \\cr &= \\dfrac{152}{3} + \\dfrac{5}{2} \\cr &= \\dfrac{304 + 15}{6} \\cr &= \\dfrac{319}{6} \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\text{Period } = 3 \\cr &\\textbf{(b) } \\dfrac{319}{6} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 3 \\cr &\\textbf{(b) } \\dfrac{152}{3} \\end{aligned}",
+        "feedback": "You forgot the remainder terms! $50 = 16 \\times 3 + 2$, which leaves 2 extra terms. You must add $U_1 + U_2 = 3 - \\frac{1}{2} = \\frac{5}{2}$ to the 16 complete cycles."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 3 \\cr &\\textbf{(b) } \\dfrac{950}{6} \\end{aligned}",
+        "feedback": "You multiplied the cycle sum by 50 instead of dividing 50 by the period 3! There are only 16 full cycles in 50 terms, not 50 full cycles."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 4 \\cr &\\textbf{(b) } \\dfrac{319}{6} \\end{aligned}",
+        "feedback": "The period is the number of distinct terms before repetition begins. Here $U_4 = U_1$, meaning the cycle consists of 3 terms ($U_1, U_2, U_3$), so the period is 3, not 4."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Remainder Terms in Series",
+      "content": "When evaluating $\\sum_{n=1}^{N} U_n$ for periodic sequences, always write down the division with remainder explicitly: $N = qk + r$. The most common exam error is forgetting to add the final $r$ terms ($U_1 + \\dots + U_r$) after summing the $q$ complete cycles."
+    }
+  },
+  {
+    "id": "004084",
+    "group_id": "004081",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences",
+    "subtopic": [
+      "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "A sequence is generated by the recurrence relation:$$U_1 = p, \\quad U_{n+1} = \\dfrac{k}{U_n} \\quad (n \\ge 1, \\, U_n \\ne 0)$$where $k$ and $p$ are non-zero real constants.<br><br><strong>(a)</strong> Find expressions for $U_2$ and $U_3$, and deduce the period of the sequence.<br><br><strong>(b)</strong> Given that $U_1 = 4$ and$$\\sum_{n=1}^{40} U_n = 100$$find the exact value of the constant $k$.",
+    "steps": [
+      "<strong>Part (a): Finding terms and deducing period</strong><br><br>Compute the next two terms:\\begin{aligned} U_2 &= \\dfrac{k}{U_1} = \\dfrac{k}{p} \\cr U_3 &= \\dfrac{k}{U_2} = \\dfrac{k}{\\frac{k}{p}} = p \\end{aligned}Since $U_3 = U_1 = p$, the sequence alternates between $p$ and $\\dfrac{k}{p}$.<br><br>The sequence is periodic with period $2$.",
+      "<strong>Part (b): Solving for $k$</strong><br><br>Given $U_1 = 4$, the two alternating terms are:\\begin{aligned} U_1 &= 4 \\cr U_2 &= \\dfrac{k}{4} \\end{aligned}",
+      "The sum of one cycle of $2$ terms is:\\begin{aligned} S_{\\text{cycle}} &= 4 + \\dfrac{k}{4} \\end{aligned}",
+      "The first $40$ terms contain $40 \\div 2 = 20$ complete cycles:\\begin{aligned} \\sum_{n=1}^{40} U_n &= 20\\left(4 + \\dfrac{k}{4}\\right) \\cr 100 &= 20\\left(4 + \\dfrac{k}{4}\\right) \\cr 5 &= 4 + \\dfrac{k}{4} \\cr \\dfrac{k}{4} &= 1 \\cr k &= 4 \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } U_2 = \\dfrac{k}{p}, \\, U_3 = p \\quad (\\text{period } = 2) \\cr &\\textbf{(b) } k = 4 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } U_2 = \\dfrac{k}{p}, \\, U_3 = p \\quad (\\text{period } = 2) \\cr &\\textbf{(b) } k = 1 \\end{aligned}",
+        "feedback": "You found $\\frac{k}{4} = 1$ but forgot to multiply by 4 to solve for $k$. Since $\\frac{k}{4} = 1$, $k = 4$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } U_2 = \\dfrac{k}{p}, \\, U_3 = p \\quad (\\text{period } = 2) \\cr &\\textbf{(b) } k = 8 \\end{aligned}",
+        "feedback": "Check your division: $100 \\div 20 = 5$, not $6$. Solving $4 + \\frac{k}{4} = 5$ gives $\\frac{k}{4} = 1 \\implies k = 4$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } U_2 = \\dfrac{k}{p}, \\, U_3 = p \\quad (\\text{period } = 2) \\cr &\\textbf{(b) } k = -60 \\end{aligned}",
+        "feedback": "Check how many cycles are in 40 terms: there are $40 \\div 2 = 20$ cycles, not 40 cycles. Multiplying by 40 instead of 20 leads to an incorrect negative value."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Alternating Recurrence Relations",
+      "content": "Any relation of the form $U_{n+1} = \\frac{k}{U_n}$ naturally has period 2 because taking the reciprocal twice returns you to the original input: $\\frac{k}{k/p} = p$. Recognizing this immediate cycle saves valuable time on exam papers."
+    }
+  },
+  {
+    "id": "004085",
+    "group_id": "004081",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Sequences",
+    "subtopic": [
+      "Periodic Sequences"
+    ],
+    "img": false,
+    "question": "A sequence is defined by the recurrence relation:$$U_1 = 2, \\quad U_{n+1} = \\dfrac{1 + U_n}{1 - U_n} \\quad (n \\ge 1)$$<strong>(a)</strong> Prove that this sequence is periodic, and state its period.<br><br><strong>(b)</strong> Evaluate:$$\\sum_{n=1}^{101} U_n$$giving your answer as an exact simplified fraction.",
+    "steps": [
+      "<strong>Part (a): Proving periodicity</strong><br><br>Generate the terms step by step:\\begin{aligned} U_1 &= 2 \\cr U_2 &= \\dfrac{1 + 2}{1 - 2} = \\dfrac{3}{-1} = -3 \\cr U_3 &= \\dfrac{1 + (-3)}{1 - (-3)} = \\dfrac{-2}{4} = -\\dfrac{1}{2} \\cr U_4 &= \\dfrac{1 + \\left(-\\frac{1}{2}\\right)}{1 - \\left(-\\frac{1}{2}\\right)} = \\dfrac{\\frac{1}{2}}{\\frac{3}{2}} = \\dfrac{1}{3} \\cr U_5 &= \\dfrac{1 + \\frac{1}{3}}{1 - \\frac{1}{3}} = \\dfrac{\\frac{4}{3}}{\\frac{2}{3}} = 2 \\end{aligned}Since $U_5 = U_1 = 2$, the sequence repeats every $4$ terms ($2, -3, -\\frac{1}{2}, \\frac{1}{3}$). The sequence is periodic with period $4$.",
+      "<strong>Part (b): Evaluating the sum of 101 terms</strong><br><br>Find the sum of one complete cycle of $4$ terms:\\begin{aligned} S_{\\text{cycle}} &= 2 + (-3) + \\left(-\\dfrac{1}{2}\\right) + \\dfrac{1}{3} \\cr &= -1 - \\dfrac{1}{2} + \\dfrac{1}{3} \\cr &= -\\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= \\dfrac{-9 + 2}{6} \\cr &= -\\dfrac{7}{6} \\end{aligned}",
+      "Determine the number of cycles in $101$ terms:\\begin{aligned} 101 &= 25 \\times 4 + 1 \\end{aligned}This gives $25$ complete cycles, plus $1$ remainder term ($U_1$).",
+      "Calculate the total sum:\\begin{aligned} \\sum_{n=1}^{101} U_n &= 25\\left(-\\dfrac{7}{6}\\right) + U_1 \\cr &= -\\dfrac{175}{6} + 2 \\cr &= -\\dfrac{175}{6} + \\dfrac{12}{6} \\cr &= -\\dfrac{163}{6} \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\text{Period } = 4 \\cr &\\textbf{(b) } -\\dfrac{163}{6} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 4 \\cr &\\textbf{(b) } -\\dfrac{175}{6} \\end{aligned}",
+        "feedback": "You forgot the single remainder term! $101 = 25 \\times 4 + 1$, which leaves $U_1 = 2$ at the end. Adding 2 to $-\\frac{175}{6}$ gives $-\\frac{163}{6}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 4 \\cr &\\textbf{(b) } -\\dfrac{187}{6} \\end{aligned}",
+        "feedback": "Check your sign when adding the remainder term $U_1 = 2$. You must add $2 = +\\frac{12}{6}$ to $-\\frac{175}{6}$, giving $-\\frac{163}{6}$, not subtract 2."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\text{Period } = 5 \\cr &\\textbf{(b) } -\\dfrac{163}{6} \\end{aligned}",
+        "feedback": "The period is the cycle length before repetition. Since $U_5$ is the first repeated term ($U_5 = U_1$), the repeating cycle contains 4 unique terms, so the period is 4, not 5."
+      }
+    ],
+    "bradley_insight": {
+      "type": "deeper",
+      "title": "The Head Teacher's Eye: Hidden Trigonometry in Recurrences",
+      "content": "The recurrence $U_{n+1} = \\frac{1 + U_n}{1 - U_n}$ is actually the compound angle formula for $\\tan\\left(\\theta + \\frac{\\pi}{4}\\right)$! Because adding $\\frac{\\pi}{4}$ four times completes a full half-turn of $\\pi$ (where $\\tan$ repeats), the sequence is mathematically guaranteed to have a period of exactly 4."
+    }
+  },
         {
                 "id": "004086",
                 "group_id": "004086",
