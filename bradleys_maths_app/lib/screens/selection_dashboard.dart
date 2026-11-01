@@ -46,10 +46,27 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   List<String> _subtopics = ['Random'];
   bool _isLoading = false;
 
+  // Live Stats State
+  Map<String, int> _userStats = {
+    'total_attempts': 0,
+    'first_try_correct': 0,
+    'unique_mastered': 0,
+  };
+
   @override
   void initState() {
     super.initState();
+    _loadStats();
     _loadTaxonomy();
+  }
+
+  Future<void> _loadStats() async {
+    final stats = await _dbHelper.getUserStats();
+    if (mounted) {
+      setState(() {
+        _userStats = stats;
+      });
+    }
   }
 
   Future<void> _loadTaxonomy() async {
@@ -188,7 +205,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       setState(() => _isLoading = false);
 
       if (question != null && mounted) {
-        Navigator.of(context).push(
+        await Navigator.of(context).push(
           MaterialPageRoute(
             builder: (_) => QuestionScreen(
               question: question,
@@ -197,6 +214,8 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
             ),
           ),
         );
+        // Refresh live stats immediately upon returning to the dashboard
+        _loadStats();
       } else if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('No question matched this combination.')),
@@ -234,7 +253,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               )
             : null,
         actions: [
-          // Quick Practice Shortcut
           TextButton.icon(
             icon: const Icon(Icons.bolt, color: Colors.amber, size: 18),
             label: const Text(
@@ -254,6 +272,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    // Live Stats Ribbon
+                    _buildStatsRibbon(),
+                    const SizedBox(height: 10),
+
                     // Live Breadcrumb Trail
                     _buildBreadcrumbHeader(),
                     const SizedBox(height: 12),
@@ -266,6 +288,100 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 ),
               ),
             ),
+    );
+  }
+
+  // ----------------------------------------------------
+  // LIVE STATS RIBBON (360px MOBILE OPTIMISED)
+  // ----------------------------------------------------
+
+  Widget _buildStatsRibbon() {
+    final int total = _userStats['total_attempts'] ?? 0;
+    final int correct = _userStats['first_try_correct'] ?? 0;
+    final int mastered = _userStats['unique_mastered'] ?? 0;
+    final int accuracy = total > 0 ? ((correct / total) * 100).round() : 0;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.indigo.shade100),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withAlpha(8),
+            blurRadius: 4,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: _buildStatCell(
+              label: "Mastered",
+              value: "$mastered",
+              icon: Icons.check_circle_outline,
+              accentColor: Colors.teal.shade700,
+            ),
+          ),
+          Container(width: 1, height: 28, color: Colors.grey.shade200),
+          Expanded(
+            child: _buildStatCell(
+              label: "1st-Try Acc.",
+              value: "$accuracy%",
+              icon: Icons.track_changes,
+              accentColor: Colors.indigo.shade700,
+            ),
+          ),
+          Container(width: 1, height: 28, color: Colors.grey.shade200),
+          Expanded(
+            child: _buildStatCell(
+              label: "Attempts",
+              value: "$total",
+              icon: Icons.history,
+              accentColor: Colors.deepPurple.shade700,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStatCell({
+    required String label,
+    required String value,
+    required IconData icon,
+    required Color accentColor,
+  }) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, size: 14, color: accentColor),
+            const SizedBox(width: 4),
+            Text(
+              value,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+                color: accentColor,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 1),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.w600,
+            color: Colors.grey.shade600,
+          ),
+        ),
+      ],
     );
   }
 
