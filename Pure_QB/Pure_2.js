@@ -1465,7 +1465,7 @@ window.ALEVEL_QUESTIONS = [
       "Periodic Sequences"
     ],
     "img": false,
-    "question": "A sequence is defined by the recurrence relation:$$U_1 = 2,$$  ££U_{n+1} = \\dfrac{1 + U_n}{1 - U_n} \\quad (n \\ge 1)$$<strong>(a)</strong> Prove that this sequence is periodic, and state its period.<br><br><strong>(b)</strong> Evaluate:$$\\sum_{n=1}^{101} U_n$$giving your answer as an exact simplified fraction.",
+    "question": "A sequence is defined by the recurrence relation:$$U_1 = 2,$$  $$U_{n+1} = \\dfrac{1 + U_n}{1 - U_n} \\quad (n \\ge 1)$$<strong>(a)</strong> Prove that this sequence is periodic, and state its period.<br><br><strong>(b)</strong> Evaluate:$$\\sum_{n=1}^{101} U_n$$giving your answer as an exact simplified fraction.",
     "steps": [
       "<strong>Part (a): Proving periodicity</strong><br><br>Generate the terms step by step:\\begin{aligned} U_1 &= 2 \\cr U_2 &= \\dfrac{1 + 2}{1 - 2} = \\dfrac{3}{-1} = -3 \\cr U_3 &= \\dfrac{1 + (-3)}{1 - (-3)} = \\dfrac{-2}{4} = -\\dfrac{1}{2} \\cr U_4 &= \\dfrac{1 + \\left(-\\frac{1}{2}\\right)}{1 - \\left(-\\frac{1}{2}\\right)} = \\dfrac{\\frac{1}{2}}{\\frac{3}{2}} = \\dfrac{1}{3} \\cr U_5 &= \\dfrac{1 + \\frac{1}{3}}{1 - \\frac{1}{3}} = \\dfrac{\\frac{4}{3}}{\\frac{2}{3}} = 2 \\end{aligned}Since $U_5 = U_1 = 2$, the sequence repeats every $4$ terms ($2, -3, -\\frac{1}{2}, \\frac{1}{3}$). The sequence is periodic with period $4$.",
       "<strong>Part (b): Evaluating the sum of 101 terms</strong><br><br>Find the sum of one complete cycle of $4$ terms:\\begin{aligned} S_{\\text{cycle}} &= 2 + (-3) + \\left(-\\dfrac{1}{2}\\right) + \\dfrac{1}{3} \\cr &= -1 - \\dfrac{1}{2} + \\dfrac{1}{3} \\cr &= -\\dfrac{3}{2} + \\dfrac{1}{3} \\cr &= \\dfrac{-9 + 2}{6} \\cr &= -\\dfrac{7}{6} \\end{aligned}",
@@ -1948,171 +1948,169 @@ window.ALEVEL_QUESTIONS = [
         }
 },
        {
-        "id": "004097",
-        "group_id": "004096",
-        "board": "AQA",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Sequences and Series",
-        "topic": "Binomial Expansion",
-        "subtopic": [
-                "Binomial Expansion",
-                "Numerical Integration"
-        ],
-        "img": false,
-        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{1+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{1-x^2}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{0.5} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Sarah, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Sarah's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Sarah goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{1-x^2}} \\text{d}x$. Explain why Sarah's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
-        "steps": [
-                "For Part (a), rewrite the function in index form and expand using $( 1 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 1 + x )^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = 1 + \\left(-\\dfrac{ 1 }{ 2 }\\right)x\\cr & \\quad + \\dfrac{ \\left(-\\dfrac{ 1 }{ 2 }\\right)\\left(-\\dfrac{ 3 }{ 2 }\\right) }{ 2 }x^2 + \\dots \\cr &\\quad = 1 - \\dfrac{ 1 }{ 2 }x + \\dfrac{ 3 }{ 8 }x^2 \\end{aligned}",
-                "For Part (b), substitute $x \\implies -x^2$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 1 - x^2 }} \\cr &\\quad = 1 - \\dfrac{ 1 }{ 2 }(-x^2) + \\dfrac{ 3 }{ 8 }(-x^2)^2 \\cr &\\quad = 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\end{aligned}",
-                "For Part (c), integrate this polynomial approximation from $0$ to $0.5$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 0.5 } \\left(1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4\\right) \\mathrm{d}x \\cr &\\quad = \\left[x + \\dfrac{ x^3 }{ 6 } + \\dfrac{ 3x^5 }{ 40 }\\right]_{ 0 }^{ 0.5 } \\cr &\\quad = 0.5 + \\dfrac{ 0.125 }{ 6 } + \\dfrac{ 0.09375 }{ 40 } \\cr &\\quad \\approx 0.5231771 \\end{aligned}",
-                "For Part (d)(i), notice that since $u = x^2 \\ge 0$ on the interval $[0, 0.5]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Sarah's approximation is an underestimate.",
-                "For Part (d)(ii), the expansion converges only for \\begin{aligned}|u| & < 1 \\cr \\implies |x^2| & < 1 \\cr \\implies |x| &< 1\\end{aligned} Since the lower limit is $x = -2$ and $| -2 | = 2 \\ge 1$, the series does not converge on this interval.",
-                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\cr \\text{Part (c):} & \\quad 0.5231771 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 - \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\cr \\text{Part (c):} & \\quad 0.4815104 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^2$ into the expansion. Substituting into $-\\dfrac{ x }{ 2 }$ yields $-\\dfrac{ -x^2 }{ 2 } = +\\dfrac{ x^2 }{ 2 }$. This also affects the integral calculation in Part (c)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 + \\dfrac{ 3 }{ 8 }x^4 \\cr \\text{Part (c):} & \\quad 0.5231771 \\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
-                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad 1 + \\dfrac{ 1 }{ 2 }x^2 - \\dfrac{ 3 }{ 8 }x^4 \\cr \\text{Part (c):} & \\quad 0.5184896 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "Check your signs in Part (b). Substituting $-x^2$ into $+\\dfrac{ 3x^2 }{ 8 }$ yields $+\\dfrac{ 3(-x^2)^2 }{ 8 } = +\\dfrac{ 3x^4 }{ 8 }$. Both terms must be positive, which also affects your integration in Part (c)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Quick Integration Checks",
-                "content": "When integrating your binomial expansion, remember to increase the power of each term and divide by the new power. For example, integrating $x^4$ gives $\\dfrac{ x^5 }{ 5 }$. It is probably easiest to write down each coefficient product clearly on your page before simplifying, as this prevents simple mental multiplication slips."
-        }
-},
-        {
-        "id": "004098",
-        "group_id": "004096",
-        "board": "AQA",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Sequences and Series",
-        "topic": "Binomial Expansion",
-        "subtopic": [
-                "Binomial Expansion",
-                "Numerical Integration"
-        ],
-        "img": false,
-        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{16+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{16-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Ranjit, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Ranjit's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Ranjit goes on to use the expansion from part (b) to find an approximation for $\\int_{-3}^{0} \\dfrac{1}{\\sqrt{16-x^3}} \\text{d}x$. Explain why Ranjit's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
-        "steps": [
-                "For Part (a), rewrite the function in index form and expand using $( 16 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 16 + x )^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = 16^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 16 }\\right)^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = \\dfrac{ 1 }{ 4 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 16 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 16 }\\right)^2 + \\dots\\right] \\cr &\\quad = \\dfrac{ 1 }{ 4 } - \\dfrac{ x }{ 128 } + \\dfrac{ 3x^2 }{ 8192 } \\end{aligned}",
-                "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 16 - x^3 }} \\cr &\\quad = \\dfrac{ 1 }{ 4 } - \\dfrac{ -x^3 }{ 128 } + \\dfrac{ 3(-x^3)^2 }{ 8192 } \\cr &\\quad = \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\end{aligned}",
-                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0  }^{ 1 } \\left(\\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 }\\right) \\mathrm{d}x \\cr &\\quad = \\left[\\dfrac{ x }{ 4 } + \\dfrac{ x^4 }{ 512 } + \\dfrac{ 3x^7 }{ 57344 }\\right]_{ 0 }^{ 1 } \\cr &\\quad = \\dfrac{ 1 }{ 4 } + \\dfrac{ 1 }{ 512 } + \\dfrac{ 3 }{ 57344 } \\cr &\\quad \\approx 0.2520054 \\end{aligned}",
-                "For Part (d)(i), notice that since $u = \\dfrac{ x^3 }{ 16 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Ranjit's approximation is an underestimate.",
-                "For Part (d)(ii), the expansion converges only for \\begin{aligned}|u| &< 1 \\cr \\implies \\left|\\dfrac{ x^3 }{ 16 }\\right| &< 1 \\cr\\implies |x| &< 16^{\\frac{ 1 }{ 3 }} \\cr &\\approx 2.52\\end{aligned} Since the lower limit is $x = -3$ and $| -3 | = 3 \\ge 2.52$, the series does not converge on this interval.",
-                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\cr \\text{Part (c):} & \\quad 0.2520054 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } - \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\cr \\text{Part (c):} & \\quad 0.2481023 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\dfrac{ x }{ 128 }$ yields $-\\dfrac{ -x^3 }{ 128 } = +\\dfrac{ x^3 }{ 128 }$. This also affects the integral calculation in Part (c)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } + \\dfrac{ 3x^6 }{ 8192 } \\cr \\text{Part (c):} & \\quad 0.2520054 \\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
-                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 4 } + \\dfrac{ x^3 }{ 128 } - \\dfrac{ 3x^6 }{ 8192 } \\cr \\text{Part (c):} & \\quad 0.2519008 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "Check your signs in Part (b). Substituting $-x^3$ into the third term yields $+\\dfrac{ 3(-x^3)^2 }{ 8192 } = +\\dfrac{ 3x^6 }{ 8192 }$. Both terms must be positive, which also affects your integration in Part (c)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "deeper",
-                "title": "The Head Teacher's Eye: Understanding Convergence Boundaries",
-                "content": "The validity range of a binomial expansion is defined by $|u| < 1$, where $u$ is the variable component. For the term $\\dfrac{ x^3 }{ 16 }$, this gives $\\left|\\dfrac{ x^3 }{ 16 }\\right| < 1 \\implies |x| < 16^{\\frac{ 1 }{ 3 }} \\approx 2.52$. When the lower limit of our integral lies outside this boundary (such as $x = -3$), the series fails to converge and is completely invalid, even if the original algebraic expression is defined there."
-        }
-},
-        {
-        "id": "004099",
-        "group_id": "004096",
-        "board": "AQA",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Sequences and Series",
-        "topic": "Binomial Expansion",
-        "subtopic": [
-                "Binomial Expansion",
-                "Numerical Integration"
-        ],
-        "img": false,
-        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{25+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{25-x^3}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Jeevesh, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Jeevesh's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Jeevesh goes on to use the expansion from part (b) to find an approximation for $\\int_{-4}^{0} \\dfrac{1}{\\sqrt{25-x^3}} \\text{d}x$. Explain why Jeevesh's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
-        "steps": [
-                "For Part (a), rewrite the function in index form and expand using $( 25 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 25 + x )^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = 25^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 25 }\\right)^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = \\dfrac{ 1 }{ 5 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 25 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 25 }\\right)^2 + \\dots\\right] \\cr &\\quad = \\dfrac{ 1 }{ 5 } - \\dfrac{ x }{ 250 } + \\dfrac{ 3x^2 }{ 25000 } \\end{aligned}",
-                "For Part (b), substitute $x \\implies -x^3$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 25 - x^3 }} \\cr &\\quad = \\dfrac{ 1 }{ 5 } - \\dfrac{ -x^3 }{ 250 } + \\dfrac{ 3(-x^3)^2 }{ 25000 } \\cr &\\quad = \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\end{aligned}",
-                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 1 } \\left(\\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 }\\right) \\mathrm{d}x \\cr &\\quad = \\left[\\dfrac{ x }{ 5 } + \\dfrac{ x^4 }{ 1000 } + \\dfrac{ 3x^7 }{ 175000 }\\right]_{ 0 }^{ 1 } \\cr &\\quad = 0.2 + 0.001 + 0.0000171 \\cr &\\quad \\approx 0.2010171 \\end{aligned}",
-                "For Part (d)(i), notice that since $u = \\dfrac{ x^3 }{ 25 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Jeevesh's approximation is an underestimate.",
-                "For Part (d)(ii), the expansion converges only for \\begin{aligned}|u| &< 1\\cr \\implies \\left|\\dfrac{ x^3 }{ 25 }\\right|&< 1 \\cr \\implies |x| &< 25^{\\frac{ 1 }{ 3 }} \\cr &\\approx 2.92\\end{aligned} Since the lower limit is $x = -4$ and $| -4 | = 4 \\ge 2.92$, the series does not converge on this interval.",
-                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\cr \\text{Part (c):} & \\quad 0.2010171 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } - \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\cr \\text{Part (c):} & \\quad 0.1990171 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^3$ into the expansion. Substituting into $-\\dfrac{ x }{ 250 }$ yields $-\\dfrac{ -x^3 }{ 250 } = +\\dfrac{ x^3 }{ 250 }$. This also affects the integral calculation in Part (c)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } + \\dfrac{ 3x^6 }{ 25000 } \\cr \\text{Part (c):} & \\quad 0.2010171 \\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}$",
-                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 5 } + \\dfrac{ x^3 }{ 250 } - \\dfrac{ 3x^6 }{ 25000 } \\cr \\text{Part (c):} & \\quad 0.2009829 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}$",
-                        "feedback": "Check your signs in Part (b). Substituting $-x^3$ into $+\\dfrac{ 3x^2 }{ 25000 }$ yields $+\\dfrac{ 3(-x^3)^2 }{ 25000 } = +\\dfrac{ 3x^6 }{ 25000 }$. Both terms must be positive, which also affects your integration in Part (c)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "caution",
-                "title": "The Head Teacher's Eye: Constant Factor Pitfalls",
-                "content": "When expanding expressions like $( 25 + x )^{-\\frac{ 1 }{ 2 }}$, never forget to factor out the constant term first as $25^{-\\frac{ 1 }{ 2 }} = \\dfrac{ 1 }{ 5 }$. Many students write this factor as $5$ or completely forget to multiply it through the rest of the terms. Always write out the factorization step explicitly to prevent this classic slip."
-        }
-},
-        {
-        "id": "004100",
-        "group_id": "004096",
-        "board": "AQA",
-        "branch": "Pure",
-        "level": "A",
-        "major_area": "Sequences and Series",
-        "topic": "Binomial Expansion",
-        "subtopic": [
-                "Binomial Expansion",
-                "Numerical Integration"
-        ],
-        "img": false,
-        "question": "(a) Find the first three terms, in ascending powers of $x$, of the binomial expansion of $\\dfrac{1}{\\sqrt{4+x}}$.<br><br>(b) Hence, find the first three terms of the binomial expansion of $\\dfrac{1}{\\sqrt{4-x^4}}$.<br><br>(c) Using your answer to part (b), find an approximation for $\\int_{0}^{1} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$, giving your answer to seven decimal places.<br><br>(d) (i) Emma, a student, decides to use this method to find a more accurate value for the integral by increasing the number of terms of the binomial expansion used. Explain clearly whether Emma's approximation will be an overestimate, an underestimate, or if it is impossible to tell.<br><br>(d) (ii) Emma goes on to use the expansion from part (b) to find an approximation for $\\int_{-2}^{0} \\dfrac{1}{\\sqrt{4-x^4}} \\text{d}x$. Explain why Emma's approximation is invalid.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (b)</strong>, <strong>Part (c)</strong>, and <strong>Part (d)(i)</strong>.",
-        "steps": [
-                "For Part (a), rewrite the function in index form and expand using $( 4 + x )^{-\\frac{ 1 }{ 2 }}$:<br><br>\\begin{aligned} &( 4 + x )^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = 4^{-\\frac{ 1 }{ 2 }}\\left(1 + \\dfrac{ x }{ 4 }\\right)^{-\\frac{ 1 }{ 2 }} \\cr &\\quad = \\dfrac{ 1 }{ 2 }\\left[1 - \\dfrac{ 1 }{ 2 }\\left(\\dfrac{ x }{ 4 }\\right) + \\dfrac{ 3 }{ 8 }\\left(\\dfrac{ x }{ 4 }\\right)^2 + \\dots\\right] \\cr &\\quad = \\dfrac{ 1 }{ 2 } - \\dfrac{ x }{ 16 } + \\dfrac{ 3x^2 }{ 256 } \\end{aligned}",
-                "For Part (b), substitute $x \\implies -x^4$ into your Part (a) expansion:<br><br>\\begin{aligned} &\\dfrac{ 1 }{ \\sqrt{ 4 - x^4 }} \\cr &\\quad = \\dfrac{ 1 }{ 2 } - \\dfrac{ -x^4 }{ 16 } + \\dfrac{ 3(-x^4)^2 }{ 256 } \\cr &\\quad = \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\end{aligned}",
-                "For Part (c), integrate this polynomial approximation from $0$ to $1$:<br><br>\\begin{aligned} &\\int_{ 0 }^{ 1 } \\left(\\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 }\\right) \\mathrm{d}x \\cr &\\quad = \\left[\\dfrac{ x }{ 2 } + \\dfrac{ x^5 }{ 80 } + \\dfrac{ x^9 }{ 768 }\\right]_{ 0 }^{ 1 } \\cr &\\quad = \\dfrac{ 1 }{ 2 } + \\dfrac{ 1 }{ 80 } + \\dfrac{ 1 }{ 768 } \\cr &\\quad \\approx 0.5138021 \\end{aligned}",
-                "For Part (d)(i), notice that since $u = \\dfrac{ x^4 }{ 4 } \\ge 0$ on the interval $[0, 1]$, every term in the binomial series for $( 1 - u )^{-\\frac{ 1 }{ 2 }}$ is positive. Truncating the series removes positive terms, so Emma's approximation is an underestimate.",
-                "For Part (d)(ii), the expansion converges only for \\begin{aligned}|u| &< 1 \\cr \\implies \\left|\\dfrac{ x^4 }{ 4 }\\right| &< 1 \\cr \\implies |x| &< 4^{\\frac{ 1 }{ 4 }}\\cr & \\approx 1.414\\end{aligned} Since the lower limit is $x = -2$ and $| -2 | = 2 \\ge 1.414$, the series does not converge on this interval.",
-                "<strong>Final Answer:</strong><br><br>\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\cr \\text{Part (c):} & \\quad 0.5138021 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}"
-        ],
-        "pi_options": [
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } - \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\cr \\text{Part (c):} & \\quad 0.4888021 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}",
-                        "feedback": "In Part (b), you probably made a sign error when substituting $-x^4$ into the expansion. Substituting into $-\\dfrac{ x }{ 16 }$ yields $-\\dfrac{ -x^4 }{ 16 } = +\\dfrac{ x^4 }{ 16 }$. This also affects the integral calculation in Part (c)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } + \\dfrac{ 3x^8 }{ 256 } \\cr \\text{Part (c):} & \\quad 0.5138021 \\cr \\text{Part (d)(i):} & \\quad \\text{Overestimate} \\end{aligned}",
-                        "feedback": "In Part (d)(i), you probably assumed that adding more positive terms makes the approximation an overestimate. However, since all terms in the series are positive, truncating after finitely many terms leaves out positive values, meaning the approximation is smaller than the true value (an underestimate)."
-                },
-                {
-                        "ans": "$\\begin{aligned} \\text{Part (b):} & \\quad \\dfrac{ 1 }{ 2 } + \\dfrac{ x^4 }{ 16 } - \\dfrac{ 3x^8 }{ 256 } \\cr \\text{Part (c):} & \\quad 0.5111979 \\cr \\text{Part (d)(i):} & \\quad \\text{Underestimate} \\end{aligned}",
-                        "feedback": "Check your signs in Part (b). Substituting $-x^4$ into the third term yields $+\\dfrac{ 3(-x^4)^2 }{ 256 } = +\\dfrac{ 3x^8 }{ 256 }$. Both terms must be positive, which also affects your integration in Part (c)."
-                }
-        ],
-        "bradley_insight": {
-                "type": "pro-tip",
-                "title": "The Head Teacher's Eye: Analyzing Truncation Errors",
-                "content": "To determine whether your approximation is an overestimate or an underestimate, look at the signs of the terms you truncated. Since $u = \\dfrac{ x^4 }{ 4 }$ is strictly positive on the interval of integration, every term in our series is positive. Removing positive terms means your finite sum is always smaller than the true infinite sum, which makes it an underestimate."
-        }
-}
+    "id": "004097",
+    "group_id": "004096",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Binomial Expansion",
+      "Approximations"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Find the binomial expansion of $(1 + 4x)^{\\frac{1}{2}}$ in ascending powers of $x$ up to and including the term in $x^3$, simplifying each coefficient.<br><br><strong>(b)</strong> State the set of values of $x$ for which this expansion is valid.<br><br><strong>(c)</strong> By substituting $x = \\dfrac{1}{16}$, obtain an approximation for $\\sqrt{5}$ as an exact simplified fraction.",
+    "steps": [
+      "<strong>Part (a): Binomial expansion</strong><br><br>Apply the binomial series formula with $n = \\dfrac{1}{2}$:\\begin{aligned} (1 + 4x)^{\\frac{1}{2}} &= 1 + \\left(\\dfrac{1}{2}\\right)(4x) \\cr &\\quad + \\dfrac{\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right)}{2!}(4x)^2 \\cr &\\quad + \\dfrac{\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right)\\left(-\\frac{3}{2}\\right)}{3!}(4x)^3 \\end{aligned}",
+      "Simplify each term step by step:\\begin{aligned} \\text{Term 1} &= 1 \\cr \\text{Term 2} &= 2x \\cr \\text{Term 3} &= -\\dfrac{1}{8}(16x^2) = -2x^2 \\cr \\text{Term 4} &= +\\dfrac{1}{16}(64x^3) = +4x^3 \\end{aligned}Therefore:\\begin{aligned} (1 + 4x)^{\\frac{1}{2}} &= 1 + 2x - 2x^2 + 4x^3 \\end{aligned}",
+      "<strong>Part (b): Validity</strong><br><br>The series converges for $|4x| < 1$:\\begin{aligned} |x| < \\dfrac{1}{4} \\end{aligned}",
+      "<strong>Part (c): Approximating $\\sqrt{5}$</strong><br><br>Substitute $x = \\dfrac{1}{16}$ into the left-hand side:\\begin{aligned} \\left(1 + 4\\left(\\dfrac{1}{16}\\right)\\right)^{\\frac{1}{2}} &= \\left(1 + \\dfrac{1}{4}\\right)^{\\frac{1}{2}} \\cr &= \\sqrt{\\dfrac{5}{4}} = \\dfrac{\\sqrt{5}}{2} \\end{aligned}",
+      "Substitute $x = \\dfrac{1}{16}$ into the polynomial expansion:\\begin{aligned} \\dfrac{\\sqrt{5}}{2} &\\approx 1 + 2\\left(\\dfrac{1}{16}\\right) - 2\\left(\\dfrac{1}{16}\\right)^2 + 4\\left(\\dfrac{1}{16}\\right)^3 \\cr &= 1 + \\dfrac{1}{8} - \\dfrac{2}{256} + \\dfrac{4}{4096} \\cr &= 1 + \\dfrac{1}{8} - \\dfrac{1}{128} + \\dfrac{1}{1024} \\cr &= \\dfrac{1024 + 128 - 8 + 1}{1024} \\cr &= \\dfrac{1145}{1024} \\end{aligned}",
+      "Multiply by $2$ to isolate $\\sqrt{5}$:\\begin{aligned} \\sqrt{5} &\\approx 2 \\times \\dfrac{1145}{1024} \\cr &= \\dfrac{1145}{512} \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } 1 + 2x - 2x^2 + 4x^3 \\cr &\\textbf{(b) } |x| < \\dfrac{1}{4} \\cr &\\textbf{(c) } \\dfrac{1145}{512} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + 2x - 2x^2 + 4x^3 \\cr &\\textbf{(b) } |x| < 1 \\cr &\\textbf{(c) } \\dfrac{1145}{512} \\end{aligned}",
+        "feedback": "Don't forget the factor of 4 inside the bracket! The expansion converges when $|4x| < 1$, which gives $|x| < \\frac{1}{4}$, not $|x| < 1$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + 2x - 2x^2 + 4x^3 \\cr &\\textbf{(b) } |x| < \\dfrac{1}{4} \\cr &\\textbf{(c) } \\dfrac{1145}{1024} \\end{aligned}",
+        "feedback": "You forgot to multiply by 2 at the end! Substituting $x = \\frac{1}{16}$ gives $\\sqrt{\\frac{5}{4}} = \\frac{\\sqrt{5}}{2}$. You must multiply $\\frac{1145}{1024}$ by 2 to solve for $\\sqrt{5}$, giving $\\frac{1145}{512}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + 2x + 2x^2 + 4x^3 \\cr &\\textbf{(b) } |x| < \\dfrac{1}{4} \\cr &\\textbf{(c) } \\dfrac{1145}{512} \\end{aligned}",
+        "feedback": "Check your sign on the $x^2$ term: the numerator contains $\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right) = -\\frac{1}{4}$, which produces a negative sign: $-2x^2$, not $+2x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Choosing x for Surds",
+      "content": "To approximate $\\sqrt{5}$, we notice that $\\frac{5}{4}$ is very close to $1$. Setting $1 + 4x = \\frac{5}{4}$ yields $x = \\frac{1}{16}$. Because $|\\frac{1}{16}| < \\frac{1}{4}$, the series converges exceptionally quickly, producing 4 decimal places of accuracy with just four terms!"
+    }
+  },
+  {
+    "id": "004098",
+    "group_id": "004096",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Binomial Expansion"
+    ],
+    "img": false,
+    "question": "The function $f(x)$ is defined by:$$f(x) = \\dfrac{4 + x}{(1 - 2x)^2} \\quad (|x| < k)$$<strong>(a)</strong> Find the binomial expansion of $(1 - 2x)^{-2}$ in ascending powers of $x$ up to and including the term in $x^2$.<br><br><strong>(b)</strong> Hence, find the expansion of $f(x)$ up to and including the term in $x^2$.<br><br><strong>(c)</strong> State the value of the constant $k$ that defines the radius of convergence.",
+    "steps": [
+      "<strong>Part (a): Expanding $(1 - 2x)^{-2}$</strong><br><br>Apply the binomial formula with $n = -2$ and replacing $x$ with $(-2x)$:\\begin{aligned} (1 - 2x)^{-2} &= 1 + (-2)(-2x) \\cr &\\quad + \\dfrac{(-2)(-3)}{2!}(-2x)^2 \\cr &= 1 + 4x + 3(4x^2) \\cr &= 1 + 4x + 12x^2 \\end{aligned}",
+      "<strong>Part (b): Expanding $f(x) = (4 + x)(1 - 2x)^{-2}$</strong><br><br>Multiply $(4 + x)$ by the expansion from Part (a):\\begin{aligned} f(x) &= (4 + x)(1 + 4x + 12x^2) \\cr &= 4(1 + 4x + 12x^2) \\cr &\\quad + x(1 + 4x + 12x^2) \\end{aligned}",
+      "Collect terms up to $x^2$:\\begin{aligned} f(x) &= 4 + 16x + 48x^2 \\cr &\\quad + x + 4x^2 + \\mathcal{O}(x^3) \\cr &= 4 + (16 + 1)x + (48 + 4)x^2 \\cr &= 4 + 17x + 52x^2 \\end{aligned}",
+      "<strong>Part (c): Finding the radius of convergence $k$</strong><br><br>The expansion is valid when $|-2x| < 1$:\\begin{aligned} 2|x| < 1 \\implies |x| < \\dfrac{1}{2} \\end{aligned}Therefore $k = \\dfrac{1}{2}$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } 1 + 4x + 12x^2 \\cr &\\textbf{(b) } 4 + 17x + 52x^2 \\cr &\\textbf{(c) } k = \\dfrac{1}{2} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 - 4x + 12x^2 \\cr &\\textbf{(b) } 4 + 15x + 44x^2 \\cr &\\textbf{(c) } k = \\dfrac{1}{2} \\end{aligned}",
+        "feedback": "Watch the negative signs: multiplying $(-2)$ by $(-2x)$ gives $+4x$, not $-4x$. Both negative signs cancel to give a positive linear term."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + 4x + 12x^2 \\cr &\\textbf{(b) } 4 + 17x + 52x^2 \\cr &\\textbf{(c) } k = 2 \\end{aligned}",
+        "feedback": "The condition is $|-2x| < 1$, which requires $|x| < \\frac{1}{2}$. Dividing by 2 gives $k = \\frac{1}{2}$, not $k = 2$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + 4x + 12x^2 \\cr &\\textbf{(b) } 4 + 16x + 48x^2 \\cr &\\textbf{(c) } k = \\dfrac{1}{2} \\end{aligned}",
+        "feedback": "Don't forget to multiply the $+x$ from $(4 + x)$ across the expansion: $+x(1 + 4x) = x + 4x^2$. Adding these gives $17x$ and $52x^2$, not $16x$ and $48x^2$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Multiplying Polynomial Brackets",
+      "content": "When expanding expressions of the form $(a + bx)(1 + cx)^n$, expand the binomial series first. Then multiply systematically, ignoring any terms whose powers exceed the required degree ($x^3$ and above) to keep your working quick and clean."
+    }
+  },
+  {
+    "id": "004099",
+    "group_id": "004096",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Binomial Expansion"
+    ],
+    "img": false,
+    "question": "The function $g(x)$ is defined by:$$g(x) = \\dfrac{1}{\\sqrt[3]{8 - 3x}}$$<strong>(a)</strong> Find the binomial expansion of $g(x)$ in ascending powers of $x$ up to and including the term in $x^2$.<br><br><strong>(b)</strong> State the radius of convergence for this series.",
+    "steps": [
+      "<strong>Part (a): Binomial expansion</strong><br><br>Rewrite in index form and factor out $8$:\\begin{aligned} g(x) &= (8 - 3x)^{-\\frac{1}{3}} \\cr &= 8^{-\\frac{1}{3}}\\left(1 - \\dfrac{3x}{8}\\right)^{-\\frac{1}{3}} \\cr &= \\dfrac{1}{2}\\left(1 - \\dfrac{3x}{8}\\right)^{-\\frac{1}{3}} \\end{aligned}",
+      "Apply the binomial series with $n = -\\dfrac{1}{3}$:\\begin{aligned} \\left(1 - \\dfrac{3x}{8}\\right)^{-\\frac{1}{3}} &= 1 + \\left(-\\dfrac{1}{3}\\right)\\left(-\\dfrac{3x}{8}\\right) \\cr &\\quad + \\dfrac{\\left(-\\frac{1}{3}\\right)\\left(-\\frac{4}{3}\\right)}{2!}\\left(-\\dfrac{3x}{8}\\right)^2 \\cr &= 1 + \\dfrac{x}{8} + \\dfrac{2}{9}\\left(\\dfrac{9x^2}{64}\\right) \\cr &= 1 + \\dfrac{x}{8} + \\dfrac{x^2}{32} \\end{aligned}",
+      "Multiply through by the leading factor of $\\dfrac{1}{2}$:\\begin{aligned} g(x) &= \\dfrac{1}{2}\\left(1 + \\dfrac{x}{8} + \\dfrac{x^2}{32}\\right) \\cr &= \\dfrac{1}{2} + \\dfrac{x}{16} + \\dfrac{x^2}{64} \\end{aligned}",
+      "<strong>Part (b): Radius of convergence</strong><br><br>The expansion is valid when $\\left|-\\dfrac{3x}{8}\\right| < 1$:\\begin{aligned} \\dfrac{3|x|}{8} &< 1 \\cr |x| &< \\dfrac{8}{3} \\end{aligned}Therefore, the radius of convergence is $R = \\dfrac{8}{3}$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{2} + \\dfrac{x}{16} + \\dfrac{x^2}{64} \\cr &\\textbf{(b) } |x| < \\dfrac{8}{3} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 1 + \\dfrac{x}{8} + \\dfrac{x^2}{32} \\cr &\\textbf{(b) } |x| < \\dfrac{8}{3} \\end{aligned}",
+        "feedback": "Don't forget to multiply by the factor factored out of the bracket: $8^{-1/3} = \\frac{1}{2}$. You must multiply each term in the expansion by $\\frac{1}{2}$, giving coefficients of $\\frac{1}{2}, \\frac{1}{16}, \\frac{1}{64}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{2} + \\dfrac{x}{16} + \\dfrac{x^2}{64} \\cr &\\textbf{(b) } |x| < \\dfrac{3}{8} \\end{aligned}",
+        "feedback": "Check your inequality rearrangement: $\\frac{3|x|}{8} < 1 \\implies |x| < \\frac{8}{3}$. You multiplied by $\\frac{3}{8}$ instead of taking the reciprocal."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{1}{2} - \\dfrac{x}{16} + \\dfrac{x^2}{64} \\cr &\\textbf{(b) } |x| < \\dfrac{8}{3} \\end{aligned}",
+        "feedback": "Check your signs: the linear term has $\\left(-\\frac{1}{3}\\right)\\left(-\\frac{3x}{8}\\right) = +\\frac{x}{8}$. Multiplying by $\\frac{1}{2}$ gives $+\\frac{x}{16}$, not $-\\frac{x}{16}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Factoring $(a + bx)^n$",
+      "content": "Before applying the binomial expansion $(1 + u)^n$, the leading term inside the bracket MUST be 1. When factoring out $a$, remember to raise it to the power: $a^n(1 + \\frac{b}{a}x)^n$. Forgetting the factor of $a^n$ outside is the single most common mistake on this topic."
+    }
+  },
+  {
+    "id": "004100",
+    "group_id": "004096",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "A",
+    "major_area": "Sequences and Series",
+    "topic": "Binomial Expansion",
+    "subtopic": [
+      "Binomial Expansion",
+      "Numerical Integration"
+    ],
+    "img": false,
+    "question": "<strong>(a)</strong> Find the binomial expansion of $\\sqrt{4 + x^2}$ in ascending powers of $x$ up to and including the term in $x^4$.<br><br><strong>(b)</strong> State the range of values of $x$ for which this expansion is valid.<br><br><strong>(c)</strong> Use your expansion to find an approximation for:$$\\int_{0}^{1} \\sqrt{4 + x^2} \\, \\text{d}x$$giving your answer as an exact simplified fraction.<br><br><strong>(d)</strong> Explain whether your approximation is an overestimate or an underestimate.",
+    "steps": [
+      "<strong>Part (a): Binomial expansion</strong><br><br>Rewrite in index form and factor out $4$:\\begin{aligned} \\sqrt{4 + x^2} &= (4 + x^2)^{\\frac{1}{2}} \\cr &= 4^{\\frac{1}{2}}\\left(1 + \\dfrac{x^2}{4}\\right)^{\\frac{1}{2}} \\cr &= 2\\left(1 + \\dfrac{x^2}{4}\\right)^{\\frac{1}{2}} \\end{aligned}",
+      "Expand using the binomial formula with $n = \\dfrac{1}{2}$:\\begin{aligned} \\left(1 + \\dfrac{x^2}{4}\\right)^{\\frac{1}{2}} &= 1 + \\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{x^2}{4}\\right) \\cr &\\quad + \\dfrac{\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right)}{2!}\\left(\\dfrac{x^2}{4}\\right)^2 \\cr &= 1 + \\dfrac{x^2}{8} - \\dfrac{1}{8}\\left(\\dfrac{x^4}{16}\\right) \\cr &= 1 + \\dfrac{x^2}{8} - \\dfrac{x^4}{128} \\end{aligned}",
+      "Multiply through by $2$:\\begin{aligned} \\sqrt{4 + x^2} &= 2\\left(1 + \\dfrac{x^2}{8} - \\dfrac{x^4}{128}\\right) \\cr &= 2 + \\dfrac{x^2}{4} - \\dfrac{x^4}{64} \\end{aligned}",
+      "<strong>Part (b): Validity</strong><br><br>The expansion is valid for $\\left|\\dfrac{x^2}{4}\\right| < 1$:\\begin{aligned} x^2 &< 4 \\implies -2 < x < 2 \\end{aligned}",
+      "<strong>Part (c): Integrating the polynomial approximation</strong><br><br>Integrate term by term from $0$ to $1$:\\begin{aligned} I &\\approx \\int_{0}^{1} \\left(2 + \\dfrac{x^2}{4} - \\dfrac{x^4}{64}\\right) \\text{d}x \\cr &= \\left[2x + \\dfrac{x^3}{12} - \\dfrac{x^5}{320}\\right]_{0}^{1} \\cr &= 2 + \\dfrac{1}{12} - \\dfrac{1}{320} \\cr &= 2 + \\dfrac{80 - 3}{960} \\cr &= 2 + \\dfrac{77}{960} \\cr &= \\dfrac{1997}{960} \\end{aligned}",
+      "<strong>Part (d): Overestimate vs Underestimate</strong><br><br>The next term in the binomial expansion of $\\left(1 + \\frac{x^2}{4}\\right)^{1/2}$ is:\\begin{aligned} 2 \\times \\dfrac{\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right)\\left(-\\frac{3}{2}\\right)}{3!}\\left(\\dfrac{x^2}{4}\\right)^3 &= +\\dfrac{x^6}{512} > 0 \\end{aligned}Since the next omitted term is strictly positive on the interval $(0, 1)$, truncating the series omits positive area, meaning our approximation is an <strong>underestimate</strong>.",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } 2 + \\dfrac{x^2}{4} - \\dfrac{x^4}{64} \\cr &\\textbf{(b) } -2 < x < 2 \\cr &\\textbf{(c) } \\dfrac{1997}{960} \\cr &\\textbf{(d) } \\text{Underestimate} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 2 + \\dfrac{x^2}{4} - \\dfrac{x^4}{64} \\cr &\\textbf{(b) } -2 < x < 2 \\cr &\\textbf{(c) } \\dfrac{1997}{960} \\cr &\\textbf{(d) } \\text{Overestimate} \\end{aligned}",
+        "feedback": "Check Part (d): the term after $-\\frac{x^4}{64}$ is positive: $+\\frac{x^6}{512}$. Because the next omitted term adds a positive value over the interval $[0, 1]$, truncating before it makes the approximation smaller than the true value (an underestimate)."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 2 + \\dfrac{x^2}{4} + \\dfrac{x^4}{64} \\cr &\\textbf{(b) } -2 < x < 2 \\cr &\\textbf{(c) } \\dfrac{2003}{960} \\cr &\\textbf{(d) } \\text{Underestimate} \\end{aligned}",
+        "feedback": "Check the sign of the $x^4$ term: $\\left(\\frac{1}{2}\\right)\\left(-\\frac{1}{2}\\right) = -\\frac{1}{4}$, which produces a negative term: $-\\frac{x^4}{64}$, not $+\\frac{x^4}{64}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } 2 + \\dfrac{x^2}{4} - \\dfrac{x^4}{64} \\cr &\\textbf{(b) } -4 < x < 4 \\cr &\\textbf{(c) } \\dfrac{1997}{960} \\cr &\\textbf{(d) } \\text{Underestimate} \\end{aligned}",
+        "feedback": "Check the validity range: $\\frac{x^2}{4} < 1 \\implies x^2 < 4$. Taking the square root gives $|x| < 2$ (or $-2 < x < 2$), not $|x| < 4$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Determining Over/Underestimates",
+      "content": "To determine whether a truncated series integral is an overestimate or underestimate, look at the very first omitted term. If the next term is positive across the limits of integration, you have left out positive area, making the result an underestimate. If negative, it is an overestimate."
+    }
+  }
 ];
