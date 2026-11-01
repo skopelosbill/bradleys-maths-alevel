@@ -33,7 +33,213 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // CASCADING TAXONOMY QUERIES (RESPECTS BOARD & LEVEL)
+  // MASTERED QUESTIONS LOOKUP
+  // ==========================================
+
+  Future<Set<String>> getMasteredQuestionIds() async {
+    if (kIsWeb) {
+      return _webAttempts
+          .where((a) => a['first_choice_correct'] == 1 || a['second_choice_correct'] == 1)
+          .map((a) => a['question_id'].toString())
+          .toSet();
+    }
+
+    try {
+      final db = await database;
+      final res = await db.rawQuery(
+        'SELECT DISTINCT question_id FROM user_attempts WHERE first_choice_correct = 1 OR second_choice_correct = 1'
+      );
+      return res.map((row) => row['question_id'].toString()).toSet();
+    } catch (e) {
+      debugPrint("[DB MASTERED LOOKUP ERROR] $e");
+      return {};
+    }
+  }
+
+  // ==========================================
+  // TOPIC & SUBTOPIC MASTERY STATS (RULE B)
+  // ==========================================
+
+  Future<Map<String, Map<String, int>>> getTopicMasteryStats({
+    String? board,
+    String? level,
+    String? branch,
+    String? majorArea,
+  }) async {
+    final masteredIds = await getMasteredQuestionIds();
+    final String? targetLevel = (level == null || level == 'Random')
+        ? null
+        : (level == 'A Level' ? 'A' : (level == 'AS Level' ? 'AS' : level));
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      final Map<String, Map<String, int>> stats = {};
+
+      for (var q in data) {
+        if (branch != null && branch != 'Random' && q['branch'] != branch) continue;
+        if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') continue;
+        if (targetLevel != null && q['level'] != targetLevel) continue;
+        if (board != null && board != 'Random' && q['board'] != board) continue;
+        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) continue;
+
+        final topic = q['topic']?.toString() ?? '';
+        if (topic.isEmpty) continue;
+
+        stats.putIfAbsent(topic, () => {'total': 0, 'mastered': 0});
+        stats[topic]!['total'] = stats[topic]!['total']! + 1;
+        if (masteredIds.contains(q['id']?.toString())) {
+          stats[topic]!['mastered'] = stats[topic]!['mastered']! + 1;
+        }
+      }
+      return stats;
+    }
+
+    final db = await database;
+    List<String> whereClauses = [];
+    List<dynamic> whereArgs = [];
+
+    if (branch != null && branch != 'Random') {
+      whereClauses.add("branch = ?");
+      whereArgs.add(branch);
+    } else {
+      whereClauses.add("branch != 'Comprehension'");
+    }
+    if (targetLevel != null) {
+      whereClauses.add("level = ?");
+      whereArgs.add(targetLevel);
+    }
+    if (board != null && board != 'Random') {
+      whereClauses.add("board = ?");
+      whereArgs.add(board);
+    }
+    if (majorArea != null && majorArea != 'Random') {
+      whereClauses.add("major_area = ?");
+      whereArgs.add(majorArea);
+    }
+
+    final whereString = whereClauses.isNotEmpty ? "WHERE ${whereClauses.join(' AND ')}" : "";
+    final res = await db.rawQuery(
+      'SELECT id, topic FROM questions $whereString',
+      whereArgs,
+    );
+
+    final Map<String, Map<String, int>> stats = {};
+    for (var row in res) {
+      final id = row['id']?.toString() ?? '';
+      final topic = row['topic']?.toString() ?? '';
+      if (topic.isEmpty) continue;
+
+      stats.putIfAbsent(topic, () => {'total': 0, 'mastered': 0});
+      stats[topic]!['total'] = stats[topic]!['total']! + 1;
+      if (masteredIds.contains(id)) {
+        stats[topic]!['mastered'] = stats[topic]!['mastered']! + 1;
+      }
+    }
+    return stats;
+  }
+
+  Future<Map<String, Map<String, int>>> getSubtopicMasteryStats({
+    String? board,
+    String? level,
+    String? branch,
+    String? majorArea,
+    String? topic,
+  }) async {
+    final masteredIds = await getMasteredQuestionIds();
+    final String? targetLevel = (level == null || level == 'Random')
+        ? null
+        : (level == 'A Level' ? 'A' : (level == 'AS Level' ? 'AS' : level));
+
+    List<Map<String, dynamic>> questionsList = [];
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      questionsList = data.where((q) {
+        if (branch != null && branch != 'Random' && q['branch'] != branch) return false;
+        if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') return false;
+        if (targetLevel != null && q['level'] != targetLevel) return false;
+        if (board != null && board != 'Random' && q['board'] != board) return false;
+        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) return false;
+        if (topic != null && topic != 'Random' && q['topic'] != topic) return false;
+        return true;
+      }).toList();
+    } else {
+      final db = await database;
+      List<String> whereClauses = [];
+      List<dynamic> whereArgs = [];
+
+      if (branch != null && branch != 'Random') {
+        whereClauses.add("branch = ?");
+        whereArgs.add(branch);
+      } else {
+        whereClauses.add("branch != 'Comprehension'");
+      }
+      if (targetLevel != null) {
+        whereClauses.add("level = ?");
+        whereArgs.add(targetLevel);
+      }
+      if (board != null && board != 'Random') {
+        whereClauses.add("board = ?");
+        whereArgs.add(board);
+      }
+      if (majorArea != null && majorArea != 'Random') {
+        whereClauses.add("major_area = ?");
+        whereArgs.add(majorArea);
+      }
+      if (topic != null && topic != 'Random') {
+        whereClauses.add("topic = ?");
+        whereArgs.add(topic);
+      }
+
+      final whereString = whereClauses.isNotEmpty ? "WHERE ${whereClauses.join(' AND ')}" : "";
+      questionsList = await db.rawQuery('SELECT id, subtopics FROM questions $whereString', whereArgs);
+    }
+
+    final Map<String, Map<String, int>> stats = {};
+
+    for (var q in questionsList) {
+      final id = q['id']?.toString() ?? '';
+      final raw = q['subtopic'] ?? q['subtopics'];
+      final List<String> subs = [];
+
+      if (raw is List) {
+        for (var item in raw) {
+          final s = item?.toString().trim() ?? '';
+          if (s.isNotEmpty) subs.add(s);
+        }
+      } else if (raw is String && raw.isNotEmpty) {
+        try {
+          final dec = json.decode(raw);
+          if (dec is List) {
+            for (var item in dec) {
+              final s = item?.toString().trim() ?? '';
+              if (s.isNotEmpty) subs.add(s);
+            }
+          }
+        } catch (_) {
+          final parts = raw.split(',');
+          for (var p in parts) {
+            final s = p.trim();
+            if (s.isNotEmpty) subs.add(s);
+          }
+        }
+      }
+
+      final isMastered = masteredIds.contains(id);
+      for (var sub in subs) {
+        stats.putIfAbsent(sub, () => {'total': 0, 'mastered': 0});
+        stats[sub]!['total'] = stats[sub]!['total']! + 1;
+        if (isMastered) {
+          stats[sub]!['mastered'] = stats[sub]!['mastered']! + 1;
+        }
+      }
+    }
+
+    return stats;
+  }
+
+  // ==========================================
+  // CASCADING TAXONOMY QUERIES
   // ==========================================
 
   Future<List<String>> getMajorAreas({String? board, String? level, String? branch}) async {
@@ -223,19 +429,27 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // FETCH QUESTION (STRICT MATCHING, NO SILENT FALLBACK)
+  // FETCH QUESTION (RESPECTS REVISION FILTER)
   // ==========================================
 
-  Future<Map<String, dynamic>?> fetchQuestion(FilterState filter) async {
+  Future<Map<String, dynamic>?> fetchQuestion(
+    FilterState filter, {
+    bool includeMastered = false,
+  }) async {
     final String? targetLevel = filter.isRandomLevel
         ? null
         : (filter.level == 'A Level' ? 'A' : (filter.level == 'AS Level' ? 'AS' : filter.level));
+
+    final Set<String> masteredIds = includeMastered ? {} : await getMasteredQuestionIds();
 
     if (kIsWeb) {
       final data = await _loadWebData();
       if (data.isEmpty) return null;
 
       var matches = data.where((q) {
+        final qId = q['id']?.toString() ?? '';
+        if (!includeMastered && masteredIds.contains(qId)) return false;
+
         if (!filter.isRandomBoard && q['board'] != filter.board) return false;
         if (targetLevel != null && q['level'] != targetLevel) return false;
         if (!filter.isRandomBranch && q['branch'] != filter.branch) return false;
@@ -269,6 +483,16 @@ class DatabaseHelper {
     final db = await database;
     List<String> whereClauses = [];
     List<dynamic> whereArgs = [];
+
+    // Exclude Mastered unless requested
+    if (!includeMastered) {
+      whereClauses.add("""
+        id NOT IN (
+          SELECT DISTINCT question_id FROM user_attempts 
+          WHERE first_choice_correct = 1 OR second_choice_correct = 1
+        )
+      """);
+    }
 
     if (!filter.isRandomBranch) {
       whereClauses.add("branch = ?");
