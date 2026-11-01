@@ -938,161 +938,164 @@ window.ALEVEL_QUESTIONS = [
                 }
         },
         {
-                "id": "004072",
-                "group_id": "004071",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Power Rule"
-                ],
-                "img": false,
-                "question": "$$y = \\dfrac{1}{x^4}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$<br>(b)$$ \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$<br> (c)$$\\dfrac{dy}{dx} = x^{-4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
-                "steps": [
-                        "First, rewrite the expression in index form: $$y = x^{-4}$$",
-                        "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -4$$ \\begin{aligned}\\dfrac{dy}{dx} &= -4x^{-4-1} \\cr&= -4x^{-5}\\end{aligned}",
-                        "Finally, convert the derivative back into fractional form.",
-                        "Final Answer: $$(a) \\dfrac{dy}{dx} = -\\dfrac{4}{x^5}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(b) \\dfrac{dy}{dx} = -\\dfrac{4}{x^3}$$",
-                                "feedback": "This is a common error where the power in the denominator has been decreased by one. When differentiating, you must subtract one from the exponent in index form: $-4 - 1 = -5$, meaning the power of $x$ in the denominator becomes 5."
-                        },
-                        {
-                                "ans": "$$(c) \\dfrac{dy}{dx} = x^{-4}$$",
-                                "feedback": "This is simply the original function rewritten in index form. Remember that you must apply the power rule to differentiate."
-                        },
-                        {
-                                "ans": "$$(d) \\dfrac{dy}{dx} = -\\dfrac{4}{x^4}$$",
-                                "feedback": "You have multiplied by the negative power but forgotten to decrease the exponent of $x$ by one. The index in index form decreases from $-4$ to $-5$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Power Rule",
-                        "content": "Forgetting to decrease the exponent is a typical slip under exam pressure. When dealing with fractions, writing out the index form stage explicitly is probably the safest way to avoid arithmetic slips with negative numbers."
-                }
-        },
-        {
-                "id": "004073",
-                "group_id": "004071",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Power Rule"
-                ],
-                "img": false,
-                "question": "$$y = \\dfrac{1}{x^5}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$ \\dfrac{dy}{dx} = x^{-5}$$<br> (b)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$<br>(d)$$ \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
-                "steps": [
-                        "First, rewrite the expression in index form: $$y = x^{-5}$$",
-                        "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(x^n\\right) = n x^{n-1}$$ where, $$n = -5$$ \\begin{aligned}\\dfrac{dy}{dx} &= -5x^{-5-1} \\cr&= -5x^{-6}\\end{aligned}",
-                        "Finally, convert the derivative back into fractional form.",
-                        "Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{5}{x^6}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(a) \\dfrac{dy}{dx} = x^{-5}$$",
-                                "feedback": "This is simply the original function rewritten in index form. Remember that you must apply the power rule to differentiate."
-                        },
-                        {
-                                "ans": "$$(c) \\dfrac{dy}{dx} = -\\dfrac{5}{x^4}$$",
-                                "feedback": "This error occurs if you decrease the power in the denominator. Subtracting one from the negative index gives $-5 - 1 = -6$, so the power of $x$ in the denominator should be 6."
-                        },
-                        {
-                                "ans": "$$(d) \\dfrac{dy}{dx} = -\\dfrac{5}{x^5}$$",
-                                "feedback": "You have multiplied by the exponent but did not decrease the power of $x$. The power must change from $-5$ to $-6$."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Systematic Differentiation",
-                        "content": "A systematic approach is essential. Write down the function in index form, perform the differentiation on paper, and only then simplify back into fraction form. Trying to do this mentally leads to sign and index errors."
-                }
-        },
-        {
-                "id": "004074",
-                "group_id": "004071",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Power Rule"
-                ],
-                "img": false,
-                "question": "$$y = \\dfrac{2}{x^3}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$ \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$<br>(b)$$ \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$<br> (c)$$ \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$<br> (d) $$\\dfrac{dy}{dx} = 2x^{-3}$$",
-                "steps": [
-                        "First, rewrite the expression in index form: $$y = 2x^{-3}$$",
-                        "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = 2$$ and $$n = -3$$ \\begin{aligned}\\dfrac{dy}{dx} &= 2 \\times \\left(-3\\right)x^{-3-1} \\cr&= -6x^{-4}\\end{aligned}",
-                        "Finally, convert the derivative back into fractional form.",
-                        "Final Answer: $$(b) \\dfrac{dy}{dx} = -\\dfrac{6}{x^4}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(a) \\dfrac{dy}{dx} = -\\dfrac{6}{x^2}$$",
-                                "feedback": "This incorrect answer arises from reducing the power in the denominator. When differentiating, subtracting one from the negative exponent of $-3$ gives $-4$, resulting in a denominator power of 4."
-                        },
-                        {
-                                "ans": "$$(c) \\dfrac{dy}{dx} = -\\dfrac{2}{x^4}$$",
-                                "feedback": "It seems you differentiated the $x^{-3}$ component to get $-3x^{-4}$ but forgot to multiply by the original constant coefficient of 2."
-                        },
-                        {
-                                "ans": "$$(d) \\dfrac{dy}{dx} = 2x^{-3}$$",
-                                "feedback": "This is the original function written in index form. It has not yet been differentiated."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "caution",
-                        "title": "The Head Teacher's Eye: Coefficient Handling",
-                        "content": "When there is a constant coefficient in the numerator, make sure it is multiplied by the exponent brought down. It is a common mistake to either replace the constant or completely ignore it during the power rule application."
-                }
-        },
-        {
-                "id": "004075",
-                "group_id": "004071",
-                "board": "AQA",
-                "branch": "Pure",
-                "level": "AS",
-                "major_area": "Differentiation",
-                "topic": "Differentiation",
-                "subtopic": [
-                        "Power Rule"
-                ],
-                "img": false,
-                "question": "$$y = \\dfrac{1}{2x^2}$$Find an expression for $$\\dfrac{dy}{dx}$$<br><br>Choose the correct answer from the options below:<br><br>(a)$$\\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}$$<br> (b)$$\\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$<br>(c)$$ \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$<br>(d)$$\\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
-                "steps": [
-                        "First, rewrite the expression in index form: $$y = \\dfrac{1}{2}x^{-2}$$",
-                        "Next, apply the standard rule for differentiation, $$\\dfrac{\\text{d}}{\\text{d}x}\\left(a x^n\\right) = a n x^{n-1}$$ where, $$a = \\dfrac{1}{2}$$ and $$n = -2$$ \\begin{aligned}\\dfrac{dy}{dx} &= \\dfrac{1}{2} \\times \\left(-2\\right)x^{-2-1} \\cr&= -1x^{-3}\\end{aligned}",
-                        "Finally, convert the derivative back into fractional form.",
-                        "Final Answer: $$(c) \\dfrac{dy}{dx} = -\\dfrac{1}{x^3}$$"
-                ],
-                "pi_options": [
-                        {
-                                "ans": "$$(a) \\dfrac{dy}{dx} = -\\dfrac{1}{4x^3}$$",
-                                "feedback": "This error probably arises from trying to differentiate the denominator directly, which is incorrect. Always convert the entire term to index form first."
-                        },
-                        {
-                                "ans": "$$(b) \\dfrac{dy}{dx} = -\\dfrac{1}{x^2}$$",
-                                "feedback": "This error is caused by decreasing the denominator power. Remember that differentiating $x^{-2}$ decreases the power to $-3$, which means the power in the denominator becomes 3."
-                        },
-                        {
-                                "ans": "$$(d) \\dfrac{dy}{dx} = \\dfrac{1}{2}x^{-2}$$",
-                                "feedback": "This is simply the original function written in index form. You must apply the power rule to differentiate."
-                        }
-                ],
-                "bradley_insight": {
-                        "type": "pro-tip",
-                        "title": "The Head Teacher's Eye: Separating Coefficients",
-                        "content": "When a constant is in the denominator of an algebraic term, rewrite it clearly as a fractional coefficient (such as 1/2) rather than keeping it grouped with the variable. This prevents differentiation mistakes in the denominator."
-                }
-        },
+    "id": "004072",
+    "group_id": "004071",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Power Rule"
+    ],
+    "img": false,
+    "question": "A curve has the equation:$$y = \\dfrac{6}{\\sqrt{x}} \\quad (x > 0)$$Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$, giving your answer in the form $-\\dfrac{a}{x\\sqrt{x}}$ where $a$ is a constant.",
+    "steps": [
+      "<strong>Step 1: Rewrite in index form</strong><br><br>Convert the surd into a negative fractional power:\\begin{aligned} y &= 6x^{-\\frac{1}{2}} \\end{aligned}",
+      "<strong>Step 2: Apply the power rule</strong><br><br>Multiply by the power and subtract $1$:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 6\\left(-\\dfrac{1}{2}\\right)x^{-\\frac{1}{2} - 1} \\cr &= -3x^{-\\frac{3}{2}} \\end{aligned}",
+      "<strong>Step 3: Convert back to surd form</strong><br><br>Express $x^{-\\frac{3}{2}}$ with positive indices in the denominator:\\begin{aligned} x^{-\\frac{3}{2}} &= \\dfrac{1}{x^{\\frac{3}{2}}} \\cr &= \\dfrac{1}{x^1 \\cdot x^{\\frac{1}{2}}} \\cr &= \\dfrac{1}{x\\sqrt{x}} \\end{aligned}Therefore:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= -\\dfrac{3}{x\\sqrt{x}} \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{3}{x\\sqrt{x}} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{3}{\\sqrt{x}} \\end{aligned}",
+        "feedback": "Check your exponent subtraction: $-\\frac{1}{2} - 1 = -\\frac{3}{2}$, not $-\\frac{1}{2}$. The power of $x$ in the denominator must be $\\frac{3}{2}$, which is $x\\sqrt{x}$."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3}{x\\sqrt{x}} \\end{aligned}",
+        "feedback": "Don't forget the negative sign from the power rule: multiplying by the exponent $-\\frac{1}{2}$ introduces a negative coefficient: $6 \\times \\left(-\\frac{1}{2}\\right) = -3$."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{6}{x\\sqrt{x}} \\end{aligned}",
+        "feedback": "Remember to multiply the existing coefficient (6) by the power $\\left(-\\frac{1}{2}\\right)$. Multiplying gives $-3$, not $-6$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Fractional Index Subtraction",
+      "content": "A frequent exam slip with terms like $x^{-1/2}$ is writing $-1/2 - 1 = +1/2$ or $0$. Always sketch a mental number line: moving 1 unit left from $-0.5$ lands at $-1.5 = -3/2$."
+    }
+  },
+  {
+    "id": "004073",
+    "group_id": "004071",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Power Rule"
+    ],
+    "img": false,
+    "question": "A curve has the equation:$$y = \\dfrac{4x^3 - 5}{2x^2} \\quad (x \\ne 0)$$Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$.",
+    "steps": [
+      "<strong>Step 1: Divide each term separately</strong><br><br>Before differentiating, split the numerator over the single denominator:\\begin{aligned} y &= \\dfrac{4x^3}{2x^2} - \\dfrac{5}{2x^2} \\cr &= 2x - \\dfrac{5}{2}x^{-2} \\end{aligned}",
+      "<strong>Step 2: Differentiate term by term</strong><br><br>Apply the power rule to each term:\\begin{aligned} \\dfrac{\\text{d}}{\\text{d}x}(2x) &= 2 \\cr \\dfrac{\\text{d}}{\\text{d}x}\\left(-\\dfrac{5}{2}x^{-2}\\right) &= -\\dfrac{5}{2}(-2x^{-3}) \\cr &= +5x^{-3} \\end{aligned}",
+      "<strong>Step 3: Combine and format</strong><br><br>Combine the results and write in fractional form:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 2 + 5x^{-3} \\cr &= 2 + \\dfrac{5}{x^3} \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 2 + \\dfrac{5}{x^3} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 2 - \\dfrac{5}{x^3} \\end{aligned}",
+        "feedback": "Watch your negative signs carefully! Multiplying $-\\frac{5}{2}$ by the exponent $-2$ gives a positive coefficient: $\\left(-\\frac{5}{2}\\right) \\times (-2) = +5$."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 3x \\end{aligned}",
+        "feedback": "You cannot differentiate the top and bottom of a fraction separately! $\\frac{\\frac{\\text{d}}{\\text{d}x}(4x^3-5)}{\\frac{\\text{d}}{\\text{d}x}(2x^2)} = \\frac{12x^2}{4x} = 3x$ is a serious algebraic fallacy. You must divide each term by $2x^2$ first."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = 2 + \\dfrac{5}{x} \\end{aligned}",
+        "feedback": "When differentiating $x^{-2}$, subtract 1 from the power: $-2 - 1 = -3$. This produces an $x^3$ term in the denominator, not $x$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: The Quotient Fallacy",
+      "content": "At AS Level, students who haven't yet learned the Quotient Rule often invent their own 'rule' by differentiating numerator and denominator independently. Whenever the denominator is a single term, always divide each term in the numerator by it first."
+    }
+  },
+  {
+    "id": "004074",
+    "group_id": "004071",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Power Rule"
+    ],
+    "img": false,
+    "question": "A curve has the equation:$$y = \\sqrt{x}(3x - 4) \\quad (x > 0)$$Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$, giving your answer in the form $\\dfrac{a\\sqrt{x}}{2} - \\dfrac{b}{\\sqrt{x}}$ where $a$ and $b$ are integers.",
+    "steps": [
+      "<strong>Step 1: Expand the brackets</strong><br><br>Rewrite $\\sqrt{x}$ as $x^{\\frac{1}{2}}$ and multiply through:\\begin{aligned} y &= x^{\\frac{1}{2}}(3x^1 - 4) \\cr &= 3x^{\\frac{1}{2} + 1} - 4x^{\\frac{1}{2}} \\cr &= 3x^{\\frac{3}{2}} - 4x^{\\frac{1}{2}} \\end{aligned}",
+      "<strong>Step 2: Differentiate term by term</strong><br><br>Apply the power rule:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 3\\left(\\dfrac{3}{2}\\right)x^{\\frac{3}{2} - 1} - 4\\left(\\dfrac{1}{2}\\right)x^{\\frac{1}{2} - 1} \\cr &= \\dfrac{9}{2}x^{\\frac{1}{2}} - 2x^{-\\frac{1}{2}} \\end{aligned}",
+      "<strong>Step 3: Convert to surds</strong><br><br>Express in surd notation:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= \\dfrac{9\\sqrt{x}}{2} - \\dfrac{2}{\\sqrt{x}} \\end{aligned}Comparing with the required form gives $a = 9$ and $b = 2$.",
+      "<strong>Final Answer:</strong>\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{9\\sqrt{x}}{2} - \\dfrac{2}{\\sqrt{x}} \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{3}{2\\sqrt{x}} \\end{aligned}",
+        "feedback": "You cannot differentiate $\\sqrt{x}$ and $(3x-4)$ separately and multiply them! That is a product fallacy. Expand the brackets first to obtain $3x^{3/2} - 4x^{1/2}$ before differentiating."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{9\\sqrt{x}}{2} + \\dfrac{2}{\\sqrt{x}} \\end{aligned}",
+        "feedback": "Check your sign on the second term: differentiating $-4x^{1/2}$ gives $-4\\left(\\frac{1}{2}\\right)x^{-1/2} = -2x^{-1/2}$, so the sign remains negative."
+      },
+      {
+        "ans": "\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{9}{2\\sqrt{x}} - \\dfrac{2}{\\sqrt{x}} \\end{aligned}",
+        "feedback": "Check the power on the first term: subtracting 1 from $\\frac{3}{2}$ gives $\\frac{3}{2} - 1 = +\\frac{1}{2}$, so the first term is $x^{1/2} = \\sqrt{x}$ in the numerator, not denominator."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Expanding Before Differentiating",
+      "content": "At AS Level, whenever you see a product involving surds or brackets like $\\sqrt{x}(3x - 4)$, always expand the brackets into individual powers of $x$ first. The Product Rule is Year 2 content; AS questions are designed to test your laws of indices."
+    }
+  },
+  {
+    "id": "004075",
+    "group_id": "004071",
+    "board": "AQA",
+    "branch": "Pure",
+    "level": "AS",
+    "major_area": "Differentiation",
+    "topic": "Differentiation",
+    "subtopic": [
+      "Power Rule",
+      "Tangents and Normals"
+    ],
+    "img": false,
+    "question": "A curve $C$ has the equation:$$y = \\dfrac{16}{x} + x\\sqrt{x} \\quad (x > 0)$$<strong>(a)</strong> Find an expression for $\\dfrac{\\text{d}y}{\\text{d}x}$.<br><br><strong>(b)</strong> Find the equation of the tangent to $C$ at the point where $x = 4$, giving your answer in the form $y = mx + c$.",
+    "steps": [
+      "<strong>Part (a): Differentiating the expression</strong><br><br>Rewrite both terms in index form:\\begin{aligned} y &= 16x^{-1} + x^1 \\cdot x^{\\frac{1}{2}} \\cr &= 16x^{-1} + x^{\\frac{3}{2}} \\end{aligned}",
+      "Apply the power rule to both terms:\\begin{aligned} \\dfrac{\\text{d}y}{\\text{d}x} &= 16(-1x^{-2}) + \\dfrac{3}{2}x^{\\frac{3}{2} - 1} \\cr &= -16x^{-2} + \\dfrac{3}{2}x^{\\frac{1}{2}} \\cr &= -\\dfrac{16}{x^2} + \\dfrac{3\\sqrt{x}}{2} \\end{aligned}",
+      "<strong>Part (b): Finding the tangent equation</strong><br><br>First, find the $y$-coordinate when $x = 4$:\\begin{aligned} y &= \\dfrac{16}{4} + 4\\sqrt{4} \\cr &= 4 + 4(2) \\cr &= 12 \\end{aligned}So the point on the curve is $(4, 12)$.",
+      "Next, evaluate the gradient at $x = 4$:\\begin{aligned} m &= -\\dfrac{16}{4^2} + \\dfrac{3\\sqrt{4}}{2} \\cr &= -\\dfrac{16}{16} + \\dfrac{3(2)}{2} \\cr &= -1 + 3 \\cr &= 2 \\end{aligned}",
+      "Use the point-slope formula with $(4, 12)$ and $m = 2$:\\begin{aligned} y - 12 &= 2(x - 4) \\cr y - 12 &= 2x - 8 \\cr y &= 2x + 4 \\end{aligned}",
+      "<strong>Final Answer:</strong>\\begin{aligned} &\\textbf{(a) } \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{16}{x^2} + \\dfrac{3\\sqrt{x}}{2} \\cr &\\textbf{(b) } y = 2x + 4 \\end{aligned}"
+    ],
+    "pi_options": [
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{16}{x^2} + \\dfrac{3\\sqrt{x}}{2} \\cr &\\textbf{(b) } y = 4x - 4 \\end{aligned}",
+        "feedback": "Check your sign when differentiating $16x^{-1}$. Multiplying by $-1$ gives $-16x^{-2} = -\\frac{16}{x^2}$. A sign error here gives an incorrect gradient of $1 + 3 = 4$ at $x = 4$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{16}{x^2} + \\dfrac{3\\sqrt{x}}{2} \\cr &\\textbf{(b) } y = -\\dfrac{1}{2}x + 14 \\end{aligned}",
+        "feedback": "You have calculated the equation of the normal instead of the tangent! The tangent uses the gradient $m = 2$ directly, not the perpendicular gradient $-\\frac{1}{2}$."
+      },
+      {
+        "ans": "\\begin{aligned} &\\textbf{(a) } \\dfrac{\\text{d}y}{\\text{d}x} = -\\dfrac{16}{x} + \\dfrac{3\\sqrt{x}}{2} \\cr &\\textbf{(b) } y = -x + 16 \\end{aligned}",
+        "feedback": "Remember to decrease the power of $x^{-1}$ by 1: $-1 - 1 = -2$. This gives $-\\frac{16}{x^2}$, not $-\\frac{16}{x}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Combining Term Types",
+      "content": "This question brings together two staple AS skills: converting fractional/negative terms ($16x^{-1}$ and $x^{3/2}$) into index form, and finding geometric tangent equations. Always calculate the $y$-coordinate first so you don't lose track of your coordinates."
+    }
+  },
         {
                 "id": "004076",
                 "group_id": "004076",
