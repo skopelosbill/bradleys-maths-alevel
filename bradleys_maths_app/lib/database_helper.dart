@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'models/filter_state.dart';
+import 'models/honour_item.dart';
 
 class DatabaseHelper {
   static Database? _db;
@@ -54,6 +55,154 @@ class DatabaseHelper {
       debugPrint("[DB MASTERED LOOKUP ERROR] $e");
       return {};
     }
+  }
+
+  // ==========================================
+  // HONOURS MATRIX PROGRESSION (24 HONOURS)
+  // ==========================================
+
+  Future<List<HonourItem>> getHonoursProgress() async {
+    final honours = HonoursRoster.getDefaultHonours();
+    final stats = await getUserStats();
+    final totalAttempts = stats['total_attempts'] ?? 0;
+    final firstTryCorrect = stats['first_try_correct'] ?? 0;
+    final accuracy = totalAttempts > 0 ? ((firstTryCorrect / totalAttempts) * 100).round() : 0;
+
+    List<Map<String, dynamic>> masteredQuestions = [];
+
+    if (kIsWeb) {
+      final masteredIds = await getMasteredQuestionIds();
+      final allData = await _loadWebData();
+      masteredQuestions = allData
+          .where((q) => masteredIds.contains(q['id']?.toString()))
+          .toList();
+    } else {
+      try {
+        final db = await database;
+        masteredQuestions = await db.rawQuery('''
+          SELECT q.id, q.board, q.branch, q.major_area, q.topic
+          FROM questions q
+          JOIN (
+            SELECT DISTINCT question_id FROM user_attempts 
+            WHERE first_choice_correct = 1 OR second_choice_correct = 1
+          ) ua ON q.id = ua.question_id
+        ''');
+      } catch (e) {
+        debugPrint("[HONOURS QUERY ERROR] $e");
+      }
+    }
+
+    // Tally sets for distinct question tracking
+    final Map<String, Set<String>> tally = {
+      'leibniz': {},
+      'newton_calc': {},
+      'euler_series': {},
+      'descartes': {},
+      'argand_vectors': {},
+      'hypatia': {},
+      'ramanujan': {},
+      'archimedes_num': {},
+      'de_morgan_proof': {},
+      'pure_grandmaster': {},
+
+      'galileo': {},
+      'newton_principia': {},
+      'archimedes_lever': {},
+      'ballistics': {},
+      'vector_mechanics': {},
+      'mechanics_master': {},
+
+      'gauss_normal': {},
+      'bernoulli': {},
+      'fisher_hypothesis': {},
+      'bayes_prob': {},
+      'pearson_regression': {},
+      'stats_master': {},
+    };
+
+    final Map<String, Set<String>> boardMastery = {};
+
+    for (var q in masteredQuestions) {
+      final id = q['id']?.toString() ?? '';
+      final branch = q['branch']?.toString().toLowerCase() ?? '';
+      final area = q['major_area']?.toString().toLowerCase() ?? '';
+      final topic = q['topic']?.toString().toLowerCase() ?? '';
+      final board = q['board']?.toString() ?? '';
+
+      if (id.isEmpty) continue;
+
+      // Board tracking for Agility
+      if (board.isNotEmpty) {
+        boardMastery.putIfAbsent(board, () => {});
+        boardMastery[board]!.add(id);
+      }
+
+      // Pure
+      if (branch == 'pure') {
+        tally['pure_grandmaster']!.add(id);
+        if (area.contains('diff') || topic.contains('diff') || area.contains('calculus') || topic.contains('calculus')) {
+          if (area.contains('diff') || topic.contains('diff')) tally['leibniz']!.add(id);
+        }
+        if (area.contains('integ') || topic.contains('integ')) tally['newton_calc']!.add(id);
+        if (area.contains('series') || topic.contains('series') || area.contains('binomial') || topic.contains('binomial') || area.contains('sequence')) {
+          tally['euler_series']!.add(id);
+        }
+        if (area.contains('coordinate') || topic.contains('coordinate') || area.contains('parametric') || topic.contains('parametric') || area.contains('curve')) {
+          tally['descartes']!.add(id);
+        }
+        if (area.contains('vector') || topic.contains('vector')) tally['argand_vectors']!.add(id);
+        if (area.contains('function') || topic.contains('function')) tally['hypatia']!.add(id);
+        if (area.contains('trig') || topic.contains('trig')) tally['ramanujan']!.add(id);
+        if (area.contains('numerical') || topic.contains('numerical') || topic.contains('iteration')) tally['archimedes_num']!.add(id);
+        if (area.contains('proof') || topic.contains('proof')) tally['de_morgan_proof']!.add(id);
+      }
+
+      // Mechanics
+      if (branch == 'mechanics') {
+        tally['mechanics_master']!.add(id);
+        if (area.contains('kinematics') || topic.contains('kinematics') || topic.contains('acceleration')) tally['galileo']!.add(id);
+        if (area.contains('dynamics') || topic.contains('dynamics') || area.contains('newton') || topic.contains('newton') || area.contains('forces')) {
+          tally['newton_principia']!.add(id);
+        }
+        if (area.contains('statics') || topic.contains('statics') || area.contains('moments') || topic.contains('moments') || area.contains('equilibrium')) {
+          tally['archimedes_lever']!.add(id);
+        }
+        if (area.contains('projectile') || topic.contains('projectile')) tally['ballistics']!.add(id);
+        if (area.contains('vector') || topic.contains('vector')) tally['vector_mechanics']!.add(id);
+      }
+
+      // Statistics
+      if (branch == 'statistics') {
+        tally['stats_master']!.add(id);
+        if (area.contains('normal') || topic.contains('normal')) tally['gauss_normal']!.add(id);
+        if (area.contains('binomial') || topic.contains('binomial')) tally['bernoulli']!.add(id);
+        if (area.contains('hypothesis') || topic.contains('hypothesis')) tally['fisher_hypothesis']!.add(id);
+        if (area.contains('prob') || topic.contains('prob') || area.contains('venn') || topic.contains('venn')) tally['bayes_prob']!.add(id);
+        if (area.contains('regress') || topic.contains('regress') || area.contains('correl') || topic.contains('correl')) {
+          tally['pearson_regression']!.add(id);
+        }
+      }
+    }
+
+    // Populate each HonourItem
+    for (var h in honours) {
+      if (h.id == 'home_nations') {
+        // Count boards with >= 5 mastered questions
+        int boardsQualified = boardMastery.values.where((set) => set.length >= 5).length;
+        h.currentCount = boardsQualified;
+        h.isUnlocked = boardsQualified >= h.targetCount;
+      } else if (h.id == 'cambridge_standard') {
+        // Requires >= 50 attempts and accuracy >= 75%
+        h.currentCount = accuracy;
+        h.isUnlocked = (totalAttempts >= 50 && accuracy >= 75);
+      } else {
+        final count = tally[h.id]?.length ?? 0;
+        h.currentCount = count;
+        h.isUnlocked = count >= h.targetCount;
+      }
+    }
+
+    return honours;
   }
 
   // ==========================================
@@ -159,7 +308,7 @@ class DatabaseHelper {
         if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') return false;
         if (targetLevel != null && q['level'] != targetLevel) return false;
         if (board != null && board != 'Random' && q['board'] != board) return false;
-        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) return false;
+        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) continue;
         if (topic != null && topic != 'Random' && q['topic'] != topic) return false;
         return true;
       }).toList();
@@ -484,7 +633,6 @@ class DatabaseHelper {
     List<String> whereClauses = [];
     List<dynamic> whereArgs = [];
 
-    // Exclude Mastered unless requested
     if (!includeMastered) {
       whereClauses.add("""
         id NOT IN (

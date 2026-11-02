@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
 import 'question_screen.dart';
+import 'honours_screen.dart';
 
 class SelectionDashboard extends StatefulWidget {
   const SelectionDashboard({super.key});
@@ -137,6 +138,14 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       });
       _loadMasteryForCurrentStep();
     }
+  }
+
+  void _openHonoursScreen() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => HonoursScreen(dbHelper: _dbHelper),
+      ),
+    );
   }
 
   // ----------------------------------------------------
@@ -324,7 +333,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         _loadStats();
         _loadMasteryForCurrentStep();
       } else if (mounted) {
-        // If no question found, check if student completed them all
         if (!_includeMastered && !forceIncludeMastered) {
           final reviewCheck = await _dbHelper.fetchQuestion(_filter, includeMastered: true);
           if (reviewCheck != null && mounted) {
@@ -370,6 +378,12 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               )
             : null,
         actions: [
+          // Mathematical Honours Trophy Shortcut
+          IconButton(
+            icon: const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B)),
+            tooltip: "Honours Matrix",
+            onPressed: _openHonoursScreen,
+          ),
           TextButton.icon(
             icon: const Icon(Icons.bolt, color: Colors.amber, size: 18),
             label: const Text(
@@ -389,7 +403,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Live Stats Ribbon
+                    // Live Stats Ribbon (Tap Mastered to view Honours!)
                     _buildStatsRibbon(),
                     const SizedBox(height: 8),
 
@@ -439,11 +453,15 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       child: Row(
         children: [
           Expanded(
-            child: _buildStatCell(
-              label: "Mastered",
-              value: "$mastered",
-              icon: Icons.check_circle_outline,
-              accentColor: Colors.teal.shade700,
+            child: InkWell(
+              onTap: _openHonoursScreen,
+              borderRadius: BorderRadius.circular(8),
+              child: _buildStatCell(
+                label: "Mastered",
+                value: "$mastered",
+                icon: Icons.check_circle_outline,
+                accentColor: Colors.teal.shade700,
+              ),
             ),
           ),
           Container(width: 1, height: 26, color: Colors.grey.shade200),
