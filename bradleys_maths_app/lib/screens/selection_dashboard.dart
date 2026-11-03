@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
+import '../theme_controller.dart';
 import 'question_screen.dart';
 import 'honours_screen.dart';
 
@@ -237,7 +238,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onSubtopicTapped(String subtopicName) {
     _filter.subtopic = subtopicName == 'Random' ? null : subtopicName;
 
-    // Check if fully mastered and not currently in revision mode
     if (!_includeMastered && subtopicName != 'Random') {
       final stats = _subtopicMastery[subtopicName];
       final total = stats?['total'] ?? 0;
@@ -268,25 +268,45 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // ----------------------------------------------------
 
   Future<void> _showTopicMasteredDialog(String topicTitle) async {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
+        backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.stars, color: Color(0xFF16A34A), size: 24),
-            SizedBox(width: 8),
-            Text("Topic Mastered! 🎉", style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            const Icon(Icons.stars, color: Color(0xFF16A34A), size: 24),
+            const SizedBox(width: 8),
+            Text(
+              "Topic Mastered! 🎉",
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.bold,
+                color: isDark ? Colors.white : Colors.black87,
+              ),
+            ),
           ],
         ),
         content: Text(
           "You have successfully solved all questions in '$topicTitle'.\n\nWould you like to enter Exam Revision Mode to practice them again?",
-          style: const TextStyle(fontSize: 13, height: 1.4, color: Colors.black87),
+          style: TextStyle(
+            fontSize: 13,
+            height: 1.4,
+            color: isDark ? const Color(0xFFCBD5E1) : Colors.black87,
+          ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text("Cancel", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold)),
+            child: Text(
+              "Cancel",
+              style: TextStyle(
+                color: isDark ? Colors.grey.shade400 : Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -329,7 +349,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
             ),
           ),
         );
-        // Refresh live stats & topic completion upon return
         _loadStats();
         _loadMasteryForCurrentStep();
       } else if (mounted) {
@@ -362,22 +381,41 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC),
+      backgroundColor: isDark ? const Color(0xFF0F172A) : const Color(0xFFF8FAFC),
       appBar: AppBar(
-        title: const Text(
-          "Bradley's Maths",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-        ),
+        backgroundColor: isDark ? const Color(0xFF0F172A) : Colors.white,
         elevation: 0,
         centerTitle: true,
+        title: Text(
+          "Bradley's Maths",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: isDark ? Colors.white : const Color(0xFF0F172A),
+          ),
+        ),
         leading: _currentStep > 0
             ? IconButton(
-                icon: const Icon(Icons.arrow_back),
+                icon: Icon(Icons.arrow_back, color: isDark ? Colors.white : Colors.black87),
                 onPressed: _stepBack,
               )
             : null,
         actions: [
+          // Instant Light/Dark Mode Switcher
+          IconButton(
+            icon: Icon(
+              isDark ? Icons.light_mode : Icons.dark_mode_outlined,
+              color: isDark ? Colors.amber : Colors.indigo.shade700,
+              size: 20,
+            ),
+            tooltip: isDark ? "Switch to Daytime Mode" : "Switch to Dark Mode",
+            onPressed: () {
+              themeNotifier.value = isDark ? ThemeMode.light : ThemeMode.dark;
+            },
+          ),
           // Mathematical Honours Trophy Shortcut
           IconButton(
             icon: const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B)),
@@ -386,16 +424,20 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           ),
           TextButton.icon(
             icon: const Icon(Icons.bolt, color: Colors.amber, size: 18),
-            label: const Text(
+            label: Text(
               "Random",
-              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+              style: TextStyle(
+                color: isDark ? Colors.white : Colors.indigo.shade800,
+                fontWeight: FontWeight.bold,
+                fontSize: 13,
+              ),
             ),
             onPressed: _isLoading ? null : _quickRandomAll,
           ),
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: Color(0xFFF59E0B)))
           : Center(
               child: Container(
                 constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
@@ -403,21 +445,21 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Live Stats Ribbon (Tap Mastered to view Honours!)
-                    _buildStatsRibbon(),
+                    // Live Stats Ribbon
+                    _buildStatsRibbon(isDark),
                     const SizedBox(height: 8),
 
                     // Exam Revision Mode Toggle Banner
-                    _buildRevisionToggleBanner(),
+                    _buildRevisionToggleBanner(isDark),
                     const SizedBox(height: 8),
 
                     // Live Breadcrumb Trail
-                    _buildBreadcrumbHeader(),
+                    _buildBreadcrumbHeader(isDark),
                     const SizedBox(height: 12),
 
-                    // Active Step View (Instant Cut)
+                    // Active Step View
                     Expanded(
-                      child: _buildCurrentStepView(),
+                      child: _buildCurrentStepView(isDark),
                     ),
                   ],
                 ),
@@ -430,7 +472,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // LIVE STATS RIBBON (360px MOBILE OPTIMISED)
   // ----------------------------------------------------
 
-  Widget _buildStatsRibbon() {
+  Widget _buildStatsRibbon(bool isDark) {
     final int total = _userStats['total_attempts'] ?? 0;
     final int correct = _userStats['first_try_correct'] ?? 0;
     final int mastered = _userStats['unique_mastered'] ?? 0;
@@ -439,12 +481,14 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: isDark ? const Color(0xFF1E293B) : Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.indigo.shade100),
+        border: Border.all(
+          color: isDark ? const Color(0xFF334155) : Colors.indigo.shade100,
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withAlpha(8),
+            color: Colors.black.withAlpha(isDark ? 60 : 8),
             blurRadius: 4,
             offset: const Offset(0, 2),
           ),
@@ -460,26 +504,37 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 label: "Mastered",
                 value: "$mastered",
                 icon: Icons.check_circle_outline,
-                accentColor: Colors.teal.shade700,
+                accentColor: isDark ? const Color(0xFF34D399) : Colors.teal.shade700,
+                isDark: isDark,
               ),
             ),
           ),
-          Container(width: 1, height: 26, color: Colors.grey.shade200),
+          Container(
+            width: 1,
+            height: 26,
+            color: isDark ? const Color(0xFF334155) : Colors.grey.shade200,
+          ),
           Expanded(
             child: _buildStatCell(
               label: "1st-Try Acc.",
               value: "$accuracy%",
               icon: Icons.track_changes,
-              accentColor: Colors.indigo.shade700,
+              accentColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+              isDark: isDark,
             ),
           ),
-          Container(width: 1, height: 26, color: Colors.grey.shade200),
+          Container(
+            width: 1,
+            height: 26,
+            color: isDark ? const Color(0xFF334155) : Colors.grey.shade200,
+          ),
           Expanded(
             child: _buildStatCell(
               label: "Attempts",
               value: "$total",
               icon: Icons.history,
-              accentColor: Colors.deepPurple.shade700,
+              accentColor: isDark ? const Color(0xFFC084FC) : Colors.deepPurple.shade700,
+              isDark: isDark,
             ),
           ),
         ],
@@ -492,6 +547,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     required String value,
     required IconData icon,
     required Color accentColor,
+    required bool isDark,
   }) {
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -517,7 +573,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           style: TextStyle(
             fontSize: 10,
             fontWeight: FontWeight.w600,
-            color: Colors.grey.shade600,
+            color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
           ),
         ),
       ],
@@ -528,22 +584,36 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // EXAM REVISION MODE TOGGLE (328px USABLE WIDTH)
   // ----------------------------------------------------
 
-  Widget _buildRevisionToggleBanner() {
+  Widget _buildRevisionToggleBanner(bool isDark) {
+    Color bannerBg;
+    Color bannerBorder;
+    Color bannerText;
+
+    if (_includeMastered) {
+      bannerBg = isDark ? const Color(0xFF064E3B).withAlpha(50) : const Color(0xFFF0FDF4);
+      bannerBorder = isDark ? const Color(0xFF059669) : const Color(0xFF16A34A);
+      bannerText = isDark ? const Color(0xFF6EE7B7) : const Color(0xFF15803D);
+    } else {
+      bannerBg = isDark ? const Color(0xFF1E293B) : Colors.white;
+      bannerBorder = isDark ? const Color(0xFF334155) : Colors.grey.shade300;
+      bannerText = isDark ? Colors.white : Colors.black87;
+    }
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: _includeMastered ? const Color(0xFFF0FDF4) : Colors.white,
+        color: bannerBg,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: _includeMastered ? const Color(0xFF16A34A) : Colors.grey.shade300,
-        ),
+        border: Border.all(color: bannerBorder),
       ),
       child: Row(
         children: [
           Icon(
             _includeMastered ? Icons.autorenew : Icons.filter_alt_outlined,
             size: 16,
-            color: _includeMastered ? const Color(0xFF15803D) : Colors.indigo.shade700,
+            color: _includeMastered
+                ? (isDark ? const Color(0xFF34D399) : const Color(0xFF15803D))
+                : (isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700),
           ),
           const SizedBox(width: 8),
           Expanded(
@@ -552,7 +622,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               style: TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.bold,
-                color: _includeMastered ? const Color(0xFF15803D) : Colors.black87,
+                color: bannerText,
               ),
             ),
           ),
@@ -575,7 +645,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // BREADCRUMB HEADER
   // ----------------------------------------------------
 
-  Widget _buildBreadcrumbHeader() {
+  Widget _buildBreadcrumbHeader(bool isDark) {
     List<String> crumbs = [];
     if (_currentStep > 0) crumbs.add(_filter.board ?? 'Any Board');
     if (_currentStep > 1) crumbs.add(_filter.level ?? 'Any Level');
@@ -586,13 +656,19 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: isDark ? const Color(0xFF1E293B) : Colors.white,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: Colors.grey.shade300),
+        border: Border.all(
+          color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+        ),
       ),
       child: Row(
         children: [
-          Icon(Icons.tune, size: 16, color: Colors.indigo.shade700),
+          Icon(
+            Icons.tune,
+            size: 16,
+            color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+          ),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
@@ -600,7 +676,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: crumbs.isEmpty ? Colors.grey.shade600 : Colors.indigo.shade900,
+                color: crumbs.isEmpty
+                    ? (isDark ? Colors.grey.shade400 : Colors.grey.shade600)
+                    : (isDark ? Colors.white : Colors.indigo.shade900),
               ),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
@@ -611,7 +689,11 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               onTap: () => setState(() => _currentStep = 0),
               child: Text(
                 "Reset",
-                style: TextStyle(fontSize: 11, color: Colors.red.shade700, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 11,
+                  color: isDark ? const Color(0xFFF87171) : Colors.red.shade700,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
         ],
@@ -620,10 +702,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // STEP ROUTER (INSTANT VIEWS)
+  // STEP ROUTER
   // ----------------------------------------------------
 
-  Widget _buildCurrentStepView() {
+  Widget _buildCurrentStepView(bool isDark) {
     switch (_currentStep) {
       case 0:
         return _buildStep(
@@ -633,6 +715,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           items: _boards,
           onSelected: _onBoardTapped,
           activeItem: _filter.board,
+          isDark: isDark,
         );
       case 1:
         return _buildStep(
@@ -642,9 +725,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           items: _levels,
           onSelected: _onLevelTapped,
           activeItem: _filter.level,
+          isDark: isDark,
         );
       case 2:
-        return _buildBranchStep();
+        return _buildBranchStep(isDark);
       case 3:
         return _buildStep(
           stepNumber: "Step 4 of 6",
@@ -653,6 +737,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           items: _majorAreas,
           onSelected: _onMajorAreaTapped,
           activeItem: _filter.majorArea,
+          isDark: isDark,
         );
       case 4:
         return _buildStep(
@@ -663,6 +748,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           onSelected: _onTopicTapped,
           activeItem: _filter.topic,
           masteryData: _topicMastery,
+          isDark: isDark,
         );
       case 5:
         return _buildStep(
@@ -673,6 +759,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           onSelected: _onSubtopicTapped,
           activeItem: _filter.subtopic,
           masteryData: _subtopicMastery,
+          isDark: isDark,
         );
       default:
         return const SizedBox.shrink();
@@ -680,7 +767,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // GENERIC STEP LIST BUILDER (WITH RULE B GREEN MASTERY)
+  // GENERIC STEP LIST BUILDER (HIGH CONTRAST & ADAPTIVE)
   // ----------------------------------------------------
 
   Widget _buildStep({
@@ -691,22 +778,35 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     required Function(String) onSelected,
     String? activeItem,
     Map<String, Map<String, int>>? masteryData,
+    required bool isDark,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
           stepNumber.toUpperCase(),
-          style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.indigo.shade600, letterSpacing: 1),
+          style: TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.bold,
+            color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade600,
+            letterSpacing: 1,
+          ),
         ),
         const SizedBox(height: 2),
         Text(
           title,
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87),
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: isDark ? Colors.white : const Color(0xFF0F172A),
+          ),
         ),
         Text(
           subtitle,
-          style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+          style: TextStyle(
+            fontSize: 12,
+            color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+          ),
         ),
         const SizedBox(height: 14),
 
@@ -719,27 +819,52 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               final isRandom = item == 'Random';
               final isCurrent = (activeItem ?? 'Random') == item;
 
-              // Rule B Mastery Calculation
               final stats = (masteryData != null && !isRandom) ? masteryData[item] : null;
               final total = stats?['total'] ?? 0;
               final mastered = stats?['mastered'] ?? 0;
               final isCompleted = total > 0 && mastered == total;
 
-              // Visual styling
-              Color cardBg = Colors.white;
-              Color borderColor = Colors.grey.shade300;
-              Color textColor = Colors.black87;
+              // High-Contrast Theme Colors
+              Color cardBg;
+              Color borderColor;
+              Color textColor;
 
-              if (isRandom) {
-                cardBg = Colors.indigo.shade50;
-                borderColor = Colors.indigo.shade300;
-                textColor = Colors.indigo.shade900;
-              } else if (isCompleted) {
-                cardBg = const Color(0xFFF0FDF4); // Soft Emerald
-                borderColor = const Color(0xFF86EFAC); // Mint Green border
-                textColor = const Color(0xFF14532D); // Deep Green text
-              } else if (isCurrent) {
-                borderColor = Colors.indigo.shade600;
+              if (isDark) {
+                if (isRandom) {
+                  cardBg = const Color(0xFF1E1B4B);
+                  borderColor = const Color(0xFF4338CA);
+                  textColor = const Color(0xFFC7D2FE);
+                } else if (isCompleted) {
+                  cardBg = const Color(0xFF064E3B).withAlpha(60);
+                  borderColor = const Color(0xFF059669);
+                  textColor = const Color(0xFF6EE7B7);
+                } else if (isCurrent) {
+                  cardBg = const Color(0xFF1E293B);
+                  borderColor = const Color(0xFF818CF8);
+                  textColor = Colors.white;
+                } else {
+                  cardBg = const Color(0xFF1E293B);
+                  borderColor = const Color(0xFF334155);
+                  textColor = Colors.white;
+                }
+              } else {
+                if (isRandom) {
+                  cardBg = Colors.indigo.shade50;
+                  borderColor = Colors.indigo.shade300;
+                  textColor = Colors.indigo.shade900;
+                } else if (isCompleted) {
+                  cardBg = const Color(0xFFF0FDF4);
+                  borderColor = const Color(0xFF86EFAC);
+                  textColor = const Color(0xFF14532D);
+                } else if (isCurrent) {
+                  cardBg = Colors.white;
+                  borderColor = Colors.indigo.shade600;
+                  textColor = Colors.black87;
+                } else {
+                  cardBg = Colors.white;
+                  borderColor = Colors.grey.shade300;
+                  textColor = Colors.black87;
+                }
               }
 
               return Material(
@@ -760,7 +885,11 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                     child: Row(
                       children: [
                         if (isRandom) ...[
-                          Icon(Icons.shuffle, color: Colors.indigo.shade700, size: 20),
+                          Icon(
+                            Icons.shuffle,
+                            color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                            size: 20,
+                          ),
                           const SizedBox(width: 10),
                         ],
                         Expanded(
@@ -773,26 +902,32 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                             ),
                           ),
                         ),
-                        // Mastery Indicator Badges
+                        // Mastery Badges
                         if (isCompleted) ...[
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
-                              color: const Color(0xFFDCFCE7),
+                              color: isDark ? const Color(0xFF064E3B) : const Color(0xFFDCFCE7),
                               borderRadius: BorderRadius.circular(6),
-                              border: Border.all(color: const Color(0xFF86EFAC)),
+                              border: Border.all(
+                                color: isDark ? const Color(0xFF059669) : const Color(0xFF86EFAC),
+                              ),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                const Icon(Icons.check, size: 12, color: Color(0xFF15803D)),
+                                Icon(
+                                  Icons.check,
+                                  size: 12,
+                                  color: isDark ? const Color(0xFF34D399) : const Color(0xFF15803D),
+                                ),
                                 const SizedBox(width: 2),
                                 Text(
                                   "$mastered/$total",
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xFF15803D),
+                                    color: isDark ? const Color(0xFF34D399) : const Color(0xFF15803D),
                                   ),
                                 ),
                               ],
@@ -802,7 +937,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
-                              color: Colors.grey.shade100,
+                              color: isDark ? const Color(0xFF334155) : Colors.grey.shade100,
                               borderRadius: BorderRadius.circular(6),
                             ),
                             child: Text(
@@ -810,7 +945,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                               style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.grey.shade700,
+                                color: isDark ? Colors.grey.shade300 : Colors.grey.shade700,
                               ),
                             ),
                           ),
@@ -818,7 +953,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                         const SizedBox(width: 4),
                         Icon(
                           Icons.chevron_right,
-                          color: isCompleted ? const Color(0xFF15803D) : Colors.grey.shade400,
+                          color: isCompleted
+                              ? (isDark ? const Color(0xFF34D399) : const Color(0xFF15803D))
+                              : (isDark ? Colors.grey.shade500 : Colors.grey.shade400),
                           size: 20,
                         ),
                       ],
@@ -834,25 +971,37 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // STEP 3: BRANCH STEP (WITH ICONS & DESCRIPTIONS)
+  // STEP 3: BRANCH STEP (MAXIMUM CONTRAST ON ALL SCREENS)
   // ----------------------------------------------------
 
-  Widget _buildBranchStep() {
+  Widget _buildBranchStep(bool isDark) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
           "STEP 3 OF 6",
-          style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.indigo.shade600, letterSpacing: 1),
+          style: TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.bold,
+            color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade600,
+            letterSpacing: 1,
+          ),
         ),
         const SizedBox(height: 2),
-        const Text(
+        Text(
           "Branch of Mathematics",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87),
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: isDark ? Colors.white : const Color(0xFF0F172A),
+          ),
         ),
         Text(
           "Select Pure, Applied, or Random",
-          style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+          style: TextStyle(
+            fontSize: 12,
+            color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+          ),
         ),
         const SizedBox(height: 14),
 
@@ -868,7 +1017,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               final desc = br['desc'] as String;
 
               return Material(
-                color: Colors.white,
+                color: isDark ? const Color(0xFF1E293B) : Colors.white,
                 borderRadius: BorderRadius.circular(12),
                 child: InkWell(
                   onTap: () => _onBranchTapped(name),
@@ -876,7 +1025,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey.shade300),
+                      border: Border.all(
+                        color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+                      ),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
@@ -884,8 +1035,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                         Container(
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            color: color.withAlpha(25),
+                            color: color.withAlpha(isDark ? 45 : 25),
                             borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: color.withAlpha(isDark ? 80 : 40)),
                           ),
                           child: Icon(icon, color: color, size: 24),
                         ),
@@ -896,17 +1048,31 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                             children: [
                               Text(
                                 name,
-                                style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  // MAXIMUM CONTRAST: Deep black in light mode, pure white in dark mode
+                                  color: isDark ? Colors.white : const Color(0xFF0F172A),
+                                ),
                               ),
                               const SizedBox(height: 2),
                               Text(
                                 desc,
-                                style: TextStyle(fontSize: 11, color: Colors.grey.shade600),
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w500,
+                                  // Clear charcoal in light mode, silver in dark mode
+                                  color: isDark ? const Color(0xFF94A3B8) : const Color(0xFF475569),
+                                ),
                               ),
                             ],
                           ),
                         ),
-                        Icon(Icons.chevron_right, color: Colors.grey.shade400, size: 20),
+                        Icon(
+                          Icons.chevron_right,
+                          color: isDark ? Colors.grey.shade500 : Colors.grey.shade400,
+                          size: 20,
+                        ),
                       ],
                     ),
                   ),

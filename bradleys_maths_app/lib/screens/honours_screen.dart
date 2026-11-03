@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../models/honour_item.dart';
 import '../database_helper.dart';
@@ -12,6 +13,7 @@ class HonoursScreen extends StatefulWidget {
 }
 
 class _HonoursScreenState extends State<HonoursScreen> {
+  final ScrollController _scrollController = ScrollController();
   List<HonourItem> _honours = [];
   bool _isLoading = true;
   String _selectedCategory = 'All';
@@ -22,6 +24,12 @@ class _HonoursScreenState extends State<HonoursScreen> {
   void initState() {
     super.initState();
     _loadHonours();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   Future<void> _loadHonours() async {
@@ -81,22 +89,44 @@ class _HonoursScreenState extends State<HonoursScreen> {
                     _buildCategoryFilter(),
                     const SizedBox(height: 16),
 
-                    // Honeycomb Tile Wall
+                    // Honeycomb Tile Wall with Visible Scrollbar
                     Expanded(
-                      child: SingleChildScrollView(
-                        physics: const BouncingScrollPhysics(),
-                        padding: const EdgeInsets.only(bottom: 24),
-                        child: Center(
-                          child: Wrap(
-                            spacing: 12,
-                            runSpacing: 14,
-                            alignment: WrapAlignment.center,
-                            children: _filteredHonours.map((item) {
-                              return HexagonTile(
-                                item: item,
-                                onTap: () => _showHonourDetails(item),
-                              );
-                            }).toList(),
+                      child: ScrollConfiguration(
+                        behavior: ScrollConfiguration.of(context).copyWith(
+                          dragDevices: {
+                            PointerDeviceKind.touch,
+                            PointerDeviceKind.mouse,
+                            PointerDeviceKind.trackpad,
+                          },
+                        ),
+                        child: RawScrollbar(
+                          controller: _scrollController,
+                          thumbVisibility: true,
+                          thickness: 6,
+                          radius: const Radius.circular(3),
+                          thumbColor: const Color(0xFFF59E0B).withAlpha(180), // Visible Amber Gold
+                          trackVisibility: true,
+                          trackColor: const Color(0xFF1E293B),
+                          trackRadius: const Radius.circular(3),
+                          child: SingleChildScrollView(
+                            controller: _scrollController,
+                            physics: const AlwaysScrollableScrollPhysics(
+                              parent: BouncingScrollPhysics(),
+                            ),
+                            padding: const EdgeInsets.only(right: 12, bottom: 32),
+                            child: Center(
+                              child: Wrap(
+                                spacing: 12,
+                                runSpacing: 14,
+                                alignment: WrapAlignment.center,
+                                children: _filteredHonours.map((item) {
+                                  return HexagonTile(
+                                    item: item,
+                                    onTap: () => _showHonourDetails(item),
+                                  );
+                                }).toList(),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -170,7 +200,12 @@ class _HonoursScreenState extends State<HonoursScreen> {
           final isSelected = cat == _selectedCategory;
 
           return GestureDetector(
-            onTap: () => setState(() => _selectedCategory = cat),
+            onTap: () {
+              setState(() => _selectedCategory = cat);
+              if (_scrollController.hasClients) {
+                _scrollController.jumpTo(0);
+              }
+            },
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
               decoration: BoxDecoration(
@@ -269,15 +304,17 @@ class HexagonTile extends StatelessWidget {
                   else
                     Icon(Icons.workspace_premium, size: 14, color: accentColor),
                   const SizedBox(height: 2),
-                  Text(
-                    item.glyph,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: unlocked ? Colors.white : const Color(0xFF64748B),
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      item.glyph,
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        color: unlocked ? Colors.white : const Color(0xFF64748B),
+                      ),
+                      maxLines: 1,
                     ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
                   ),
                   const SizedBox(height: 2),
                   Text(
@@ -379,8 +416,8 @@ class _HonourDetailSheet extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 48,
-                height: 48,
+                width: 52,
+                height: 52,
                 decoration: BoxDecoration(
                   color: unlocked ? accentColor.withAlpha(35) : const Color(0xFF0F172A),
                   borderRadius: BorderRadius.circular(12),
@@ -389,12 +426,18 @@ class _HonourDetailSheet extends StatelessWidget {
                   ),
                 ),
                 child: Center(
-                  child: Text(
-                    item.glyph,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: unlocked ? accentColor : const Color(0xFF64748B),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text(
+                        item.glyph,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: unlocked ? accentColor : const Color(0xFF64748B),
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -406,7 +449,7 @@ class _HonourDetailSheet extends StatelessWidget {
                   children: [
                     Text(
                       item.title,
-                      style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.white),
+                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -452,10 +495,13 @@ class _HonourDetailSheet extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      item.description,
-                      style: const TextStyle(fontSize: 12, color: Colors.white70),
+                    Expanded(
+                      child: Text(
+                        item.description,
+                        style: const TextStyle(fontSize: 12, color: Colors.white70),
+                      ),
                     ),
+                    const SizedBox(width: 8),
                     Text(
                       "${item.currentCount} / ${item.targetCount}",
                       style: TextStyle(

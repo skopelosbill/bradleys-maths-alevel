@@ -82,7 +82,7 @@ class HonoursRoster {
         id: 'argand_vectors',
         title: "The Argand Shield",
         subtitle: "3D Vectors & Geometry",
-        glyph: "v⃗",
+        glyph: "i, j, k",
         category: "Pure",
         targetCount: 10,
         description: "Master 10 distinct questions in Vectors.",
@@ -115,7 +115,7 @@ class HonoursRoster {
         id: 'archimedes_num',
         title: "The Archimedes Ribbon",
         subtitle: "Numerical Methods",
-        glyph: "xₙ₊₁",
+        glyph: "x(n+1)",
         category: "Pure",
         targetCount: 5,
         description: "Master 5 distinct questions in Numerical Methods.",
@@ -126,7 +126,7 @@ class HonoursRoster {
         id: 'de_morgan_proof',
         title: "The De Morgan Shield",
         subtitle: "Mathematical Proof",
-        glyph: "∎",
+        glyph: "Q.E.D.",
         category: "Pure",
         targetCount: 10,
         description: "Master 10 distinct questions in Proof.",
@@ -137,7 +137,7 @@ class HonoursRoster {
         id: 'pure_grandmaster',
         title: "The Pure Grandmaster",
         subtitle: "Pure Syllabus Breadth",
-        glyph: "ℝ",
+        glyph: "∑ ∫ dx",
         category: "Pure",
         targetCount: 75,
         description: "Master 75 distinct questions across the Pure syllabus.",
@@ -185,7 +185,7 @@ class HonoursRoster {
         id: 'ballistics',
         title: "The Ballistic Distinction",
         subtitle: "Projectiles in 2D",
-        glyph: "v₀",
+        glyph: "u cos θ",
         category: "Mechanics",
         targetCount: 10,
         description: "Master 10 distinct questions in Projectile Motion.",
@@ -195,19 +195,19 @@ class HonoursRoster {
       HonourItem(
         id: 'vector_mechanics',
         title: "The Vector Dynamics Honour",
-        subtitle: "Vector Forces & Bearing",
-        glyph: "F⃗",
+        subtitle: "Vector Forces & Motion",
+        glyph: "r(t)",
         category: "Mechanics",
         targetCount: 5,
         description: "Master 5 distinct questions in Vector Mechanics.",
         headTeachersEye:
-            "Vectors are the native language of the physical universe. Always double check bearings (measured clockwise from North) against Cartesian angles.",
+            "Vectors are the native language of the physical universe. Differentiating position gives velocity; differentiating velocity gives acceleration.",
       ),
       HonourItem(
         id: 'mechanics_master',
         title: "The Master Mechanician",
         subtitle: "Applied Mechanics Breadth",
-        glyph: "⚙",
+        glyph: "W = Fs",
         category: "Mechanics",
         targetCount: 40,
         description: "Master 40 distinct questions across Mechanics.",
@@ -244,12 +244,12 @@ class HonoursRoster {
         id: 'fisher_hypothesis',
         title: "The Fisher Ribbon",
         subtitle: "Hypothesis Testing",
-        glyph: "H₀",
+        glyph: "H0 / H1",
         category: "Statistics",
         targetCount: 10,
         description: "Master 10 distinct questions in Hypothesis Testing.",
         headTeachersEye:
-            "Sir Ronald Fisher established modern significance testing. Remember: you never 'prove' H₀; you merely conclude there is 'insufficient evidence to reject H₀ at the given significance level.'",
+            "Sir Ronald Fisher established modern significance testing. Remember: you never 'prove' H0; you merely conclude there is 'insufficient evidence to reject H0 at the given significance level.'",
       ),
       HonourItem(
         id: 'bayes_prob',
@@ -286,13 +286,13 @@ class HonoursRoster {
       ),
 
       // ==========================================
-      // ELITE AGILITY & DISTINCTION (2 HONOURS)
+      // ELITE AGILITY & SUPREME EXCELLENCE (2 HONOURS)
       // ==========================================
       HonourItem(
         id: 'home_nations',
         title: "The Home Nations Distinction",
         subtitle: "Cross-Board Agility",
-        glyph: "⬡",
+        glyph: "ALL 6",
         category: "Elite",
         targetCount: 4,
         description: "Master at least 5 questions each across 4 different UK Exam Boards.",
@@ -301,14 +301,14 @@ class HonoursRoster {
       ),
       HonourItem(
         id: 'cambridge_standard',
-        title: "The Cambridge Standard",
+        title: "The A-Level Grandmaster",
         subtitle: "Grade A* Precision",
         glyph: "A*",
         category: "Elite",
         targetCount: 100,
         description: "Achieve ≥ 75% 1st-try accuracy with at least 50 total attempts.",
         headTeachersEye:
-            "The hallmark of a Cambridge or Warwick mathematician: getting it right the first time under pressure through methodical, error-free working.",
+            "The supreme benchmark of the A-Level mathematician: combining speed, accuracy, and rigorous first-time execution across the entire syllabus.",
       ),
     ];
   }

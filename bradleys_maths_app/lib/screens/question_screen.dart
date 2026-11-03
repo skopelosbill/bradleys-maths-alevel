@@ -5,6 +5,7 @@ import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart
 import 'package:flutter_svg/flutter_svg.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
+import '../theme_controller.dart';
 
 class QuestionScreen extends StatefulWidget {
   final Map<String, dynamic> question;
@@ -33,7 +34,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   bool _optionsUnlocked = false; 
   int? _selectedOptionIndex;
-  int? _disabledOptionIndex; // For ambering out the first failed choice
+  int? _disabledOptionIndex; 
   bool _isSubmitted = false;
   int _attemptCount = 0; 
   String? _feedbackText;
@@ -63,7 +64,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     super.dispose();
   }
 
-  // Smooth scroll specifically to bring the feedback banner and model answer into comfortable view
   void _scrollToFeedback() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_feedbackKey.currentContext != null) {
@@ -71,7 +71,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           _feedbackKey.currentContext!,
           duration: const Duration(milliseconds: 450),
           curve: Curves.easeOutCubic,
-          alignment: 0.1, // Positions feedback banner near the top of the viewport
+          alignment: 0.1,
         );
       }
     });
@@ -82,12 +82,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
     final List<dynamic> rawSteps = q['steps'] ?? [];
     _steps = rawSteps.map((s) => s.toString()).toList();
 
-    // Strip out 'Final Answer' label if present in the last step
+    // Defensive extraction: Strip out 'Final Answer' label AND any <img> tags so images never leak into option grid
     String correctAnswer = "";
     if (_steps.isNotEmpty) {
       correctAnswer = _steps.last
           .replaceFirst(RegExp(r'<strong>Final Answer</strong>\s*[:\-\—]?\s*', caseSensitive: false), '')
           .replaceFirst(RegExp(r'Final Answer\s*[:\-\—]?\s*', caseSensitive: false), '')
+          .replaceAll(RegExp(r'<img[^>]*>', caseSensitive: false), '') // Structural Image Shield
           .trim();
     }
 
@@ -106,7 +107,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
         'feedback': pi['feedback']?.toString() ?? 'Check your paper working carefully.',
       });
     }
-    choices.shuffle(); // Shuffle the 4 choices
+    choices.shuffle();
     choices.add({
       'ans': 'None of the Above',
       'is_correct': 0,
@@ -157,9 +158,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     }
 
     setState(() {
-      // ----------------------------------------------------
-      // CASE 1: NONE OF THE ABOVE (Immediate Model Answer Unlock)
-      // ----------------------------------------------------
       if (isNoneChoice) {
         HapticFeedback.heavyImpact();
         _isCorrect = false;
@@ -174,11 +172,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           choseNoneOfAbove: true,
           viewedModelAnswer: true,
         );
-      }
-      // ----------------------------------------------------
-      // CASE 2: FIRST ATTEMPT
-      // ----------------------------------------------------
-      else if (_attemptCount == 0) {
+      } else if (_attemptCount == 0) {
         _firstChoiceText = selected['ans'];
         _firstChoiceCorrect = isCorrectChoice;
 
@@ -197,18 +191,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
             viewedModelAnswer: true,
           );
         } else {
-          // Missed on attempt 1 -> Amber-out this choice and prompt second chance
           HapticFeedback.heavyImpact();
           _attemptCount = 1;
           _disabledOptionIndex = _selectedOptionIndex;
           _selectedOptionIndex = null;
           _feedbackText = "${selected['feedback']}\n\nCheck your working and take a Second Chance!";
         }
-      }
-      // ----------------------------------------------------
-      // CASE 3: SECOND ATTEMPT
-      // ----------------------------------------------------
-      else {
+      } else {
         _secondChoiceText = selected['ans'];
         _secondChoiceCorrect = isCorrectChoice;
         _isSubmitted = true;
@@ -277,27 +266,55 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return false;
   }
 
+  // ----------------------------------------------------
+  // FLOATING IVORY DIAGRAM PLAQUE (BOOSTED AMBIENT HALO)
+  // ----------------------------------------------------
   Widget _buildVectorImage(String imgPath) {
     final cleanPath = imgPath.startsWith('assets/') ? imgPath : 'assets/$imgPath';
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Center(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 12),
-        constraints: const BoxConstraints(maxWidth: 320),
-        padding: const EdgeInsets.all(8.0),
+        margin: const EdgeInsets.symmetric(vertical: 14),
+        constraints: const BoxConstraints(maxWidth: 324), // 328px usable width mobile-first
+        padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey.shade300),
-          borderRadius: BorderRadius.circular(10),
-          color: Colors.white,
+          color: const Color(0xFFFAF9F6), // Soft Archival Ivory
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: isDark ? const Color(0xFFFDE68A).withAlpha(160) : const Color(0xFFE2DDD5),
+            width: 1.4,
+          ),
+          boxShadow: [
+            // Boosted Warm Ivory / Cream Ambient Glow
+            BoxShadow(
+              color: const Color(0xFFFDE68A).withAlpha(isDark ? 110 : 35),
+              blurRadius: 18,
+              spreadRadius: 2,
+              offset: const Offset(0, 4),
+            ),
+            // Grounding Depth Shadow
+            BoxShadow(
+              color: Colors.black.withAlpha(isDark ? 90 : 25),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
-        child: cleanPath.toLowerCase().endsWith('.svg')
-            ? SvgPicture.asset(cleanPath, fit: BoxFit.contain)
-            : Image.asset(cleanPath, fit: BoxFit.contain),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: cleanPath.toLowerCase().endsWith('.svg')
+              ? SvgPicture.asset(cleanPath, fit: BoxFit.contain)
+              : Image.asset(cleanPath, fit: BoxFit.contain),
+        ),
       ),
     );
   }
 
   void _showDiagramSheet(BuildContext context, String imgPath) {
     HapticFeedback.selectionClick();
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -307,9 +324,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
           constraints: BoxConstraints(
             maxHeight: MediaQuery.of(context).size.height * 0.75,
           ),
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          decoration: BoxDecoration(
+            color: isDark ? const Color(0xFF1E293B) : Colors.white,
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
           ),
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           child: Column(
@@ -319,7 +336,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade400,
+                  color: isDark ? Colors.grey.shade600 : Colors.grey.shade400,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -327,17 +344,21 @@ class _QuestionScreenState extends State<QuestionScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     "Figure 1: Problem Diagram",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: isDark ? Colors.white : Colors.black87,
+                    ),
                   ),
                   IconButton(
-                    icon: const Icon(Icons.close, size: 20),
+                    icon: Icon(Icons.close, size: 20, color: isDark ? Colors.white70 : Colors.black54),
                     onPressed: () => Navigator.pop(ctx),
                   ),
                 ],
               ),
-              const Divider(height: 8),
+              Divider(height: 8, color: isDark ? Colors.grey.shade700 : Colors.grey.shade300),
               Expanded(
                 child: SingleChildScrollView(
                   child: _buildVectorImage(imgPath),
@@ -352,6 +373,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final qId = _currentQuestion['id']?.toString() ?? '------';
     final branch = _currentQuestion['branch'] ?? 'Maths';
     final board = _currentQuestion['board'] ?? '';
@@ -366,13 +388,25 @@ class _QuestionScreenState extends State<QuestionScreen> {
         ),
         elevation: 0,
         actions: [
+          // Instant Light/Dark Mode Switcher
+          IconButton(
+            icon: Icon(
+              isDark ? Icons.light_mode : Icons.dark_mode_outlined,
+              color: isDark ? Colors.amber : Colors.indigo.shade700,
+              size: 20,
+            ),
+            tooltip: isDark ? "Switch to Daytime Mode" : "Switch to Dark Mode",
+            onPressed: () {
+              themeNotifier.value = isDark ? ThemeMode.light : ThemeMode.dark;
+            },
+          ),
           if (_hasDedicatedImage(rawImg) && rawImg is String)
             Padding(
               padding: const EdgeInsets.only(right: 8.0),
               child: TextButton.icon(
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.white,
-                  backgroundColor: Colors.indigo.shade800,
+                  backgroundColor: isDark ? const Color(0xFF334155) : Colors.indigo.shade800,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 ),
@@ -401,16 +435,18 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.indigo.shade50,
+                        color: isDark ? const Color(0xFF1E293B) : Colors.indigo.shade50,
                         borderRadius: BorderRadius.circular(6),
-                        border: Border.all(color: Colors.indigo.shade200),
+                        border: Border.all(
+                          color: isDark ? const Color(0xFF334155) : Colors.indigo.shade200,
+                        ),
                       ),
                       child: Text(
                         "ID: $qId  |  $board $level",
                         style: TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
-                          color: Colors.indigo.shade800,
+                          color: isDark ? const Color(0xFFFDE68A) : Colors.indigo.shade800,
                         ),
                       ),
                     ),
@@ -419,14 +455,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ),
 
               // ------------------------------------
-              // STEP 7: QUESTION PRESENTATION
+              // STEP 7: QUESTION PRESENTATION CARD
               // ------------------------------------
               Card(
-                elevation: 1,
-                color: Colors.white,
+                elevation: isDark ? 2 : 1,
+                color: isDark ? const Color(0xFF1E293B) : Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
-                  side: BorderSide(color: Colors.grey.shade200),
+                  side: BorderSide(
+                    color: isDark ? const Color(0xFF334155) : Colors.grey.shade200,
+                  ),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
@@ -452,21 +490,27 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFF0FDF4),
-                    border: Border.all(color: const Color(0xFF86EFAC)),
+                    color: isDark ? const Color(0xFF064E3B).withAlpha(50) : const Color(0xFFF0FDF4),
+                    border: Border.all(
+                      color: isDark ? const Color(0xFF059669) : const Color(0xFF86EFAC),
+                    ),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Row(
+                  child: Row(
                     children: [
-                      Icon(Icons.edit_note, color: Color(0xFF15803D), size: 28),
-                      SizedBox(width: 12),
+                      Icon(
+                        Icons.edit_note,
+                        color: isDark ? const Color(0xFF34D399) : const Color(0xFF15803D),
+                        size: 28,
+                      ),
+                      const SizedBox(width: 12),
                       Expanded(
                         child: Text(
                           "Work through the complete solution on paper before inspecting the options.",
                           style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xFF166534),
+                            color: isDark ? const Color(0xFF6EE7B7) : const Color(0xFF166534),
                           ),
                         ),
                       ),
@@ -508,21 +552,28 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   final isDisabled = _disabledOptionIndex == index;
                   final isNoneOfAbove = index == _options.length - 1;
 
+                  Color boxBg;
+                  Color boxBorder;
+                  if (isDisabled) {
+                    boxBg = isDark ? const Color(0xFF451A03).withAlpha(80) : Colors.amber.shade50;
+                    boxBorder = isDark ? const Color(0xFFD97706) : Colors.amber.shade400;
+                  } else if (isSelected) {
+                    boxBg = isDark ? const Color(0xFF312E81) : Colors.indigo.shade50;
+                    boxBorder = isDark ? const Color(0xFF818CF8) : Colors.indigo.shade600;
+                  } else {
+                    boxBg = isDark ? const Color(0xFF1E293B) : Colors.white;
+                    boxBorder = isDark ? const Color(0xFF334155) : (isNoneOfAbove ? Colors.grey.shade400 : Colors.grey.shade300);
+                  }
+
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10.0),
                     child: Material(
-                      color: isDisabled
-                          ? Colors.amber.shade50
-                          : (isSelected ? Colors.indigo.shade50 : Colors.white),
+                      color: boxBg,
                       borderRadius: BorderRadius.circular(12),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: isDisabled
-                                ? Colors.amber.shade400
-                                : (isSelected
-                                    ? Colors.indigo.shade600
-                                    : (isNoneOfAbove ? Colors.grey.shade400 : Colors.grey.shade300)),
+                            color: boxBorder,
                             width: (isSelected || isDisabled) ? 2.0 : 1.0,
                           ),
                           borderRadius: BorderRadius.circular(12),
@@ -530,7 +581,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         child: RadioListTile<int>(
                           value: index,
                           groupValue: _selectedOptionIndex,
-                          activeColor: Colors.indigo.shade700,
+                          activeColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
                           title: Opacity(
                             opacity: isDisabled ? 0.6 : 1.0,
                             child: _renderMixedContent(_options[index]['ans']),
@@ -541,7 +592,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                   style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.amber.shade800,
+                                    color: isDark ? const Color(0xFFFBBF24) : Colors.amber.shade800,
                                   ),
                                 )
                               : null,
@@ -563,7 +614,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     height: 48,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.indigo.shade700,
+                        backgroundColor: isDark ? const Color(0xFF4338CA) : Colors.indigo.shade700,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       ),
@@ -578,17 +629,21 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ],
 
               // ------------------------------------
-              // STEP 11: DIAGNOSTIC FEEDBACK BANNER (Targeted Scroll Landmark)
+              // STEP 11: DIAGNOSTIC FEEDBACK BANNER
               // ------------------------------------
               if (_feedbackText != null) ...[
                 const SizedBox(height: 18),
                 Container(
-                  key: _feedbackKey, // Auto-scroll target anchor
+                  key: _feedbackKey,
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: _isCorrect ? const Color(0xFFF0FDF4) : const Color(0xFFFFFBEB),
+                    color: _isCorrect
+                        ? (isDark ? const Color(0xFF064E3B).withAlpha(70) : const Color(0xFFF0FDF4))
+                        : (isDark ? const Color(0xFF451A03).withAlpha(70) : const Color(0xFFFFFBEB)),
                     border: Border.all(
-                      color: _isCorrect ? const Color(0xFF86EFAC) : const Color(0xFFFCD34D),
+                      color: _isCorrect
+                          ? (isDark ? const Color(0xFF059669) : const Color(0xFF86EFAC))
+                          : (isDark ? const Color(0xFFD97706) : const Color(0xFFFCD34D)),
                       width: 1.5,
                     ),
                     borderRadius: BorderRadius.circular(12),
@@ -598,7 +653,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     children: [
                       Icon(
                         _isCorrect ? Icons.check_circle : Icons.lightbulb_outline,
-                        color: _isCorrect ? const Color(0xFF16A34A) : Colors.amber.shade800,
+                        color: _isCorrect
+                            ? (isDark ? const Color(0xFF34D399) : const Color(0xFF16A34A))
+                            : (isDark ? const Color(0xFFFBBF24) : Colors.amber.shade800),
                         size: 22,
                       ),
                       const SizedBox(width: 10),
@@ -618,14 +675,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       "Textbook Model Answer",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: isDark ? Colors.white : Colors.black87,
+                      ),
                     ),
-                    // Unfold / Fold Complete Proof Button
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        foregroundColor: Colors.indigo.shade700,
+                        foregroundColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       ),
                       icon: Icon(_allExpanded ? Icons.unfold_less : Icons.unfold_more, size: 18),
@@ -649,19 +709,29 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 8),
 
-                // Step Drawers (True Accordion: Opening drawer closes prior drawer unless unfolded)
+                // Step Drawers (Accordion)
                 ...List.generate(_revealedStepsCount.clamp(0, _steps.length), (i) {
                   final isExpanded = _expandedStepIndices.contains(i);
                   final isFinal = i == _steps.length - 1;
 
+                  Color drawerBg;
+                  Color drawerBorder;
+                  if (isFinal) {
+                    drawerBg = isDark ? const Color(0xFF064E3B).withAlpha(50) : const Color(0xFFF0FDF4);
+                    drawerBorder = isDark ? const Color(0xFF059669) : const Color(0xFF86EFAC);
+                  } else {
+                    drawerBg = isDark ? const Color(0xFF1E293B) : Colors.white;
+                    drawerBorder = isDark
+                        ? (isExpanded ? const Color(0xFF818CF8) : const Color(0xFF334155))
+                        : (isExpanded ? Colors.indigo.shade300 : Colors.grey.shade300);
+                  }
+
                   return Container(
                     margin: const EdgeInsets.only(bottom: 8),
                     decoration: BoxDecoration(
-                      color: isFinal ? const Color(0xFFF0FDF4) : Colors.white,
+                      color: drawerBg,
                       border: Border.all(
-                        color: isFinal
-                            ? const Color(0xFF86EFAC)
-                            : (isExpanded ? Colors.indigo.shade300 : Colors.grey.shade300),
+                        color: drawerBorder,
                         width: isExpanded ? 1.5 : 1.0,
                       ),
                       borderRadius: BorderRadius.circular(10),
@@ -680,7 +750,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                   _expandedStepIndices.add(i);
                                 }
                               } else {
-                                // Accordion behavior: close others, open this one
                                 if (isExpanded) {
                                   _expandedStepIndices.clear();
                                 } else {
@@ -697,7 +766,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 Icon(
                                   isFinal ? Icons.check_circle : (isExpanded ? Icons.expand_circle_down : Icons.radio_button_checked),
                                   size: 18,
-                                  color: isFinal ? const Color(0xFF16A34A) : Colors.indigo.shade700,
+                                  color: isFinal
+                                      ? (isDark ? const Color(0xFF34D399) : const Color(0xFF16A34A))
+                                      : (isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700),
                                 ),
                                 const SizedBox(width: 10),
                                 Expanded(
@@ -706,14 +777,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                     style: TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.bold,
-                                      color: isFinal ? const Color(0xFF166534) : Colors.black87,
+                                      color: isFinal
+                                          ? (isDark ? const Color(0xFF6EE7B7) : const Color(0xFF166534))
+                                          : (isDark ? Colors.white : Colors.black87),
                                     ),
                                   ),
                                 ),
                                 Icon(
                                   isExpanded ? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,
                                   size: 20,
-                                  color: Colors.grey.shade600,
+                                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
                                 ),
                               ],
                             ),
@@ -726,7 +799,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                const Divider(height: 12),
+                                Divider(height: 12, color: isDark ? const Color(0xFF334155) : Colors.grey.shade300),
                                 _renderMixedContent(_steps[i]),
                               ],
                             ),
@@ -743,7 +816,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     child: OutlinedButton.icon(
                       icon: const Icon(Icons.add_circle_outline, size: 18),
                       style: OutlinedButton.styleFrom(
-                        foregroundColor: Colors.indigo.shade700,
+                        foregroundColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                        side: BorderSide(color: isDark ? const Color(0xFF4F46E5) : Colors.indigo.shade200),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                         padding: const EdgeInsets.symmetric(vertical: 12),
                       ),
@@ -752,7 +826,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         setState(() {
                           _revealedStepsCount++;
                           if (!_allExpanded) {
-                            // Focus on newly revealed drawer
                             _expandedStepIndices = <int>{_revealedStepsCount - 1};
                           } else {
                             _expandedStepIndices.add(_revealedStepsCount - 1);
@@ -775,9 +848,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 // ------------------------------------
                 // STEP 12: SMART RECOMMENDATIONS
                 // ------------------------------------
-                const Text(
+                Text(
                   "Smart Next Steps",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: isDark ? Colors.white : Colors.black87,
+                  ),
                 ),
                 const SizedBox(height: 12),
 
@@ -787,7 +864,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   height: 48,
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.indigo.shade700,
+                      backgroundColor: isDark ? const Color(0xFF4338CA) : Colors.indigo.shade700,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
@@ -801,7 +878,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 10),
 
-                // Option B: Progression in Same ID Group (Twin / Cousin)
+                // Option B: Progression in Same ID Group
                 SizedBox(
                   width: double.infinity,
                   height: 48,
@@ -821,14 +898,14 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 10),
 
-                // Option C: Dashboard / Change Topic
+                // Option C: Return to Dashboard
                 SizedBox(
                   width: double.infinity,
                   height: 48,
                   child: OutlinedButton.icon(
                     style: OutlinedButton.styleFrom(
-                      foregroundColor: Colors.grey.shade800,
-                      side: BorderSide(color: Colors.grey.shade400),
+                      foregroundColor: isDark ? Colors.white70 : Colors.grey.shade800,
+                      side: BorderSide(color: isDark ? const Color(0xFF475569) : Colors.grey.shade400),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
                     icon: const Icon(Icons.dashboard_outlined, size: 20),
@@ -849,9 +926,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   // ----------------------------------------------------
-  // BRADLEY INSIGHT CARD (Deeper, Pro-tip, Caution)
+  // BRADLEY INSIGHT CARD
   // ----------------------------------------------------
   Widget _renderInsightCard(Map<String, dynamic> insight) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final type = insight['type']?.toString().toLowerCase() ?? 'pro-tip';
 
     Color bgColor;
@@ -860,19 +938,19 @@ class _QuestionScreenState extends State<QuestionScreen> {
     IconData icon;
 
     if (type.contains('caution')) {
-      bgColor = const Color(0xFFFEFCE8);
-      borderColor = const Color(0xFFFACC15);
-      textColor = const Color(0xFF854D0E);
+      bgColor = isDark ? const Color(0xFF451A03).withAlpha(60) : const Color(0xFFFEFCE8);
+      borderColor = isDark ? const Color(0xFFB45309) : const Color(0xFFFACC15);
+      textColor = isDark ? const Color(0xFFFDE68A) : const Color(0xFF854D0E);
       icon = Icons.warning_amber_rounded;
     } else if (type.contains('deeper')) {
-      bgColor = const Color(0xFFFAF5FF);
-      borderColor = const Color(0xFFC084FC);
-      textColor = const Color(0xFF581C87);
+      bgColor = isDark ? const Color(0xFF3B0764).withAlpha(60) : const Color(0xFFFAF5FF);
+      borderColor = isDark ? const Color(0xFF7E22CE) : const Color(0xFFC084FC);
+      textColor = isDark ? const Color(0xFFE9D5FF) : const Color(0xFF581C87);
       icon = Icons.psychology;
     } else {
-      bgColor = const Color(0xFFEFF6FF);
-      borderColor = const Color(0xFF93C5FD);
-      textColor = const Color(0xFF1E40AF);
+      bgColor = isDark ? const Color(0xFF1E3A8A).withAlpha(60) : const Color(0xFFEFF6FF);
+      borderColor = isDark ? const Color(0xFF2563EB) : const Color(0xFF93C5FD);
+      textColor = isDark ? const Color(0xFFBFDBFE) : const Color(0xFF1E40AF);
       icon = Icons.lightbulb_outline;
     }
 
@@ -903,7 +981,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ),
             ],
           ),
-          const Divider(height: 18),
+          Divider(height: 18, color: borderColor.withAlpha(80)),
           _renderMixedContent(insight['content'] ?? ''),
         ],
       ),
@@ -914,10 +992,16 @@ class _QuestionScreenState extends State<QuestionScreen> {
   // HTML + TEXTBOOK LATEX + VECTOR SVG/PNG RENDERER
   // ----------------------------------------------------
   Widget _renderMixedContent(String rawData) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return HtmlWidget(
       rawData,
       factoryBuilder: () => _MathWidgetFactory(),
-      textStyle: const TextStyle(fontSize: 15, height: 1.5, color: Colors.black87),
+      textStyle: TextStyle(
+        fontSize: 15,
+        height: 1.5,
+        color: isDark ? const Color(0xFFF1F5F9) : Colors.black87,
+      ),
       customWidgetBuilder: (el) {
         if (el.localName == 'img') {
           final src = el.attributes['src'] ?? '';
@@ -934,21 +1018,22 @@ class _QuestionScreenState extends State<QuestionScreen> {
             'max-width': '300px',
             'margin': '12px auto',
             'border-collapse': 'collapse',
-            'border': '1px solid #999',
+            'border': isDark ? '1px solid #475569' : '1px solid #999',
           };
         }
         if (el.localName == 'th') {
           return {
             'font-weight': 'bold',
-            'background-color': '#eef2f6',
-            'border': '1px solid #999',
+            'background-color': isDark ? '#334155' : '#eef2f6',
+            'color': isDark ? '#F1F5F9' : '#000000',
+            'border': isDark ? '1px solid #475569' : '1px solid #999',
             'padding': '6px 8px',
             'text-align': 'center',
           };
         }
         if (el.localName == 'td') {
           return {
-            'border': '1px solid #ccc',
+            'border': isDark ? '1px solid #334155' : '1px solid #ccc',
             'padding': '6px 8px',
             'text-align': 'center',
           };

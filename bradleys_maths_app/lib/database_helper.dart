@@ -187,12 +187,10 @@ class DatabaseHelper {
     // Populate each HonourItem
     for (var h in honours) {
       if (h.id == 'home_nations') {
-        // Count boards with >= 5 mastered questions
         int boardsQualified = boardMastery.values.where((set) => set.length >= 5).length;
         h.currentCount = boardsQualified;
         h.isUnlocked = boardsQualified >= h.targetCount;
       } else if (h.id == 'cambridge_standard') {
-        // Requires >= 50 attempts and accuracy >= 75%
         h.currentCount = accuracy;
         h.isUnlocked = (totalAttempts >= 50 && accuracy >= 75);
       } else {
@@ -308,7 +306,7 @@ class DatabaseHelper {
         if ((branch == null || branch == 'Random') && q['branch'] == 'Comprehension') return false;
         if (targetLevel != null && q['level'] != targetLevel) return false;
         if (board != null && board != 'Random' && q['board'] != board) return false;
-        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) continue;
+        if (majorArea != null && majorArea != 'Random' && q['major_area'] != majorArea) return false;
         if (topic != null && topic != 'Random' && q['topic'] != topic) return false;
         return true;
       }).toList();
