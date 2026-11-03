@@ -426,7 +426,7 @@ window.ALEVEL_QUESTIONS = [
                         "Divide both sides by $r^2$ and multiply by $30$ to clear the fractions and obtain the target equation: \\begin{aligned}\\dfrac{1}{6}\\sin\\theta &= \\dfrac{1}{10}\\theta \\cr5\\sin\\theta &= 3\\theta \\cr3\\theta &= 5\\sin\\theta\\end{aligned}",
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)}\\cr & \\approx 1.71392\\end{aligned}",
-                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 \\cr & \\ quad- \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
+                        "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 \\cr & \\quad- \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
                         "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}&\\text{% error}\\cr &\\qquad= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
                         "Final Answer: <br> (b) $$1.66164$$ (c) $$0.57\\% $$"
                 ],
@@ -1431,7 +1431,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Differentiating the Square",
-                        "content": "When maximising an area expression like $A = 4x\\sqrt{36 - x^2}$, a neat shortcut is to maximise its square instead, let us call it \\begin{aligned}S $= A^2\\cr & = 16x^2(36 - x^2)\\cr & = 576x^2 - 16x^4\\end{aligned} This is a simple polynomial that is much easier to differentiate and yields the exact same critical point, saving valuable time in an exam."
+                        "content": "When maximising an area expression like $A = 4x\\sqrt{36 - x^2}$, a neat shortcut is to maximise its square instead, let us call it \\begin{aligned}S = A^2\\cr & = 16x^2(36 - x^2)\\cr & = 576x^2 - 16x^4\\end{aligned} This is a simple polynomial that is much easier to differentiate and yields the exact same critical point, saving valuable time in an exam."
                 }
         },
         {
