@@ -266,7 +266,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "This equation is a disguised quadratic. Let $t = \\sqrt{x}$, which implies $x = t^2$ (for $x \\ge 0$). Substitute these into the equation:<br>$$t^2 - 5t + 6 = 0$$",
                         "Factorise the quadratic equation by finding two numbers that multiply to $6$ and add to $-5$. These numbers are $-2$ and $-3$:<br>$$(t - 2)(t - 3) = 0$$",
-                        "Solve for $t$:<br>\\begin{aligned}t &= 2 \\quad \\text{or} \\quad t \\cr&= 3\\end{aligned}",
+                        "Solve for $t$:<br>\\begin{aligned}t &= 2 \\quad \\text{or} \\cr t &= 3\\end{aligned}",
                         "Substitute $\\sqrt{x}$ back in place of $t$ to find our original variable $x$:<br>\\begin{aligned}\\sqrt{x} &= 2 \\cr x &= 2^2 = 4\\end{aligned}<br>\\begin{aligned}\\sqrt{x} &= 3 \\cr x &= 3^2 = 9\\end{aligned}",
                         "Verify that both solutions are valid by substituting them back into the original equation:<br>For $x = 4$: $4 - 5\\sqrt{4} + 6 = 4 - 10 + 6 = 0$ (Valid).<br>For $x = 9$: $9 - 5\\sqrt{9} + 6 = 9 - 15 + 6 = 0$ (Valid).",
                 "Final Answer: $$x = 4, \\quad 9$$"
@@ -310,7 +310,7 @@ window.ALEVEL_QUESTIONS = [
                         "Rearrange the terms into a standard polynomial form:<br>$$x^4 - 5x^2 + 4 = 0$$",
                         "This is a quartic equation in a quadratic form. Let $y = x^2$, which gives us:<br>$$y^2 - 5y + 4 = 0$$",
                         "Factorise the quadratic equation:<br>$$(y - 1)(y - 4) = 0$$",
-                        "Solve for $y$:<br>\\begin{aligned}y &= 1 \\quad \\text{or} \\quad y \\cr&= 4\\end{aligned}",
+                        "Solve for $y$:<br>\\begin{aligned}y &= 1 \\quad \\text{or} \\cr y &= 4\\end{aligned}",
                         "Substitute $x^2$ back into our equations to solve for $x$:<br>\\begin{aligned}x^2 &= 1 \\cr x &= \\pm 1\\end{aligned}<br>\\begin{aligned}x^2 &= 4 \\cr x &= \\pm 2\\end{aligned}",
                 "Final Answer: $$x = -2, \\quad -1, \\quad 1, \\quad 2$$"
                 ],
@@ -352,8 +352,8 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "This equation is a disguised quadratic because $e^{2x} = \\left(e^x\\right)^2$. Let $u = e^x$ (where $u > 0$). Substituting this into the equation yields:<br>$$u^2 - 2u - 3 = 0$$",
                         "Factorise the quadratic equation:<br>$$(u - 3)(u + 1) = 0$$",
-                        "Solve for $u$:<br>\\begin{aligned}u &= 3 \\quad \\text{or} \\quad u \\cr&= -1\\end{aligned}",
-                        "Now substitute $e^x$ back in place of $u$:<br>\\begin{aligned}e^x &= 3 \\quad \\text{or} \\quad e^x \\cr&= -1\\end{aligned}",
+                        "Solve for $u$:<br>\\begin{aligned}u &= 3 \\quad \\text{or} \\cr u &= -1\\end{aligned}",
+                        "Now substitute $e^x$ back in place of $u$:<br>\\begin{aligned}e^x &= 3 \\quad \\text{or} \\cr e^x &= -1\\end{aligned}",
                         "Since the exponential function $e^x$ is strictly positive for all real values of $x$ ($e^x > 0$), the equation $e^x = -1$ has no real solutions and is discarded.",
                         "Solve the remaining equation by taking the natural logarithm of both sides:<br>\\begin{aligned}e^x &= 3 \\cr x &= \\ln 3\\end{aligned}",
                 "Final Answer: $$x = \\ln 3$$"
@@ -399,8 +399,8 @@ window.ALEVEL_QUESTIONS = [
                         "Multiply the entire equation by $-1$ to make the leading coefficient positive:<br>$$2\\cos^2\\theta - 3\\cos\\theta + 1 = 0$$",
                         "This is a disguised quadratic. Let $u = \\cos\\theta$, which gives us:<br>$$2u^2 - 3u + 1 = 0$$",
                         "Factorise the quadratic expression:<br>$$(2u - 1)(u - 1) = 0$$",
-                        "Solve for $u$:<br>\\begin{aligned}u &= \\dfrac{1}{2} \\quad \\text{or} \\quad u \\cr&= 1\\end{aligned}",
-                        "Substitute $\\cos\\theta$ back into our solutions:<br>\\begin{aligned}\\cos\\theta &= \\dfrac{1}{2} \\quad \\text{or} \\quad \\cos\\theta \\cr&= 1\\end{aligned}",
+                        "Solve for $u$:<br>\\begin{aligned}u &= \\dfrac{1}{2} \\quad \\text{or} \\cr u &= 1\\end{aligned}",
+                        "Substitute $\\cos\\theta$ back into our solutions:<br>\\begin{aligned}\\cos\\theta &= \\dfrac{1}{2} \\quad \\text{or} \\cr \\cos\\theta &= 1\\end{aligned}",
                         "Find all solutions for $\\theta$ within the specified domain $0^\\circ \\le \\theta \\le 360^\\circ$:<br>For $\\cos\\theta = 1$: $\\theta = 0^\\circ$ and $\\theta = 360^\\circ$ (both endpoints are inclusive).<br>For $\\cos\\theta = \\dfrac{1}{2}$: $\\theta = 60^\\circ$ and $\\theta = 360^\\circ - 60^\\circ = 300^\\circ$.",
                         "Combine all solutions in ascending order:<br>$$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$",
                 "Final Answer: $$\\theta = 0^\\circ, \\quad 60^\\circ, \\quad 300^\\circ, \\quad 360^\\circ$$"
@@ -657,7 +657,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "To find the centre and radius of the circle, we rearrange the terms and complete the square for both $x$ and $y$:<br>$$x^2 + 4x + y^2 - 6y + 3 = 0$$",
                         "Complete the square for the $x$ terms and the $y$ terms separately:<br>$$x^2 + 4x = (x + 2)^2 - 4$$<br><br>$$y^2 - 6y = (y - 3)^2 - 9$$",
-                        "Substitute these completed squares back into the original equation and simplify:<br>\\begin{aligned}(x + 2)^2 - 4 + (y - 3)^2 & - 9 + 3 = 0 \\cr (x + 2)^2 + (y - 3)^2 - 10 &= 0 \\cr (x + 2)^2 + (y - 3)^2 &= 10\\end{aligned}<br><br>So, the centre of the circle is $(-2, 3)$ and the radius is $\\sqrt{10}$.",
+                        "Substitute these completed squares back into the original equation and simplify:<br>\\begin{aligned}(x + 2)^2 &- 4 + (y - 3)^2\\cr & \\quad & - 9 + 3 = 0 \\cr (x + 2)^2 + (y - 3)^2 - 10 &= 0 \\cr (x + 2)^2 + (y - 3)^2 &= 10\\end{aligned}<br><br>So, the centre of the circle is $(-2, 3)$ and the radius is $\\sqrt{10}$.",
                         "To find the points of intersection, substitute the line equation $y = -3x + 7$ into the original equation of the circle:<br>\\begin{aligned}&x^2 + (-3x + 7)^2 + 4x \\cr & \\quad - 6(-3x + 7) + 3 = 0\\end{aligned}",
                         "Expand and simplify the algebraic terms:<br>\\begin{aligned}&x^2 + (9x^2 - 42x + 49) + 4x \\cr & \\quad + 18x - 42 + 3 = 0 \\cr &10x^2 - 20x + 10 = 0\\end{aligned}",
                         "Divide the quadratic equation by $10$ to simplify factorisation:<br>\\begin{aligned}x^2 - 2x + 1 &= 0 \\cr (x - 1)^2 &= 0\\end{aligned}<br><br>This quadratic equation has a single repeated real root:<br>$$x = 1$$",
@@ -702,7 +702,7 @@ window.ALEVEL_QUESTIONS = [
                 "steps": [
                         "Rearrange the terms and complete the square for both variables to find the centre and radius of the circle:<br>$$x^2 - 6x + y^2 - 4y - 12 = 0$$",
                         "Complete the square for $x$ and $y$ separately:<br>$$x^2 - 6x = (x - 3)^2 - 9$$<br><br>$$y^2 - 4y = (y - 2)^2 - 4$$",
-                        "Substitute these back into the original equation and simplify:<br>\\begin{aligned}(x - 3)^2 - 9 + (y - 2)^2 &- 4 - 12 = 0 \\cr (x - 3)^2 + (y - 2)^2 - 25 &= 0 \\cr (x - 3)^2 + (y - 2)^2 &= 25\\end{aligned}<br><br>This confirms the centre is $(3, 2)$, and the radius is $\\sqrt{25} = 5$.",
+                        "Substitute these back into the original equation and simplify:<br>\\begin{aligned}(x - 3)^2 - 9 &+ (y - 2)^2\\cr & \\quad- 4 - 12 = 0 \\cr (x - 3)^2 + (y - 2)^2 - 25 &= 0 \\cr (x - 3)^2 + (y - 2)^2 &= 25\\end{aligned}<br><br>This confirms the centre is $(3, 2)$, and the radius is $\\sqrt{25} = 5$.",
                         "To find the points of intersection, substitute the line equation $y = x + 4$ into the original circle equation:<br>\\begin{aligned}&x^2 + (x + 4)^2 - 6x \\cr & \\quad - 4(x + 4) - 12 = 0\\end{aligned}",
                         "Expand the brackets and simplify the quadratic expression:<br>\\begin{aligned}&x^2 + (x^2 + 8x + 16) - 6x \\cr & \\quad - 4x - 16 - 12 = 0 \\cr &2x^2 - 2x - 12 = 0\\end{aligned}",
                         "Divide the entire equation by $2$ to simplify factorisation:<br>\\begin{aligned}x^2 - x - 6 &= 0 \\cr (x - 3)(x + 2) &= 0\\end{aligned}<br><br>This yields two distinct real solutions for the $x$-coordinates:<br>\\begin{aligned}x &= 3 \\cr x &= -2\\end{aligned}",
@@ -1480,7 +1480,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "1. Find the first three terms in the expansion of $(1 - 8x)^{-1/2}$ in ascending powers of $x$.<br><br>2. Find the coefficient of $x^2$ in the expansion of $(1 + 4x)^3(1 - 8x)^{-1/2}$.",
                 "steps": [
                         "Apply the binomial expansion formula for negative fractional powers with $n = -\\dfrac{1}{2}$ and $y = -8x$:\\begin{aligned}&(1 - 8x)^{-1/2} \\cr & \\quad = 1 + (-\\dfrac{1}{2})(-8x) \\cr & \\quad + \\dfrac{(-\\dfrac{1}{2})(-\\dfrac{3}{2})}{2}(-8x)^2 + \\dots \\cr & \\quad = 1 + 4x + \\dfrac{3}{8}(64x^2) + \\dots \\cr & \\quad = 1 + 4x + 24x^2 + \\dots\\end{aligned}",
-                        "To find the composite expansion, we first expand $(1 + 4x)^3$ fully using the standard binomial theorem:\\begin{aligned}&(1 + 4x)^3 \\cr &  = 1^3 + 3(1)^2(4x) + 3(1)(4x)^2 + (4x)^3 \\cr & = 1 + 12x + 48x^2 + 64x^3\\end{aligned}",
+                        "To find the composite expansion, we first expand $(1 + 4x)^3$ fully using the standard binomial theorem:\\begin{aligned}&(1 + 4x)^3 \\cr &  = 1^3 + 3(1)^2(4x) + 3(1)(4x)^2 \\cr &\\qquad \\qquad+ (4x)^3 \\cr & = 1 + 12x + 48x^2 + 64x^3\\end{aligned}",
                         "Write the composite product as a multiplication of these two expansion series up to the $x^2$ terms:\\begin{aligned}&\\text{Product} \\cr & \\approx (1 + 12x + 48x^2)(1 + 4x + 24x^2)\\end{aligned}",
                         "Identify the cross-multiplications that yield an $x^2$ term:\\begin{aligned}\\text{Term } 1: 1 \\times 24x^2 &= 24x^2 \\cr \\text{Term } 2: 12x \\times 4x &= 48x^2 \\cr \\text{Term } 3: 48x^2 \\times 1 &= 48x^2\\end{aligned}",
                         "Sum these three components to obtain the final coefficient of $x^2$:\\begin{aligned}\\text{Total } x^2 &\\text{ term} \\cr & \\quad = 24x^2 + 48x^2 + 48x^2 \\cr & \\quad = 120x^2\\end{aligned}<br><br>So the coefficient of $x^2$ is $120$.",
@@ -1610,8 +1610,8 @@ window.ALEVEL_QUESTIONS = [
                         "To solve the composite equation $ff(x) = 2$, let $y = f(x)$. This transforms the equation into:\\begin{aligned}f(y) &= 2 \\cr |2y - 5| - 3 &= 2\\end{aligned}",
                         "Solve this modulus equation for $y$:\\begin{aligned}|2y - 5| &= 5\\end{aligned}<br><br>This splits into two linear cases:<br><br>For the positive case:\\begin{aligned}2y - 5 &= 5 \\cr 2y &= 10 \\cr y &= 5\\end{aligned}<br><br>For the negative case:\\begin{aligned}2y - 5 &= -5 \\cr 2y &= 0 \\cr y &= 0\\end{aligned}",
                         "Substitute $f(x)$ back in place of $y$, which gives us two separate modulus equations to solve for $x$:\\begin{aligned}f(x) &= 0 \\cr f(x) &= 5\\end{aligned}",
-                        "Solve **Case 1**: $f(x) = 0$:\\begin{aligned}|2x - 5| - 3 &= 0 \\cr |2x - 5| &= 3\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 3 \\cr 2x &= 8 \\cr x &= 4\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -3 \\cr 2x &= 2 \\cr x &= 1\\end{aligned}",
-                        "Solve **Case 2**: $f(x) = 5$:\\begin{aligned}|2x - 5| - 3 &= 5 \\cr |2x - 5| &= 8\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 8 \\cr 2x &= 13 \\cr x &= 6.5\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -8 \\cr 2x &= -3 \\cr x &= -1.5\\end{aligned}",
+                        "Solve Case 1: $f(x) = 0$:\\begin{aligned}|2x - 5| - 3 &= 0 \\cr |2x - 5| &= 3\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 3 \\cr 2x &= 8 \\cr x &= 4\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -3 \\cr 2x &= 2 \\cr x &= 1\\end{aligned}",
+                        "Solve Case 2: $f(x) = 5$:\\begin{aligned}|2x - 5| - 3 &= 5 \\cr |2x - 5| &= 8\\end{aligned}<br><br>This yields two equations:<br><br>Positive equation:\\begin{aligned}2x - 5 &= 8 \\cr 2x &= 13 \\cr x &= 6.5\\end{aligned}<br><br>Negative equation:\\begin{aligned}2x - 5 &= -8 \\cr 2x &= -3 \\cr x &= -1.5\\end{aligned}",
                         "Combine all solutions to obtain our final set of roots:\\begin{aligned}x &= -1.5, \\quad 1, \\quad 4, \\quad 6.5\\end{aligned}",
                         "Final Answer:\\begin{aligned}&y \\ge -3 \\cr &x = -1.5, \\, 1, \\, 4, \\, 6.5\\end{aligned}"
                 ],
