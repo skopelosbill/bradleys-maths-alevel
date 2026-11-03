@@ -194,7 +194,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (a), calculate the gradients of the radius $OT$ and the tangent line $PT$: \\begin{aligned}m_{OT} &= \\dfrac{4.8-0}{3.6-0} \\cr&= \\dfrac{4}{3}\\end{aligned} and \\begin{aligned}m_{PT} &= \\dfrac{4.8-0}{3.6-10} \\cr&= \\dfrac{4.8}{-6.4} \\cr&= -\\dfrac{3}{4}\\end{aligned}",
                         "Since the product of their gradients is \\begin{aligned}m_{OT} \\times m_{PT} &= \\dfrac{4}{3} \\times \\left(-\\dfrac{3}{4}\\right) \\cr&= -1\\end{aligned}, the radius $OT$ and the tangent $PT$ are perpendicular.",
                         "For Part (b)(i), calculate the side lengths of triangle $OPT$: $OT = 6$$ $$OP = 10$, and \\begin{aligned}PT &= \\sqrt{(3.6 - 10)^2 + 4.8^2} \\cr&= \\sqrt{(-6.4)^2 + 23.04} \\cr&= \\sqrt{40.96 + 23.04} \\cr&= 8\\end{aligned}",
-                        "Apply the Cosine Rule to find $\\cos\\theta$: \\begin{aligned}\\text{let }\\angle POT &=\\theta \\cr PT^2 &= OP^2 + OT^2 \\cr &\\quad - 2(OP)(OT)\\cos\\theta \\cr 8^2 &= 10^2 + 6^2 - 2(10)(6)\\cos\\theta\\end{aligned}",
+                        "Apply the Cosine Rule to find $\\cos\\theta$: \\begin{aligned}\\text{let }\\angle POT &=\\theta \\cr PT^2 &= OP^2 + OT^2 \\cr &\\quad - 2(OP)(OT)\\cos\\theta \\cr 8^2 &= 10^2 + 6^2 \\cr & \\qquad- 2(10)(6)\\cos\\theta\\end{aligned}",
                         "Simplify to find the cosine value: \\begin{aligned}64 &= 100 + 36 - 120\\cos\\theta \\cr64 &= 136 - 120\\cos\\theta \\cr\\cos\\theta &= 0.6\\end{aligned}",
                         "Using the Cosine Rule with $\\cos\\theta = 0.6$ verifies the length of the tangent: \\begin{aligned}PT &= \\sqrt{10^2 + 6^2 - 2(10)(6)(0.6)} \\cr&= \\sqrt{64} \\cr&= 8\\end{aligned}, as required.",
                         "For Part (b)(ii), calculate the distance squared from $D(5, -4)$ to the center $O(0, 0)$: \\begin{aligned}OD^2 &= 5^2 + (-4)^2 \\cr&= 25 + 16 \\cr&= 41\\end{aligned}",
@@ -244,7 +244,7 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = \\theta - 1.5\\sin\\theta$ and its derivative $f'(\\theta) = 1 - 1.5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{\\theta_n - 1.5\\sin\\theta_n}{1 - 1.5\\cos\\theta_n}$$",
                         "With $\\theta_1 = \\pi$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= \\pi - \\dfrac{\\pi - 1.5\\sin\\pi}{1 - 1.5\\cos\\pi} \\cr&= \\pi - \\dfrac{\\pi}{1 - 1.5(-1)} \\cr&= \\pi - \\dfrac{\\pi}{2.5} \\cr&= 0.6\\pi \\approx 1.88496\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.88496\\cr & \\quad - \\dfrac{1.88496 - 1.5\\sin(1.88496)}{1 - 1.5\\cos(1.88496)}\\cr & \\approx 1.57176\\end{aligned}",
-                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: \\begin{aligned}\\text{% error} &= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08\\%\\end{aligned}",
+                        "For Part (c), calculate the percentage error by comparing the approximation $\\theta_3 \\approx 1.57176$ with the actual root $\\theta = 1.49579$: \\begin{aligned}&\\text{% error}\\cr &\\qquad= \\dfrac{|1.57176 - 1.49579|}{1.49579} \\times 100 \\cr &\\approx 5.08\\%\\end{aligned}",
                         "Final Answer: (b)$$ 1.57176$$(c)$$ 5.08\\%$$"
                 ],
                 "pi_options": [
@@ -292,20 +292,20 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 3\\theta - 4\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 4\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 4\\sin\\theta_n}{3 - 4\\cos\\theta_n}$$",
                         "With $\\theta_1 = 1.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 1.5 - \\dfrac{3(1.5) - 4\\sin(1.5)}{3 - 4\\cos(1.5)}\\cr & \\approx 1.31229\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.31229\\cr & \\quad - \\dfrac{3(1.31229) - 4\\sin(1.31229)}{3 - 4\\cos(1.31229)}\\cr & \\approx 1.27741\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: \\begin{aligned}\\text{% Error} &= \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\cr & \\approx 0.13\\%\\end{aligned}",
-                        "Final Answer: \\cr(b)$$ 1.27741$$ (c)$$0.13\\%$$"
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.27741$ against the true root $\\theta = 1.27570$: \\begin{aligned}&\\text{% Error}\\cr & \\qquad= \\dfrac{|1.27741 - 1.27570|}{1.27570} \\times 100 \\cr & \\approx 0.13\\%\\end{aligned}",
+                        "Final Answer: (b)$$ 1.27741$$ (c)$$0.13\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\cr (b)$$1.27510$$ $$(c) 0.05\\%$$",
+                                "ans": "(b)$$1.27510$$ $$(c) 0.05\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.31229)$ and $f'(1.31229)$ on your page."
                         },
                         {
-                                "ans": "\\cr (b)$$1.27741$$ (c) $$0.05\\%$$",
+                                "ans": "(b)$$1.27741$$ (c) $$0.05\\%$$",
                                 "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.13\\%$, not $0.05\\%$."
                         },
                         {
-                                "ans": "\\cr (b)$$1.31229$$(c)$$2.87\\%$$",
+                                "ans": "(b)$$1.31229$$(c)$$2.87\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -337,20 +337,20 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin(2\\theta)$ and its derivative $f'(\\theta) = 3 - 10\\cos(2\\theta)$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin(2\\theta_n)}{3 - 10\\cos(2\\theta_n)}$$",
                         "With $\\theta_1 = 1.0$, calculate the iterations. In the first iteration:\\begin{aligned}\\theta_2 &= 1.0 - \\dfrac{3(1.0) - 5\\sin(2)}{3 - 10\\cos(2)}\\cr &\\approx 1.21594\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.21594\\cr &\\quad - \\dfrac{3(1.21594) - 5\\sin(2.43188)}{3 - 10\\cos(2.43188)}\\cr & \\approx 1.17911\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}\\text{% error} &= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%$$",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.17911$ against the true root $\\theta = 1.17243$: \\begin{aligned}&\\text{% error}\\cr &\\qquad= \\dfrac{|1.17911 - 1.17243|}{1.17243} \\times 100\\cr &\\approx 0.57\\%\\end{aligned}",
                         "Final Answer: <br> (b)$$1.17911$$ (c) $$0.57\\%$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\cr (b)$$1.17880$$ (c) $$0.54\\%$$",
+                                "ans": "(b)$$1.17880$$ (c) $$0.54\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.21594)$ and $f'(1.21594)$ on your page."
                         },
                         {
-                                "ans": "\\cr (b)$$1.17911$$ (c) $$0.54\\%$$",
+                                "ans": "(b)$$1.17911$$ (c) $$0.54\\%$$",
                                 "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.54\\%$."
                         },
                         {
-                                "ans": "\\cr (b)$$1.21594$$(c) $$3.71\\%$$",
+                                "ans": "(b)$$1.21594$$(c) $$3.71\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -382,20 +382,20 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 2\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 2 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{2\\theta_n - 5\\sin\\theta_n}{2 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.5$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.5 - \\dfrac{2(2.5) - 5\\sin(2.5)}{2 - 5\\cos(2.5)}\\cr &\\approx 2.16571\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 2.16571\\cr & \\quad - \\dfrac{2(2.16571) - 5\\sin(2.16571)}{2 - 5\\cos(2.16571)}\\cr & \\approx 2.12654\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: \\begin{aligned}\\text{% error} &= \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100\\cr & \\approx 0.09\\%\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 2.12654$ against the true root $\\theta = 2.12463$: \\begin{aligned}&\\text{% error}\\cr &\\qquad= \\dfrac{|2.12654 - 2.12463|}{2.12463} \\times 100\\cr & \\approx 0.09\\%\\end{aligned}",
                         "Final Answer: <br> (b)$$2.12654$$ (c) $$0.09\\% $$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\cr (b)$$2.12680$$(c) $$0.10\\%$$",
+                                "ans": "(b)$$2.12680$$(c) $$0.10\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(2.16571)$ and $f'(2.16571)$ on your page."
                         },
                         {
-                                "ans": "\\cr (b)$$2.12654$$(c) $$0.10\\%$$",
+                                "ans": "(b)$$2.12654$$(c) $$0.10\\%$$",
                                 "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.09\\%$, not $0.10\\%$."
                         },
                         {
-                                "ans": "\\cr (b)$$2.16571$$(c) $$1.93\\%$$",
+                                "ans": "(b)$$2.16571$$(c) $$1.93\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -427,20 +427,20 @@ window.ALEVEL_QUESTIONS = [
                         "For Part (b), define $f(\\theta) = 3\\theta - 5\\sin\\theta$ and its derivative $f'(\\theta) = 3 - 5\\cos\\theta$. Use the Newton-Raphson formula: $$\\theta_{n+1} = \\theta_n - \\dfrac{3\\theta_n - 5\\sin\\theta_n}{3 - 5\\cos\\theta_n}$$",
                         "With $\\theta_1 = 2.0$, calculate the iterations. In the first iteration: \\begin{aligned}\\theta_2 &= 2.0 - \\dfrac{3(2.0) - 5\\sin(2.0)}{3 - 5\\cos(2.0)}\\cr & \\approx 1.71392\\end{aligned}",
                         "In the second iteration: \\begin{aligned}\\theta_3 &= 1.71392 \\cr & \\ quad- \\dfrac{3(1.71392) - 5\\sin(1.71392)}{3 - 5\\cos(1.71392)} \\cr &\\approx 1.66164\\end{aligned}",
-                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}\\text{%error} &= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
+                        "For Part (c), calculate the percentage error of $\\theta_3 \\approx 1.66164$ against the true root $\\theta = 1.65215$: \\begin{aligned}&\\text{% error}\\cr &\\qquad= \\dfrac{|1.66164 - 1.65215|}{1.65215} \\times 100\\cr & \\approx 0.57\\%\\end{aligned}",
                         "Final Answer: <br> (b) $$1.66164$$ (c) $$0.57\\% $$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "\\cr (b)$$1.66120$$(c) $$0.55\\%$$",
+                                "ans": "(b)$$1.66120$$(c) $$0.55\\%$$",
                                 "feedback": "This incorrect option probably results from a minor rounding slip during your second iteration. Double-check your values for $f(1.71392)$ and $f'(1.71392)$ on your page."
                         },
                         {
-                                "ans": "\\cr (b)$$1.66164$$(c) $$0.55\\%$$",
+                                "ans": "(b)$$1.66164$$(c) $$0.55\\%$$",
                                 "feedback": "Your value for $\\theta_3$ is correct, but your percentage error calculation has a minor rounding slip. It should round to $0.57\\%$, not $0.55\\%$."
                         },
                         {
-                                "ans": "\\cr (b)$$1.71392$$(c) $$3.74\\%$$",
+                                "ans": "(b)$$1.71392$$(c) $$3.74\\%$$",
                                 "feedback": "You have calculated $\\theta_2$ instead of $\\theta_3$. The question requires two full applications of the Newton-Raphson formula to find $\\theta_3$ starting from $\\theta_1$."
                         }
                 ],
@@ -654,7 +654,7 @@ window.ALEVEL_QUESTIONS = [
                         "Notice that the right-hand side of the Part (a) relation can be factored as a perfect square: $$16a + 120d = (2a + d)^2$$",
                         "Substitute $d = 4 - a$ into both sides of the factored equation: \\begin{aligned}16a + 120(4-a) &= (2a + 4 - a)^2 \\cr16a + 480 - 120a &= (a + 4)^2\\end{aligned}",
                         "Expand and simplify the resulting quadratic equation: \\begin{aligned}480 - 104a &= a^2 + 8a + 16 \\cr a^2 + 112a - 464 &= 0\\end{aligned}",
-                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cr a &= 4 \\quad \\text{or} \\quad a = -116\\end{aligned}",
+                        "Factor the quadratic to find the two possible values of $a$: \\begin{aligned}(a - 4)(a + 116) &= 0 \\cr a &= 4 \\quad \\text{or} \\cr a &= -116\\end{aligned}",
                         "Comparing the two roots, the smallest possible value of $a$ is $-116$.",
                         "Final Answer: <br> (b)$$a = -116$$"
                 ],
@@ -831,11 +831,11 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A physics laboratory is storing a sample of a radioactive isotope. The activity of the sample, $A$ (in Becquerels, Bq), is modelled by<br>$$A = A_0\\text{e}^{-\\lambda t}$$<br>where $A_0$ is the initial activity of the sample and $t$ is the time in days. The half-life of this radioactive isotope is 8.1 days.<br><br>(a) A sample of the isotope has an initial activity of 800 Bq on Monday at 12 pm. Use the model to estimate the remaining activity exactly 12 days later. Give your answer to 3 significant figures.<br><br>(b) The sample is considered safe to handle without special shielding once its activity drops below 100 Bq. Find the minimum storage time required before the sample is safe, giving your answer in days and hours (to the nearest hour).<br><br>(c) State a physical reason why the measured activity of the sample at any given moment might differ slightly from the model's prediction.",
                 "steps": [
                         "First, calculate the decay constant $\\lambda$ using the half-life of 8.1 days: \\begin{aligned}\\dfrac{1}{2}A_0 &= A_0\\text{e}^{-8.1\\lambda} \\cr\\text{e}^{-8.1\\lambda} &= 0.5 \\cr-8.1\\lambda &= \\ln(0.5) \\cr\\lambda &= \\dfrac{\\ln(2)}{8.1} \\approx 0.08557\\end{aligned}",
-                        "For Part (a), substitute $A_0 = 800$, $\\lambda = 0.08557$, and $t = 12$ days into the model: \\begin{aligned}A &= 800\\text{e}^{-0.08557 \\times 12} \\cr&= 800\\text{e}^{-1.02684} \\approx 286.49 \\approx 286\\text{ Bq}\\end{aligned}",
+                        "For Part (a), substitute $A_0 = 800$, $\\lambda = 0.08557$, and $t = 12$ days into the model: \\begin{aligned}A &= 800\\text{e}^{-0.08557 \\times 12} \\cr&= 800\\text{e}^{-1.02684} \\cr &\\approx 286.49 \\cr &\\approx 286\\text{ Bq}\\end{aligned}",
                         "For Part (b), set $A = 100$ and solve for $t$: \\begin{aligned}100 &= 800\\text{e}^{-\\lambda t} \\cr\\text{e}^{-\\lambda t} &= \\dfrac{100}{800} = \\dfrac{1}{8} = 2^{-3}\\end{aligned}",
                         "Take the natural logarithm of both sides to isolate the exponent: \\begin{aligned}-\\lambda t &= \\ln(2^{-3}) \\cr-\\lambda t &= -3\\ln(2)\\cr t &= \\dfrac{3\\ln(2)}{\\lambda}\\end{aligned}",
                         "Substitute $\\lambda = \\dfrac{\\ln(2)}{8.1}$ into the equation: \\begin{aligned}t &= 3 \\times 8.1 \\cr&= 24.3\\text{ days}\\end{aligned}",
-                        "Convert the decimal days to hours: \\begin{aligned}24\\text{ days and }& (0.3 \\times 24)\\text{ hours}\\cr  = 24\\text{ days and }& 7.2\\text{ hours} \\cr &\\approx 24\\text{ days and } 7\\cr &\\text{ hours}\\end{aligned}",
+                        "Convert the decimal days to hours: \\begin{aligned}&24\\text{ days and } (0.3 \\times 24)\\text{ hours}\\cr & = 24\\text{ days and } 7.2\\text{ hours} \\cr &\\approx 24\\text{ days and } 7\\text{ hours}\\end{aligned}",
                         "For Part (c), identify a physical limitation: radioactive decay is a random, stochastic quantum process. The model predicts the average expected decay, but the actual measurements will fluctuate statistically around this smooth curve.",
                         "Final Answer: (a) $$ 286\\text{ Bq}$$ (b) $$24\\text{ days and } 7\\text{ hours}$$"
                 ],
@@ -983,15 +983,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.763 \\cr T_2 &= 30.642 \\cr T_3 &= 30.593 \\cr \\text{Interval:} & \\quad 28 < t < 29 \\implies 2038 \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 30.763 \\cr T_2 &= 30.642 \\cr T_3 &= 30.593 \\cr \\text{Interval:} & \\quad 28 < t < 29 \\implies 2038 \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the square root of $946.129$. Carrying the rounded value $T_1 \\approx 30.763$ instead of $30.759$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 27 < t < 28 \\implies 2037 \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 27 < t < 28 \\implies 2037 \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 28$ is your target value, evaluating both models shows that they do not cross until $t$ is between $28$ and $29$, which corresponds to the year 2038."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 29 < t < 30 \\implies 2039 \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 30.759 \\cr T_2 &= 30.644 \\cr T_3 &= 30.588 \\cr \\text{Interval:} & \\quad 29 < t < 30 \\implies 2039 \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 28$. Since $R \\approx 20.68$ and $C \\approx 13.40$, revenue is still greater than costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1031,15 +1031,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.700 \\cr T_2 &= 72.400 \\cr T_3 &= 72.200 \\cr \\text{Interval:} & \\quad 69 < t < 70  \\cr & \\implies \\text{70th month} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 72.700 \\cr T_2 &= 72.400 \\cr T_3 &= 72.200 \\cr \\text{Interval:} & \\quad 69 < t < 70  \\cr & \\implies \\text{70th month} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $385,416$. Carrying the rounded value $T_1 \\approx 72.700$ instead of $72.775$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 68 < t < 69 \\cr &  \\implies \\text{69th month} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 68 < t < 69 \\cr &  \\implies \\text{69th month} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 69$ is your target value, evaluating both models shows that they do not cross until $t$ is between $69$ and $70$, which corresponds to the 70th month."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 70 < t < 71  \\cr & \\implies \\text{71st month} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 72.775 \\cr T_2 &= 72.626 \\cr T_3 &= 72.527 \\cr \\text{Interval:} & \\quad 70 < t < 71  \\cr & \\implies \\text{71st month} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 69$. Since $V \\approx 74.13$ and $V_{\\text{in}} \\approx 53.20$, reservoir volume is still greater than inflow, meaning they have not crossed yet."
                         }
                 ],
@@ -1064,7 +1064,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The rate of a primary chemical reaction, $R$ (in moles per second), is modelled by<br>\\begin{aligned} R &= 5 + 50\\left(\\dfrac{ t }{ 10 }\\right)^3 \\cr &\\quad - 25\\left(\\dfrac{ t }{ 10 }\\right)^4 \\end{aligned}<br>where $t$ is the time in minutes.<br><br>(a) (i) The model is used to predict the time, $T$, when the primary reaction stops. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{20T^2 + \\dfrac{2000}{T}}$$<br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{20T_n^2 + \\dfrac{2000}{T_n}}$, with $T_0 = 21$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 21$.<br><br>(b) A secondary chemical inhibitor is introduced, and its reaction rate, $R_{\\text{inh}}$ (in moles per second), is modelled by:<br>$$R_{\\text{inh}} = 0.8 \\times 1.15^t$$<br>Use the models to show that the inhibitor's reaction rate and the primary reaction rate will be equal during the 20th minute.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (a)(ii)</strong> and <strong>Part (b)</strong>.",
                 "steps": [
-                        "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents:<br><br>\\begin{aligned} &0 = 5 + 50\\left(\\dfrac{ T }{ 10 }\\right)^3 - 25\\left(\\dfrac{ T }{ 10 }\\right)^4 \\cr &\\quad = 5 + 50\\left(\\dfrac{ T^3 }{ 1\\,000 }\\right) - 25\\left(\\dfrac{ T^4 }{ 10\\,000 }\\right) \\cr &\\quad = 5 + \\dfrac{ T^3 }{ 20 } - \\dfrac{ T^4 }{ 400 } \\end{aligned}",
+                        "For Part (a)(i), set the rate $R$ equal to $0$ and expand the exponents:<br><br>\\begin{aligned} &0 = 5 + 50\\left(\\dfrac{ T }{ 10 }\\right)^3 - 25\\left(\\dfrac{ T }{ 10 }\\right)^4 \\cr & = 5 + 50\\left(\\dfrac{ T^3 }{ 1\\,000 }\\right) - 25\\left(\\dfrac{ T^4 }{ 10\\,000 }\\right) \\cr & = 5 + \\dfrac{ T^3 }{ 20 } - \\dfrac{ T^4 }{ 400 } \\end{aligned}",
                         "Multiply the entire equation by $400$ to clear the fractions:<br><br>$$0 = 2\\,000 + 20T^3 - T^4$$",
                         "Rearrange the terms and divide both sides by $T$ (since $T > 0$):<br><br>\\begin{aligned} T^4 &= 20T^3 + 2\\,000 \\cr T^3 &= 20T^2 + \\dfrac{ 2\\,000 }{ T } \\end{aligned}",
                         "Take the cube root of both sides to obtain the target iterative relation:<br><br>$$T = \\sqrt[3]{ 20T^2 + \\dfrac{ 2\\,000 }{ T } }$$ as required.",
@@ -1079,15 +1079,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.730 \\cr T_2 &= 20.610 \\cr T_3 &= 20.540 \\cr \\text{Interval:} & \\quad 19 < t < 20  \\cr & \\implies \\text{20th minute} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 20.730 \\cr T_2 &= 20.610 \\cr T_3 &= 20.540 \\cr \\text{Interval:} & \\quad 19 < t < 20  \\cr & \\implies \\text{20th minute} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $8,915.24$. Carrying the rounded value $T_1 \\approx 20.730$ instead of $20.735$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 18 < t < 19 \\cr &  \\implies \\text{19th minute} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 18 < t < 19 \\cr &  \\implies \\text{19th minute} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 19$ is your target value, evaluating both models shows that they do not cross until $t$ is between $19$ and $20$, which corresponds to the 20th minute."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 20 < t < 21 \\cr &  \\implies \\text{21st minute} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 20.735 \\cr T_2 &= 20.563 \\cr T_3 &= 20.451 \\cr \\text{Interval:} & \\quad 20 < t < 21 \\cr &  \\implies \\text{21st minute} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 19$. Since $R \\approx 22.15$ and $R_{\\text{inh}} \\approx 11.39$, primary rate is still greater than inhibitor rate, meaning they have not crossed yet."
                         }
                 ],
@@ -1112,7 +1112,7 @@ window.ALEVEL_QUESTIONS = [
                 "img": false,
                 "question": "The total value of a corporate delivery fleet, $V$ (in millions of pounds), $t$ years after purchase is modelled by:<br>\\begin{aligned} V &= 4 + 40\\left(\\dfrac{ t }{ 20 }\\right)^3 \\cr &\\quad - 20\\left(\\dfrac{ t }{ 20 }\\right)^4 \\end{aligned}<br>(a) (i) The model is used to predict the time, $T$, when the total value of the fleet will depreciate to zero. Show that $T$ satisfies the equation:<br>$$T = \\sqrt[3]{40T^2 + \\dfrac{32\\,000}{T}}$$ <br>(a) (ii) Use the iterative formula $T_{n+1} = \\sqrt[3]{40T_n^2 + \\dfrac{32\\,000}{T_n}}$, with $T_0 = 41$, to find the values of $T_1$, $T_2$, and $T_3$, giving your answers to three decimal places.<br><br>(a) (iii) Explain the relevance of using $T_0 = 41$.<br><br>(b) The company's annual fleet maintenance cost, $C$ (in millions of pounds), is modelled by:<br>$$C = 0.2 \\times 1.085^t$$<br>Use the models to show that the annual maintenance cost and the total fleet value will be equal during the 40th year.<br><br><strong>Note:</strong> Select the option that matches your calculated results for <strong>Part (a)(ii)</strong> and <strong>Part (b)</strong>.",
                 "steps": [
-                        "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents:<br><br>\\begin{aligned} &0 = 4 + 40\\left(\\dfrac{ T }{ 20 }\\right)^3 - 20\\left(\\dfrac{ T }{ 20 }\\right)^4 \\cr &\\quad = 4 + 40\\left(\\dfrac{ T^3 }{ 8\\,000 }\\right) - 20\\left(\\dfrac{ T^4 }{ 160\\,000 }\\right) \\cr &\\quad = 4 + \\dfrac{ T^3 }{ 200 } - \\dfrac{ T^4 }{ 8\\,000 } \\end{aligned}",
+                        "For Part (a)(i), set the value $V$ equal to $0$ and expand the exponents:<br><br>\\begin{aligned} &0 = 4 + 40\\left(\\dfrac{ T }{ 20 }\\right)^3 - 20\\left(\\dfrac{ T }{ 20 }\\right)^4 \\cr & = 4 + 40\\left(\\dfrac{ T^3 }{ 8\\,000 }\\right) - 20\\left(\\dfrac{ T^4 }{ 160\\,000 }\\right) \\cr & = 4 + \\dfrac{ T^3 }{ 200 } - \\dfrac{ T^4 }{ 8\\,000 } \\end{aligned}",
                         "Multiply the entire equation by $8\\,000$ to clear the fractions:<br><br>$$0 = 32\\,000 + 40T^3 - T^4$$",
                         "Rearrange the terms and divide both sides by $T$ (since $T > 0$):<br><br>\\begin{aligned} T^4 &= 40T^3 + 32\\,000 \\cr T^3 &= 40T^2 + \\dfrac{ 32\\,000 }{ T } \\end{aligned}",
                         "Take the cube root of both sides to obtain the target iterative relation:<br><br>$$T = \\sqrt[3]{ 40T^2 + \\dfrac{ 32\\,000 }{ T } }$$ as required.",
@@ -1127,15 +1127,15 @@ window.ALEVEL_QUESTIONS = [
                 ],
                 "pi_options": [
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.820 \\cr T_2 &= 40.730 \\cr T_3 &= 40.670 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\implies \\cr &  \\text{40th year} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 40.820 \\cr T_2 &= 40.730 \\cr T_3 &= 40.670 \\cr \\text{Interval:} & \\quad 39 < t < 40 \\implies \\cr &  \\text{40th year} \\end{aligned}",
                                 "feedback": "In Part (a)(ii), you probably made a minor rounding slip when calculating the cube root of $68,020.5$. Carrying the rounded value $T_1 \\approx 40.820$ instead of $40.821$ caused your subsequent iterations to drift. Use full calculator accuracy."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 38 < t < 39 \\implies \\cr &  \\text{39th year} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 38 < t < 39 \\implies \\cr &  \\text{39th year} \\end{aligned}",
                                 "feedback": "In Part (b), check your interval analysis. While $t = 39$ is your target value, evaluating both models shows that they do not cross until $t$ is between $39$ and $40$, which corresponds to the 40th year."
                         },
                         {
-                                "ans": "$\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 40 < t < 41 \\implies \\cr & S \\text{41st year} \\end{aligned}",
+                                "ans": "\\begin{aligned} T_1 &= 40.821 \\cr T_2 &= 40.704 \\cr T_3 &= 40.627 \\cr \\text{Interval:} & \\quad 40 < t < 41 \\implies \\cr & S \\text{41st year} \\end{aligned}",
                                 "feedback": "In Part (b), check your arithmetic when evaluating both models at $t = 39$. Since $V \\approx 11.42$ and $C \\approx 4.82$, fleet value is still greater than maintenance costs, meaning they have not crossed yet."
                         }
                 ],
@@ -1161,7 +1161,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "Let $p(x) = 24x^3 - 22x^2 - x + 3$.<br><br>(a) Prove that $(3x+1)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\\begin{aligned} & \\dfrac{24\\sec^2 x + 3\\cos x}{22}\\cr & \\quad \\quad = \\sec x + \\dfrac{1}{22}\\end{aligned}",
                 "steps": [
                         "For Part (a), apply the Factor Theorem. If $(3x+1)$ is a factor of $p(x)$, then $p\\left(-\\dfrac{1}{3}\\right) = 0$. Evaluate the polynomial at $$x = -\\dfrac{1}{3}$$",
-                        "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{3}\\right)^3 - 22\\left(-\\dfrac{1}{3}\\right)^2\\cr & \\quad - \\left(-\\dfrac{1}{3}\\right) + 3\\end{aligned}",
+                        "\\begin{aligned}&p\\left(-\\dfrac{1}{3}\\right) = 24\\left(-\\dfrac{1}{3}\\right)^3\\cr & \\quad - 22\\left(-\\dfrac{1}{3}\\right)^2 - \\left(-\\dfrac{1}{3}\\right) + 3\\end{aligned}",
                         "\\begin{aligned}p\\left(-\\dfrac{1}{3}\\right) &= 24\\left(-\\dfrac{1}{27}\\right) - 22\\left(\\dfrac{1}{9}\\right) \\cr & \\quad + \\dfrac{1}{3} + 3 \\cr &= -\\dfrac{8}{9} - \\dfrac{22}{9} + \\dfrac{3}{9} + \\dfrac{27}{9} \\cr &= \\dfrac{0}{9} \\cr&= 0\\end{aligned}",
                         "Since $p\\left(-\\dfrac{1}{3}\\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.",
                         "For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$<br> \\begin{aligned} & \\dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \\cr & \\quad \\quad \\quad= 8x^2 - 10x + 3\\end{aligned}",
@@ -1431,7 +1431,7 @@ window.ALEVEL_QUESTIONS = [
                 "bradley_insight": {
                         "type": "pro-tip",
                         "title": "The Head Teacher's Eye: Differentiating the Square",
-                        "content": "When maximising an area expression like $A = 4x\\sqrt{36 - x^2}$, a neat shortcut is to maximise its square instead, let us call it $S = A^2 = 16x^2(36 - x^2) = 576x^2 - 16x^4$. This is a simple polynomial that is much easier to differentiate and yields the exact same critical point, saving valuable time in an exam."
+                        "content": "When maximising an area expression like $A = 4x\\sqrt{36 - x^2}$, a neat shortcut is to maximise its square instead, let us call it \\begin{aligned}S $= A^2\\cr & = 16x^2(36 - x^2)\\cr & = 576x^2 - 16x^4\\end{aligned} This is a simple polynomial that is much easier to differentiate and yields the exact same critical point, saving valuable time in an exam."
                 }
         },
         {
@@ -1841,7 +1841,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A curve has equation $y = x^3 - 27x$.<br><br>The point $A$ on the curve has $x$-coordinate $-3$.<br>The point $B$ on the curve has $x$-coordinate $-3 + h$.<br><br>1. Show that the gradient of the line $AB$ is $h^2 - 9h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
                 "steps": [
                         "Find the $y$-coordinate of point $A$ by substituting $x = -3$ into the curve's equation:<br>\\begin{aligned}y_A &= (-3)^3 - 27(-3) \\cr&= -27 + 81 \\cr&= 54\\end{aligned}<br>So, the coordinates of $A$ are $(-3, 54)$.",
-                        "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:<br>$$y_B = (h^3 - 9h^2 + 27h - 27) + 81 - 27h$$<br>$$y_B = h^3 - 9h^2 + 54$$<br>So, the coordinates of $B$ are $(-3 + h, \\, h^3 - 9h^2 + 54)$.",
+                        "Find the $y$-coordinate of point $B$ by substituting $x = -3 + h$ into the curve's equation:<br>$$y_B = (-3 + h)^3 - 27(-3 + h)$$<br>Using the binomial expansion for $(-3+h)^3$, we expand this expression as:\\begin{aligned}y_B &= (h^3 - 9h^2 + 27h - 27)\\cr & \\qquad + 81 - 27\\cr y_B &= h^3 - 9h^2 + 54\\end{aligned} So, the coordinates of $B$ are $(-3 + h, \\, h^3 - 9h^2 + 54)$.",
                         "Calculate the gradient of the chord $AB$ using the gradient formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(h^3 - 9h^2 + 54) - 54}{(-3 + h) - (-3)}$$<br>$$m_{AB} = \\dfrac{h^3 - 9h^2}{h}$$<br>Dividing each term in the numerator by $h$ (where $h \\ne 0$) gives the required gradient:<br>$$m_{AB} = h^2 - 9h$$",
                         "To show that $A$ is a stationary point, we consider the limit of the chord gradient $m_{AB}$ as $h \\to 0$. As $h$ approaches $0$, the chord $AB$ becomes the tangent to the curve at point $A$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} (h^2 - 9h) \\cr&= 0^2 - 9(0) \\cr&= 0\\end{aligned}",
                         "Since the derivative (gradient of the tangent) at $x = -3$ is $0$, the tangent line is completely horizontal. Therefore, point $A$ is a stationary point on the curve.",
@@ -1884,7 +1884,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A curve has equation $y = 2x^2 - 5x$.<br><br>The point $P$ on the curve has $x$-coordinate $2$.<br>The point $Q$ on the curve has $x$-coordinate $2 + h$.<br><br>1. Show that the gradient of the chord $PQ$ is $2h + 3$.<br>2. Explain how this result can be used to show that the gradient of the tangent to the curve at $P$ is $3$.",
                 "steps": [
                         "Find the $y$-coordinate of point $P$ by substituting $x = 2$ into the curve's equation:<br>\\begin{aligned}y_P &= 2(2)^2 - 5(2) \\cr&= 8 - 10 \\cr&= -2\\end{aligned}<br>So, the coordinates of $P$ are $(2, -2)$.",
-                        "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:<br>$$y_Q = 2(4 + 4h + h^2) - 10 - 5h$$<br>\\begin{aligned}y_Q &= 8 + 8h + 2h^2 - 10 - 5h \\cr&= 2h^2 + 3h - 2\\end{aligned}<br>So, the coordinates of $Q$ are $(2 + h, \\, 2h^2 + 3h - 2)$.",
+                        "Find the $y$-coordinate of point $Q$ by substituting $x = 2 + h$ into the curve's equation:<br>$$y_Q = 2(2 + h)^2 - 5(2 + h)$$<br>Expand the quadratic term and simplify:\\begin{aligned}y_Q &= 2(4 + 4h + h^2) - 10 - 5h \\cr  &= 8 + 8h + 2h^2 - 10 - 5h \\cr &= 2h^2 + 3h - 2\\end{aligned} So, the coordinates of $Q$ are $(2 + h, \\, 2h^2 + 3h - 2)$.",
                         "Calculate the gradient of the chord $PQ$ using the formula $m = \\dfrac{y_Q - y_P}{x_Q - x_P}$:<br>$$m_{PQ} = \\dfrac{(2h^2 + 3h - 2) - (-2)}{(2 + h) - 2}$$<br>$$m_{PQ} = \\dfrac{2h^2 + 3h}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{PQ} = 2h + 3$$",
                         "To find the gradient of the tangent to the curve at $P$, we evaluate the limit of the chord gradient $m_{PQ}$ as the point $Q$ moves infinitely close to $P$, which corresponds to $h \\to 0$:<br>\\begin{aligned}\\text{Gradient at } P &= \\lim_{h \\to 0} (2h + 3) \\cr&= 2(0) + 3 \\cr&= 3\\end{aligned}",
                 "Final Answer: $$2h + 3, \\quad \\lim_{h \\to 0} (2h + 3) = 3$$"
@@ -1925,7 +1925,7 @@ window.ALEVEL_QUESTIONS = [
                 "question": "A curve has equation $y = 2x^3 - 6x$.<br><br>The point $A$ on the curve has $x$-coordinate $1$.<br>The point $B$ on the curve has $x$-coordinate $1 + h$.<br><br>1. Show that the gradient of the line $AB$ is $2h^2 + 6h$.<br>2. Explain how the result of part (1) can be used to show that $A$ is a stationary point on the curve.",
                 "steps": [
                         "Find the $y$-coordinate of point $A$ by substituting $x = 1$ into the curve's equation:<br>\\begin{aligned}y_A &= 2(1)^3 - 6(1) \\cr&= 2 - 6 \\cr&= -4\\end{aligned}<br>So, the coordinates of $A$ are $(1, -4)$.",
-                        "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:<br>$$y_B = 2(1 + 3h + 3h^2 + h^3) - 6 - 6h$$<br>\\begin{aligned}y_B &= 2 + 6h + 6h^2 + 2h^3 - 6 - 6h \\cr&= 2h^3 + 6h^2 - 4\\end{aligned}<br>So, the coordinates of $B$ are $(1 + h, \\, 2h^3 + 6h^2 - 4)$.",
+                        "Find the $y$-coordinate of point $B$ by substituting $x = 1 + h$ into the curve's equation:<br>$$y_B = 2(1 + h)^3 - 6(1 + h)$$<br>Expand the cubic term and simplify:\\begin{aligned y_B &= 2(1 + 3h + 3h^2 + h^3)\\cr & \\qquad - 6 - 6h &= 2 + 6h + 6h^2 + 2h^3 \\cr & \\qquad- 6 - 6h \\cr&= 2h^3 + 6h^2 - 4\\end{aligned}So, the coordinates of $B$ are $(1 + h, \\, 2h^3 + 6h^2 - 4)$.",
                         "Calculate the gradient of the line $AB$ using $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>$$m_{AB} = \\dfrac{(2h^3 + 6h^2 - 4) - (-4)}{(1 + h) - 1}$$<br>$$m_{AB} = \\dfrac{2h^3 + 6h^2}{h}$$<br>Divide the numerator by $h$ (where $h \\ne 0$):<br>$$m_{AB} = 2h^2 + 6h$$",
                         "To show that $A$ is a stationary point, we find the gradient of the tangent at $A$ by taking the limit of the chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\\dfrac{\\text{d}y}{\\text{d}x} &= \\lim_{h \\to 0} (2h^2 + 6h) \\cr&= 2(0)^2 + 6(0) \\cr&= 0\\end{aligned}",
                         "Since the derivative at $x = 1$ is $0$, the curve has a horizontal tangent line at $A$. Therefore, point $A$ is a stationary point on the curve.",
@@ -2015,20 +2015,20 @@ window.ALEVEL_QUESTIONS = [
                         "Calculate the gradient of the line $AB$ using the formula $m = \\dfrac{y_B - y_A}{x_B - x_A}$:<br>\\begin{aligned}m_{AB} &= \\dfrac{\\sqrt{4 + h} - 2}{(4 + h) - 4} \\cr&= \\dfrac{\\sqrt{4 + h} - 2}{h}\\end{aligned}",
                         "To eliminate the $h$ in the denominator and simplify, we rationalise the numerator by multiplying both the numerator and the denominator by the conjugate expression $(\\sqrt{4 + h} + 2)$:<br>$$m_{AB} = \\dfrac{(\\sqrt{4 + h} - 2)(\\sqrt{4 + h} + 2)}{h(\\sqrt{4 + h} + 2)}$$",
                         "Expand the numerator using the difference of two squares identity, $(a-b)(a+b) = a^2 - b^2$:<br>\\begin{aligned}m_{AB} &= \\dfrac{(4 + h) - 4}{h(\\sqrt{4 + h} + 2)} \\cr&= \\dfrac{h}{h(\\sqrt{4 + h} + 2)}\\end{aligned}<br>Cancel the factor of $h$ (where $h \\ne 0$) to obtain the required expression:<br>$$m_{AB} = \\dfrac{1}{\\sqrt{4 + h} + 2}$$",
-                        "To find the gradient of the curve at $A$, we evaluate the limit of the simplified chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}\\text{Gradient at } A &= \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4 + h} + 2}\\right) \\cr&= \\dfrac{1}{\\sqrt{4 + 0} + 2} \\cr&= \\dfrac{1}{2 + 2} \\cr&= \\dfrac{1}{4} \\cr&= 0.25\\end{aligned}",
-                "Final Answer: $$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.25$$"
+                        "To find the gradient of the curve at $A$, we evaluate the limit of the simplified chord gradient $m_{AB}$ as $h \\to 0$:<br>\\begin{aligned}&\\text{Gradient at } A \\cr & \\qquad = \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4 + h} + 2}\\right) \\cr & \\qquad= \\dfrac{1}{\\sqrt{4 + 0} + 2} \\cr & \\qquad= \\dfrac{1}{2 + 2} \\cr & \\qquad= \\dfrac{1}{4} \\cr & \\qquad= 0.25\\end{aligned}",
+                "Final Answer: $$\\dfrac{1}{\\sqrt{4+h} + 2},$$  $$\\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.25$$"
                 ],
                 "pi_options": [
                         {
-                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} - 2}, \\quad \\text{gradient is undefined}$$",
+                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} - 2},$$ $$\\text{gradient is undefined}$$",
                                 "feedback": "This is probably because you multiplied by the wrong conjugate. To rationalise the numerator $(\\sqrt{4+h}-2)$, you must multiply both top and bottom by $(\\sqrt{4+h}+2)$."
                         },
                         {
-                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 2}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.5$$",
+                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 2},$$ $$\\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 2}\\right) = 0.5$$",
                                 "feedback": "Your algebraic rationalisation is correct, but your final limit evaluation has a slip. Substituting $h = 0$ yields $\\dfrac{1}{\\sqrt{4}+2} = \\dfrac{1}{2+2} = \\dfrac{1}{4} = 0.25$, not $0.5$."
                         },
                         {
-                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 4}, \\quad \\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 4}\\right) = 0.167$$",
+                                "ans": "$$\\dfrac{1}{\\sqrt{4+h} + 4},$$ $$\\lim_{h \\to 0} \\left(\\dfrac{1}{\\sqrt{4+h} + 4}\\right) = 0.167$$",
                                 "feedback": "Check your difference of squares expansion in the numerator. Squaring the term $2$ gives $4$, which cancels the $+4$ term inside the radical perfectly."
                         }
                 ],
