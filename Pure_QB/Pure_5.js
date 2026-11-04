@@ -504,7 +504,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "\\begin{aligned} k = -11 \\end{aligned}",
-                                "feedback": "Check your evaluation of $(-2)^3$. It is $-8$, not $+8$. Using $+8$ gives \\begin{aligned} 24 + 4k + 20 &= 0 \\cr 4k &= -44 \\cr k &= -11 \\end{aligned."
+                                "feedback": "Check your evaluation of $(-2)^3$. It is $-8$, not $+8$. Using $+8$ gives \\begin{aligned} 24 + 4k + 20 &= 0 \\cr 4k &= -44 \\cr k &= -11 \\end{aligned}"
                         },
                         {
                                 "ans": "\\begin{aligned} k = -1 \\end{aligned}",
@@ -1156,7 +1156,7 @@ window.ALEVEL_QUESTIONS = [
                 "pi_options": [
                         {
                                 "ans": "\\begin{aligned} r &= -\\dfrac{2}{5}, \\, a = -15 \\cr r &= -\\dfrac{3}{5}, \\, a = -10 \\end{aligned}",
-                                "feedback": "Check your signs when factorising the quadratic equation $25r^2 - 25r + 6 = 0$. Since the middle term is negative and the constant term is positive, both roots must be positive: $(5r - 2)(5r - 3) = 0 \\implies r = 0.4, 0.6$."
+                                "feedback": "Check your signs when factorising the quadratic equation $25r^2 - 25r + 6 = 0$. Since the middle term is negative and the constant term is positive, both roots must be positive: \\begin{aligned}(5r - 2)(5r - 3) &= 0 \\cr\\implies r &= 0.4, 0.6$."
                         },
                         {
                                 "ans": "\\begin{aligned} r &= \\dfrac{2}{5}, \\, a = 2.4 \\cr r &= \\dfrac{3}{5}, \\, a = 3.6 \\end{aligned}",
