@@ -58,6 +58,27 @@ class DatabaseHelper {
   }
 
   // ==========================================
+  // TRIAL GATEKEEPER ACCOUNTING (UNIQUE QUESTIONS)
+  // ==========================================
+
+  Future<int> getAttemptedQuestionsCount() async {
+    if (kIsWeb) {
+      return _webAttempts.map((a) => a['question_id'].toString()).toSet().length;
+    }
+
+    try {
+      final db = await database;
+      final res = await db.rawQuery(
+        'SELECT COUNT(DISTINCT question_id) as count FROM user_attempts'
+      );
+      return Sqflite.firstIntValue(res) ?? 0;
+    } catch (e) {
+      debugPrint("[DB ATTEMPTED COUNT ERROR] $e");
+      return 0;
+    }
+  }
+
+  // ==========================================
   // HONOURS MATRIX PROGRESSION (24 HONOURS)
   // ==========================================
 
@@ -92,7 +113,6 @@ class DatabaseHelper {
       }
     }
 
-    // Tally sets for distinct question tracking
     final Map<String, Set<String>> tally = {
       'leibniz': {},
       'newton_calc': {},
@@ -131,7 +151,6 @@ class DatabaseHelper {
 
       if (id.isEmpty) continue;
 
-      // Board tracking for Agility
       if (board.isNotEmpty) {
         boardMastery.putIfAbsent(board, () => {});
         boardMastery[board]!.add(id);
@@ -184,7 +203,6 @@ class DatabaseHelper {
       }
     }
 
-    // Populate each HonourItem
     for (var h in honours) {
       if (h.id == 'home_nations') {
         int boardsQualified = boardMastery.values.where((set) => set.length >= 5).length;
@@ -725,10 +743,13 @@ class DatabaseHelper {
           .map((a) => a['question_id'])
           .toSet()
           .length;
+      final uniqueAttempted = _webAttempts.map((a) => a['question_id']).toSet().length;
+
       return {
         'total_attempts': total,
         'first_try_correct': correct,
         'unique_mastered': uniqueMastered,
+        'unique_attempted': uniqueAttempted,
       };
     }
 
@@ -739,15 +760,19 @@ class DatabaseHelper {
       final uniqueRes = await db.rawQuery(
         'SELECT COUNT(DISTINCT question_id) as count FROM user_attempts WHERE first_choice_correct = 1 OR second_choice_correct = 1'
       );
+      final uniqueAttemptedRes = await db.rawQuery(
+        'SELECT COUNT(DISTINCT question_id) as count FROM user_attempts'
+      );
 
       return {
         'total_attempts': Sqflite.firstIntValue(totalRes) ?? 0,
         'first_try_correct': Sqflite.firstIntValue(correctRes) ?? 0,
         'unique_mastered': Sqflite.firstIntValue(uniqueRes) ?? 0,
+        'unique_attempted': Sqflite.firstIntValue(uniqueAttemptedRes) ?? 0,
       };
     } catch (e) {
       debugPrint("[DB STATS ERROR] $e");
-      return {'total_attempts': 0, 'first_try_correct': 0, 'unique_mastered': 0};
+      return {'total_attempts': 0, 'first_try_correct': 0, 'unique_mastered': 0, 'unique_attempted': 0};
     }
   }
 

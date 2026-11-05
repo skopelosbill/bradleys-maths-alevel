@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bradley's Maths — Master Icon Studio</title>
+  <style>
+    body {
+      background-color: #020617;
+      color: #F8FAFC;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+      color: #FDE68A;
+      letter-spacing: 0.5px;
+    }
+    p {
+      color: #94A3B8;
+      font-size: 13px;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    .preview-box {
+      border: 2px solid #334155;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      width: 512px;
+      height: 512px;
+      margin-bottom: 24px;
+      background: #000;
+    }
+    canvas {
+      width: 512px;
+      height: 512px;
+      display: block;
+    }
+    button {
+      background: linear-gradient(135deg, #F59E0B, #D97706);
+      color: #0F172A;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bradley's Maths • Official Master App Icon</h1>
+  <p>The Canonical Sine Wave [0, 2π] with Infinite Tails (1024 × 1024 px)</p>
+
+  <div class="preview-box">
+    <canvas id="iconCanvas" width="1024" height="1024"></canvas>
+  </div>
+
+  <button onclick="downloadIcon()">Download 1024×1024 Master Icon (app_icon.png)</button>
+
+  <script>
+    const canvas = document.getElementById('iconCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function drawIcon() {
+      const W = 1024;
+      const H = 1024;
+      const cx = W / 2;
+      const cy = H / 2;
+
+      // 1. BACKGROUND: Deep Oxford Slate with Radial Lighting
+      const bgGrad = ctx.createRadialGradient(cx, cy, 60, cx, cy, 680);
+      bgGrad.addColorStop(0, '#1E293B');
+      bgGrad.addColorStop(0.65, '#0F172A');
+      bgGrad.addColorStop(1, '#050811');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      // Pointy-topped regular hexagon
+      function createHexagonPath(radius) {
+        ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+          const angle = (Math.PI / 3) * i - (Math.PI / 2);
+          const x = cx + radius * Math.cos(angle);
+          const y = cy + radius * Math.sin(angle);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+      }
+
+      // 2. SOFT AMBIENT GOLD HALO
+      ctx.save();
+      createHexagonPath(425);
+      ctx.shadowColor = 'rgba(245, 158, 11, 0.4)';
+      ctx.shadowBlur = 45;
+      ctx.strokeStyle = 'rgba(245, 158, 11, 0.25)';
+      ctx.lineWidth = 12;
+      ctx.stroke();
+      ctx.restore();
+
+      // 3. MAIN 24K GOLD HEXAGON BORDER
+      ctx.save();
+      createHexagonPath(415);
+      const goldGrad = ctx.createLinearGradient(cx - 300, cy - 350, cx + 300, cy + 350);
+      goldGrad.addColorStop(0, '#FBBF24');
+      goldGrad.addColorStop(0.35, '#FDE68A');
+      goldGrad.addColorStop(0.7, '#F59E0B');
+      goldGrad.addColorStop(1, '#B45309');
+      ctx.strokeStyle = goldGrad;
+      ctx.lineWidth = 26;
+      ctx.lineJoin = 'miter';
+      ctx.stroke();
+      ctx.restore();
+
+      // 4. INNER BEVEL ACCENT LINE
+      ctx.save();
+      createHexagonPath(385);
+      ctx.strokeStyle = 'rgba(254, 243, 199, 0.35)';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+      ctx.restore();
+
+      // ----------------------------------------------------
+      // 5. COORDINATE GEOMETRY (Canonical [0, 2π] Frame)
+      // ----------------------------------------------------
+      // Origin (x = 0) is placed on the left third
+      const originX = cx - 210; // x = 0 at 302px
+      const originY = cy;       // y = 0 at 512px
+      const periodL = 420;      // 2π period length
+      // Note: π lands exactly at originX + 210 = cx (512px)! Dead centre!
+
+      // 5A. PLATINUM-WHITE AXES (Architectural 4px line)
+      ctx.save();
+      ctx.strokeStyle = '#F8FAFC';
+      ctx.fillStyle = '#F8FAFC';
+      ctx.lineWidth = 4.5;
+      ctx.lineCap = 'round';
+
+      // X-Axis (from before x=0 to past 2π)
+      const xAxisStart = originX - 70;
+      const xAxisEnd = originX + periodL + 95;
+
+      ctx.beginPath();
+      ctx.moveTo(xAxisStart, originY);
+      ctx.lineTo(xAxisEnd, originY);
+      ctx.stroke();
+
+      // X Arrowhead
+      ctx.beginPath();
+      ctx.moveTo(xAxisEnd + 14, originY);
+      ctx.lineTo(xAxisEnd - 4, originY - 8);
+      ctx.lineTo(xAxisEnd - 4, originY + 8);
+      ctx.closePath();
+      ctx.fill();
+
+      // Y-Axis (Vertical through originX)
+      const yAxisTop = cy - 230;
+      const yAxisBottom = cy + 240;
+
+      ctx.beginPath();
+      ctx.moveTo(originX, yAxisBottom);
+      ctx.lineTo(originX, yAxisTop);
+      ctx.stroke();
+
+      // Y Arrowhead
+      ctx.beginPath();
+      ctx.moveTo(originX, yAxisTop - 14);
+      ctx.lineTo(originX - 8, yAxisTop + 4);
+      ctx.lineTo(originX + 8, yAxisTop + 4);
+      ctx.closePath();
+      ctx.fill();
+
+      // Origin Point
+      ctx.fillStyle = '#FDE68A';
+      ctx.beginPath();
+      ctx.arc(originX, originY, 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Subtle Axis Notation (x, y)
+      ctx.font = 'bold italic 30px "Georgia", serif';
+      ctx.fillStyle = 'rgba(248, 250, 252, 0.85)';
+      ctx.fillText('x', xAxisEnd - 6, originY + 36);
+      ctx.fillText('y', originX - 36, yAxisTop + 14);
+
+      // Subtle Origin label 'O'
+      ctx.font = 'italic 22px "Georgia", serif';
+      ctx.fillStyle = 'rgba(254, 243, 199, 0.7)';
+      ctx.fillText('O', originX - 22, originY + 24);
+
+      ctx.restore();
+
+      // ----------------------------------------------------
+      // 6. THE SLENDER GOLDEN SINE CURVE (8px Laser Filament)
+      // ----------------------------------------------------
+      ctx.save();
+
+      // Soft ambient curve glow
+      ctx.shadowColor = 'rgba(245, 158, 11, 0.6)';
+      ctx.shadowBlur = 18;
+      ctx.shadowOffsetY = 1;
+
+      const curveGrad = ctx.createLinearGradient(originX, cy - 140, originX + periodL, cy + 140);
+      curveGrad.addColorStop(0, '#F59E0B');   // Warm 24K Gold
+      curveGrad.addColorStop(0.5, '#FDE68A'); // Champagne Highlight at π
+      curveGrad.addColorStop(1, '#FBBF24');   // Pure Imperial Amber
+
+      ctx.strokeStyle = curveGrad;
+      ctx.lineWidth = 8.5; // Refined, slender laser filament (no serpent!)
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+
+      // Graph extends from -0.15π (before x=0) to 2.15π (past x=2π)
+      const graphStartX = originX - 45;
+      const graphEndX = originX + periodL + 50;
+      const amplitude = 135; // Textbook amplitude
+
+      ctx.beginPath();
+      for (let x = graphStartX; x <= graphEndX; x += 1.5) {
+        const theta = ((x - originX) / periodL) * (2 * Math.PI);
+        const y = originY - amplitude * Math.sin(theta);
+        if (x === graphStartX) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    drawIcon();
+
+    function downloadIcon() {
+      const link = document.createElement('a');
+      link.download = 'app_icon.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+  </script>
+</body>
+</html>

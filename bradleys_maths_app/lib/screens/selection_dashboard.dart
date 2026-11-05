@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
 import '../theme_controller.dart';
+import '../services/purchase_service.dart';
 import 'question_screen.dart';
 import 'honours_screen.dart';
+import 'paywall_sheet.dart';
 
 class SelectionDashboard extends StatefulWidget {
   const SelectionDashboard({super.key});
@@ -15,6 +17,7 @@ class SelectionDashboard extends StatefulWidget {
 class _SelectionDashboardState extends State<SelectionDashboard> {
   final DatabaseHelper _dbHelper = DatabaseHelper();
   final FilterState _filter = FilterState();
+  final PurchaseService _purchaseService = PurchaseService();
 
   // Current Step: 0 = Board, 1 = Level, 2 = Branch, 3 = Major Area, 4 = Topic, 5 = Subtopic
   int _currentStep = 0;
@@ -56,6 +59,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
     'total_attempts': 0,
     'first_try_correct': 0,
     'unique_mastered': 0,
+    'unique_attempted': 0,
   };
   Map<String, Map<String, int>> _topicMastery = {};
   Map<String, Map<String, int>> _subtopicMastery = {};
@@ -63,6 +67,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   @override
   void initState() {
     super.initState();
+    _purchaseService.initialize();
     _loadStats();
     _loadTaxonomy();
   }
@@ -147,6 +152,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         builder: (_) => HonoursScreen(dbHelper: _dbHelper),
       ),
     );
+  }
+
+  void _openPaywall() {
+    PaywallSheet.show(context);
   }
 
   // ----------------------------------------------------
@@ -326,10 +335,19 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // QUESTION LAUNCHER
+  // QUESTION LAUNCHER (WITH 25-QUESTION GATEKEEPER LOCK)
   // ----------------------------------------------------
 
   Future<void> _launchQuestion({bool forceIncludeMastered = false}) async {
+    // GATEKEEPER CHECK: 25 Unique Questions Trial Limit
+    final bool isFullAccess = _purchaseService.isUnlocked.value;
+    final int uniqueAttempted = _userStats['unique_attempted'] ?? 0;
+
+    if (!isFullAccess && uniqueAttempted >= PurchaseService.freeTrialLimit) {
+      _openPaywall();
+      return;
+    }
+
     setState(() => _isLoading = true);
 
     try {
@@ -389,12 +407,27 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         backgroundColor: isDark ? const Color(0xFF0F172A) : Colors.white,
         elevation: 0,
         centerTitle: true,
-        title: Text(
-          "Bradley's Maths",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-            color: isDark ? Colors.white : const Color(0xFF0F172A),
+        // Secret Founder's Unlock: Long-press the title!
+        title: GestureDetector(
+          onLongPress: () async {
+            await _purchaseService.debugSimulateUnlock();
+            if (mounted) {
+              setState(() {});
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text("Founder Master Key Activated: All 1,400 Questions Unlocked!"),
+                  backgroundColor: Color(0xFF16A34A),
+                ),
+              );
+            }
+          },
+          child: Text(
+            "Bradley's Maths",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+              color: isDark ? Colors.white : const Color(0xFF0F172A),
+            ),
           ),
         ),
         leading: _currentStep > 0
@@ -449,6 +482,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                     _buildStatsRibbon(isDark),
                     const SizedBox(height: 8),
 
+                    // 25-Question Trial Countdown / Lifetime Status Banner
+                    _buildTrialCountdownBanner(isDark),
+                    const SizedBox(height: 8),
+
                     // Exam Revision Mode Toggle Banner
                     _buildRevisionToggleBanner(isDark),
                     const SizedBox(height: 8),
@@ -465,6 +502,101 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 ),
               ),
             ),
+    );
+  }
+
+  // ----------------------------------------------------
+  // 25-QUESTION TRIAL COUNTDOWN / LIFETIME UNLOCKED BANNER
+  // ----------------------------------------------------
+
+  Widget _buildTrialCountdownBanner(bool isDark) {
+    return ValueListenableBuilder<bool>(
+      valueListenable: _purchaseService.isUnlocked,
+      builder: (ctx, unlocked, _) {
+        if (unlocked) {
+          return Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: isDark ? const Color(0xFF1E293B) : const Color(0xFFFEF3C7),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: const Color(0xFFF59E0B)),
+            ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.workspace_premium, color: Color(0xFFF59E0B), size: 16),
+                SizedBox(width: 8),
+                Text(
+                  "Full Lifetime Access Unlocked",
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFF59E0B),
+                  ),
+                ),
+              ],
+            ),
+          );
+        }
+
+        final int uniqueAttempted = _userStats['unique_attempted'] ?? 0;
+        final int remaining = (PurchaseService.freeTrialLimit - uniqueAttempted).clamp(0, PurchaseService.freeTrialLimit);
+
+        return InkWell(
+          onTap: _openPaywall,
+          borderRadius: BorderRadius.circular(10),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: isDark ? const Color(0xFF1E293B) : Colors.indigo.shade50,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: remaining <= 5
+                    ? (isDark ? const Color(0xFFF87171) : Colors.red.shade400)
+                    : (isDark ? const Color(0xFF818CF8) : Colors.indigo.shade300),
+              ),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  remaining <= 5 ? Icons.lock_clock : Icons.stars,
+                  size: 16,
+                  color: remaining <= 5
+                      ? (isDark ? const Color(0xFFF87171) : Colors.red.shade700)
+                      : (isDark ? const Color(0xFFFDE68A) : Colors.indigo.shade700),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    remaining > 0
+                        ? "Free Trial: $remaining / ${PurchaseService.freeTrialLimit} questions left"
+                        : "Free Trial Complete: Tap to Unlock All 1,400",
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? Colors.white : Colors.indigo.shade900,
+                    ),
+                  ),
+                ),
+                Text(
+                  "Unlock",
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                    color: isDark ? const Color(0xFFF59E0B) : Colors.indigo.shade700,
+                  ),
+                ),
+                const SizedBox(width: 2),
+                Icon(
+                  Icons.chevron_right,
+                  size: 16,
+                  color: isDark ? const Color(0xFFF59E0B) : Colors.indigo.shade700,
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -767,7 +899,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // GENERIC STEP LIST BUILDER (HIGH CONTRAST & ADAPTIVE)
+  // GENERIC STEP LIST BUILDER
   // ----------------------------------------------------
 
   Widget _buildStep({
@@ -824,7 +956,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               final mastered = stats?['mastered'] ?? 0;
               final isCompleted = total > 0 && mastered == total;
 
-              // High-Contrast Theme Colors
               Color cardBg;
               Color borderColor;
               Color textColor;
@@ -902,7 +1033,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                             ),
                           ),
                         ),
-                        // Mastery Badges
                         if (isCompleted) ...[
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -971,7 +1101,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // STEP 3: BRANCH STEP (MAXIMUM CONTRAST ON ALL SCREENS)
+  // STEP 3: BRANCH STEP
   // ----------------------------------------------------
 
   Widget _buildBranchStep(bool isDark) {
@@ -1051,7 +1181,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
-                                  // MAXIMUM CONTRAST: Deep black in light mode, pure white in dark mode
                                   color: isDark ? Colors.white : const Color(0xFF0F172A),
                                 ),
                               ),
@@ -1061,7 +1190,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                                 style: TextStyle(
                                   fontSize: 11,
                                   fontWeight: FontWeight.w500,
-                                  // Clear charcoal in light mode, silver in dark mode
                                   color: isDark ? const Color(0xFF94A3B8) : const Color(0xFF475569),
                                 ),
                               ),

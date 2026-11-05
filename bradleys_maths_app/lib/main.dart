@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'screens/selection_dashboard.dart';
 import 'theme_controller.dart';
 
-void main() {
+void main() async {
+  // Ensure Flutter engine bindings are initialized before locking orientation
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Formally lock app to Portrait Mode Only (360px mobile-first standard)
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
   runApp(const BradleysMathsApp());
 }
 
