@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
@@ -13,13 +14,135 @@ class DatabaseHelper {
 
   Future<Database> get database async {
     if (_db != null) return _db!;
+    
     var databasesPath = await getDatabasesPath();
     var path = join(databasesPath, "bradleys_maths.db");
+
+    // Check if the database exists and actually contains the questions table
+    bool shouldCopy = false;
+    bool exists = await databaseExists(path);
+
+    if (!exists) {
+      shouldCopy = true;
+    } else {
+      try {
+        final testDb = await openDatabase(path, readOnly: true);
+        final check = await testDb.rawQuery(
+          "SELECT name FROM sqlite_master WHERE type='table' AND name='questions'"
+        );
+        await testDb.close();
+        if (check.isEmpty) {
+          shouldCopy = true;
+        }
+      } catch (_) {
+        shouldCopy = true;
+      }
+    }
+
+    if (shouldCopy) {
+      debugPrint("[DB INIT] Copying bradleys_maths.db from assets to $path...");
+      try {
+        await Directory(dirname(path)).create(recursive: true);
+      } catch (_) {}
+
+      // Copy from asset
+      ByteData data = await rootBundle.load("assets/bradleys_maths.db");
+      List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+
+      // Write and flush the bytes written
+      await File(path).writeAsBytes(bytes, flush: true);
+      debugPrint("[DB INIT] Copy complete! Size: ${bytes.length} bytes.");
+    }
+
     _db = await openDatabase(path);
+
+    // Ensure the user_attempts table is ready to log progress
+    await _db!.execute('''
+      CREATE TABLE IF NOT EXISTS user_attempts (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER DEFAULT 1,
+        question_id TEXT NOT NULL,
+        first_choice_text TEXT,
+        first_choice_correct INTEGER,
+        second_choice_text TEXT,
+        second_choice_correct INTEGER,
+        chose_none_of_above INTEGER DEFAULT 0,
+        viewed_model_answer INTEGER DEFAULT 0,
+        attempted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    ''');
+
     return _db!;
   }
 
-  // Reads the full 1400 questions.json asset
+  // Hydrates a SQLite question row with its related steps, options, and insight
+  Future<Map<String, dynamic>> _hydrateQuestionFromDb(Database db, Map<String, dynamic> row) async {
+    final qId = row['id']?.toString() ?? '';
+    final Map<String, dynamic> questionMap = Map<String, dynamic>.from(row);
+
+    // 1. Question text
+    final qText = row['question_text'] ?? row['question'] ?? '';
+    questionMap['question'] = qText;
+    questionMap['question_text'] = qText;
+
+    // 2. Fetch steps ordered by step_number
+    final stepsRes = await db.query(
+      'question_steps',
+      columns: ['step_text', 'is_final_answer'],
+      where: 'question_id = ?',
+      whereArgs: [qId],
+      orderBy: 'step_number ASC',
+    );
+    questionMap['steps'] = stepsRes.map((s) => s['step_text']?.toString() ?? '').toList();
+
+    // 3. Fetch options
+    final optionsRes = await db.query(
+      'question_options',
+      columns: ['ans_text', 'feedback_text', 'is_correct'],
+      where: 'question_id = ?',
+      whereArgs: [qId],
+    );
+
+    // Distractors (is_correct == 0)
+    final piOptions = optionsRes
+        .where((o) => (o['is_correct'] as int? ?? 0) == 0)
+        .map((o) => {
+              'ans': o['ans_text']?.toString() ?? '',
+              'feedback': o['feedback_text']?.toString() ?? 'Check your paper working carefully.',
+            })
+        .toList();
+    questionMap['pi_options'] = piOptions;
+
+    // Correct Answer (is_correct == 1)
+    final correctOpt = optionsRes.firstWhere(
+      (o) => (o['is_correct'] as int? ?? 0) == 1,
+      orElse: () => {},
+    );
+    if (correctOpt.isNotEmpty) {
+      questionMap['correct_answer'] = correctOpt['ans_text']?.toString() ?? '';
+    }
+
+    // 4. Fetch Bradley Insight
+    final insightRes = await db.query(
+      'bradley_insights',
+      columns: ['insight_type', 'title', 'content'],
+      where: 'question_id = ?',
+      whereArgs: [qId],
+      limit: 1,
+    );
+    if (insightRes.isNotEmpty) {
+      final i = insightRes.first;
+      questionMap['bradley_insight'] = {
+        'type': i['insight_type']?.toString() ?? 'pro-tip',
+        'title': i['title']?.toString() ?? "The Head Teacher's Eye",
+        'content': i['content']?.toString() ?? '',
+      };
+    }
+
+    return questionMap;
+  }
+
+  // Reads the full 1400 questions.json asset for Web fallback
   Future<List<Map<String, dynamic>>> _loadWebData() async {
     if (_jsonCache != null) return _jsonCache!;
     try {
@@ -594,7 +717,7 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // FETCH QUESTION (RESPECTS REVISION FILTER)
+  // FETCH QUESTION (HYDRATED FROM SQLITE)
   // ==========================================
 
   Future<Map<String, dynamic>?> fetchQuestion(
@@ -685,14 +808,23 @@ class DatabaseHelper {
       whereArgs.add('%"${filter.subtopic!.trim()}"%');
     }
 
+    // Bill's Rule: Comprehension and focused topics start at Question 1 (lowest unmastered),
+    // while Random practice retains unpredictable exam-style shuffling!
+    final bool useSequential = filter.branch == 'Comprehension' || 
+        (!filter.isRandomTopic && (!filter.isRandomSubtopic || filter.subtopic != null));
+
     final res = await db.query(
       'questions',
       where: whereClauses.join(' AND '),
       whereArgs: whereArgs,
-      orderBy: 'RANDOM()',
+      orderBy: useSequential ? 'id ASC' : 'RANDOM()',
       limit: 1,
     );
-    return res.isNotEmpty ? res.first : null;
+    
+    if (res.isNotEmpty) {
+      return await _hydrateQuestionFromDb(db, res.first);
+    }
+    return null;
   }
 
   // ==========================================
@@ -777,7 +909,7 @@ class DatabaseHelper {
   }
 
   // ==========================================
-  // STEP 12: SMART BRANCHING QUERIES
+  // STEP 12: SMART BRANCHING QUERIES (HYDRATED)
   // ==========================================
 
   Future<Map<String, dynamic>?> fetchDifferentBoardQuestion(Map<String, dynamic> currentQ) async {
@@ -790,11 +922,15 @@ class DatabaseHelper {
     final List<dynamic> rawSubtopics = currentQ['subtopic'] is List ? currentQ['subtopic'] : [];
     final String? primarySubtopic = rawSubtopics.isNotEmpty ? rawSubtopics.first.toString() : null;
 
+    final masteredIds = await getMasteredQuestionIds();
+
     if (kIsWeb) {
       final data = await _loadWebData();
 
       var baseCandidates = data.where((q) {
-        if (q['id']?.toString() == currentId) return false;
+        final id = q['id']?.toString() ?? '';
+        if (id == currentId) return false;
+        if (masteredIds.contains(id)) return false;
         if (q['board']?.toString() == currentBoard) return false;
         if (q['branch'] != branch) return false;
         if (q['level'] != level) return false;
@@ -824,25 +960,37 @@ class DatabaseHelper {
 
     final db = await database;
 
+    final String masteryClause = """
+      id NOT IN (
+        SELECT DISTINCT question_id FROM user_attempts 
+        WHERE first_choice_correct = 1 OR second_choice_correct = 1
+      )
+    """;
+
     if (primarySubtopic != null && primarySubtopic.isNotEmpty) {
       final subtopicRes = await db.query(
         'questions',
-        where: 'id != ? AND board != ? AND branch = ? AND level = ? AND subtopics LIKE ?',
+        where: 'id != ? AND board != ? AND branch = ? AND level = ? AND subtopics LIKE ? AND $masteryClause',
         whereArgs: [currentId, currentBoard, branch, level, '%$primarySubtopic%'],
         orderBy: 'RANDOM()',
         limit: 1,
       );
-      if (subtopicRes.isNotEmpty) return subtopicRes.first;
+      if (subtopicRes.isNotEmpty) {
+        return await _hydrateQuestionFromDb(db, subtopicRes.first);
+      }
     }
 
     final topicRes = await db.query(
       'questions',
-      where: 'id != ? AND board != ? AND branch = ? AND level = ? AND topic = ?',
+      where: 'id != ? AND board != ? AND branch = ? AND level = ? AND topic = ? AND $masteryClause',
       whereArgs: [currentId, currentBoard, branch, level, topic],
       orderBy: 'RANDOM()',
       limit: 1,
     );
-    return topicRes.isNotEmpty ? topicRes.first : null;
+    if (topicRes.isNotEmpty) {
+      return await _hydrateQuestionFromDb(db, topicRes.first);
+    }
+    return null;
   }
 
   Future<Map<String, dynamic>?> fetchGroupProgressionQuestion(Map<String, dynamic> currentQ) async {
@@ -851,29 +999,69 @@ class DatabaseHelper {
 
     if (groupId.isEmpty) return null;
 
+    final masteredIds = await getMasteredQuestionIds();
+
     if (kIsWeb) {
       final data = await _loadWebData();
-      var matches = data.where((q) {
-        if (q['id']?.toString() == currentId) return false;
+
+      var family = data.where((q) {
+        final id = q['id']?.toString() ?? '';
+        if (id == currentId) return false;
         if (q['group_id']?.toString() != groupId) return false;
+        if (masteredIds.contains(id)) return false;
         return true;
       }).toList();
 
-      if (matches.isNotEmpty) {
-        matches.sort((a, b) => (a['id']?.toString() ?? '').compareTo(b['id']?.toString() ?? ''));
-        return matches.first;
+      if (family.isEmpty) return null;
+
+      var forwardCandidates = family
+          .where((q) => (q['id']?.toString() ?? '').compareTo(currentId) > 0)
+          .toList()
+        ..sort((a, b) => (a['id']?.toString() ?? '').compareTo(b['id']?.toString() ?? ''));
+
+      if (forwardCandidates.isNotEmpty) {
+        return forwardCandidates.first;
       }
-      return null;
+
+      family.sort((a, b) => (a['id']?.toString() ?? '').compareTo(b['id']?.toString() ?? ''));
+      return family.first;
     }
 
     final db = await database;
-    final res = await db.query(
+
+    final String masteryClause = """
+      id NOT IN (
+        SELECT DISTINCT question_id FROM user_attempts 
+        WHERE first_choice_correct = 1 OR second_choice_correct = 1
+      )
+    """;
+
+    // 1. Strict Forward Progression: id > currentId
+    final forwardRes = await db.query(
       'questions',
-      where: 'id != ? AND group_id = ?',
-      whereArgs: [currentId, groupId],
+      where: 'group_id = ? AND id > ? AND $masteryClause',
+      whereArgs: [groupId, currentId],
       orderBy: 'id ASC',
       limit: 1,
     );
-    return res.isNotEmpty ? res.first : null;
+
+    if (forwardRes.isNotEmpty) {
+      return await _hydrateQuestionFromDb(db, forwardRes.first);
+    }
+
+    // 2. Wrap-around: lowest remaining unmastered in group
+    final wrapRes = await db.query(
+      'questions',
+      where: 'group_id = ? AND id != ? AND $masteryClause',
+      whereArgs: [groupId, currentId],
+      orderBy: 'id ASC',
+      limit: 1,
+    );
+
+    if (wrapRes.isNotEmpty) {
+      return await _hydrateQuestionFromDb(db, wrapRes.first);
+    }
+
+    return null;
   }
 }

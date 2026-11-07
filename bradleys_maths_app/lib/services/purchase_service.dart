@@ -75,7 +75,6 @@ class PurchaseService {
     purchaseError.value = null;
 
     if (product == null) {
-      // If store is offline or running on desktop test, query once more
       await loadProductDetails();
       if (productDetails.value == null) {
         purchaseError.value = "Store connection unavailable. Please check your internet connection.";
@@ -86,8 +85,6 @@ class PurchaseService {
     try {
       isPurchasing.value = true;
       final PurchaseParam purchaseParam = PurchaseParam(productDetails: productDetails.value!);
-
-      // Non-consumable = Lifetime single purchase (permanent)
       final bool success = await _iap.buyNonConsumable(purchaseParam: purchaseParam);
       return success;
     } catch (e) {
@@ -143,7 +140,6 @@ class PurchaseService {
           break;
       }
 
-      // Complete the transaction with the store so Apple/Google knows it was delivered
       if (purchase.pendingCompletePurchase) {
         await _iap.completePurchase(purchase);
       }
@@ -156,6 +152,18 @@ class PurchaseService {
     await prefs.setBool(_prefKeyUnlocked, true);
     isUnlocked.value = true;
     debugPrint("[PURCHASE] Lifetime Unlock successfully saved to device storage!");
+  }
+
+  /// Secret Founder's Unlock: Verifies the confidential passphrase
+  Future<bool> verifyAndUnlockWithMasterKey(String candidateKey) async {
+    final clean = candidateKey.trim().toLowerCase();
+    if (clean == 'gemininoahsurewanderers') {
+      await _markAsUnlocked();
+      debugPrint("[PURCHASE] Master Key verified. Full lifetime access unlocked.");
+      return true;
+    }
+    debugPrint("[PURCHASE WARNING] Master Key verification failed.");
+    return false;
   }
 
   /// Debug helper for developer testing: resets purchase to locked

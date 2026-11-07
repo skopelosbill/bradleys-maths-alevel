@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../models/filter_state.dart';
 import '../database_helper.dart';
 import '../theme_controller.dart';
@@ -156,6 +157,136 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
 
   void _openPaywall() {
     PaywallSheet.show(context);
+  }
+
+  // ----------------------------------------------------
+  // SECRET FOUNDER'S ACCESS DIALOG
+  // ----------------------------------------------------
+
+  Future<void> _showFounderKeyDialog(BuildContext context, bool isDark) async {
+    final controller = TextEditingController();
+    String? errorMsg;
+
+    await showDialog(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              title: Row(
+                children: [
+                  const Icon(Icons.key, color: Color(0xFFF59E0B), size: 22),
+                  const SizedBox(width: 8),
+                  Text(
+                    "Founder & Master Access",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? Colors.white : Colors.black87,
+                    ),
+                  ),
+                ],
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    "Enter confidential master passphrase to unlock lifetime access:",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: isDark ? const Color(0xFFCBD5E1) : Colors.black87,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: controller,
+                    autofocus: true,
+                    obscureText: true,
+                    style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                    decoration: InputDecoration(
+                      hintText: "Enter master key...",
+                      hintStyle: TextStyle(color: isDark ? Colors.grey.shade500 : Colors.grey.shade400, fontSize: 13),
+                      errorText: errorMsg,
+                      filled: true,
+                      fillColor: isDark ? const Color(0xFF0F172A) : Colors.grey.shade100,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(color: isDark ? const Color(0xFF334155) : Colors.grey.shade300),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(color: isDark ? const Color(0xFF334155) : Colors.grey.shade300),
+                      ),
+                    ),
+                    onSubmitted: (_) async {
+                      final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
+                      if (ok) {
+                        Navigator.of(ctx).pop();
+                        HapticFeedback.mediumImpact();
+                        if (mounted) {
+                          setState(() {});
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
+                              backgroundColor: Color(0xFF16A34A),
+                              duration: Duration(seconds: 4),
+                            ),
+                          );
+                        }
+                      } else {
+                        HapticFeedback.heavyImpact();
+                        setDialogState(() => errorMsg = "Invalid master passphrase.");
+                      }
+                    },
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: Text(
+                    "Cancel",
+                    style: TextStyle(color: isDark ? Colors.grey.shade400 : Colors.grey, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFF59E0B),
+                    foregroundColor: Colors.black87,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  ),
+                  onPressed: () async {
+                    final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
+                    if (ok) {
+                      Navigator.of(ctx).pop();
+                      HapticFeedback.mediumImpact();
+                      if (mounted) {
+                        setState(() {});
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
+                            backgroundColor: Color(0xFF16A34A),
+                            duration: Duration(seconds: 4),
+                          ),
+                        );
+                      }
+                    } else {
+                      HapticFeedback.heavyImpact();
+                      setDialogState(() => errorMsg = "Invalid master passphrase.");
+                    }
+                  },
+                  child: const Text("Verify & Unlock", style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
   }
 
   // ----------------------------------------------------
@@ -407,20 +538,9 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         backgroundColor: isDark ? const Color(0xFF0F172A) : Colors.white,
         elevation: 0,
         centerTitle: true,
-        // Secret Founder's Unlock: Long-press the title!
+        // Secret Founder's Unlock: Long-press prompts for passphrase
         title: GestureDetector(
-          onLongPress: () async {
-            await _purchaseService.debugSimulateUnlock();
-            if (mounted) {
-              setState(() {});
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text("Founder Master Key Activated: All 1,400 Questions Unlocked!"),
-                  backgroundColor: Color(0xFF16A34A),
-                ),
-              );
-            }
-          },
+          onLongPress: () => _showFounderKeyDialog(context, isDark),
           child: Text(
             "Bradley's Maths",
             style: TextStyle(
@@ -473,7 +593,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
           ? const Center(child: CircularProgressIndicator(color: Color(0xFFF59E0B)))
           : Center(
               child: Container(
-                constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
+                constraints: const BoxConstraints(maxWidth: 420),
                 padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,

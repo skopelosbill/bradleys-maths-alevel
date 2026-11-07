@@ -78,17 +78,26 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   void _loadQuestionData(Map<String, dynamic> q) {
-    _currentQuestion = q;
+    _currentQuestion = Map<String, dynamic>.from(q);
+    final qText = q['question'] ?? q['question_text'] ?? '';
+    _currentQuestion['question'] = qText;
+
     final List<dynamic> rawSteps = q['steps'] ?? [];
     _steps = rawSteps.map((s) => s.toString()).toList();
 
-    // Defensive extraction: Strip out 'Final Answer' label AND any <img> tags so images never leak into option grid
+    // Determine correct answer: prioritize direct correct_answer from question_options
     String correctAnswer = "";
-    if (_steps.isNotEmpty) {
+    if (q['correct_answer'] != null && q['correct_answer'].toString().isNotEmpty) {
+      correctAnswer = q['correct_answer'].toString()
+          .replaceFirst(RegExp(r'<strong>Final Answer</strong>\s*[:\-\—]?\s*', caseSensitive: false), '')
+          .replaceFirst(RegExp(r'Final Answer\s*[:\-\—]?\s*', caseSensitive: false), '')
+          .replaceAll(RegExp(r'<img[^>]*>', caseSensitive: false), '')
+          .trim();
+    } else if (_steps.isNotEmpty) {
       correctAnswer = _steps.last
           .replaceFirst(RegExp(r'<strong>Final Answer</strong>\s*[:\-\—]?\s*', caseSensitive: false), '')
           .replaceFirst(RegExp(r'Final Answer\s*[:\-\—]?\s*', caseSensitive: false), '')
-          .replaceAll(RegExp(r'<img[^>]*>', caseSensitive: false), '') // Structural Image Shield
+          .replaceAll(RegExp(r'<img[^>]*>', caseSensitive: false), '')
           .trim();
     }
 
@@ -266,9 +275,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return false;
   }
 
-  // ----------------------------------------------------
-  // FLOATING IVORY DIAGRAM PLAQUE (BOOSTED AMBIENT HALO)
-  // ----------------------------------------------------
   Widget _buildVectorImage(String imgPath) {
     final cleanPath = imgPath.startsWith('assets/') ? imgPath : 'assets/$imgPath';
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -276,24 +282,22 @@ class _QuestionScreenState extends State<QuestionScreen> {
     return Center(
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 14),
-        constraints: const BoxConstraints(maxWidth: 324), // 328px usable width mobile-first
+        constraints: const BoxConstraints(maxWidth: 324),
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
-          color: const Color(0xFFFAF9F6), // Soft Archival Ivory
+          color: const Color(0xFFFAF9F6),
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
             color: isDark ? const Color(0xFFFDE68A).withAlpha(160) : const Color(0xFFE2DDD5),
             width: 1.4,
           ),
           boxShadow: [
-            // Boosted Warm Ivory / Cream Ambient Glow
             BoxShadow(
               color: const Color(0xFFFDE68A).withAlpha(isDark ? 110 : 35),
               blurRadius: 18,
               spreadRadius: 2,
               offset: const Offset(0, 4),
             ),
-            // Grounding Depth Shadow
             BoxShadow(
               color: Colors.black.withAlpha(isDark ? 90 : 25),
               blurRadius: 10,
@@ -388,7 +392,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
         ),
         elevation: 0,
         actions: [
-          // Instant Light/Dark Mode Switcher
           IconButton(
             icon: Icon(
               isDark ? Icons.light_mode : Icons.dark_mode_outlined,
@@ -422,7 +425,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
       ),
       body: Center(
         child: Container(
-          constraints: const BoxConstraints(maxWidth: 420), // 360-420px mobile viewport
+          constraints: const BoxConstraints(maxWidth: 420),
           child: ListView(
             controller: _scrollController,
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
@@ -709,7 +712,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 8),
 
-                // Step Drawers (Accordion)
                 ...List.generate(_revealedStepsCount.clamp(0, _steps.length), (i) {
                   final isExpanded = _expandedStepIndices.contains(i);
                   final isFinal = i == _steps.length - 1;
@@ -809,7 +811,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   );
                 }),
 
-                // Reveal Next Step Button
                 if (_revealedStepsCount < _steps.length)
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4.0),
@@ -839,7 +840,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     ),
                   ),
 
-                // Bradley Insight
                 if (_revealedStepsCount >= _steps.length && _insight != null)
                   _renderInsightCard(_insight!),
 
@@ -858,7 +858,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 12),
 
-                // Option A: Cross-Board Mastery
                 SizedBox(
                   width: double.infinity,
                   height: 48,
@@ -878,7 +877,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 10),
 
-                // Option B: Progression in Same ID Group
                 SizedBox(
                   width: double.infinity,
                   height: 48,
@@ -898,7 +896,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 ),
                 const SizedBox(height: 10),
 
-                // Option C: Return to Dashboard
                 SizedBox(
                   width: double.infinity,
                   height: 48,
@@ -1012,6 +1009,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
         return null;
       },
       customStylesBuilder: (el) {
+        // COMPREHENSION EXTRACT & CALLOUT DIVS: Adapt dynamically to Dark/Light mode
+        if (el.localName == 'div' && el.attributes.containsKey('style')) {
+          return {
+            'background-color': isDark ? '#1E293B' : '#F1F5F9',
+            'color': isDark ? '#F1F5F9' : '#0F172A',
+            'border-left': isDark ? '4px solid #38BDF8' : '4px solid #005a9c',
+            'padding': '12px 14px',
+            'margin-bottom': '14px',
+            'border-radius': '6px',
+          };
+        }
         if (el.localName == 'table') {
           return {
             'width': '100%',
@@ -1045,79 +1053,138 @@ class _QuestionScreenState extends State<QuestionScreen> {
 }
 
 // --------------------------------------------------------
-// SMART LATEX WIDGET FACTORY
+// SMART LATEX WIDGET FACTORY (NESTED ENVIRONMENT AWARE)
 // --------------------------------------------------------
 class _MathWidgetFactory extends WidgetFactory {
-  static final RegExp _blockPattern = RegExp(
-    r'(\$\$[\s\S]*?\$\$|\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})',
-  );
-
   static final RegExp _inlineMathPattern = RegExp(r'\$([^\$]+?)\$');
+
+  // Parses text into segments, balancing nested \begin{} and \end{} tags
+  List<_MathSegment> _extractSegments(String text) {
+    List<_MathSegment> segments = [];
+    int i = 0;
+
+    while (i < text.length) {
+      // 1. Check for $$ ... $$
+      if (text.startsWith(r'$$', i)) {
+        int end = text.indexOf(r'$$', i + 2);
+        if (end != -1) {
+          segments.add(_MathSegment(
+            content: text.substring(i + 2, end),
+            isMath: true,
+            isBlock: true,
+          ));
+          i = end + 2;
+          continue;
+        }
+      }
+
+      // 2. Check for \begin{...}
+      if (text.startsWith(r'\begin{', i)) {
+        int depth = 0;
+        int searchIdx = i;
+        int blockEnd = -1;
+
+        while (searchIdx < text.length) {
+          int nextBegin = text.indexOf(r'\begin{', searchIdx);
+          int nextEnd = text.indexOf(r'\end{', searchIdx);
+
+          if (nextEnd == -1) break;
+
+          if (nextBegin != -1 && nextBegin < nextEnd) {
+            depth++;
+            searchIdx = nextBegin + 7;
+          } else {
+            depth--;
+            int closeBrace = text.indexOf('}', nextEnd + 5);
+            if (closeBrace == -1) break;
+            searchIdx = closeBrace + 1;
+
+            if (depth == 0) {
+              blockEnd = searchIdx;
+              break;
+            }
+          }
+        }
+
+        if (blockEnd != -1) {
+          segments.add(_MathSegment(
+            content: text.substring(i, blockEnd),
+            isMath: true,
+            isBlock: true,
+          ));
+          i = blockEnd;
+          continue;
+        }
+      }
+
+      // Regular text character
+      int nextDollar = text.indexOf(r'$$', i);
+      int nextBegin = text.indexOf(r'\begin{', i);
+
+      int nextBlock = text.length;
+      if (nextDollar != -1 && nextDollar < nextBlock) nextBlock = nextDollar;
+      if (nextBegin != -1 && nextBegin < nextBlock) nextBlock = nextBegin;
+
+      segments.add(_MathSegment(
+        content: text.substring(i, nextBlock),
+        isMath: false,
+        isBlock: false,
+      ));
+      i = nextBlock;
+    }
+
+    return segments;
+  }
 
   @override
   Widget? buildText(BuildMetadata meta, TextStyleHtml tsh, InlineSpan span) {
     final text = span.toPlainText();
+    final segments = _extractSegments(text);
 
-    if (!_blockPattern.hasMatch(text)) {
+    // If pure plain text with no blocks
+    if (segments.length == 1 && !segments.first.isBlock) {
       if (_inlineMathPattern.hasMatch(text)) {
         return _renderInlineSpan(text, tsh);
       }
       return super.buildText(meta, tsh, span);
     }
 
-    final matches = _blockPattern.allMatches(text);
-    List<Widget> blockWidgets = [];
-    int lastEnd = 0;
-
-    for (final match in matches) {
-      if (match.start > lastEnd) {
-        final leadingText = text.substring(lastEnd, match.start).trim();
-        if (leadingText.isNotEmpty) {
-          blockWidgets.add(_renderInlineSpan(leadingText, tsh));
-        }
-      }
-
-      String mathContent = match.group(0)!;
-      if (mathContent.startsWith(r'$$') && mathContent.endsWith(r'$$')) {
-        mathContent = mathContent.substring(2, mathContent.length - 2).trim();
-      }
-      mathContent = mathContent.replaceAll(r'\cr', r'\\').trim();
-
-      if (mathContent.isNotEmpty) {
-        blockWidgets.add(
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: Center(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Math.tex(
-                  mathContent,
-                  mathStyle: MathStyle.display,
-                  textStyle: tsh.style.copyWith(
-                    fontSize: 16,
-                    fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
+    List<Widget> widgets = [];
+    for (var seg in segments) {
+      if (seg.isBlock) {
+        String math = seg.content.replaceAll(r'\cr', r'\\').trim();
+        if (math.isNotEmpty) {
+          widgets.add(
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: Center(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Math.tex(
+                    math,
+                    mathStyle: MathStyle.display,
+                    textStyle: tsh.style.copyWith(
+                      fontSize: 16,
+                      fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        );
-      }
-
-      lastEnd = match.end;
-    }
-
-    if (lastEnd < text.length) {
-      final trailingText = text.substring(lastEnd).trim();
-      if (trailingText.isNotEmpty) {
-        blockWidgets.add(_renderInlineSpan(trailingText, tsh));
+          );
+        }
+      } else {
+        final cleanText = seg.content.trim();
+        if (cleanText.isNotEmpty) {
+          widgets.add(_renderInlineSpan(cleanText, tsh));
+        }
       }
     }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisSize: MainAxisSize.min,
-      children: blockWidgets,
+      children: widgets,
     );
   }
 
@@ -1157,4 +1224,11 @@ class _MathWidgetFactory extends WidgetFactory {
 
     return Text.rich(TextSpan(children: spans));
   }
+}
+
+class _MathSegment {
+  final String content;
+  final bool isMath;
+  final bool isBlock;
+  _MathSegment({required this.content, required this.isMath, required this.isBlock});
 }
