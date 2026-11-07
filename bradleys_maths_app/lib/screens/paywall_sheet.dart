@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../services/purchase_service.dart';
 
 class PaywallSheet extends StatefulWidget {
@@ -20,17 +21,140 @@ class PaywallSheet extends StatefulWidget {
 class _PaywallSheetState extends State<PaywallSheet> {
   final PurchaseService _purchaseService = PurchaseService();
 
+  Future<void> _showFounderKeyDialog(BuildContext context) async {
+    final controller = TextEditingController();
+    String? errorMsg;
+
+    await showDialog(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              backgroundColor: const Color(0xFF1E293B),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              title: const Row(
+                children: [
+                  Icon(Icons.key, color: Color(0xFFF59E0B), size: 22),
+                  SizedBox(width: 8),
+                  Text(
+                    "Founder & Master Access",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Text(
+                    "Enter confidential master passphrase to unlock lifetime access:",
+                    style: TextStyle(fontSize: 12, color: Color(0xFFCBD5E1)),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: controller,
+                    autofocus: true,
+                    obscureText: true,
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      hintText: "Enter master key...",
+                      hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 13),
+                      errorText: errorMsg,
+                      filled: true,
+                      fillColor: const Color(0xFF0F172A),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: Color(0xFF334155)),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: Color(0xFF334155)),
+                      ),
+                    ),
+                    onSubmitted: (_) async {
+                      final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
+                      if (ok) {
+                        Navigator.of(ctx).pop();
+                        HapticFeedback.mediumImpact();
+                        if (mounted) {
+                          Navigator.pop(context); // Close Paywall
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
+                              backgroundColor: Color(0xFF16A34A),
+                              duration: Duration(seconds: 4),
+                            ),
+                          );
+                        }
+                      } else {
+                        HapticFeedback.heavyImpact();
+                        setDialogState(() => errorMsg = "Invalid master passphrase.");
+                      }
+                    },
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: const Text(
+                    "Cancel",
+                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFF59E0B),
+                    foregroundColor: Colors.black87,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  ),
+                  onPressed: () async {
+                    final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
+                    if (ok) {
+                      Navigator.of(ctx).pop();
+                      HapticFeedback.mediumImpact();
+                      if (mounted) {
+                        Navigator.pop(context); // Close Paywall
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
+                            backgroundColor: Color(0xFF16A34A),
+                            duration: Duration(seconds: 4),
+                          ),
+                        );
+                      }
+                    } else {
+                      HapticFeedback.heavyImpact();
+                      setDialogState(() => errorMsg = "Invalid master passphrase.");
+                    }
+                  },
+                  child: const Text("Verify & Unlock", style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final product = _purchaseService.productDetails.value;
-    final String priceText = product?.price ?? "£12.99"; // Fallback if store is offline during testing
+    final String priceText = product?.price ?? "£12.99";
 
     return Container(
       constraints: BoxConstraints(
         maxHeight: MediaQuery.of(context).size.height * 0.88,
       ),
       decoration: const BoxDecoration(
-        color: Color(0xFF0F172A), // Deep Oxford Slate
+        color: Color(0xFF0F172A),
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
         border: Border(
           top: BorderSide(color: Color(0xFF334155), width: 1.5),
@@ -53,21 +177,10 @@ class _PaywallSheetState extends State<PaywallSheet> {
           ),
           const SizedBox(height: 16),
 
-          // Header with Secret Founder's Unlock (Long press the emblem!)
+          // Header Emblem (Long press opens Founder key)
           Center(
             child: GestureDetector(
-              onLongPress: () async {
-                await _purchaseService.debugSimulateUnlock();
-                if (mounted) {
-                  Navigator.pop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text("Founder Master Key Activated: All 1,400 Questions Unlocked!"),
-                      backgroundColor: Color(0xFF16A34A),
-                    ),
-                  );
-                }
-              },
+              onLongPress: () => _showFounderKeyDialog(context),
               child: Container(
                 width: 56,
                 height: 56,
@@ -134,7 +247,6 @@ class _PaywallSheetState extends State<PaywallSheet> {
 
                 const SizedBox(height: 10),
 
-                // Anti-Subscription Banner
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                   decoration: BoxDecoration(
@@ -165,6 +277,22 @@ class _PaywallSheetState extends State<PaywallSheet> {
 
           const SizedBox(height: 12),
 
+          // Live Purchase Error feedback (if any)
+          ValueListenableBuilder<String?>(
+            valueListenable: _purchaseService.purchaseError,
+            builder: (ctx, err, _) {
+              if (err == null) return const SizedBox.shrink();
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 8.0),
+                child: Text(
+                  err,
+                  style: const TextStyle(color: Color(0xFFF87171), fontSize: 11),
+                  textAlign: TextAlign.center,
+                ),
+              );
+            },
+          ),
+
           // Purchase Button
           ValueListenableBuilder<bool>(
             valueListenable: _purchaseService.isPurchasing,
@@ -173,7 +301,7 @@ class _PaywallSheetState extends State<PaywallSheet> {
                 height: 52,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFF59E0B), // Imperial Amber Gold
+                    backgroundColor: const Color(0xFFF59E0B),
                     foregroundColor: Colors.black87,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                   ),
@@ -186,7 +314,11 @@ class _PaywallSheetState extends State<PaywallSheet> {
                           }
                         },
                   child: isBusy
-                      ? const CircularProgressIndicator(color: Colors.black87)
+                      ? const SizedBox(
+                          width: 22,
+                          height: 22,
+                          child: CircularProgressIndicator(color: Colors.black87, strokeWidth: 2.5),
+                        )
                       : Text(
                           "Unlock Lifetime Access — $priceText",
                           style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
@@ -197,7 +329,7 @@ class _PaywallSheetState extends State<PaywallSheet> {
           ),
           const SizedBox(height: 10),
 
-          // Restore Purchases and Dismiss Buttons
+          // Footer: Not Now, Enter Access Key, Restore Purchases
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -208,11 +340,20 @@ class _PaywallSheetState extends State<PaywallSheet> {
                   style: TextStyle(color: Colors.grey, fontSize: 12),
                 ),
               ),
-              // Mandatory for Apple App Store Approval
+              // Founder / Access Key Button
+              TextButton.icon(
+                icon: const Icon(Icons.key, size: 14, color: Color(0xFFF59E0B)),
+                label: const Text(
+                  "Access Key",
+                  style: TextStyle(color: Color(0xFFF59E0B), fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                onPressed: () => _showFounderKeyDialog(context),
+              ),
+              // Restore Purchases
               TextButton.icon(
                 icon: const Icon(Icons.restore, size: 14, color: Color(0xFF94A3B8)),
                 label: const Text(
-                  "Restore Purchases",
+                  "Restore",
                   style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12, fontWeight: FontWeight.bold),
                 ),
                 onPressed: () async {

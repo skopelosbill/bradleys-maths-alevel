@@ -348,8 +348,16 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   void _onTopicTapped(String topicName) async {
     setState(() {
       _filter.setTopic(topicName == 'Random' ? null : topicName);
-      _currentStep = 5;
     });
+
+    // In Comprehension, the topic IS the document! Launch directly into Question 1!
+    if (_filter.branch == 'Comprehension') {
+      _filter.subtopic = null;
+      _launchQuestion();
+      return;
+    }
+
+    setState(() => _currentStep = 5);
 
     final subs = await _dbHelper.getSubtopics(
       board: _filter.board,
@@ -470,7 +478,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   // ----------------------------------------------------
 
   Future<void> _launchQuestion({bool forceIncludeMastered = false}) async {
-    // GATEKEEPER CHECK: 25 Unique Questions Trial Limit
     final bool isFullAccess = _purchaseService.isUnlocked.value;
     final int uniqueAttempted = _userStats['unique_attempted'] ?? 0;
 
@@ -557,7 +564,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               )
             : null,
         actions: [
-          // Instant Light/Dark Mode Switcher
           IconButton(
             icon: Icon(
               isDark ? Icons.light_mode : Icons.dark_mode_outlined,
@@ -569,7 +575,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               themeNotifier.value = isDark ? ThemeMode.light : ThemeMode.dark;
             },
           ),
-          // Mathematical Honours Trophy Shortcut
           IconButton(
             icon: const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B)),
             tooltip: "Honours Matrix",
@@ -598,23 +603,18 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    // Live Stats Ribbon
                     _buildStatsRibbon(isDark),
                     const SizedBox(height: 8),
 
-                    // 25-Question Trial Countdown / Lifetime Status Banner
                     _buildTrialCountdownBanner(isDark),
                     const SizedBox(height: 8),
 
-                    // Exam Revision Mode Toggle Banner
                     _buildRevisionToggleBanner(isDark),
                     const SizedBox(height: 8),
 
-                    // Live Breadcrumb Trail
                     _buildBreadcrumbHeader(isDark),
                     const SizedBox(height: 12),
 
-                    // Active Step View
                     Expanded(
                       child: _buildCurrentStepView(isDark),
                     ),
@@ -721,7 +721,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // LIVE STATS RIBBON (360px MOBILE OPTIMISED)
+  // LIVE STATS RIBBON
   // ----------------------------------------------------
 
   Widget _buildStatsRibbon(bool isDark) {
@@ -833,7 +833,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
-  // EXAM REVISION MODE TOGGLE (328px USABLE WIDTH)
+  // EXAM REVISION MODE TOGGLE
   // ----------------------------------------------------
 
   Widget _buildRevisionToggleBanner(bool isDark) {

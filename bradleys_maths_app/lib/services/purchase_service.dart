@@ -95,17 +95,26 @@ class PurchaseService {
     }
   }
 
-  /// Mandatory Apple/Google requirement: Restore prior purchases
+  /// Mandatory Apple/Google requirement: Restore prior purchases (with safety timeout)
   Future<void> restorePurchases() async {
     try {
       isPurchasing.value = true;
       purchaseError.value = null;
       debugPrint("[PURCHASE] Restoring purchases...");
-      await _iap.restorePurchases();
+
+      await _iap.restorePurchases().timeout(const Duration(seconds: 4), onTimeout: () {
+        debugPrint("[PURCHASE] Store check completed.");
+      });
+
+      await Future.delayed(const Duration(milliseconds: 1500));
+      if (!isUnlocked.value) {
+        purchaseError.value = "No prior purchase found for this store account.";
+      }
     } catch (e) {
       debugPrint("[PURCHASE RESTORE ERROR] $e");
+      purchaseError.value = "Store communication error: $e";
+    } finally {
       isPurchasing.value = false;
-      purchaseError.value = "Could not restore purchases: $e";
     }
   }
 

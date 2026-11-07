@@ -85,7 +85,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     final List<dynamic> rawSteps = q['steps'] ?? [];
     _steps = rawSteps.map((s) => s.toString()).toList();
 
-    // Determine correct answer: prioritize direct correct_answer from question_options
     String correctAnswer = "";
     if (q['correct_answer'] != null && q['correct_answer'].toString().isNotEmpty) {
       correctAnswer = q['correct_answer'].toString()
@@ -780,7 +779,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                       fontSize: 13,
                                       fontWeight: FontWeight.bold,
                                       color: isFinal
-                                          ? (isDark ? const Color(0xFF6EE7B7) : const Color(0xFF166534))
+                                          ? (isDark ? const Color(0xFF6EE7B7) : const Color(0xFF16A34A))
                                           : (isDark ? Colors.white : Colors.black87),
                                     ),
                                   ),
@@ -922,9 +921,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
     );
   }
 
-  // ----------------------------------------------------
-  // BRADLEY INSIGHT CARD
-  // ----------------------------------------------------
   Widget _renderInsightCard(Map<String, dynamic> insight) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final type = insight['type']?.toString().toLowerCase() ?? 'pro-tip';
@@ -991,9 +987,22 @@ class _QuestionScreenState extends State<QuestionScreen> {
   Widget _renderMixedContent(String rawData) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
+    // Direct String Sanitizer: Strips light-mode background color completely
+    String processed = rawData;
+    if (isDark) {
+      processed = processed
+          .replaceAll(RegExp(r'background\s*:\s*#[a-fA-F0-9]+;?', caseSensitive: false), 'background: #1E293B;')
+          .replaceAll(RegExp(r'border-left\s*:\s*4px solid #[a-fA-F0-9]+;?', caseSensitive: false), 'border-left: 4px solid #38BDF8;')
+          .replaceAll(RegExp(r'color\s*:\s*#[a-fA-F0-9]+;?', caseSensitive: false), 'color: #F1F5F9;');
+    } else {
+      processed = processed
+          .replaceAll(RegExp(r'background\s*:\s*#[a-fA-F0-9]+;?', caseSensitive: false), 'background: #F1F5F9;')
+          .replaceAll(RegExp(r'border-left\s*:\s*4px solid #[a-fA-F0-9]+;?', caseSensitive: false), 'border-left: 4px solid #005A9C;');
+    }
+
     return HtmlWidget(
-      rawData,
-      factoryBuilder: () => _MathWidgetFactory(),
+      processed,
+      factoryBuilder: () => _MathWidgetFactory(isDark: isDark),
       textStyle: TextStyle(
         fontSize: 15,
         height: 1.5,
@@ -1008,63 +1017,24 @@ class _QuestionScreenState extends State<QuestionScreen> {
         }
         return null;
       },
-      customStylesBuilder: (el) {
-        // COMPREHENSION EXTRACT & CALLOUT DIVS: Adapt dynamically to Dark/Light mode
-        if (el.localName == 'div' && el.attributes.containsKey('style')) {
-          return {
-            'background-color': isDark ? '#1E293B' : '#F1F5F9',
-            'color': isDark ? '#F1F5F9' : '#0F172A',
-            'border-left': isDark ? '4px solid #38BDF8' : '4px solid #005a9c',
-            'padding': '12px 14px',
-            'margin-bottom': '14px',
-            'border-radius': '6px',
-          };
-        }
-        if (el.localName == 'table') {
-          return {
-            'width': '100%',
-            'max-width': '300px',
-            'margin': '12px auto',
-            'border-collapse': 'collapse',
-            'border': isDark ? '1px solid #475569' : '1px solid #999',
-          };
-        }
-        if (el.localName == 'th') {
-          return {
-            'font-weight': 'bold',
-            'background-color': isDark ? '#334155' : '#eef2f6',
-            'color': isDark ? '#F1F5F9' : '#000000',
-            'border': isDark ? '1px solid #475569' : '1px solid #999',
-            'padding': '6px 8px',
-            'text-align': 'center',
-          };
-        }
-        if (el.localName == 'td') {
-          return {
-            'border': isDark ? '1px solid #334155' : '1px solid #ccc',
-            'padding': '6px 8px',
-            'text-align': 'center',
-          };
-        }
-        return null;
-      },
     );
   }
 }
 
 // --------------------------------------------------------
-// SMART LATEX WIDGET FACTORY (NESTED ENVIRONMENT AWARE)
+// SMART LATEX WIDGET FACTORY (WITH WHITE ARRAY LINES IN DARK MODE)
 // --------------------------------------------------------
 class _MathWidgetFactory extends WidgetFactory {
+  final bool isDark;
+  _MathWidgetFactory({required this.isDark});
+
   static final RegExp _inlineMathPattern = RegExp(r'\$([^\$]+?)\$');
 
-  // Parses text into segments, balancing nested \begin{} and \end{} tags
   List<_MathSegment> _extractSegments(String text) {
     List<_MathSegment> segments = [];
     int i = 0;
 
     while (i < text.length) {
-      // 1. Check for $$ ... $$
       if (text.startsWith(r'$$', i)) {
         int end = text.indexOf(r'$$', i + 2);
         if (end != -1) {
@@ -1078,7 +1048,6 @@ class _MathWidgetFactory extends WidgetFactory {
         }
       }
 
-      // 2. Check for \begin{...}
       if (text.startsWith(r'\begin{', i)) {
         int depth = 0;
         int searchIdx = i;
@@ -1117,7 +1086,6 @@ class _MathWidgetFactory extends WidgetFactory {
         }
       }
 
-      // Regular text character
       int nextDollar = text.indexOf(r'$$', i);
       int nextBegin = text.indexOf(r'\begin{', i);
 
@@ -1141,7 +1109,6 @@ class _MathWidgetFactory extends WidgetFactory {
     final text = span.toPlainText();
     final segments = _extractSegments(text);
 
-    // If pure plain text with no blocks
     if (segments.length == 1 && !segments.first.isBlock) {
       if (_inlineMathPattern.hasMatch(text)) {
         return _renderInlineSpan(text, tsh);
@@ -1150,10 +1117,17 @@ class _MathWidgetFactory extends WidgetFactory {
     }
 
     List<Widget> widgets = [];
+    final textColor = isDark ? const Color(0xFFF1F5F9) : Colors.black87;
+
     for (var seg in segments) {
       if (seg.isBlock) {
         String math = seg.content.replaceAll(r'\cr', r'\\').trim();
         if (math.isNotEmpty) {
+          // Force array lines, \hline, and vertical bars to render in white in dark mode
+          if (isDark && (math.contains(r'\begin{array}') || math.contains('|') || math.contains(r'\hline'))) {
+            math = r'{\color{#F1F5F9} ' + math + r'}';
+          }
+
           widgets.add(
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -1163,7 +1137,8 @@ class _MathWidgetFactory extends WidgetFactory {
                   child: Math.tex(
                     math,
                     mathStyle: MathStyle.display,
-                    textStyle: tsh.style.copyWith(
+                    textStyle: TextStyle(
+                      color: textColor,
                       fontSize: 16,
                       fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
                     ),
@@ -1196,6 +1171,7 @@ class _MathWidgetFactory extends WidgetFactory {
     final inlineMatches = _inlineMathPattern.allMatches(content);
     List<InlineSpan> spans = [];
     int lastIndex = 0;
+    final mathColor = isDark ? const Color(0xFFF1F5F9) : Colors.black87;
 
     for (final m in inlineMatches) {
       if (m.start > lastIndex) {
@@ -1208,7 +1184,8 @@ class _MathWidgetFactory extends WidgetFactory {
           child: Math.tex(
             mathStr,
             mathStyle: MathStyle.text,
-            textStyle: tsh.style.copyWith(
+            textStyle: TextStyle(
+              color: mathColor,
               fontSize: 15,
               fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
             ),
