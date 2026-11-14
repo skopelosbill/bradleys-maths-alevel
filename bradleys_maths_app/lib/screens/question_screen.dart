@@ -584,9 +584,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           value: index,
                           groupValue: _selectedOptionIndex,
                           activeColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 10.0),
                           title: Opacity(
                             opacity: isDisabled ? 0.6 : 1.0,
-                            child: _renderMixedContent(_options[index]['ans']),
+                            child: _renderMixedContent(_options[index]['ans'], isOption: true),
                           ),
                           subtitle: isDisabled
                               ? Text(
@@ -984,7 +985,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   // ----------------------------------------------------
   // HTML + TEXTBOOK LATEX + VECTOR SVG/PNG RENDERER
   // ----------------------------------------------------
-  Widget _renderMixedContent(String rawData) {
+  Widget _renderMixedContent(String rawData, {bool isOption = false}) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     // Direct String Sanitizer: Strips light-mode background color completely
@@ -1002,7 +1003,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
     return HtmlWidget(
       processed,
-      factoryBuilder: () => _MathWidgetFactory(isDark: isDark),
+      factoryBuilder: () => _MathWidgetFactory(isDark: isDark, isOption: isOption),
       textStyle: TextStyle(
         fontSize: 15,
         height: 1.5,
@@ -1026,7 +1027,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
 // --------------------------------------------------------
 class _MathWidgetFactory extends WidgetFactory {
   final bool isDark;
-  _MathWidgetFactory({required this.isDark});
+  final bool isOption;
+  _MathWidgetFactory({required this.isDark, this.isOption = false});
 
   static final RegExp _inlineMathPattern = RegExp(r'\$([^\$]+?)\$');
 
@@ -1111,6 +1113,13 @@ class _MathWidgetFactory extends WidgetFactory {
 
     if (segments.length == 1 && !segments.first.isBlock) {
       if (_inlineMathPattern.hasMatch(text)) {
+        if (isOption) {
+          return FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: _renderInlineSpan(text, tsh),
+          );
+        }
         return _renderInlineSpan(text, tsh);
       }
       return super.buildText(meta, tsh, span);
@@ -1128,25 +1137,46 @@ class _MathWidgetFactory extends WidgetFactory {
             math = r'{\color{#F1F5F9} ' + math + r'}';
           }
 
-          widgets.add(
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Center(
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
+          if (isOption) {
+            widgets.add(
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerLeft,
                   child: Math.tex(
                     math,
                     mathStyle: MathStyle.display,
                     textStyle: TextStyle(
                       color: textColor,
-                      fontSize: 16,
+                      fontSize: 15,
                       fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
                     ),
                   ),
                 ),
               ),
-            ),
-          );
+            );
+          } else {
+            widgets.add(
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                child: Center(
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Math.tex(
+                      math,
+                      mathStyle: MathStyle.display,
+                      textStyle: TextStyle(
+                        color: textColor,
+                        fontSize: 16,
+                        fontWeight: tsh.style.fontWeight ?? FontWeight.normal,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            );
+          }
         }
       } else {
         final cleanText = seg.content.trim();

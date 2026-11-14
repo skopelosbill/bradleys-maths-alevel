@@ -1,4 +1,4 @@
-package com.example.bradleys_maths_app
+package uk.co.bradleysmaths.alevel
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,228 @@
+======================================================================
+     ALL 56 ODD-DOLLAR FIELDS IN DETAIL
+======================================================================
+
+[questions.question_text] Record ID: 004553 (Odd count: 27)
+TEXT:
+<strong>(i)</strong> The points $A$, $B$, and $C$ have position vectors $\vec{OA} = \begin{pmatrix} 1 \cr 4 \cr -2 \end{pmatrix}, $\vec{OB} = \begin{pmatrix} 3 \cr 2 \cr 1 \end{pmatrix}, and $\vec{OC} = \begin{pmatrix} 7 \cr -2 \cr 7 \end{pmatrix} respectively. Find the vectors $\vec{AB}$ and $\vec{BC}$ in component form.<br><br><strong>(ii)</strong> Show that the points $A$, $B$, and $C$ are collinear.<br><br><strong>(iii)</strong> A fourth point $D$ lies on the line segment $AC$ such that $\vec{AD} = 2\vec{DC}$. Find the coordinates of $D$.
+------------------------------------------------------------
+[questions.question_text] Record ID: 004554 (Odd count: 27)
+TEXT:
+<strong>(i)</strong> The points $P$, $Q$, and $R$ have position vectors $\vec{OP} = \begin{pmatrix} 1 \cr -2 \cr 3 \end{pmatrix}, $\vec{OQ} = \begin{pmatrix} 4 \cr y \cr 1 \end{pmatrix}, and $\vec{OR} = \begin{pmatrix} 3 \cr -3 \cr 7 \end{pmatrix} respectively. Write down the vectors $\vec{PQ}$ and $\vec{PR}$ in terms of the constant $y$.<br><br><strong>(ii)</strong> Given that the line $PQ$ is perpendicular to the line $PR$, find the value of the constant $y$.<br><br><strong>(iii)</strong> Using your value of $y$ from part (ii), find the exact value of the cosine of the angle between $\vec{PQ}$ and the positive $z$-axis.
+------------------------------------------------------------
+[questions.question_text] Record ID: 004658 (Odd count: 23)
+TEXT:
+In this question you must show detailed reasoning.<br><br>The points $P$, $Q$, and $R$ have position vectors $\mathbf{p} = \begin{pmatrix} 1 \cr -2 \cr 3 \end{pmatrix}, $\mathbf{q} = \begin{pmatrix} 3 \cr 1 \cr 2 \end{pmatrix}, and $\mathbf{r} = \begin{pmatrix} k \cr 2 \cr -1 \end{pmatrix} respectively, where $k$ is a constant.<br><br><strong>(i)</strong> Given that the vector $\vec{PQ}$ is perpendicular to the vector $\vec{PR}$, determine the value of the constant $k$.<br><strong>(ii)</strong> Using the value of $k$ found in part <strong>(i)</strong>, calculate the size of the angle $PQR$, giving your answer to the nearest $0.1^\circ$.
+------------------------------------------------------------
+[questions.question_text] Record ID: 004659 (Odd count: 17)
+TEXT:
+In this question you must show detailed reasoning.<br><br>A straight line $L$ passes through the points $B(1, 2, 3)$ and $C(2, 4, 1)$.<br><br><strong>(i)</strong> Find a vector equation for the line $L$ in the form $\mathbf{r} = \mathbf{u} + \lambda \mathbf{v}$.<br><strong>(ii)</strong> A point $A$ has position vector $\mathbf{a} = \begin{pmatrix} 1 \cr 4 \cr -4 \end{pmatrix}. Determine the coordinates of the point on the line $L$ that is closest to $A$.
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 012026 (Odd count: 1)
+TEXT:
+Final Answer: <strong>(a)</strong> $\vec{AB} = \begin{pmatrix} 1 \cr 3 \cr -3 \end{pmatrix}<br><strong>(b)</strong> Parallelogram; not a rhombus (adjacent sides unequal)
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 012027 (Odd count: 1)
+TEXT:
+Final Answer: <strong>(a)</strong> $\vec{BC} = \begin{pmatrix} 2 \cr -1 \cr 2 \end{pmatrix}<br><strong>(b)</strong> Rhombus; not a square (adjacent sides equal, not perpendicular)
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 012028 (Odd count: 1)
+TEXT:
+Final Answer: <strong>(a)</strong> $\vec{DC} = \begin{pmatrix} 2 \cr 1 \cr -2 \end{pmatrix}<br><strong>(b)</strong> Rectangle; not a square (perpendicular, unequal adjacent sides)
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004554 (Odd count: 11)
+TEXT:
+With $y = -4$, the vector $\vec{PQ}$ is:\begin{aligned} \vec{PQ} = \begin{pmatrix} 3 \cr -2 \cr -2 \end{pmatrix} \end{aligned}The positive $z$-axis is represented by the unit vector $\vec{k} = \begin{pmatrix} 0 \cr 0 \cr 1 \end{pmatrix}. The cosine of the angle $\theta$ is:\begin{aligned} \cos\theta = \dfrac{\vec{PQ} \cdot \vec{k}}{|\vec{PQ}| |\vec{k}|} \end{aligned}Find the length of $\vec{PQ}$:\begin{aligned} |\vec{PQ}| &= \sqrt{3^2 + (-2)^2 + (-2)^2} \cr &= \sqrt{9 + 4 + 4} \cr &= \sqrt{17} \end{aligned}Compute the dot product and the cosine value:\begin{aligned} \vec{PQ} \cdot \vec{k} &= (3)(0) + (-2)(0) \cr & \qquad+ (-2)(1) \cr &= -2 \end{aligned}\begin{aligned} \cos\theta &= \dfrac{-2}{\sqrt{17} \times 1} \cr &= -\dfrac{2}{\sqrt{17}} \end{aligned}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004656 (Odd count: 1)
+TEXT:
+Final Answer: $\mathbf{a} = \begin{pmatrix} 1.5 \cr 2.5 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004657 (Odd count: 1)
+TEXT:
+Final Answer: $\mathbf{a} = \begin{pmatrix} 3 \cr 3 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004659 (Odd count: 3)
+TEXT:
+Final Answer: $\mathbf{r} = \begin{pmatrix} 1 \cr 2 \cr 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \cr 2 \cr -2 \end{pmatrix}, Closest point $(3, 6, -1)$
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004663 (Odd count: 11)
+TEXT:
+<strong>Case 1:</strong> $x^2 - 3 \ge 0\begin{aligned} &x^2 - 3 = 2x \cr &x^2 - 2x - 3 = 0 \cr &(x - 3)(x + 1) = 0 \end{aligned}<br><br>This gives $x = 3$ or $x = -1$. Since $x \ge 0$, reject $x = -1$, leaving $x = 3$.
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004663 (Odd count: 11)
+TEXT:
+<strong>Case 2:</strong> $x^2 - 3 < 0\begin{aligned} &-(x^2 - 3) = 2x \cr &3 - x^2 = 2x \cr &x^2 + 2x - 3 = 0 \cr &(x + 3)(x - 1) = 0 \end{aligned}<br><br>This gives $x = 1$ or $x = -3$. Since $x \ge 0$, reject $x = -3$, leaving $x = 1$.
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004664 (Odd count: 1)
+TEXT:
+<strong>Case 1:</strong> $t \ge 3\begin{aligned} &t - 3 = \dfrac{2}{t} \cr &t^2 - 3t - 2 = 0 \end{aligned}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004664 (Odd count: 7)
+TEXT:
+<strong>Case 2:</strong> $0 < t < 3\begin{aligned} &-(t - 3) = \dfrac{2}{t} \cr &3 - t = \dfrac{2}{t} \cr &3t - t^2 = 2 \cr &t^2 - 3t + 2 = 0 \cr &(t - 1)(t - 2) = 0 \end{aligned}<br><br>This yields $t = 1$ and $t = 2$, both satisfying $0 < t < 3$.
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004102 (Odd count: 5)
+TEXT:
+For Part (a), calculate the side lengths of triangle $AOC$ to find $\angle AOC$: $OA = 10$$ $$OC = 10,\begin{aligned} AC &= \sqrt{(-8-8)^2 + (6-6)^2}\cr &= 16\end{aligned}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004241 (Odd count: 1)
+TEXT:
+Identify the centre and the radius of the circle directly from its standard form $(x - x_0)^2 + (y - y_0)^2 = R^2\begin{aligned} \text{Centre: } &C(2, 1) \cr \text{Radius: } &R = 5 \end{aligned}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004363 (Odd count: 1)
+TEXT:
+Final Answer: $29^\circ\text{C}
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 004432 (Odd count: 13)
+TEXT:
+<strong>Step 3: Determine the range of $h$ for part (b)</strong><br>As $x \to \infty$, the rational function $h(x) = \dfrac{4x + 2}{x - 2} approaches its horizontal asymptote:\begin{aligned} y &\to \dfrac{4}{1} \cr &= 4 \end{aligned}Since the function is continuous and decreasing for $x \ge 3$, its maximum value occurs at the boundary $x = 3$, where $h(3) = 14$. Thus, the range of $h$ is restricted to:$$4 < h(x) \le 14$$
+------------------------------------------------------------
+[question_steps.step_text] Record ID: 050124 (Odd count: 7)
+TEXT:
+Final Answer: (a) $36 \le v < 40$, (b)(i) $38.5\text{ mph}$, (ii) $9.7\text{ mph}$, (c) $38.8\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 201 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{AB} = \begin{pmatrix} 1 \cr 3 \cr -3 \end{pmatrix}<br><strong>(b)</strong> Parallelogram; not a rhombus (adjacent sides unequal)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 202 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{AB} = \begin{pmatrix} 1 \cr 3 \cr -3 \end{pmatrix}<br><strong>(b)</strong> Parallelogram and a rhombus (adjacent sides equal)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 203 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{AB} = \begin{pmatrix} 1 \cr 3 \cr -3 \end{pmatrix}<br><strong>(b)</strong> Rhombus; not a square (adjacent sides equal and perpendicular)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 204 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{AB} = \begin{pmatrix} -1 \cr -3 \cr 3 \end{pmatrix}<br><strong>(b)</strong> Parallelogram (opposite sides not parallel)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 205 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{BC} = \begin{pmatrix} 2 \cr -1 \cr 2 \end{pmatrix}<br><strong>(b)</strong> Rhombus; not a square (adjacent sides equal, not perpendicular)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 206 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{BC} = \begin{pmatrix} 2 \cr -1 \cr 2 \end{pmatrix}<br><strong>(b)</strong> Square (adjacent sides perpendicular and equal)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 207 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{BC} = \begin{pmatrix} -2 \cr 1 \cr -2 \end{pmatrix}<br><strong>(b)</strong> Parallelogram; not a rhombus (adjacent sides unequal)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 208 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{BC} = \begin{pmatrix} 2 \cr -1 \cr 2 \end{pmatrix}<br><strong>(b)</strong> Rectangle (opposite sides equal and perpendicular)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 209 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{DC} = \begin{pmatrix} 2 \cr 1 \cr -2 \end{pmatrix}<br><strong>(b)</strong> Rectangle; not a square (perpendicular, unequal adjacent sides)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 210 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{DC} = \begin{pmatrix} 2 \cr 1 \cr -2 \end{pmatrix}<br><strong>(b)</strong> Square (adjacent sides perpendicular and equal)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 211 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{DC} = \begin{pmatrix} -2 \cr -1 \cr 2 \end{pmatrix}<br><strong>(b)</strong> Rectangle (opposite sides perpendicular)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 212 (Odd count: 1)
+TEXT:
+<strong>(a)</strong> $\vec{DC} = \begin{pmatrix} 2 \cr 1 \cr -2 \end{pmatrix}<br><strong>(b)</strong> Rhombus (adjacent sides equal and perpendicular)
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2221 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 1.5 \cr 2.5 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2222 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 1.5 \cr 1.5 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2223 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 2.5 \cr 3.5 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2224 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 3 \cr 4 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2225 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 3 \cr 3 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2226 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 1 \cr 1 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2227 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 3 \cr -3 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2228 (Odd count: 1)
+TEXT:
+$\mathbf{a} = \begin{pmatrix} 5 \cr 5 \cr 0 \end{pmatrix}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2233 (Odd count: 3)
+TEXT:
+$\mathbf{r} = \begin{pmatrix} 1 \cr 2 \cr 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \cr 2 \cr -2 \end{pmatrix}, Closest point $(3, 6, -1)$
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2234 (Odd count: 3)
+TEXT:
+$\mathbf{r} = \begin{pmatrix} 1 \cr 2 \cr 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \cr 2 \cr -2 \end{pmatrix}, Closest point $(2, 4, 1)$
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2235 (Odd count: 3)
+TEXT:
+$\mathbf{r} = \begin{pmatrix} 1 \cr 2 \cr 3 \end{pmatrix} + \lambda \begin{pmatrix} 1 \cr 2 \cr -2 \end{pmatrix}, Closest point $(3, 6, 1)$
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 2236 (Odd count: 3)
+TEXT:
+$\mathbf{r} = \begin{pmatrix} 1 \cr 2 \cr 3 \end{pmatrix} + \lambda \begin{pmatrix} 3 \cr 6 \cr -2 \end{pmatrix}, Closest point $(3, 6, -1)$
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 4089 (Odd count: 1)
+TEXT:
+$29^\circ\text{C}
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 4933 (Odd count: 7)
+TEXT:
+(a) $36 \le v < 40$, (b)(i) $38.5\text{ mph}$, (ii) $9.7\text{ mph}$, (c) $38.8\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 4934 (Odd count: 7)
+TEXT:
+(a) $36 \le v < 40$, (b)(i) $38.5\text{ mph}$, (ii) $9.7\text{ mph}$, (c) $61.3\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 4935 (Odd count: 7)
+TEXT:
+(a) $36 \le v < 40$, (b)(i) $38.0\text{ mph}$, (ii) $9.7\text{ mph}$, (c) $38.8\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 4936 (Odd count: 7)
+TEXT:
+(a) $36 \le v < 40$, (b)(i) $38.5\text{ mph}$, (ii) $10.0\text{ mph}$, (c) $38.8\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 5454 (Odd count: 7)
+TEXT:
+(a)(i) $60$, (ii) $20$, (b) $85$, (c) $10\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 5455 (Odd count: 7)
+TEXT:
+(a)(i) $60$, (ii) $20$, (b) $75$, (c) $12\%
+------------------------------------------------------------
+[question_options.ans_text] Record ID: 5456 (Odd count: 7)
+TEXT:
+(a)(i) $60$, (ii) $25$, (b) $75$, (c) $10\%
+------------------------------------------------------------
+[question_options.feedback_text] Record ID: 579 (Odd count: 1)
+TEXT:
+Incorrect distance in part (c). Evaluating displacement requires subtracting the cubic term: \begin{aligned}s_P(6) & = 108 - \frac{1}{6}(216)\cr & = 108 - 36 \cr &= 72\text{ m}\end{aligned} not $108\text{ m}.
+------------------------------------------------------------
+[question_options.feedback_text] Record ID: 2236 (Odd count: 3)
+TEXT:
+This option lists an incorrect direction vector for the line $L$. The direction vector must be $C - B = \begin{pmatrix} 1 \cr 2 \cr -2 \end{pmatrix}.
+------------------------------------------------------------
+[question_options.feedback_text] Record ID: 2900 (Odd count: 3)
+TEXT:
+You probably forgot to subtract the lower limit value ($x=4$) at the end of Part (b). Remember to substitute both limits into your integrated function: \text{Area} = \text{F}(6) - \text{F}(4)$.
+------------------------------------------------------------
+[bradley_insights.content] Record ID: 004577 (Odd count: 13)
+TEXT:
+For any circle represented in general form $x^2 + y^2 + 2gx + 2fy + c = 0$, the radius is given by $r = \sqrt{ g^2 + f^2 - c }$. This implies $r^2 = g^2 + f^2 - c$. In this question, $g = -2$, $f = 6$, and $c = k$. Substituting these values in gives \begin{aligned}7^2 $= (-2)^2 + 6^2 - k \cr &\implies 49 = 4 + 36 - k \cr &\implies k = -9\end{aligned}. This formula is a very useful shortcut to remember!
+------------------------------------------------------------

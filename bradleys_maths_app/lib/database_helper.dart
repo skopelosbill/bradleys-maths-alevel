@@ -13,26 +13,36 @@ class DatabaseHelper {
   static final List<Map<String, dynamic>> _webAttempts = [];
 
   Future<Database> get database async {
-    if (_db != null) return _db!;
+    if (_db != null && _db!.isOpen) return _db!;
     
     var databasesPath = await getDatabasesPath();
     var path = join(databasesPath, "bradleys_maths.db");
 
-    // Check if the database exists and actually contains the questions table
     bool shouldCopy = false;
     bool exists = await databaseExists(path);
+
+    // Read asset size to detect database updates
+    ByteData assetData = await rootBundle.load("assets/bradleys_maths.db");
+    int assetLength = assetData.lengthInBytes;
 
     if (!exists) {
       shouldCopy = true;
     } else {
       try {
-        final testDb = await openDatabase(path, readOnly: true);
-        final check = await testDb.rawQuery(
-          "SELECT name FROM sqlite_master WHERE type='table' AND name='questions'"
-        );
-        await testDb.close();
-        if (check.isEmpty) {
+        final currentFile = File(path);
+        // If the local file size differs from the bundled asset, an update was made!
+        if (await currentFile.exists() && await currentFile.length() != assetLength) {
+          debugPrint("[DB REFRESH] Asset update detected (size difference). Refreshing database...");
           shouldCopy = true;
+        } else {
+          final testDb = await openDatabase(path, readOnly: true);
+          final check = await testDb.rawQuery(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='questions'"
+          );
+          await testDb.close();
+          if (check.isEmpty) {
+            shouldCopy = true;
+          }
         }
       } catch (_) {
         shouldCopy = true;
@@ -40,23 +50,70 @@ class DatabaseHelper {
     }
 
     if (shouldCopy) {
-      debugPrint("[DB INIT] Copying bradleys_maths.db from assets to $path...");
+      debugPrint("[DB INIT] Refreshing bradleys_maths.db from assets...");
+      
+      // PRESERVE STUDENT ATTEMPTS BEFORE REPLACING DATABASE
+      List<Map<String, dynamic>> savedAttempts = [];
+      if (exists) {
+        try {
+          final oldDb = await openDatabase(path);
+          final checkAttempts = await oldDb.rawQuery(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='user_attempts'"
+          );
+          if (checkAttempts.isNotEmpty) {
+            savedAttempts = await oldDb.query('user_attempts');
+            debugPrint("[DB PRESERVE] Saved ${savedAttempts.length} existing student attempts.");
+          }
+          await oldDb.close();
+        } catch (e) {
+          debugPrint("[DB PRESERVE ERROR] Could not read old attempts: $e");
+        }
+      }
+
       try {
         await Directory(dirname(path)).create(recursive: true);
       } catch (_) {}
 
-      // Copy from asset
-      ByteData data = await rootBundle.load("assets/bradleys_maths.db");
-      List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
-
-      // Write and flush the bytes written
+      // Copy new asset
+      List<int> bytes = assetData.buffer.asUint8List(assetData.offsetInBytes, assetData.lengthInBytes);
       await File(path).writeAsBytes(bytes, flush: true);
       debugPrint("[DB INIT] Copy complete! Size: ${bytes.length} bytes.");
+
+      // RESTORE PRESERVED STUDENT ATTEMPTS INTO THE NEW DATABASE
+      if (savedAttempts.isNotEmpty) {
+        try {
+          final freshDb = await openDatabase(path);
+          await freshDb.execute('''
+            CREATE TABLE IF NOT EXISTS user_attempts (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              user_id INTEGER DEFAULT 1,
+              question_id TEXT NOT NULL,
+              first_choice_text TEXT,
+              first_choice_correct INTEGER,
+              second_choice_text TEXT,
+              second_choice_correct INTEGER,
+              chose_none_of_above INTEGER DEFAULT 0,
+              viewed_model_answer INTEGER DEFAULT 0,
+              attempted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+          ''');
+
+          for (var att in savedAttempts) {
+            final row = Map<String, dynamic>.from(att);
+            row.remove('id'); // let SQLite autoincrement ID
+            await freshDb.insert('user_attempts', row);
+          }
+          await freshDb.close();
+          debugPrint("[DB RESTORE] Successfully restored ${savedAttempts.length} student attempts!");
+        } catch (e) {
+          debugPrint("[DB RESTORE ERROR] Could not restore attempts: $e");
+        }
+      }
     }
 
     _db = await openDatabase(path);
 
-    // Ensure the user_attempts table is ready to log progress
+    // Ensure the user_attempts table exists
     await _db!.execute('''
       CREATE TABLE IF NOT EXISTS user_attempts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -153,6 +210,78 @@ class DatabaseHelper {
     } catch (e) {
       debugPrint("JSON Load Error: $e");
       return [];
+    }
+  }
+
+  // ==========================================
+  // FETCH QUESTION BY EXACT ID (SEARCH FEATURE)
+  // ==========================================
+
+  Future<Map<String, dynamic>?> fetchQuestionById(String id) async {
+    final cleanId = id.trim().padLeft(6, '0');
+
+    if (kIsWeb) {
+      final data = await _loadWebData();
+      final match = data.firstWhere(
+        (q) => q['id']?.toString() == cleanId,
+        orElse: () => {},
+      );
+      return match.isNotEmpty ? match : null;
+    }
+
+    final db = await database;
+    final res = await db.query(
+      'questions',
+      where: 'id = ?',
+      whereArgs: [cleanId],
+      limit: 1,
+    );
+
+    if (res.isNotEmpty) {
+      return await _hydrateQuestionFromDb(db, res.first);
+    }
+    return null;
+  }
+
+  // ==========================================
+  // BACKUP & RESTORE STUDENT PROGRESS (JSON)
+  // ==========================================
+
+  Future<String> exportProgressJson() async {
+    if (kIsWeb) {
+      return jsonEncode(_webAttempts);
+    }
+
+    final db = await database;
+    final attempts = await db.query('user_attempts');
+    return jsonEncode(attempts);
+  }
+
+  Future<int> importProgressJson(String jsonStr) async {
+    try {
+      final List<dynamic> list = jsonDecode(jsonStr);
+      if (kIsWeb) {
+        _webAttempts.clear();
+        for (var item in list) {
+          _webAttempts.add(Map<String, dynamic>.from(item));
+        }
+        return _webAttempts.length;
+      }
+
+      final db = await database;
+      int count = 0;
+      await db.transaction((txn) async {
+        for (var item in list) {
+          final row = Map<String, dynamic>.from(item);
+          row.remove('id');
+          await txn.insert('user_attempts', row);
+          count++;
+        }
+      });
+      return count;
+    } catch (e) {
+      debugPrint("[RESTORE PROGRESS ERROR] $e");
+      return -1;
     }
   }
 
@@ -808,8 +937,6 @@ class DatabaseHelper {
       whereArgs.add('%"${filter.subtopic!.trim()}"%');
     }
 
-    // Bill's Rule: Comprehension and focused topics start at Question 1 (lowest unmastered),
-    // while Random practice retains unpredictable exam-style shuffling!
     final bool useSequential = filter.branch == 'Comprehension' || 
         (!filter.isRandomTopic && (!filter.isRandomSubtopic || filter.subtopic != null));
 

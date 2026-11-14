@@ -160,6 +160,324 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
   }
 
   // ----------------------------------------------------
+  // SEARCH / JUMP TO QUESTION ID DIALOG
+  // ----------------------------------------------------
+
+  Future<void> _showJumpToQuestionDialog(BuildContext context, bool isDark) async {
+    final controller = TextEditingController();
+    String? errorMsg;
+
+    await showDialog(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            return AlertDialog(
+              backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              title: Row(
+                children: [
+                  Icon(
+                    Icons.search,
+                    color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                    size: 22,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    "Jump to Question",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? Colors.white : Colors.black87,
+                    ),
+                  ),
+                ],
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    "Enter Question ID (e.g. 004137 or 4137):",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: isDark ? const Color(0xFFCBD5E1) : Colors.black87,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextField(
+                    controller: controller,
+                    autofocus: true,
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                    decoration: InputDecoration(
+                      hintText: "e.g. 004137",
+                      hintStyle: TextStyle(
+                        color: isDark ? Colors.grey.shade500 : Colors.grey.shade400,
+                        fontSize: 13,
+                      ),
+                      errorText: errorMsg,
+                      filled: true,
+                      fillColor: isDark ? const Color(0xFF0F172A) : Colors.grey.shade100,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+                        ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+                        ),
+                      ),
+                    ),
+                    onSubmitted: (val) => _executeJump(val, ctx, setDialogState),
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(ctx).pop(),
+                  child: Text(
+                    "Cancel",
+                    style: TextStyle(
+                      color: isDark ? Colors.grey.shade400 : Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  ),
+                  onPressed: () => _executeJump(controller.text, ctx, setDialogState),
+                  child: const Text("Launch", style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+  }
+
+  Future<void> _executeJump(String rawInput, BuildContext dialogCtx, StateSetter setDialogState) async {
+    final clean = rawInput.trim();
+    if (clean.isEmpty) {
+      setDialogState(() {});
+      return;
+    }
+
+    final bool isFullAccess = _purchaseService.isUnlocked.value;
+    final int uniqueAttempted = _userStats['unique_attempted'] ?? 0;
+
+    if (!isFullAccess && uniqueAttempted >= PurchaseService.freeTrialLimit) {
+      Navigator.of(dialogCtx).pop();
+      _openPaywall();
+      return;
+    }
+
+    final question = await _dbHelper.fetchQuestionById(clean);
+    if (question != null) {
+      Navigator.of(dialogCtx).pop();
+      HapticFeedback.lightImpact();
+      if (mounted) {
+        await Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => QuestionScreen(
+              question: question,
+              dbHelper: _dbHelper,
+              filterState: _filter,
+            ),
+          ),
+        );
+        _loadStats();
+        _loadMasteryForCurrentStep();
+      }
+    } else {
+      HapticFeedback.heavyImpact();
+      setDialogState(() {});
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Question #$clean not found in database."),
+          backgroundColor: Colors.red.shade700,
+          duration: const Duration(seconds: 3),
+        ),
+      );
+    }
+  }
+
+  // ----------------------------------------------------
+  // BACKUP & RESTORE STUDENT PROGRESS DIALOG
+  // ----------------------------------------------------
+
+  Future<void> _showBackupRestoreDialog(BuildContext context, bool isDark) async {
+    await showDialog(
+      context: context,
+      builder: (ctx) {
+        return AlertDialog(
+          backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          title: Row(
+            children: [
+              Icon(
+                Icons.cloud_sync_outlined,
+                color: isDark ? const Color(0xFF34D399) : Colors.teal.shade700,
+                size: 22,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                "Study Progress Backup",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: isDark ? Colors.white : Colors.black87,
+                ),
+              ),
+            ],
+          ),
+          content: Text(
+            "Back up your completed questions, attempts, and Honour Wall to move to a new phone, or restore from a previous backup.",
+            style: TextStyle(
+              fontSize: 13,
+              height: 1.4,
+              color: isDark ? const Color(0xFFCBD5E1) : Colors.black87,
+            ),
+          ),
+          actionsAlignment: MainAxisAlignment.spaceBetween,
+          actions: [
+            OutlinedButton.icon(
+              icon: const Icon(Icons.copy, size: 16),
+              label: const Text("Copy Backup"),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: isDark ? const Color(0xFF34D399) : Colors.teal.shade700,
+                side: BorderSide(color: isDark ? const Color(0xFF059669) : Colors.teal.shade300),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+              onPressed: () async {
+                final jsonStr = await _dbHelper.exportProgressJson();
+                await Clipboard.setData(ClipboardData(text: jsonStr));
+                if (ctx.mounted) Navigator.of(ctx).pop();
+                HapticFeedback.mediumImpact();
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Backup code copied to clipboard! Paste and save it in an email or note."),
+                      backgroundColor: Color(0xFF16A34A),
+                      duration: Duration(seconds: 4),
+                    ),
+                  );
+                }
+              },
+            ),
+            ElevatedButton.icon(
+              icon: const Icon(Icons.restore, size: 16),
+              label: const Text("Restore"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+              onPressed: () async {
+                Navigator.of(ctx).pop();
+                _showRestoreCodeInput(context, isDark);
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<void> _showRestoreCodeInput(BuildContext context, bool isDark) async {
+    final controller = TextEditingController();
+    final clip = await Clipboard.getData(Clipboard.kTextPlain);
+    if (clip != null && clip.text != null && clip.text!.trim().startsWith('[')) {
+      controller.text = clip.text!.trim();
+    }
+
+    if (!context.mounted) return;
+
+    await showDialog(
+      context: context,
+      builder: (ctx) {
+        return AlertDialog(
+          backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          title: Text(
+            "Paste Backup Code",
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: isDark ? Colors.white : Colors.black87,
+            ),
+          ),
+          content: TextField(
+            controller: controller,
+            maxLines: 4,
+            style: TextStyle(color: isDark ? Colors.white : Colors.black87, fontSize: 12),
+            decoration: InputDecoration(
+              hintText: "Paste your backup code here...",
+              hintStyle: TextStyle(
+                color: isDark ? Colors.grey.shade500 : Colors.grey.shade400,
+                fontSize: 12,
+              ),
+              filled: true,
+              fillColor: isDark ? const Color(0xFF0F172A) : Colors.grey.shade100,
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(),
+              child: const Text("Cancel"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF16A34A),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+              onPressed: () async {
+                final count = await _dbHelper.importProgressJson(controller.text.trim());
+                if (ctx.mounted) Navigator.of(ctx).pop();
+                if (count >= 0) {
+                  HapticFeedback.mediumImpact();
+                  _loadStats();
+                  _loadMasteryForCurrentStep();
+                  if (mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text("Restored $count study records! Your progress is live."),
+                        backgroundColor: const Color(0xFF16A34A),
+                        duration: const Duration(seconds: 4),
+                      ),
+                    );
+                  }
+                } else if (mounted) {
+                  HapticFeedback.heavyImpact();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Invalid backup code format."),
+                      backgroundColor: Colors.red,
+                      duration: Duration(seconds: 3),
+                    ),
+                  );
+                }
+              },
+              child: const Text("Restore Now", style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // ----------------------------------------------------
   // SECRET FOUNDER'S ACCESS DIALOG
   // ----------------------------------------------------
 
@@ -208,18 +526,25 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                     style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                     decoration: InputDecoration(
                       hintText: "Enter master key...",
-                      hintStyle: TextStyle(color: isDark ? Colors.grey.shade500 : Colors.grey.shade400, fontSize: 13),
+                      hintStyle: TextStyle(
+                        color: isDark ? Colors.grey.shade500 : Colors.grey.shade400,
+                        fontSize: 13,
+                      ),
                       errorText: errorMsg,
                       filled: true,
                       fillColor: isDark ? const Color(0xFF0F172A) : Colors.grey.shade100,
                       contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: isDark ? const Color(0xFF334155) : Colors.grey.shade300),
+                        borderSide: BorderSide(
+                          color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+                        ),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: isDark ? const Color(0xFF334155) : Colors.grey.shade300),
+                        borderSide: BorderSide(
+                          color: isDark ? const Color(0xFF334155) : Colors.grey.shade300,
+                        ),
                       ),
                     ),
                     onSubmitted: (_) async {
@@ -250,7 +575,10 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
                   onPressed: () => Navigator.of(ctx).pop(),
                   child: Text(
                     "Cancel",
-                    style: TextStyle(color: isDark ? Colors.grey.shade400 : Colors.grey, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: isDark ? Colors.grey.shade400 : Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
                 ElevatedButton(
@@ -350,7 +678,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       _filter.setTopic(topicName == 'Random' ? null : topicName);
     });
 
-    // In Comprehension, the topic IS the document! Launch directly into Question 1!
     if (_filter.branch == 'Comprehension') {
       _filter.subtopic = null;
       _launchQuestion();
@@ -545,7 +872,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
         backgroundColor: isDark ? const Color(0xFF0F172A) : Colors.white,
         elevation: 0,
         centerTitle: true,
-        // Secret Founder's Unlock: Long-press prompts for passphrase
         title: GestureDetector(
           onLongPress: () => _showFounderKeyDialog(context, isDark),
           child: Text(
@@ -565,20 +891,32 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
             : null,
         actions: [
           IconButton(
+            icon: const Icon(Icons.search, size: 21),
+            tooltip: "Jump to Question ID",
+            color: isDark ? const Color(0xFF818CF8) : Colors.indigo.shade700,
+            onPressed: () => _showJumpToQuestionDialog(context, isDark),
+          ),
+          IconButton(
+            icon: const Icon(Icons.cloud_sync_outlined, size: 21),
+            tooltip: "Backup / Restore Progress",
+            color: isDark ? const Color(0xFF34D399) : Colors.teal.shade700,
+            onPressed: () => _showBackupRestoreDialog(context, isDark),
+          ),
+          IconButton(
+            icon: const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B), size: 21),
+            tooltip: "Honours Matrix",
+            onPressed: _openHonoursScreen,
+          ),
+          IconButton(
             icon: Icon(
               isDark ? Icons.light_mode : Icons.dark_mode_outlined,
               color: isDark ? Colors.amber : Colors.indigo.shade700,
               size: 20,
             ),
-            tooltip: isDark ? "Switch to Daytime Mode" : "Switch to Dark Mode",
+            tooltip: isDark ? "Day/Dark Mode" : "Day/Dark Mode",
             onPressed: () {
               themeNotifier.value = isDark ? ThemeMode.light : ThemeMode.dark;
             },
-          ),
-          IconButton(
-            icon: const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B)),
-            tooltip: "Honours Matrix",
-            onPressed: _openHonoursScreen,
           ),
           TextButton.icon(
             icon: const Icon(Icons.bolt, color: Colors.amber, size: 18),
@@ -587,7 +925,7 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
               style: TextStyle(
                 color: isDark ? Colors.white : Colors.indigo.shade800,
                 fontWeight: FontWeight.bold,
-                fontSize: 13,
+                fontSize: 12,
               ),
             ),
             onPressed: _isLoading ? null : _quickRandomAll,

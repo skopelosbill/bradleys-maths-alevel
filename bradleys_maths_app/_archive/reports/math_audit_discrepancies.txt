@@ -1,0 +1,316 @@
+======================================================================
+     BRADLEY'S MATHS — MATHEMATICAL DISCREPANCY AUDIT REPORT
+======================================================================
+
+QUESTION ID: 004009 (Pure - Exponential Functions and Numerical Methods)
+DATABASE ANSWER: $$\varepsilon \approx 0.080.$$
+EXAMINER REPORT: The small-angle approximation for $e^{-x}$ is $1 - x$, leading to $1 - x - 1.5x - 0.8 = 0$, which yields $2.5x = 0.2$ and $x = 0.08$ (or $0.080$), making the Database Answer numerically correct for part (b). However, the question states "where $x$ is measured in radians", which is a nonsense inclusion for an exponential function, but let's check standard exponential approximations. Wait, using $e^{-x} \approx 1 - x + \frac{1}{2}x^2$ gives $0.5x^2 - 2.5x + 0.2 = 0$, which gives $\varepsilon \approx 0.0806$, or simply linear approximation gives $0.08
+------------------------------------------------------------
+QUESTION ID: 004010 (Pure - Trigonometric Functions and Numerical Methods)
+DATABASE ANSWER: $$\zeta \approx -0.500.$$
+EXAMINER REPORT: The small-angle approximation $\sin(3x) \approx 3x$ gives $3x + 0.5 - 2
+------------------------------------------------------------
+QUESTION ID: 004011 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $$\dfrac{\text{d}y}{\text{d}x} = \dfrac{24}{ (x+2)^3 }$$ <strong>(b)</strong> $$x < -2$$
+EXAMINER REPORT: The inequality in part (b) is incomplete because the derivative is negative for all $x$ in the domain except at $x=-2$, so it should be $x < -2$ **or** $x > -2$ (i.e., $x \in \mathbb{R}, x \neq -2$). | Correct: (a) $\dfrac{\text{d}y}{\text{d}x} = \dfrac{24}{ (x+2)^3 }$ (b) $x < -2$ and $x > -2$ (or $x \neq -2$)
+------------------------------------------------------------
+QUESTION ID: 004015 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $$\dfrac{\text{d}y}{\text{d}x} = \dfrac{8}{ (x+1)^3 }$$ <strong>(b)</strong> $$x < -1$$
+EXAMINER REPORT: Part (b) misses the valid interval where the derivative is negative for $x > -1$. | Correct: (a) $\dfrac{\text{d}y}{\text{d}x}
+------------------------------------------------------------
+QUESTION ID: 004016 (Pure - Binomial Expansion)
+DATABASE ANSWER: <strong>(a)</strong> $$f(x) \approx \dfrac{1}{3} + \dfrac{1}{27}x + \dfrac{1}{162}x^2.$$ <strong>(b)(i)</strong> $x = -6$ should not be used. <strong>(b)(ii)</strong> $x = 3$ gives an approximation of $\sqrt{3}$.
+EXAMINER REPORT: The database answer for part (b)(ii) incorrectly selects $x = 3$, which violates the range of validity $|x| < \frac{9}{2}$. | Correct: <strong>(a)</strong> $\frac{1}{3} + \frac{1}{27}x + \frac{1}{162}x^2$ <strong>(b)(i)</strong> $x = -6$ should not be used because it lies outside the region of validity $|x| < \frac{9}{2}$ (or $|\frac{2x}{9}| < 1$). <strong>(b)(ii)</strong> $x = -\frac{1}{2}$ would lead to an approximation of $\sqrt{3}$.
+------------------------------------------------------------
+QUESTION ID: 004020 (Pure - Binomial Expansion)
+DATABASE ANSWER: <strong>(a)</strong> $$F(x) \approx \dfrac{1}{4} + \dfrac{1}{128}x + \dfrac{3}{8192}x^2.$$ <strong>(b)(i)</strong> $x = -18$ should not be used. <strong>(b)(ii)</strong> $x = 0.5$ gives the most accurate approximation to $\dfrac{1}{\sqrt{15.5}}$.
+EXAMINER REPORT: The $x^2$ coefficient in the binomial expansion is incorrect ($\frac{3}{2048}$ instead of $\frac{3}{8192}$), and the reason for part (b)(i) is missing. | Correct: <b>(a)</b> $f(x) = \frac{1}{4} + \frac{1}{128}x + \frac{3}{2048}x^2$ <b>(b)(i)</b> $x = -18$ should not be used because it violates the condition for convergence $|x| < 16$. <b>(b)(ii)</b> $x = 0.5$ because it is closest to 0, and terms in higher powers of $x$ become smaller faster.
+------------------------------------------------------------
+QUESTION ID: 004022 (Pure - Coordinate Geometry)
+DATABASE ANSWER: <strong>(a)</strong> $$2(x+2)^2 + 4$$ <strong>(b)</strong> $$\text{Turning Point: (-2,4)}y\text{ -int: (0,12) }$$ <strong>(c)(i)</strong> $$\text{Translation by }\begin{pmatrix} 3 \\\ -3 \end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \le 3$$
+EXAMINER REPORT: The
+------------------------------------------------------------
+QUESTION ID: 004023 (Pure - Coordinate Geometry)
+DATABASE ANSWER: <strong>(a)</strong> $$4(x+1)^2 + 3$$ <strong>(b)</strong> $$\text{Turning Point: (-1,3)}y\text{ -int: (0,7) }$$ <strong>(c)(i)</strong> $$\text{Translation by }\begin{pmatrix} 3 \\\ -2 \end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \le 5$$
+EXAMINER REPORT: The database answer for part (c)(i) gives an incorrect translation vector due to an algebraic expansion/simplification error in $g(x)$. | Correct: **(a)** $4(x+1)^2 + 3$ **(b)** Turning Point: $(-1,3)$, $y$-intercept: $(0,7)$, no $x$-intercepts **(c)(i)** Translation by $\begin{pmatrix} 3 \\ 4 \end{pmatrix}$ **(c)(ii)** $0 < h(x) \le 5$
+------------------------------------------------------------
+QUESTION ID: 004024 (Pure - Coordinate Geometry)
+DATABASE ANSWER: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\text{Turning Point: (-2,6)}y\text{ -int: (0,18) }$$ <strong>(c)(i)</strong> $$\text{Translation by }\begin{pmatrix} 3 \\\ -4 \end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \le 4$$
+EXAMINER REPORT: The database answer for part (c)(i) misidentifies the translation vector because $g(x)$ simplifies to $3(x-5)^2 + 6$, making the correct vector $\begin{pmatrix} 5 \\ 0 \end{pmatrix}$. | Correct: <strong>(a)</strong> $$3(x+2)^2 + 6$$ <strong>(b)</strong> $$\text{Turning Point: (-2,6), } y\text{-int: (0,18)}$$ <strong>(c)(i)</strong> $$\text{Translation by }\begin{pmatrix} 5 \\\ 0 \end{pmatrix}$$ <strong>(c)(ii)</strong> $$0 < h(x) \le 4$$
+------------------------------------------------------------
+QUESTION ID: 004027 (Pure - Trigonometric Equations)
+DATABASE ANSWER: $x = 15^\circ$
+EXAMINER REPORT: The database answer fails to solve part (a) and incorrectly identifies the smallest positive solution for part (b) by missing the primary root at $x = 15^\circ$ derived from $\sin\theta = 0$. | Correct: For (a): $\theta = -144.7^\circ, -180^\circ, 0^\circ, 144.7^\circ, 180^\circ$. For (b): $x = 15^\circ$ (or $15.0^\circ$).
+------------------------------------------------------------
+QUESTION ID: 004028 (Pure - Trigonometric Equations)
+DATABASE ANSWER: $x \approx 44.4^\circ$
+EXAMINER REPORT: The database answer fails to account for the angle transformation properly, yielding an incorrect value for the smallest positive solution. | Correct: $x \approx 14.4^\circ$
+------------------------------------------------------------
+QUESTION ID: 004030 (Pure - Trigonometric Equations)
+DATABASE ANSWER: $x = 5^\circ$
+EXAMINER REPORT: The database answer only provides a single value and misses all other solutions to the trigonometric equation. | Correct: $x = 5^\circ, 95^\circ, 45^\circ$ (or depending on the full solution set for part (b), the smallest positive solution is $x = 5^\circ$, but the database answer fails to account for the full context of solutions required in part (a)). Wait, let's re-evaluate part (b): $\theta = x - 5^\circ$. From (a), solutions for $\theta$ include $0^\circ$. Thus $x - 5^\circ = 0^\circ \implies x = 5^\circ$. However, as a Senior Chief Examiner, an answer of just "5°" for a multi-part trig question without showing the full workings or all roots is incomplete, but let's check
+------------------------------------------------------------
+QUESTION ID: 004034 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: <strong>(a)</strong> $V = 40000(0.75)^t$ <strong>(b)</strong> Model is highly reliable ($\approx$ £4,005 vs £4,000) <strong>(c)</strong> Increase the base (e.g. $V = 40000(r)^t$ where $r > 0.75$)
+EXAMINER REPORT: The model's predicted value after 8 years is actually £4,005.16, but calling it "highly reliable" for an 8-year extrapolation when it differs by only £5 is mathematically sound; however, the base $r$ in part (c) must be strictly less than 1 (specifically $0.75 < r < 1$), not just "$r > 0.75$". | Correct: **(a)** $V = 40000(0.75)^t$ **(b)** Model is very reliable ($\approx$ £4,005 vs £4,000 after 8 years) **(c)** Increase the base so that $0.75 < r < 1$ (e.g., $V = 40000(r)^t$)
+------------------------------------------------------------
+QUESTION ID: 004035 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: <strong>(a)</strong> $V = 30000(0.8)^t$ <strong>(b)</strong> Model is highly reliable ($\approx$ £7,864 vs £7,800) <strong>(c)</strong> Increase the base (e.g. $V = 30000(r)^t$ where $r > 0.8$)
+EXAMINER REPORT: The database incorrectly claims the model is "highly reliable" when a ~64 pound discrepancy over 6 years in a secondary-school modeling context is typically evaluated as fairly accurate or reasonably reliable, but stating it is "highly reliable" based on a subjective appraisal rather than mathematical soundness is loose, and more importantly, the base calculation needs strict checking. Let's re-verify: $30000 \times 0.8^6 = 7864.32$. The evaluation is a matter of interpretation, but stating "highly reliable" for an arbitrary adjective in A-Level contexts usually requires a specific threshold. However, strictly mathematically, parts (a) and (c) are correct. Wait, let's look at the wording: "Model is highly reliable (~£7,864 vs £7,800)". Since £7,864 is very close to £
+------------------------------------------------------------
+QUESTION ID: 004039 (Pure - Definite Integration)
+DATABASE ANSWER: <strong>(a)</strong> $$\text{Area } R_1 = \dfrac{81}{4}$$ <strong>(b)</strong> $$(b+3)^2(b-3)^2 = 0  \text{ verified}$$ <strong>(c)</strong> $$b = 3$$ $$ \text{ symmetric opposite lobe boundary}$$
+EXAMINER REPORT: The database answer in part (b) and (c) glosses over a flawed premise in the question text (since $b=3$ violates $0 < b < 3$), but algebraically part (b) yields $(b^2-9)^2 = 81$ rather than $= 0$. | Correct: (a) $\frac{81}{4}$ (b) $(b^2-9)^2 = 81$ (c) The root $b=3$ corresponds to the upper limit of integration where the net accumulated area equals the area of $R_1$, but since $b < 3$ is required, no valid value of $b$ exists in that domain.
+------------------------------------------------------------
+QUESTION ID: 004042 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: <strong>(a)</strong> $$a = \dfrac{ b^3 }{ b^2 - 1 }$$ <strong>(b)</strong> $$b > 1$$
+EXAMINER REPORT: The database answer in part (b) omits the restriction $a > b$, which leads to the complete valid domain of $b > \frac{1+\sqrt{5}}{2}$ (or $\phi + 1$, where $\phi$ is the golden ratio). | Correct: (a) $a = \dfrac{b^3}{b^2 - 1}$, (b) $b > \frac{1+\sqrt{5}}{2}$ (or $\frac{1+\sqrt{5}}{2} < b < \infty$)
+------------------------------------------------------------
+QUESTION ID: 004043 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: <strong>(a)</strong> $$a = \dfrac{ b^2 }{ 2b - 1 }$$ <strong>(b)</strong> $$\dfrac{1}{2} < b < 1$$
+EXAMINER REPORT: The database answer in part (b) incorrectly restricts $b < 1$; using the given condition $a > b > 0$, the correct range is $b > 1$. | Correct: **(a)** $a = \dfrac{b^2}{2b - 1}$ **(b)** $b > 1$ (since $a > b$, we require $\frac{b^2}{2b-1} > b$, which simplifies to $b(b-1) < 0$ for $2b-1 > 0$, giving $0 < b < 1$, but combined with $a > b > 0$ and the original domain requirements, it forces $b > 1$).
+------------------------------------------------------------
+QUESTION ID: 004044 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: <strong>(a)</strong> $$a = \dfrac{ 2b^2 }{ b - 1 }$$ <strong>(b)</strong> $$b > 1$$
+EXAMINER REPORT: Part (b) is incomplete because it misses the upper bound restriction derived from $a > 2b$. | Correct: (a) $a = \frac{2b^2}{b-1}$, (b) $1 < b < 2$
+------------------------------------------------------------
+QUESTION ID: 004046 (Pure - Proof)
+DATABASE ANSWER: \begin{aligned} &\textbf{(i) } \text{Proof by exhaustion completed} \cr &\textbf{(ii) } \text{Sometimes true} \cr &\text {(e.g. holds for } x = 2 \text{} \cr &\text { but fails for } x = 0.5\text{)} \end{aligned}
+EXAMINER REPORT: Part (i) cannot be proven by exhaustion because $n \in \mathbb{N}$ is an infinite set; it requires proof by contradiction or exhaustion over
+------------------------------------------------------------
+QUESTION ID: 004047 (Pure - Proof)
+DATABASE ANSWER: \begin{aligned} &\textbf{(i) } \text{Proof by exhaustion completed} \cr &\textbf{(ii) } \text{Sometimes true} \cr &\text{(e.g. holds for } x = 2, y = 3\text{} \cr &\text{ but fails for } x = 2, y = -3\text{)} \end{aligned}
+EXAMINER REPORT: Part (i) cannot be proven by exhaustion because $n \in \mathbb{N}$ is an infinite set, and the statement in part (ii) is actually always true for real numbers. | Correct: (i) Proof by contradiction/cases using even/odd integers: if $n=2k$, $n^2+1 = 4k^2+1$ (remainder 1); if $n=2k+1$, $n^2+1 = 4k^2+4k+2 = 4(k^2+k)+2$ (remainder 2). Neither is divisible by 4. (ii) Always true, since $(x+y)^2 = x^2 + 2xy + y^2$, and $2xy \ge 0$ is not required; wait, expanding gives $x^2+2xy
+------------------------------------------------------------
+QUESTION ID: 004058 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $$\tan x = 3$$ <strong>(b)</strong> Bouncing curves sketched <strong>(c)</strong> $$2.63\text{ m}$$ <strong>(d)</strong> Bounces occur at constant intervals of $\pi\text{ seconds}$
+EXAMINER REPORT: The model states the ball is above ground, but the absolute value creates cusps at $t = n\pi$ where $H(t)=0$, meaning bounces occur at $t = n\pi$ (intervals of $\pi$), yet the maximum height calculation for part (c) uses the wrong turning point interval. | Correct: **(c)** $0.583\text{ m}$ (or similar depending on the specific bounce interval selected from $\tan t = 3$) **(d)** The model predicts bounces occur at exact mathematical intervals ($\pi$ seconds) forever, whereas a real bouncing ball loses energy at each impact and the time between bounces decreases.
+------------------------------------------------------------
+QUESTION ID: 004059 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $$\tan x = 8$$ <strong>(b)</strong> Bouncing curves sketched <strong>(c)</strong> $$3.36\text{ m}$$ <strong>(d)</strong> Bounces occur at constant intervals of $\pi\text{ seconds}$
+EXAMINER REPORT: The model states the ball is on the ground when $H(t) = 0$, which occurs when $\sin t = 0$, meaning bounces happen at $t = \pi, 2\pi, 3\pi, \dots$ (intervals of $\pi$), not because of any flaw in the database answer's premise, but because the database answer fails to explain that $H(t)=0$ implies $t = n\pi$, meaning the model predicts infinite bouncing forever instead of coming to rest. | Correct: Bounces occur at $t = n\pi$, meaning the ball bounces infinitely often and never comes to rest.
+------------------------------------------------------------
+QUESTION ID: 004060 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $$\tan x = 6 \text{ is verified}$$ <strong>(b)</strong> $$\text{Bouncing curves sketched }$$ $$\text{above the }t\text{-axis}$$ <strong>(c)</strong> $$9.25\text{ m}$$ <strong>(d)</strong> $$\text{Bounces are forced at}$$ $$\text{constant intervals of } \pi \text{ seconds}$$
+EXAMINER REPORT: The maximum height between the first and second bounce requires evaluating $H(t)$ at the turning point within $(\pi, 2\pi)$, which yields $2.84\text{ m}$ (or $2.83\text{ m}$ depending on $\arctan 6$ precision), not $9.25\text{ m}$ (which is the first peak). | Correct: **(c)** $2.84\text{ m}$
+------------------------------------------------------------
+QUESTION ID: 004061 (Pure - Integration)
+DATABASE ANSWER: <strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 14$$ <strong>(b)</strong> $$\dfrac{17}{5}\ln 2 - \dfrac{9}{5}\ln 3$$
+EXAMINER REPORT: The integration for part (b) contains a partial fraction or evaluation error, omitting the $\ln 7$ term specified in the form of the answer. | Correct: $-\frac{9}{5}\ln 2 - \frac{1}{2}\ln 3 + \frac{19}{10}\ln 7$ (or equivalent correct evaluation of the area integral)
+------------------------------------------------------------
+QUESTION ID: 004064 (Pure - Integration)
+DATABASE ANSWER: <strong>(a)(i)</strong> $$q = 6$$ <strong>(a)(ii)</strong> $$p = 12$$ <strong>(b)</strong> $$\dfrac{44}{9}\ln 2 - \dfrac{14}{9}\ln 7$$
+EXAMINER REPORT: The integration for the area involves partial fractions, and the coefficients resulting from the standard decomposition yield a sign error and incorrect fractions in the database answer. | Correct: $-\frac{4}{3}\ln 2 + \frac{2}{3}\ln 7$ (or equivalent correct evaluation of the definite integral)
+------------------------------------------------------------
+QUESTION ID: 004067 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $\dfrac{1}{15}$<br><strong>(b)(i)</strong> $y \approx \dfrac{1}{15}x$<br><strong>(b)(ii)</strong> The gradient of the linear approximation equals the exact derivative at the origin<br><strong>(c)</strong> $a = 3, b = 25$
+EXAMINER REPORT: The derivative $\frac{\text{dy}}{\text{dx}}$ at the origin is inverted; since $\frac{\text{dx}}{\text{dy}} = 15\cos(3y)$, at $y=0$ we have $\frac{\text{dx}}{\text{dy}} = 15$, making $\frac{\text{dy}}{\text{dx}} = \frac{1}{15}$. | Correct: <strong>(a)</strong> $\dfrac{1}{15}$<br><strong>(b)(i)</strong> $y \approx \dfrac{1}{15}x$<br><strong>(b)(ii)</strong> The gradient of the linear approximation equals the exact derivative at the origin<br><strong>(c)</strong> $a = 15, b = 25$
+------------------------------------------------------------
+QUESTION ID: 004068 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $\dfrac{1}{8}$<br><strong>(b)(i)</strong> $y \approx \dfrac{1}{8}x$<br><strong>(b)(ii)</strong> The gradient of the linear approximation equals the exact derivative at the origin<br><strong>(c)</strong> $a = 4, b = 4$
+EXAMINER REPORT: For part (c), applying the identity $\cos^2 4y = 1 - \sin^2 4y = 1 - \frac{x^2}{4}$ leads to $a=8$ and $b=4$ rather than $a=4$ and $b=4$. | Correct: <strong>(a)</strong> $\dfrac{1}{8}$ <br> <strong>(b)(i)</strong> $y \approx \dfrac{1}{8}x$ <br> <strong>(b)(ii)</strong> The gradient of the linear approximation equals the exact derivative at the origin <br> <strong>(c)</strong> $a = 8, b = 4$
+------------------------------------------------------------
+QUESTION ID: 004070 (Pure - Differentiation)
+DATABASE ANSWER: <strong>(a)</strong> $\dfrac{1}{12}$<br><strong>(b)(i)</strong> $y \approx \dfrac{1}{12}x$<br><strong>(b)(ii)</strong> The gradient of the linear approximation equals the exact derivative at the origin<br><strong>(c)</strong> $a = 3, b = 16$
+EXAMINER REPORT: The derivative $\frac{\text{d}y}{\text{d}x}$ at the origin is $\frac{1}{12}$, but differentiating $x = 4\sin 3y$ gives $\frac{\text{d}x}{\text{d}y} = 12\cos 3y$, so at the origin $(y=0)$, $\frac{\text{d}y}{\text{d}x} = \frac{1}{12}$, making parts (a), (b)(i), and (b)(ii) correct, but part (c) fails since $\cos 3y = \sqrt{1 - \sin^2 3y} = \sqrt{1 - (x/4)^2} = \frac{1}{4}\sqrt{16 - x^2}$, leading to $\frac{\text{d}y}{\text{
+------------------------------------------------------------
+QUESTION ID: 004083 (Pure - Sequences)
+DATABASE ANSWER: $$ 6$$
+EXAMINER REPORT: The sine function has a fundamental period of $2\pi$, so the argument must increase by $2\pi$ for the sequence to repeat, making the period 6 rather than 3. Wait, let me re-evaluate: $\sin\left(\frac{(n+k)\pi}{3}\right) = \sin\left(\frac{n\pi}{3} + \frac{k\pi}{3}\right)$. For this to equal $\sin\left(\frac{n\pi}{3}\right)$, we need $\frac{k\pi}{3} = 2\pi m$, so $k = 6m$. The smallest positive integer $k$ is 6. The database answer is 6.
+------------------------------------------------------------
+QUESTION ID: 004084 (Pure - Sequences)
+DATABASE ANSWER: $$ 3$$
+EXAMINER REPORT: The database answer (3) completely misinterprets the question, as $U_n = \cos\left(\frac{2n\pi}{3}\right)$ represents a periodic sequence of values, not a sum or a period length of 3. | Correct: -\frac{1}{2}, -\frac{1}{2}, 1 (or the sequence repeats: -\frac{1}{2}, -\frac{1}{2}, 1)
+------------------------------------------------------------
+QUESTION ID: 004085 (Pure - Sequences)
+DATABASE ANSWER: $$ 8$$
+EXAMINER REPORT: The sequence values repeat every 8 terms, but the fundamental period (smallest positive integer $k$ such that $U_{n+k} = U_n$) is 8? Wait, let's check: $n=1: \sqrt{2}/2$, $n=2: 1$, $n=3: \sqrt{2}/2$, $n=4: 0$, $n=5: -\sqrt{2}/2$, $n=6: -1$, $n=7: -\sqrt{2}/2$, $n=8: 0$, $n=9: \sqrt{2}/2$. The period is indeed 8. The database answer $8$ is correct.
+------------------------------------------------------------
+QUESTION ID: 004088 (Pure - Functions)
+DATABASE ANSWER: $$f^{-1}(x) = \dfrac{\ln(x) + 4}{2},\quad x > 0$$
+EXAMINER REPORT: The algebraic rearrangement of $y = e^{2x-4}$ to find the inverse was done incorrectly. | Correct: $f^{-1}(x) = \frac{1}{2}\ln(x) + 2$ (
+------------------------------------------------------------
+QUESTION ID: 004089 (Pure - Functions)
+DATABASE ANSWER: $$f^{-1}(x) = \dfrac{\ln(x) - 6}{2},\quad x > 0$$
+EXAMINER REPORT: The database answer incorrectly subtracted 6 before applying the natural logarithm; it should be $f^{-1}(x) = \frac{\ln(x) - 6}{2}$ evaluated from $y = e^{2x+6} \implies \ln(y) = 2x + 6 \implies x = \frac{\ln(y) - 6}{2}$. Wait, let me re-evaluate algebraically: $y = e^{2x+6} \implies \ln y = 2x + 6 \implies 2x = \ln y - 6 \implies x = \frac{\ln y - 6}{2}$. Therefore $f^{-1}(x) = \frac{\ln x - 6}{2}$. | Correct: f^{-1}(x) = \dfrac{\ln(x) - 6}{2}, \quad x
+------------------------------------------------------------
+QUESTION ID: 004093 (Pure - Differentiation)
+DATABASE ANSWER: $$\text{(a) } \dfrac{dy}{dx} = -\dfrac{4}{5} \times 2^{2t},$$ $$\text{(b) } xy + 3x - y = 23$$
+EXAMINER REPORT: The Cartesian equation in part (b) contains a sign error; expanding $(x-1)(y+3) = 20$ yields $xy + 3x - y = 23$, but the true constant should be 17. | Correct: (a) $\dfrac{dy}{dx} = -\dfrac{4}{5} \times 2^{2t}$ (b) $xy + 3x - y = 17$
+------------------------------------------------------------
+QUESTION ID: 004094 (Pure - Differentiation)
+DATABASE ANSWER: $$\text{(a) } \dfrac{dy}{dx} = -2 \times 3^{2t},$$ $$\text{(b) } xy + x - 5y = 13$$
+EXAMINER REPORT: The derivative in part (a) is incorrect due to a differentiation error, and consequently the Cartesian equation in part (b) is also incorrect. | Correct: (a) $\frac{dy}{dx} = -\frac{2}{3}\ln 3 \cdot 3^{2t}$ (or $\frac{dy}{dx} = -2 \cdot 3^{2t-1}$ if evaluated without $\ln 3$, but fundamentally depends on the chain rule for exponential functions); (b) $xy - 5x + 2y = 17$ (since $x-5 = 2 \times 3^{-t}$ and $y+1 = 4 \times 3^t$, multiplying them gives $(x-5)(y+1) = 8$, which expands to $xy + x - 5y = 13$ —
+------------------------------------------------------------
+QUESTION ID: 004101 (Pure - Circles)
+DATABASE ANSWER: (b)(i) $$4\angle ABC = 90^\circ$$ $$AC \text{ is a diameter} $$ (b)(ii) $$\text{Inside the circle}$$
+EXAMINER REPORT: The database answer lacks proper justification and complete working for part (b)(ii), which requires comparing the distance from the center to $D$ with the radius. | Correct: (b)(i) Since $\angle ABC = 90^\circ$, the angle subtended by the arc $AC$ at the circumference is $90^\circ$, meaning $AC$ must subtend a semi-circle, making $AC$ a diameter (or using Thales's theorem / converse of angle in a semi-circle). (b)(ii) Center of the circle is the midpoint of $AC$, which is $(1, 4)$. Radius $r = \sqrt{(1 - (-9))^2 + (4 - 4)^2} = 10$. Distance from center $(1, 4)$ to $D(4, 10)$ is $\sqrt{(4-1
+------------------------------------------------------------
+QUESTION ID: 004102 (Pure - Circles)
+DATABASE ANSWER: (b)(i) $$\text{ Midpoint is (0, 6)}$$ $$\text{which lies on the } y\text{-axis} $$ (b)(ii) $$\text{Inside the circle}$$
+EXAMINER REPORT: The database answer for (b)(ii) fails to provide any mathematical justification as required by the command. | Correct: (b)(i) Midpoint of AC is $(0, 6)$, which lies on the $y$-axis. (b)(ii) Distance squared from origin is $3^2 + (-9)^2 = 9 + 81 = 90 < 100$, so $D$ lies inside the circle.
+------------------------------------------------------------
+QUESTION ID: 004103 (Pure - Circles)
+DATABASE ANSWER: (b)(i) $$\text{ All points are distance } 5 \text{ from (0, 0)} $$ (b)(ii) $$\text{Outside the circle}$$
+EXAMINER REPORT: The database answer fails to provide any mathematical justification for part (b)(ii). | Correct: The distance from the origin to $E(-4, 4)$ is $\sqrt{(-4)^2 + 4^2} = \sqrt{32} \approx 5.66$. Since this
+------------------------------------------------------------
+QUESTION ID: 004104 (Pure - Circles)
+DATABASE ANSWER: (b)(i) $$PT^2 = R^2 \text{ is verified}$$ (b)(ii) $$\text{Inside the circle}$$
+EXAMINER REPORT: The database answer for (b)(i) is completely missing the required calculations for the length of the chord and perpendicular distance, and for (b)(ii) lacks the necessary distance calculation and mathematical justification. | Correct: (b)(i) $AB = 5\sqrt{2}$, $d = \frac{5\sqrt{2}}{2}$, verifying $(5)^2 = \left(\frac{5\sqrt{2}}{2}\right)^2 + \left(\frac{5\sqrt{2}}{2}\right)^2 \implies 25 = \frac{25}{2} + \frac{25}{2}$. (b)(ii) Distance $MD = \sqrt{10} \approx 3.16 < 5$, so the point $D(4, -2)$ lies inside the circle.
+------------------------------------------------------------
+QUESTION ID: 004105 (Pure - Circles)
+DATABASE ANSWER: (b)(i) $$\text{ } PT = 8 \text{ is verified } $$ (b)(ii) $$\text{Outside the circle}$$
+EXAMINER REPORT: The Database Answer lacks the required working for (b)(i) and numerical justification for (b)(ii). | Correct: (b)(i) $OT = 6$, $OP = 10$. $\cos(\angle POT) = \frac{6}{10} = \frac{3}{5}$. By Cosine Rule: $PT^2 = 10^2 + 6^2 - 2(10)(6)(\frac{3}{5}) = 100 + 36 - 72 = 64 \implies PT = 8$. (b)(ii) Distance from origin to $D(5, -4)$ is $\sqrt{5^2 + (-4)^2} = \sqrt{41} \approx 6.40$. Since $6.40 > 6$ (the radius),
+------------------------------------------------------------
+QUESTION ID: 004107 (Pure - Trigonometry)
+DATABASE ANSWER: (b)$$ 1.27741$$ (c)$$0.13\%$$
+EXAMINER REPORT: The Newton-Raphson iteration from $\theta_1 = 1.5$ yields $\theta_2 \approx 1.29415$ and $\theta_3 \approx 1.27741$, making the percentage error approximately $0.134\%$, which rounds to $0.13\%$; wait, let me re-verify $\theta_3$. With $f(\theta) = 4\sin\theta - 3\theta$ and $f'(\theta) = 4\cos\theta - 3$: $\theta_1 = 1.5$, $\theta_2 = 1.5 - \frac{4\sin(1.5) - 4.5}{4\cos(1.5) - 3} \approx 1.294152$, $\theta_3 =
+------------------------------------------------------------
+QUESTION ID: 004108 (Pure - Trigonometry)
+DATABASE ANSWER: (b)$$1.17911$$ (c) $$0.57\%$$
+EXAMINER REPORT: The Newton-Raphson iteration was evaluated incorrectly; $\theta_3$ should be approximately 1.17215, which leads to a percentage error of 0.02%. | Correct: (b) 1.17215, (c) 0.02%
+------------------------------------------------------------
+QUESTION ID: 004109 (Pure - Trigonometry)
+DATABASE ANSWER: (b)$$2.12654$$ (c) $$0.09\% $$
+EXAMINER REPORT: The Newton-Raphson iteration from $\theta_1 = 2.5$ yields $\theta_3 = 2.12458$, resulting in a percentage error of $0.00\%$. | Correct: (b) 2.12458 (c) 0.00%
+------------------------------------------------------------
+QUESTION ID: 004110 (Pure - Trigonometry)
+DATABASE ANSWER: (b) $$1.66164$$ (c) $$0.57\% $$
+EXAMINER REPORT: The Newton-Raphson iteration starting from $\theta_1 = 2.0$ yields $\theta_2 = 1.66699$ and $\theta_3 = 1.65243$, which leads to a percentage error of $0.02\%$. | Correct: (b) 1.65243 (c) 0.02%
+------------------------------------------------------------
+QUESTION ID: 004111 (Pure - Arithmetic Series)
+DATABASE ANSWER: (b)$$a = -26$$
+EXAMINER REPORT: The database answer fails to account for both possible solutions of the quadratic equation; the smallest possible value of $a$ is $-30$. | Correct: $a = -30$
+------------------------------------------------------------
+QUESTION ID: 004112 (Pure - Arithmetic Series)
+DATABASE ANSWER: (b)$$a = -9$$
+EXAMINER REPORT: The value $a = -9$ fails to satisfy the condition that $d$ must be real, yielding a complex common difference instead of the minimum real value $a = -2$. | Correct: a = -2
+------------------------------------------------------------
+QUESTION ID: 004116 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: (a) $$ 139\text{ mg}$$ (b) $$11\text{:}38\text{ am}$$
+EXAMINER REPORT: The calculation for part (b) uses an incorrect initial mass of 300 mg instead of accounting for the remaining drug from the 9 am dose at the time of the next dose. | Correct: (a) 139 mg (b) 1:29 pm
+------------------------------------------------------------
+QUESTION ID: 004117 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: (a) $$ 32.4^\circ\text{C}$$ (b) $$1\text{:}12\text{ pm}$$
+EXAMINER REPORT: Part (a) fails to use the correct value of $k$ derived from the half-life information, and Part (b) has an incorrect time and omits part (c). | Correct: (a) $37.5^\circ\text{C}$ (b) $1:14\text{ pm}$ (c) Room temperature is not strictly constant, or heat loss is not purely Newtonian.
+------------------------------------------------------------
+QUESTION ID: 004119 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: (a) $$ 286\text{ Bq}$$ (b) $$24\text{ days and } 7\text{ hours}$$
+EXAMINER REPORT: The decay constant was incorrectly calculated, leading to wrong values for both parts (part a should be 288 Bq and part b should be 24 days and 6 hours). | Correct: (a) 288 Bq, (b) 24 days and 6 hours
+------------------------------------------------------------
+QUESTION ID: 004120 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: (a) $$ 48.2\text{ kPa}$$ (b) $$15,160\text{ metres}$$
+EXAMINER REPORT: The database answer fails to convert the altitude in part (a) from metres to kilometres ($5895\text{ m} = 5.895\text{ km}$), and contains calculation errors in both parts. | Correct: (a) 36.7 kPa (b) 10,750 metres
+------------------------------------------------------------
+QUESTION ID: 004122 (Pure - Exponentials and Logarithms)
+DATABASE ANSWER: $$\begin{aligned} T_1 &= 30.759 \cr T_2 &= 30.644 \cr T_3 &= 30.588 \cr \text{Interval:} & \quad 28 < t < 29 \implies 2038 \end{aligned}$$
+EXAMINER REPORT: The iterative calculations are incorrect ($T_1 \approx 30.793$, $T_2 \approx 30.710$, $T_3 \approx 30.670$), and part (b) requires checking the year 28 (2038), where revenue ($R \approx 13.06$) is greater than cost ($C \approx 12.98$), whereas in year 29 (2039) cost exceeds revenue, meaning they are equal *during* the year 2038 ($28 < t < 29$). | Correct: T_1 = 30.793, T_2 = 30.710, T_3 = 30.670; Interval: 28 < t < 29 \
+------------------------------------------------------------
+QUESTION ID: 004126 (Pure - Algebraic Methods)
+DATABASE ANSWER: (b) $$p(x) = (3x+1)(2x-1)(4x-3)$$(c) $$|\sec x| \ge 1 $$ $$\text{No real solutions}$$
+EXAMINER REPORT: The database answer is incomplete, as it omits part (a) entirely and provides only partial responses for parts (b) and (c). | Correct: (a) Show $p\left(-\frac{1}{3}\right) = 0$; (b) $p(x) = (3x+1)(2x-1)(4x-3)$; (c) Substitute $u = \sec x$, use the factorised cubic to show $u = -\frac{1}{3}$ or $u = \frac{1}{2}$ or $u = \frac{3}{4}$, and since $|\sec x| \ge 1$, there are no real solutions.
+------------------------------------------------------------
+QUESTION ID: 004127 (Pure - Algebraic Methods)
+DATABASE ANSWER: (b) $$q(x) = (2x-1)(3x-1)$$(c) $$-1 \le \sin x \le 1$$ $$\text{No real solutions}$$
+EXAMINER REPORT: The database answer omits the solution for part (a) completely. | Correct: (a) Show $q\left(\frac{1}{2}\right) = 0$ or use algebraic long division to show a remainder of 0. (b) $q(x) = (2x-1)(3x-1)$ (c) Substitute $\csc x = \frac{1}{\sin x}$, obtain the quadratic $6\sin^2 x - 5\sin x + 1 = 0$, factorise to $(\sin x - \frac{1}{2})(3\sin x - 1) = 0$, giving $\sin x = \frac{1}{2}$ and $\sin x = \frac{1}{3}$, which both have real solutions (contradicting the database claim).
+------------------------------------------------------------
+QUESTION ID: 004130 (Pure - Algebraic Methods)
+DATABASE ANSWER: (b) $$q(x) = (2x-1)(6x-1)$$(c) $$-1 \le \cos x \le 1$$ $$\text{No real solutions}$$
+EXAMINER REPORT: The database answer completely omits the solution for part (a) and provides an incomplete solution for part (c). | Correct: (a) Substitute $x = \frac{1}{2}$ into $q(x)$ to get $12(\frac{1}{4}) - 8(\frac{1}{2}) + 1 = 3 - 4 + 1 = 0$, so $(2x-1)$ is a factor. (b) $q(x) = (2x-1)(6x-1)$. (c) Substitute $\sec x = \frac{1}{\cos x}$ to form the quadratic $12 + \cos^2 x = 8\cos x \implies \cos^2 x - 8\cos x + 12 = 0$, which factors as $(\cos x - 6)(\cos x -
+------------------------------------------------------------
+QUESTION ID: 004136 (Pure - Trigonometric Identities)
+DATABASE ANSWER: \begin{aligned} & \cos(A - B) \cr & \quad = \cos A \cos B + \sin A \sin B\end{aligned}
+EXAMINER REPORT: The database answer only provides the answer to part 4 and completely omits the required steps and answers for parts 1, 2, and 3. | Correct: 1. $\dfrac{EP}{EF} = \sin A$ (from triangle $EPF$) and $\dfrac{EF}{OF} = \sin B$ (from triangle $OEF$), so their product is $\sin A \sin B$.
+------------------------------------------------------------
+QUESTION ID: 004137 (Pure - Trigonometric Identities)
+DATABASE ANSWER: $$\tan(A+B) = -1, \quad A+B = 135^\circ$$
+EXAMINER REPORT: The database answer fails to provide answers for parts 1 and 2, and the value for part 3 assumes $A$ and $B$ are in the first quadrant which violates the condition $\tan A = 2$ and $\tan B = 3$ for acute angles summing to $135^\circ$ ($A+B$ must be obtuse since $\tan(A+B) = -1$). | Correct: $\tan(A+B) = -1$, and $A+B = 135^\circ$ (noting that $A$ and $B$ cannot both be acute if their tangents are $2$ and $3$, as $\tan(A+B)=-1$ implies $A+B = 135^\circ$, which is obtuse).
+------------------------------------------------------------
+QUESTION ID: 004139 (Pure - Trigonometric Identities)
+DATABASE ANSWER: $$\cos(3\theta) = 4\cos^3\theta - 3\cos\theta$$
+EXAMINER REPORT: The database answer only provides the identity itself, completely ignoring parts 1, 2, and 3 of the prompt. | Correct: 1. $\cos(3\theta) = \cos(2\theta)\cos\theta - \sin(2\theta)\sin\theta$; 2. Substitute $\cos(2\theta) = 2\cos^2\theta - 1$ and $\sin(2\theta) = 2\sin\theta\cos\theta$ into the expansion, use $\sin^2\theta = 1 - \cos^3\theta$, and simplify to yield $4\cos^3\theta - 3\cos\theta$; 3. The algebraic proof uses trigonometric identities derived from the unit circle and Euler's formula that hold true for all real numbers $\theta$, whereas geometric proofs involving right-angled triangles
+------------------------------------------------------------
+QUESTION ID: 004140 (Pure - Trigonometric Identities)
+DATABASE ANSWER: $$\sin(15^\circ) = \dfrac{\sqrt{6} - \sqrt{2}}{4}$$
+EXAMINER REPORT: The database answer only provides the answer to part 2 and completely omits the proofs and explanations required for parts 1 and 3. | Correct: 
+------------------------------------------------------------
+QUESTION ID: 004143 (Pure - Differentiation)
+DATABASE ANSWER: $$2h^2 + 6h, \quad \lim_{h \to 0} (2h^2 + 6h) = 0$$
+EXAMINER REPORT: The database answer omits the required algebraic derivation for part 1 and the explanation for part 2. | Correct: Part 1: $\frac{y_B - y_A}{h} = \frac{(2(1+h)^3 - 6(1+h)) - (2(1)^3 - 6(1))}{h} = \frac{2(1+3h+3h^2+h^3) - 6 - 6h + 4}{h} = \frac{2h^3 + 6h^2 + 6h - 4 - 6h + 4}{h} = 2h^2 + 6h$. Part 2: As $h \to 0$, point $B$ approaches $A$, and the gradient of $AB$ approaches $\lim_{h \to
+------------------------------------------------------------
+QUESTION ID: 004146 (Pure - Straight Lines)
+DATABASE ANSWER: $$x + 4y = 43$$
+EXAMINER REPORT: The perpendicular line passes through $(3, 10)$ with gradient $-\frac{1}{4}$, yielding the correct equation $x + 4y = 43$. Wait, let me re-evaluate.
+------------------------------------------------------------
+QUESTION ID: 004148 (Pure - Straight Lines)
+DATABASE ANSWER: $$6x + 7y = 20$$
+EXAMINER REPORT: The database answer fails to answer part 1 and gives an incorrect equation for part 2 (the correct altitude passes through X(1,2) with gradient 6/7, yielding 6x - 7y = -8). | Correct: 6x - 7y = -8
+------------------------------------------------------------
+QUESTION ID: 004151 (Pure - Numerical Methods)
+DATABASE ANSWER: $$5.03$$
+EXAMINER REPORT: The database answer only answers part 1 and misses the explanation required for part 2. | Correct: Part 1: 5.03. Part 2: Increase the number of strips (decrease the width $\Delta x$) used in the trapezium rule.
+------------------------------------------------------------
+QUESTION ID: 004152 (Pure - Numerical Methods)
+DATABASE ANSWER: $$0.987$$
+EXAMINER REPORT: The database answer 0.987 is incorrect; the correct application of the trapezium rule yields approximately 0.948. | Correct: 0.948
+------------------------------------------------------------
+QUESTION ID: 004153 (Pure - Numerical Methods)
+DATABASE ANSWER: $$1.68, \quad \ln 5, \quad 4.60\%$$
+EXAMINER REPORT: The trapezium rule estimate is incorrect (should be 2.08, not 1.68), making the percentage error wrong. | Correct: 2.08, \quad \ln 5, \quad 25.4\%
+------------------------------------------------------------
+QUESTION ID: 004154 (Pure - Numerical Methods)
+DATABASE ANSWER: $$1.99$$
+EXAMINER REPORT: The database answer fails to answer both parts of the question (it only gives the numerical estimate and omits the explanation). | Correct: 1.99 (with explanation that more strips decrease strip width, which increases approximation accuracy)
+------------------------------------------------------------
+QUESTION ID: 004156 (Pure - Algebraic Methods)
+DATABASE ANSWER: $$x = \pm\sqrt{6}$$
+EXAMINER REPORT: The database answer missed two of the four roots of the quartic equation; the full set of real roots is $\pm\sqrt{6}$ and $\pm\sqrt{-2}$ (or $\pm i\sqrt{2}$), though the question specifically asks for the *two* real roots, which are $\pm\sqrt{6}$. Wait, let's re-solve: $x^4 - 4x^2 - 12 = 0 \implies (x^2 - 6)(x^2 + 2) = 0$, so $x^2 = 6$ or $x^2 = -2$. The real roots are indeed $\pm\sqrt{6}$. The database answer is mathematically CORRECT.
+------------------------------------------------------------
+QUESTION ID: 004158 (Pure - Algebraic Methods)
+DATABASE ANSWER: $$x = -2, \quad -1, \quad 1, \quad 2$$
+EXAMINER REPORT: The database answer fails to verify by substitution; the actual roots of the equation are $\pm 1$ and $\pm 2$. | Correct: $x = -2, -1, 1, 2$
+------------------------------------------------------------
+QUESTION ID: 004161 (Pure - Proof)
+DATABASE ANSWER: $$2(4k^3 + 5k) - 1$$  $$\text{ and } 2(4k^3 + 6k^2 + 8k + 2) + 1$$ $$\text{ are odd}$$
+EXAMINER REPORT: The database answer tests specific cases or flawed algebraic expansions rather than a complete parity proof covering all integers $n$. | Correct: Let $n = 2k$ (even) $\implies (2k)^3 + 5(2k) - 1 = 8k^3 + 10k - 1 = 2(4k^3 + 5k - 1) + 1$ (odd). Let $n = 2k-1$ (odd) $\implies (2k-1)^3 + 5(2k-1) - 1 = 8k^3 - 12k^2 + 16k - 7 = 2(4k^3 - 6k^2 + 8k - 4) + 1$ (odd). Hence $n^3 + 5n -
+------------------------------------------------------------
+QUESTION ID: 004163 (Pure - Proof)
+DATABASE ANSWER: $$& 4k^2 + 2 \quad \text{and} 4(k^2 + k) + 3 \quad \text{leave remainders}$$
+EXAMINER REPORT: The database answer is completely fragmented, nonsensical, and fails to provide a proper algebraic proof by exhaustion. | Correct: Consider all integers $n$ modulo 4. Every positive integer $n$ can be written in one of four forms: $4k$, $4k+1$, $4k+2$, or $4k+3$ for some integer $k \ge 0$. Squaring each gives: (1) $(4k)^2+2 = 16k^2+2 = 4(4k^2)+2$ (remainder 2); (2) $(4k+1)^2+2 = 16k^2+8k+3 = 4(4k^2+2k)+3$ (remainder 3); (3) $(4k+2)^2+2 = 16k^2
+------------------------------------------------------------
+QUESTION ID: 004165 (Pure - Proof)
+DATABASE ANSWER: $$x &= q - r \quad \implies \text{contradiction}$$
+EXAMINER REPORT: The database answer is an incomplete fragment that fails to set up the contradiction or define the variables. | Correct: Assume the sum of a rational number $r$ and an irrational number $i$ is rational, so $r + i = q$ for some rational $q$. Then $i = q - r$. Since the difference of two rational numbers is rational, $i$ must be rational, which contradicts the premise that $i$ is irrational. Therefore, the sum must be irrational.
+------------------------------------------------------------
+QUESTION ID: 004166 (Pure - Circles)
+DATABASE ANSWER: \begin{aligned}&(-2, 3), \quad \sqrt{10} \cr &(1, 4), \quad \text{tangent}\end{aligned}
+EXAMINER REPORT: The database answer misses one of the two intersection points for part (2), as the line actually intersects the circle at two distinct points. | Correct: 1. Centre: $(-2, 3)$, Radius: $\sqrt{10}$ (or $3.16$). 2. $(1, 4)$ and $\left(\frac{1}{5}, \frac{32}{5}\right)$. 3. The line is a secant to the circle (it intersects the circle at two distinct points).
+------------------------------------------------------------
+QUESTION ID: 004167 (Pure - Circles)
+DATABASE ANSWER: \begin{aligned}&5 \cr &(3, 7) \text{ and } (-2, 2) \cr &\text{secant}\end{aligned}
+EXAMINER REPORT: The database answer contains an incorrect coordinate for the second intersection point; substituting $y = x + 4$ into the circle equation yields the intersection points $(-1, 3)$ and $(3, 7)$. | Correct: Radius: 5; Intersection points: $(3, 7)$ and $(-1, 3)$; Relationship: secant (or the line intersects the circle at two distinct points).
+------------------------------------------------------------
+QUESTION ID: 004168 (Pure - Circles)
+DATABASE ANSWER: \begin{aligned}&(1, 4), \quad \sqrt{5} \cr &\Delta = -15 < 0\end{aligned}
+EXAMINER REPORT: The database answer is completely inadequate, missing the radius value, the full algebraic substitution for part 2, and the required geometrical deduction for part 3. | Correct: 1. Centre: $(1, 4)$, Radius: $\sqrt{5}$ (or $2.24$). 2. Substituting $y = x+8$ into the circle equation yields $2x^2 + 10x + 20 = 0$, which has discriminant $\Delta = 10^2 - 4(2)(20) = -60 < 0$, meaning no real roots and no points of intersection. 3. The line is strictly outside the circle (does not intersect or touch it).
+------------------------------------------------------------
+QUESTION ID: 004169 (Pure - Circles)
+DATABASE ANSWER: $$k = \pm 5$$
+EXAMINER REPORT: Substituting $y = 2x + k$ into $x^2 + y^2 = 5$ and setting the discriminant to zero yields $k^2 = 25$, so $k = \pm\sqrt{5}$ (or $\pm 5\sqrt{5}$ depending on scaling), making $\pm 5$ incorrect. | Correct: $k = \pm 5\sqrt{5}$
+------------------------------------------------------------
+QUESTION ID: 004170 (Pure - Circles)
+DATABASE ANSWER: $$x + 3y = 5$$
+EXAMINER REPORT: The database answer fails to verify that the point $P(2,1)$ lies on the circle and has the wrong constant term for the tangent equation. | Correct: $x - 3y = -1$
+------------------------------------------------------------
+QUESTION ID: 004172 (Pure - Algebraic Methods)
+DATABASE ANSWER: \begin{aligned}&(x - 1)(x - 2)(x - 3) \cr & {x : 1 \le x \le 2 } \cup {x : x \ge 3 } \cr &y = (x - 3)(x - 4)(x - 5) - 1\end{aligned}
+EXAMINER REPORT: The database answer for part 3 uses incorrect set notation and boundaries for the solution to the inequality. | Correct: 
+------------------------------------------------------------
+QUESTION ID: 004173 (Pure - Algebraic Methods)
+DATABASE ANSWER: \begin{aligned}&(x + 1)(x - 2)^2 \cr & {x : -1 < x < 2 } \cup {x : x > 2 } \cr &y = 3x^3 - 9x^2 + 12\end{aligned}
+EXAMINER REPORT: The database answer for the inequality omits the full solution set, missing $x > 2$ as a disjoint interval rather than a continuous union. | Correct: 
+------------------------------------------------------------
+QUESTION ID: 004174 (Pure - Algebraic Methods)
+DATABASE ANSWER: \begin{aligned}&-(x + 1)(x - 2)^2 \cr & {x : x \le -1 } \cup {2 } \cr &y = x^3 - 3x^2 + 4\end{aligned}
+EXAMINER REPORT: The database answer for the inequality is missing the set notation brackets (e.g., $\{x : x \le -1\} \cup \{2\}$) and the fully factorised form in part 1 is not clearly separated from the rest. | Correct: 1. $f(x) = -(x+1)(x-2)^2; \quad$ 2. Intersections at $(-1,0), (2,0), (0,-4); \quad$ 3. $\{x : x \le -1\} \cup \{2\}; \quad$ 4. $y = x^3 - 3x^2 + 4$
+------------------------------------------------------------

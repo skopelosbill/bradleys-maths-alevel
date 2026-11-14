@@ -3,23 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bradley's Maths - A-Level Revision Hub</title>
+    <title>AS and A Level Revision — Bradley's Maths</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f3e5f5;
-            color: #4a148c;
-            text-align: center;
-            padding: 50px;
-            margin-top: 100px;
+            color: #1e293b;
+            margin: 0;
+            padding: 24px 16px;
+            line-height: 1.6;
         }
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-        p { font-size: 1.2em; color: #555; }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 24px 16px;
+        }
+        h1 {
+            color: #4a148c;
+            font-size: 2rem;
+            margin: 0 0 8px 0;
+        }
+        .subtitle {
+            color: #6a1b9a;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+        }
+        .tagline {
+            color: #475569;
+            font-size: 1rem;
+            max-width: 580px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(74, 20, 140, 0.08);
+        }
+        h2 {
+            color: #4a148c;
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .stat-box {
+            background-color: #f8f2fa;
+            border: 1px solid #e1bee7;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .stat-number {
+            display: block;
+            color: #4a148c;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        a {
+            color: #4a148c;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-bottom: 16px;
+            font-size: 0.9rem;
+            color: #475569;
+        }
     </style>
 </head>
 <body>
-    <h1>Bradley's Maths</h1>
-    <h2>A-Level Revision Hub</h2>
-    <p>Our premium, course-long GCE revision companion is currently in development and coming soon!</p>
+    <div class="container">
+        <header>
+            <h1>Bradley's Maths</h1>
+            <p class="subtitle">AS and A Level Revision</p>
+            <p class="tagline">
+                A premium, 100% offline-first GCE Mathematics revision companion featuring 1,400 examination-standard multipart questions with textbook-quality model answers.
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>Complete 1,400-Question Bank</h2>
+            <div class="highlight-grid">
+                <div class="stat-box">
+                    <span class="stat-number">815</span>
+                    <span class="stat-label">Pure Maths</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">290</span>
+                    <span class="stat-label">Statistics</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">270</span>
+                    <span class="stat-label">Mechanics</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">25</span>
+                    <span class="stat-label">Comprehension</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Built for Serious Revision</h2>
+            <ul>
+                <li><strong>All 6 UK Exam Boards Covered:</strong> Aligned to DfE / Ofqual AS and A-Level Mathematics specifications for Edexcel, AQA, OCR, OCR MEI, WJEC, and CCEA.</li>
+                <li><strong>Textbook-Quality Step-by-Step Solutions:</strong> Every single question includes full mathematical working and clear explanations.</li>
+                <li><strong>Fair, Honest Pricing:</strong> Free to try with an optional one-off lifetime unlock (&pound;13.99) — zero subscriptions and zero adverts.</li>
+                <li><strong>100% Offline-First:</strong> Works seamlessly on your phone or tablet without an internet connection, with built-in clipboard progress backup and restore.</li>
+            </ul>
+        </section>
+
+        <section class="card" id="support">
+            <h2>App Support &amp; Contact</h2>
+            <p>
+                Need help with the app, spotted something you would like to ask about a question, or need assistance restoring your study progress? Please email us at:
+            </p>
+            <p>
+                <a href="mailto:support@bradleysmaths.co.uk">support@bradleysmaths.co.uk</a>
+            </p>
+            <p>
+                We aim to respond promptly to all student, teacher, and parent enquiries.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                &copy; Bradley's Maths &bull;
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>

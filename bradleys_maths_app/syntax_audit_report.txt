@@ -1,0 +1,5 @@
+===========================================================================
+     BRADLEY'S MATHS — MASTER SYNTAX AUDIT REPORT
+===========================================================================
+
+ALL 1,400 QUESTIONS PASSED! 0 SYNTAX OR DELIMITER ANOMALIES FOUND.

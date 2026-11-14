@@ -277,19 +277,22 @@ class HexagonTile extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Hexagon Background
+            // Hexagon Background Fill
             ClipPath(
               clipper: _HexagonClipper(),
               child: Container(
+                width: 92,
+                height: 104,
                 color: unlocked ? const Color(0xFF1E293B) : const Color(0xFF0F172A),
-                child: Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: unlocked ? accentColor : const Color(0xFF334155),
-                      width: unlocked ? 2.0 : 1.0,
-                    ),
-                  ),
-                ),
+              ),
+            ),
+
+            // Hexagon 6-sided True Border
+            CustomPaint(
+              size: const Size(92, 104),
+              painter: _HexagonBorderPainter(
+                color: unlocked ? accentColor : const Color(0xFF334155),
+                strokeWidth: unlocked ? 2.0 : 1.0,
               ),
             ),
 
@@ -357,6 +360,43 @@ class _HexagonClipper extends CustomClipper<Path> {
 
   @override
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
+}
+
+// Hexagon 6-Sided Stroke Painter
+class _HexagonBorderPainter extends CustomPainter {
+  final Color color;
+  final double strokeWidth;
+
+  _HexagonBorderPainter({required this.color, required this.strokeWidth});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final w = size.width;
+    final h = size.height;
+    final halfStroke = strokeWidth / 2.0;
+
+    // Traces all 6 perimeter vertices with slight inset so stroke doesn't clip
+    final path = Path();
+    path.moveTo(w * 0.5, halfStroke);
+    path.lineTo(w - halfStroke, h * 0.25);
+    path.lineTo(w - halfStroke, h * 0.75);
+    path.lineTo(w * 0.5, h - halfStroke);
+    path.lineTo(halfStroke, h * 0.75);
+    path.lineTo(halfStroke, h * 0.25);
+    path.close();
+
+    final paint = Paint()
+      ..color = color
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke
+      ..strokeJoin = StrokeJoin.round;
+
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _HexagonBorderPainter oldDelegate) =>
+      oldDelegate.color != color || oldDelegate.strokeWidth != strokeWidth;
 }
 
 // ==========================================

@@ -11,7 +11,7 @@ import sqlite3
 import sys
 
 # Import width estimator from our auditor script
-from audit_360_math import audit_text_content, load_questions
+from bradleys_maths_app._archive.python_tools.audit_360_math import audit_text_content, load_questions
 
 
 def main():
