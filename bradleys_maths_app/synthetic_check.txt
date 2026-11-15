@@ -1,0 +1,43 @@
+=== 004126 ===
+Q: Let $p(x) = 24x^3 - 22x^2 - x + 3$.<br><br>(a) Prove that $(3x+1)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\begin{aligned} & \dfrac{24\sec^2 x + 3\cos x}{22}\cr & \quad \quad = \sec x + \dfrac{1}{22}\end{aligned}
+S1: For Part (a), apply the Factor Theorem. If $(3x+1)$ is a factor of $p(x)$, then $p\left(-\dfrac{1}{3}\right) = 0$. Evaluate the polynomial at $$x = -\dfrac{1}{3}$$
+S2: \begin{aligned}p\left(-\dfrac{1}{3}\right) &= 24\left(-\dfrac{1}{3}\right)^3 - 22\left(-\dfrac{1}{3}\right)^2\cr & \quad - \left(-\dfrac{1}{3}\right) + 3\end{aligned}
+S3: \begin{aligned}p\left(-\dfrac{1}{3}\right) &= 24\left(-\dfrac{1}{27}\right) - 22\left(\dfrac{1}{9}\right) \cr & \quad + \dfrac{1}{3} + 3 \cr &= -\dfrac{8}{9} - \dfrac{22}{9} + \dfrac{3}{9} + \dfrac{27}{9} \cr &= \dfrac{0}{9} \cr&= 0\end{aligned}
+S4: Since $p\left(-\dfrac{1}{3}\right) = 0$, by the Factor Theorem, $(3x+1)$ is indeed a factor of $p(x)$.
+S5: For Part (b), perform polynomial division to divide $$24x^3 - 22x^2 - x + 3$$ by $$(3x+1)$$<br> \begin{aligned} & \dfrac{24x^3 - 22x^2 - x + 3}{3x+1} \cr & \quad \quad \quad= 8x^2 - 10x + 3\end{aligned}
+S6: Factorise the quadratic quotient completely: $$8x^2 - 10x + 3 = (2x-1)(4x-3)$$
+S7: Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (3x+1)(2x-1)(4x-3)$$
+S8: For Part (c), multiply both sides of the equation by $22$ to clear the denominators: $$24\sec^2 x + 3\cos x = 22\sec x + 1$$
+S9: Substitute $y = \sec x$ into the equation, noting that $\cos x = \dfrac{1}{y}$: $$24y^2 + \dfrac{3}{y} = 22y + 1$$
+S10: Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \begin{aligned}24y^3 &+ 3 = 22y^2 + y \cr 24y^3 &- 22y^2 - y + 3 = 0\end{aligned}
+S11: Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \begin{aligned}y &= -\dfrac{1}{3},\quad \cr y &= \dfrac{1}{2},\quad  \cr y &= \dfrac{3}{4}\end{aligned}
+S12: Since $y = \sec x$, we must have $\sec x = -\dfrac{1}{3}$, $\sec x = \dfrac{1}{2}$, or $\sec x = \dfrac{3}{4}$.
+S13: Recall that the range of the secant function is strictly restricted to $|\sec x| \ge 1$. Since all three roots have absolute values strictly less than $1$ ($|-\frac{1}{3}| < 1$, $|\frac{1}{2}| < 1$, and $|\frac{3}{4}| < 1$), there are no real values of $x$ that satisfy these equations.
+S14: Final Answer: <br>(b) $$p(x) = (3x+1)(2x-1)(4x-3)$$(c) $$|\sec x| \ge 1 $$ $$\text{No real solutions}$$
+INSIGHT [The Head Teacher's Eye: Synthetic Division of Fractional Roots]: When using synthetic division with a fractional root like $-\frac{1}{3}$, the resulting quotient coefficients must be divided by the denominator $3$ to find the true quotient polynomial. Forgetting this step is probably the most common way students introduce incorrect constant factors into their final factorisations.
+=== 004129 ===
+Q: Let $p(x) = 2x^3 - 9x^2 - 2x + 24$.<br><br>(a) Prove that $(2x+3)$ is a factor of $p(x)$.<br><br>(b) Factorise $p(x)$ completely.<br><br>(c) Prove that there are no real solutions to the equation:\begin{aligned}2\cos^2 x &+ 24\sec x \cr & \quad = 9\cos x + 2\end{aligned}
+S1: For Part (a), apply the Factor Theorem. If $(2x+3)$ is a factor of $p(x)$, then $p\left(-\dfrac{3}{2}\right) = 0$. Evaluate the polynomial at $$x = -\dfrac{3}{2}$$
+S2: \begin{aligned}p\left(-\dfrac{3}{2}\right) &= 2\left(-\dfrac{3}{2}\right)^3 - 9\left(-\dfrac{3}{2}\right)^2 \cr & \quad - 2\left(-\dfrac{3}{2}\right) + 24\end{aligned}
+S3: \begin{aligned}p\left(-\dfrac{3}{2}\right) &= 2\left(-\dfrac{27}{8}\right) - 9\left(\dfrac{9}{4}\right) \cr & \quad + 3 + 24 \cr &= -\dfrac{27}{4} - \dfrac{81}{4} + 27 \cr &= -\dfrac{108}{4} + 27 \cr &= -27 + 27 \cr &= 0\end{aligned}
+S4: Since $p\left(-\dfrac{3}{2}\right) = 0$, by the Factor Theorem, $(2x+3)$ is indeed a factor of $p(x)$.
+S5: For Part (b), perform polynomial division to divide $$2x^3 - 9x^2 - 2x + 24$$ by $$(2x+3)$$<br> \begin{aligned} & \dfrac{2x^3 - 9x^2 - 2x + 24}{2x+3} \cr & \quad \quad \quad= x^2 - 6x + 8\end{aligned}
+S6: Factorise the quadratic quotient completely: $$x^2 - 6x + 8 = (x-2)(x-4)$$
+S7: Combine the linear factors to write the complete factorisation of $p(x)$: $$p(x) = (2x+3)(x-2)(x-4)$$
+S8: For Part (c), let $y = \cos x$, noting that $\sec x = \dfrac{1}{y}$ (where $y \ne 0$): $$2y^2 + 24\left(\dfrac{1}{y}\right) = 9y + 2$$
+S9: Multiply both sides by $y$ to clear the fraction and rearrange to form a cubic equation: \begin{aligned}2y^3 + 24 &= 9y^2 + 2y \cr 2y^3 - 9y^2 - 2y + 24 &= 0\end{aligned}
+S10: Notice that this is exactly the cubic equation $p(y) = 0$. From Part (b), the three roots of this equation are: \begin{aligned}y &= -\dfrac{3}{2},\quad \cr y &= 2,\quad  \cr y &= 4\end{aligned}
+S11: Since $y = \cos x$, we must have $\cos x = -\dfrac{3}{2}$, $\cos x = 2$, or $\cos x = 4$.
+S12: Recall that the range of the cosine function is strictly restricted to $-1 \le \cos x \le 1$. Since all three roots have absolute values strictly greater than $1$ ($|-\frac{3}{2}| > 1$, $|2| > 1$, and $|4| > 1$), there are no real values of $x$ that satisfy these equations.
+S13: Final Answer: <br>(b) $$p(x) = (2x+3)(x-2)(x-4)$$(c) $$-1 \le \cos x \le 1$$ $$\text{No real solutions}$$
+INSIGHT [The Head Teacher's Eye: Linear Divisor Division Rules]: When dividing a polynomial by $(2x+3)$ using synthetic division with root $-1.5$, your raw coefficients will be $(2, -12, 16)$, which represents $2x^2 - 12x + 16$. You must divide these coefficients by the leading coefficient $2$ to find the true quotient $x^2 - 6x + 8$. Forgetting this division step is a classic error that leads to an extra factor of $2$ in your final product.
+=== 004171 ===
+Q: The cubic polynomial $f(x)$ is defined by $f(x) = 2x^3 - 5x^2 - 4x + 3$.<br><br>1. Given that $(x - 3)$ is a factor of $f(x)$, express $f(x)$ in a fully factorised form.<br><br>2. Sketch the graph of $y = f(x)$, indicating the coordinates of any points of intersection with the axes.<br><br>3. Solve the inequality $f(x) < 0$, giving your answer in set notation.<br><br>4. The graph of $y = f(x)$ is transformed by a stretch parallel to the $x$-axis, scale factor $\dfrac{1}{3}$. Find the equation of the transformed graph.
+S1: Since $(x - 3)$ is a factor of $f(x)$, we divide $2x^3 - 5x^2 - 4x + 3$ by $(x - 3)$ using algebraic long division or synthetic division to find the quadratic factor:<br>\begin{aligned}2x^3 - 5x^2 &- 4x + 3 \cr &= (x - 3)(2x^2 + x - 1)\end{aligned}<br><br>Base factors can be checked by expansion.
+S2: Factorise the quadratic factor $2x^2 + x - 1$ into linear brackets:<br>\begin{aligned}2x^2 + x - 1 &= (2x - 1)(x + 1)\end{aligned}<br><br>Combining these yields the fully factorised form of $f(x)$:<br>\begin{aligned}f(x) &= (x - 3)(2x - 1)(x + 1)\end{aligned}
+S3: To sketch the graph of $y = f(x)$, find the axes intercepts:<br><br>The $x$-intercepts occur where \begin{aligned}f(x) &= 0 \cr \implies x = 3, \, x = 0.5, \, x = -1\end{aligned} These are the points $(3, 0)$, $(0.5, 0)$, and $(-1, 0)$.<br><br>The $y$-intercept occurs where $x = 0 \implies f(0) = 3$. This is the point $(0, 3)$.<br><br>Since the leading coefficient $2$ is positive, the cubic curve starts in the bottom-left and heads up to the top-right:<br><br><img src='images/Pure_PNGs/004171_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'></img>
+S4: To solve the inequality $f(x) < 0$, determine the intervals where the cubic curve lies below the $x$-axis. The roots partition the $x$-axis into intervals: $x < -1$, $-1 < x < 0.5$, $0.5 < x < 3$, and $x > 3$.<br><br>By testing values or observing our sketch, we see that $f(x) < 0$ on:<br>\begin{aligned}x < -1 \quad \text{and} \quad 0.5 < x < 3\end{aligned}
+S5: Express this solution in formal set notation:<br>$$ {x : x < -1 } \cup {x : 0.5 < x < 3 }$$
+S6: A stretch parallel to the $x$-axis with a scale factor of $\dfrac{1}{3}$ replaces $x$ with $3x$ in the equation:<br>\begin{aligned}y &= 2(3x)^3 - 5(3x)^2 - 4(3x) + 3 \cr &= 2(27x^3) - 5(9x^2) - 12x + 3 \cr &= 54x^3 - 45x^2 - 12x + 3\end{aligned}
+S7: Final Answer:<br>\begin{aligned}&(x - 3)(2x - 1)(x + 1) \cr & {x : x < -1 } \cup {x : 0.5 < x < 3 } \cr &y = 54x^3 - 45x^2 - 12x + 3\end{aligned}
+INSIGHT [The Head Teacher's Eye: Horizontal Scaling]: Horizontal transformations are always counterintuitive. A stretch parallel to the $x$-axis with a scale factor of $c$ translates algebraically to replacing $x$ with $\dfrac{x}{c}$. Thus, a scale factor of $\dfrac{1}{3}$ requires replacing $x$ with $3x$.

@@ -1,0 +1,723 @@
+========================================================================
+A. TRUE WORD/PUNCTUATION TOUCHING MATH DELIMITER: 625
+========================================================================
+  004017 [question_text] (before='e', after='i'): ong> Rewrite$g(x)$in the form 
+  004026 [question_text] (before='>', after='G'): quation:<br>$$4\sin 2\theta = 7\cos\theta.$$Give your an
+  004027 [question_text] (before='>', after='G'): quation:<br>$$3\tan\theta = 2\sin 2\theta.$$Give answers
+  004028 [question_text] (before='>', after='G'): quation:<br>$$5\cos 2\theta = 8\sin\theta.$$Give answers
+  004030 [question_text] (before='>', after='G'): quation:<br>$$9\sin 2\theta = 4\tan\theta.$$Give answers
+  004050 [question_text] (before=',', after='<'): all $x > 0$,$$x + \dfrac{1}{x} \ge 2$$<br><strong>
+  004051 [question_text] (before=' ', after='t'): to swim the $r$th kilometre
+  004052 [question_text] (before=' ', after='t'): o drill the $r$th metre, fo
+  004053 [question_text] (before=' ', after='t'): o cycle the $r$th kilometre
+  004054 [question_text] (before=' ', after='t'): to hike the $r$th kilometre
+  004055 [question_text] (before=' ', after='t'):  to row the $r$th kilometre
+  004061 [question_text] (before=':', after=' '): th equation:$$y = \dfrac{p - 2x}{(2x - q)(x + 2)},$$ $$\text{Whe
+  004063 [question_text] (before=':', after=' '): th equation:$$y = \dfrac{p - 4x}{(2x - q)(x + 1)},$$ $$\text{Whe
+  004064 [question_text] (before=':', after=' '): th equation:$$y = \dfrac{p - 2x}{(3x - q)(x + 1)},$$ $$\text{Whe
+  004065 [question_text] (before=':', after=' '): th equation:$$y = \dfrac{p - 3x}{(2x - q)(x + 2)},$$ $$\text{Whe
+  004071 [question_text] (before=' ', after='F'): $$y = \dfrac{1}{x^3}$$Find an expr
+  004072 [question_text] (before=' ', after='F'): $$y = \dfrac{1}{x^4}$$Find an expr
+  004073 [question_text] (before=' ', after='F'): $$y = \dfrac{1}{x^5}$$Find an expr
+  004074 [question_text] (before=' ', after='F'): $$y = \dfrac{2}{x^3}$$Find an expr
+  004075 [question_text] (before=' ', after='F'): $$y = \dfrac{1}{2x^2}$$Find an expr
+  004127 [question_text] (before=':', after=' '): he equation:$$6\csc x + \sin x = 5$$
+  004130 [question_text] (before=':', after=' '): he equation:$$12\sec x + \cos x = 8$$
+  004271 [question_text] (before=':', after=' '): te integral:$$\int \left( 6\sqrt{x} - \dfrac{4}{x^3} \right) \text{d}x$$
+  004272 [question_text] (before=':', after=' '): te integral:$$\int_{1}^{4} \left( \dfrac{3}{\sqrt{x}} + \dfrac{2}{x^2} \right) \text{d}x$$
+  004273 [question_text] (before=':', after='G'): on given by:$$\dfrac{\text{d}y}{\text{d}x} = 2\sqrt{x} + \dfrac{3}{x^2}$$Given that t
+  004274 [question_text] (before=':', after=' '): te integral:$$\int \dfrac{3x^3 - 2\sqrt{x}}{x} \text{d}x$$
+  004276 [question_text] (before=':', after='1'): is given by:$$x^2 - xy^2 + y^3 = 13$$1. Find the 
+  004277 [question_text] (before=':', after='1'): he equation:$$y\text{e}^{2x} + y^2\text{e}^x = 6$$1. Show that
+  004278 [question_text] (before=':', after='1'): he equation:$$x^2 - 2xy + 3y^2 = 8$$1. Find an e
+  004279 [question_text] (before=':', after='1'): he equation:$$x^2y^2 - 3x + y^3 = 9$$1. Verify th
+  004280 [question_text] (before=':', after='1'):  a curve is:$$2x^3 + y^3 = 6y$$1. Show that
+  004280 [question_text] (before=':', after='2'): is given by:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{2x^2}{2 - y^2}$$2. Find the 
+  004281 [question_text] (before=':', after='w'): tic formula:$$s = P - Q(t - R)^2, \quad t \ge 0$$where $P$, $
+  004281 [question_text] (before=':', after='F'):  repetition:$$s = 35 + 55\left(1 - \text{e}^{-0.5t}\right)$$For the next
+  004282 [question_text] (before=':', after=' '): c component:$$C = x^3 - 9x^2 + 24x + 10$$ $$\text{for
+  004282 [question_text] (before=' ', after='1'):  24x + 10$$ $$\text{for } 0 \le x \le 5$$1. Write dow
+  004283 [question_text] (before=':', after=' '): he equation:$$\theta = T_R + (\theta_0 - T_R)\text{e}^{-kt}$$ $$\text{for
+  004283 [question_text] (before=' ', after='w'): {e}^{-kt}$$ $$\text{for } t \ge 0$$where $T_R$ 
+  004284 [question_text] (before=':', after='1'): the formula:$$P = \dfrac{1200}{1 + 5\text{e}^{-0.4t}}, \quad t \ge 0$$1. Find the 
+  004285 [question_text] (before=':', after='w'): ic function:$$h = h_0 + ut - 5t^2, \quad t \ge 0$$where $h_0$ 
+  004286 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = y f(x)$$giving your 
+  004287 [question_text] (before=':', after='w'): of the form:$$\dfrac{A}{x} + \dfrac{B}{x - 1} + \dfrac{C}{(x - 1)^2}$$where $A$, $
+  004287 [question_text] (before=':', after='e'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = \text{e}^{-y} f(x)$$expressing $
+  004288 [question_text] (before=':', after='e'): al equation:$$y\dfrac{\text{d}y}{\text{d}x} = f(x)$$expressing $
+  004289 [question_text] (before=':', after='1'): is given by:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{x + y}{x}, \quad x > 0$$1. Use the s
+  004289 [question_text] (before=':', after='2'):  written as:$$x\dfrac{\text{d}v}{\text{d}x} = 1$$2. Hence, so
+  004290 [question_text] (before=':', after='w'): al equation:$$\dfrac{\text{d}V}{\text{d}t} = -k\sqrt{V}$$where $k$ is
+  004291 [question_text] (before=' ', after='2'): :<br><br>1. $$\dfrac{60\sqrt{b}}{(\sqrt{b} + 5)^2 - (\sqrt{b} - 5)^2}$$2. $$\dfrac{
+  004292 [question_text] (before=':', after=' '): re integers:$$(3 - 2\sqrt{5})^2 + \dfrac{30}{\sqrt{5}}$$
+  004293 [question_text] (before=':', after=' '): re integers:$$\dfrac{3\sqrt{2} - \sqrt{3}}{2\sqrt{2} + \sqrt{3}}$$
+  004297 [question_text] (before=':', after='1'): he equation:$$3x - 2y + 8 = 0$$1. Given tha
+  004308 [question_text] (before=':', after='F'): he equation:$$y = 3x^2 - \dfrac{4}{x} + 2$$Find the equ
+  004310 [question_text] (before=':', after='1'): he equation:$$y = 2x^3 - 3x^2 - 12x + 5$$1. Find the 
+  004321 [question_text] (before=':', after=' '): he identity:$$\dfrac{\sin\theta - \sin^3\theta}{\cos^3\theta} \equiv \tan\theta$$
+  004322 [question_text] (before=':', after=' '): he identity:$$\cos^4\theta - \sin^4\theta \equiv 1 - 2\sin^2\theta$$
+  004324 [question_text] (before=':', after=' '): he identity:$$\dfrac{\tan\theta}{\sin\theta} - \sin\theta\tan\theta \equiv \cos\theta$$
+  004325 [question_text] (before=':', after='i'): e statement:$$\cos(A + B) \equiv \cos A + \cos B$$is not gener
+  004329 [question_text] (before=':', after='H'): ic equation:$$2x^3 - 5x^2 - 4x + 3 = 0$$Hence, solve
+  004330 [question_text] (before=':', after='h'): ic equation:$$3x^2 - 6x + k = 0$$has no real 
+  004336 [question_text] (before=':', after='2'): m to expand:$$\left(x + \sqrt{y}\right)^4$$2. Hence, wr
+  004336 [question_text] (before=':', after='g'): ression for:$$(x + \sqrt{y})^4 + (x - \sqrt{y})^4$$giving your 
+  004337 [question_text] (before=':', after=' '): xpansion of:$$(2 - 3x)^6$$
+  004338 [question_text] (before=':', after='g'): m to expand:$$\left(x^2 - \dfrac{2}{x}\right)^4, \quad x \neq 0$$giving each 
+  004341 [question_text] (before=':', after='<'): $ such that:$$\mu|\mathbf{v}| > |\mathbf{u}|$$<br><strong>
+  004351 [question_text] (before=':', after=' '): your answer:$$\int_{2}^{6} (x^3 - 6x^2) \text{d}x$$
+  004353 [question_text] (before=':', after=' '): your answer:$$\int_{0}^{\sqrt{12}} (12x - x^3) \text{d}x$$
+  004366 [question_text] (before=':', after='T'): he equation:$$y = 3x^2 - 14x - 8$$The point $P
+  004366 [question_text] (before=':', after='w'): he equation:$$y = -2x + c$$where $c$ is
+  004367 [question_text] (before=':', after='<'): he equation:$$y = 2x^2 - 8x + 9$$<strong>(a)<
+  004368 [question_text] (before=':', after='<'): he equation:$$y = 3x^2 - 5x + 2$$<strong>(a)<
+  004369 [question_text] (before=':', after='<'): he equation:$$y = \dfrac{8}{x} + 2x$$<strong>(a)<
+  004370 [question_text] (before=':', after='<'): he equation:$$(m+4)^2 - 16 = 0$$<strong>(b)<
+  004371 [question_text] (before=':', after='g'): al equation:$$5^x = 3e^{0.2x}$$giving your 
+  004371 [question_text] (before=':', after=' '): he equation:$$9^x - 12 \times 3^x = -27$$
+  004373 [question_text] (before=':', after='g'): al equation:$$4^{2x - 1} = 5^{x + 2}$$giving your 
+  004374 [question_text] (before=':', after='g'): he equation:$$2^{2x} - 2^{x + 2} - 32 = 0$$giving your 
+  004377 [question_text] (before=':', after='<'): he equation:$$x^2 + y^2 - 6x + 8y - 9 = 0$$<strong>(a)<
+  004378 [question_text] (before=':', after='T'): he equation:$$(x - 2)^2 + (y - 1)^2 = 25$$The line $L$
+  004378 [question_text] (before=':', after='<'): he equation:$$y = x - 2$$<strong>(a)<
+  004380 [question_text] (before=':', after='<'): he equation:$$k^2 - 100 = 0$$<strong>(b)<
+  004384 [question_text] (before=':', after='T'): he equation:$$y = ax^2 + bx + c$$The curve pa
+  004391 [question_text] (before=':', after=' '): nsformation:$$y + 3 = f(x)$$
+  004396 [question_text] (before=':', after='<'): he equation:$$\log_3 \left(\dfrac{2x}{x-2}\right) = 2$$<strong>(c)<
+  004396 [question_text] (before=':', after='g'): al equation:$$5e^{3x} = 7$$giving your 
+  004398 [question_text] (before=':', after='g'): al equation:$$2 \times 10^{4x} = 50$$giving your 
+  004399 [question_text] (before=':', after='g'): he equation:$$e^{2x} - 5e^x + 6 = 0$$giving your 
+  004400 [question_text] (before=':', after='f'):  Prove that:$$\log_a \left(\dfrac{1}{k}\right) = -\log_a k$$for any posi
+  004401 [question_text] (before=':', after='['): he equation:$$x^2 + 6x + y^2 - 8y - 11 = 0$$[6]
+  004403 [question_text] (before=':', after='F'): he equation:$$x^2 + y^2 - 8x - 4y - 9 = 0$$Find the coo
+  004405 [question_text] (before=':', after='D'): he equation:$$x^2 + y^2 - 10x + 2y - 10 = 0$$Determine, w
+  004406 [question_text] (before='t', after='w'): > Given that$$\int_{1}^{k} 3\sqrt{x} \text{d}x = 14$$where $k > 1
+  004406 [question_text] (before='n', after='f'): the equation$$2\sin^2 \theta + \cos \theta = 1$$for $0^\circ
+  004407 [question_text] (before='t', after='w'): > Given that$$\int_{1}^{k} \dfrac{4}{x^2} \text{d}x = 3$$where $k > 1
+  004407 [question_text] (before='n', after='f'): the equation$$3\cos^2 \theta + 4\sin \theta = 4$$for $0^\circ
+  004408 [question_text] (before='t', after='w'): > Given that$$\int_{0}^{k} (2x - 3) \text{d}x = 4$$where $k > 0
+  004408 [question_text] (before='n', after='f'): the equation$$3\sin \theta - 4\cos \theta = 0$$for $0^\circ
+  004409 [question_text] (before='n', after='f'): the equation$$\cos(2\theta + 40^\circ) = -0.5$$for $0^\circ
+  004410 [question_text] (before='t', after='f'): > Given that$$\int_{1}^{4} \left( 2x + \dfrac{a}{\sqrt{x}} \right) \text{d}x = 21$$find the val
+  004410 [question_text] (before='n', after='f'): the equation$$4\cos^2 \theta + 5\cos \theta + 1 = 0$$for $0^\circ
+  004411 [question_text] (before=':', after='['): xpressed as:$$V = 54\pi r - \dfrac{1}{2}\pi r^3$$[3]<br><br><
+  004412 [question_text] (before=':', after='['): is given by:$$V = 75\pi r - \pi r^3$$[3]<br><br><
+  004413 [question_text] (before=':', after='['): xpressed as:$$V = 108x - \dfrac{1}{4}x^3$$[3]<br><br><
+  004414 [question_text] (before=':', after='['): xpressed as:$$A = 2x^2 + \dfrac{864}{x}$$[4]<br><br><
+  004415 [question_text] (before=':', after='['): is given by:$$A = 120x - 2x^2$$[3]<br><br><
+  004416 [question_text] (before=':', after='['): ic equation:$$2x^3 - 10x^2 + 11x + 3 = 0$$[8]
+  004417 [question_text] (before=':', after='['): ic equation:$$3x^3 + 4x^2 - 6x - 4 = 0$$[8]
+  004418 [question_text] (before=':', after='['): ic equation:$$x^3 - 2x^2 - 5x + 6 = 0$$[8]
+  004419 [question_text] (before=':', after='['): ic equation:$$2x^3 - 9x^2 + 6x - 1 = 0$$[8]
+  004420 [question_text] (before=':', after='['): ic equation:$$2x^3 - 4x^2 - 3x + 3 = 0$$[8]
+  004426 [question_text] (before=':', after='['): , show that:$$AD^2 = r^2(1 + 3\cos^2 \theta)$$[7]<br><br><
+  004426 [question_text] (before=',', after='F'): isects $OS$,$$AD = r\sqrt{\dfrac{7}{k}}$$Find the val
+  004427 [question_text] (before=':', after='['): , show that:$$BD^2 = r^2(1 + 3\cos^2 \theta)$$[7]<br><br><
+  004427 [question_text] (before=',', after='F'): isects $OS$,$$BD = r\sqrt{\dfrac{7}{k}}$$Find the val
+  004428 [question_text] (before=':', after='['): AD$ satisfy:$$AS^2 = 2r \cdot AD$$[6]<br><br><
+  004429 [question_text] (before=':', after='['): $ satisfies:$$TP^2 = r^2\tan^2 \theta$$[5]<br><br><
+  004430 [question_text] (before=':', after='['): , show that:$$BC^2 = 4r^2\sin^2 \theta$$[5]<br><br><
+  004446 [question_text] (before=':', after='['): > Show that:$$\sum_{r=1}^{12} (4 + 3r + 2^r) = 8472$$[4]<br><br><
+  004446 [question_text] (before=':', after='['): ct value of:$$\sum_{r=1}^{80} u_r$$[3]
+  004447 [question_text] (before=':', after='['): > Show that:$$\sum_{r=1}^{8} (5 + 2r + 3^r) = 9952$$[4]<br><br><
+  004447 [question_text] (before=':', after='['): ct value of:$$\sum_{r=1}^{100} u_r$$[3]
+  004448 [question_text] (before=':', after='['): > Show that:$$\sum_{r=1}^{10} (20 - 3r + 2^r) = 2081$$[4]<br><br><
+  004448 [question_text] (before=':', after='['): ct value of:$$\sum_{r=1}^{50} u_r$$[3]
+  004449 [question_text] (before=':', after='['): ct value of:$$\sum_{r=1}^{101} u_r$$[4]
+  004450 [question_text] (before=':', after='['): ct value of:$$\sum_{r=1}^{10} u_r$$[4]
+  004471 [question_text] (before=':', after='W'): ce quotient:$$\dfrac{\sin(\theta + h) - \sin\theta}{h}$$Which of the
+  004472 [question_text] (before=':', after='W'): ce quotient:$$\dfrac{\cos(2x + 2h) - \cos(2x)}{h}$$Which of the
+  004473 [question_text] (before=':', after='W'): ce quotient:$$\dfrac{\sin(2x + 2h) - \sin(2x)}{h}$$Which of the
+  004474 [question_text] (before=':', after='W'): ce quotient:$$\dfrac{\cos(3\theta + 3h) - \cos(3\theta)}{h}$$Which of the
+  004475 [question_text] (before=':', after='W'): ce quotient:$$\dfrac{\sin(3\theta + 3h) - \sin(3\theta)}{h}$$Which of the
+  004486 [question_text] (before=':', after='<'):  Prove that:$$1 + \cos 2\theta \equiv \cot \theta \sin 2\theta$$<strong>(b)<
+  004487 [question_text] (before=':', after='<'):  Prove that:$$1 - \cos 2\theta \equiv \tan \theta \sin 2\theta$$<strong>(b)<
+  004488 [question_text] (before=':', after='<'):  Prove that:$$1 + \cos 2\theta \equiv \cot \theta \sin 2\theta$$<strong>(b)<
+  004489 [question_text] (before=':', after='<'):  Prove that:$$1 - \cos 2\theta \equiv \tan \theta \sin 2\theta$$<strong>(b)<
+  004490 [question_text] (before=':', after='<'):  Prove that:$$1 + \cos 2\theta \equiv \cot \theta \sin 2\theta$$<strong>(b)<
+  004491 [question_text] (before=':', after='T'): th equation:$$y = 2x \ln x, \quad x > 0$$The line $l$
+  004492 [question_text] (before=':', after='T'): th equation:$$y = x^2 \ln x, \quad x > 0$$The line $l$
+  004493 [question_text] (before=':', after='T'): th equation:$$y = 3\sqrt{x} \ln x, \quad x > 0$$The line $l$
+  004494 [question_text] (before=':', after='T'): th equation:$$y = \dfrac{\ln x}{\sqrt{x}}, \quad x > 0$$The line $l$
+  004495 [question_text] (before=':', after='T'): th equation:$$y = x^3 \ln x, \quad x > 0$$The line $l$
+  004506 [question_text] (before=':', after='C'):  expression:$$\sqrt{ x^{\frac{3}{4}} \times x^{\frac{1}{3}} }$$Choose the c
+  004507 [question_text] (before=':', after='C'):  expression:$$\sqrt[3]{ y^{\frac{1}{2}} \times y^{\frac{2}{5}} }$$Choose the c
+  004508 [question_text] (before=':', after='C'):  expression:$$\sqrt{ \dfrac{ w^{\frac{5}{6}} }{ w^{\frac{1}{4}} } }$$Choose the c
+  004509 [question_text] (before=':', after='C'):  expression:$$\sqrt{ z^{\frac{3}{2}} \times z^{-\frac{2}{3}} }$$Choose the c
+  004510 [question_text] (before=':', after='C'):  expression:$$\sqrt[4]{ \dfrac{ x^{\frac{2}{3}} }{ x^{-\frac{1}{2}} } }$$Choose the c
+  004521 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}t}{\text{d}x} = \dfrac{\ln x}{x^3 t} \quad \text{for } x > 0$$given that $
+  004522 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{x \mathrm{e}^{2x}}{y} \quad \text{for } x \in \mathbb{R}$$given that $
+  004523 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{x \sin x}{y} \quad \text{for } x \in \mathbb{R}$$given that $
+  004524 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{x \ln x}{y} \quad \text{for } x > 0$$given that $
+  004525 [question_text] (before=':', after='g'): al equation:$$\dfrac{\text{d}y}{\text{d}x} = \dfrac{x \mathrm{e}^{-x}}{y} \quad \text{for } x \in \mathbb{R}$$given that $
+  004526 [question_text] (before=':', after='w'): he equation:$$y = a \sin x + b \cos x$$where $a$ an
+  004527 [question_text] (before=':', after='w'): he equation:$$y = a \sin x - b \cos x$$where $a$ an
+  004528 [question_text] (before=':', after='w'): he equation:$$y = a \sin(2x) + b \cos(2x)$$where $a$ an
+  004529 [question_text] (before=':', after='w'): he equation:$$y = a \sin x + b \cos x$$where $a$ an
+  004530 [question_text] (before=':', after='w'): he equation:$$y = a \sin x + b \cos x$$where $a$ an
+  004531 [question_text] (before=':', after='w'):  defined by:$$f(x) = x^3 - 3px^2 + q$$where $p$ an
+  004532 [question_text] (before=':', after='w'):  defined by:$$f(x) = -x^3 + 3px^2 + q$$where $p$ an
+  004533 [question_text] (before=':', after='w'):  defined by:$$f(x) = x^3 - 3x^2 + q$$where $q$ is
+  004534 [question_text] (before=':', after='w'):  defined by:$$f(x) = x^3 - 12x + q$$where $q$ is
+  004535 [question_text] (before=':', after='w'):  defined by:$$f(x) = x^3 - 3px + q$$where $p$ an
+  004536 [question_text] (before=':', after='w'): he equation:$$V = p q^t$$where $V$ po
+  004537 [question_text] (before=':', after='w'): he equation:$$N = a \mathrm{e}^{b t}$$where $t$ re
+  004538 [question_text] (before=':', after='w'): aw equation:$$T = a L^b$$where $a$ an
+  004539 [question_text] (before=':', after='w'): he equation:$$M = a b^t$$where $a$ an
+  004540 [question_text] (before=':', after='w'): al equation:$$C = a b^t$$where $a$ an
+  004562 [question_text] (before=':', after=' '): he identity:$$\dfrac{1 - \cos 2\theta}{\sin 2\theta} \equiv \tan \theta$$
+  004563 [question_text] (before=':', after=' '): le identity:$$\cos 3\theta \equiv 4\cos^3\theta - 3\cos\theta$$
+  004564 [question_text] (before=':', after=' '): he identity:$$\cot \theta - \tan \theta \equiv 2\cot 2\theta$$
+  004776 [question_text] (before=':', after=' '): l fractions:$$\dfrac{ 7x - 1 }{ (x + 3)(x - 1) }$$
+  004777 [question_text] (before=':', after=' '): l fractions:$$\dfrac{ x + 7 }{ (x + 1)(x - 2)^2 }$$
+  004778 [question_text] (before=':', after=' '): l fractions:$$\dfrac{ 4x^2 - 3x + 5 }{ (x - 1)^2(x + 2) }$$
+  004779 [question_text] (before=':', after=' '): l fractions:$$\dfrac{ 2x^2 + 5x - 7 }{ (x + 3)(x - 2) }$$
+  004780 [question_text] (before=':', after='<'):  expression:$$f(x) = \dfrac{ x + 5 }{ (1 - x)(1 + x) }$$<strong>(a)<
+  004781 [question_text] (before=':', after='G'): he integral:$$\int_{ 2 }^{ 4 } \dfrac{ x^2 }{ (x + 2)(x - 1) } \text{d}x$$Give your an
+  004782 [question_text] (before=':', after='G'): he integral:$$\int_{ 1 }^{ 5 } \ln(x^2 + 1) \text{d}x$$Give your an
+  004783 [question_text] (before=':', after='G'): he integral:$$\int_{ 0 }^{ \pi/2 } \mathrm{e}^{ \sin x } \text{d}x$$Give your an
+  004784 [question_text] (before=':', after='G'): he integral:$$\int_{ 0 }^{ 2 } \mathrm{e}^{ -x } \text{d}x$$Give your an
+  004786 [question_text] (before=':', after='w'): al equation:$$\dfrac{ \text{d}P }{ \text{d}t } = kP$$where $k$ is
+  004787 [question_text] (before=':', after='w'): al equation:$$\dfrac{ \text{d}M }{ \text{d}t } = -kM$$where $k$ is
+  004788 [question_text] (before=':', after='w'): al equation:$$\dfrac{ \text{d}\theta }{ \text{d}t } = -k(\theta - 20)$$where $k$ is
+  004789 [question_text] (before=':', after='w'): al equation:$$\dfrac{ \text{d}V }{ \text{d}t } = -k \sqrt{ V }$$where $k$ is
+  004790 [question_text] (before=':', after='w'): al equation:$$\dfrac{ \text{d}P }{ \text{d}t } = \dfrac{ kP }{ 2t + 3 }$$where $k$ is
+  004790 [question_text] (before=':', after='<'): ration that:$$P = P_0 \left( \dfrac{ 2t + 3 }{ 3 } \right)^{ k/2 }$$<strong>(ii)
+  004791 [question_text] (before=':', after='<'): he equation:$$y = (x - 4) \ln x$$<strong>(i)<
+  004791 [question_text] (before=':', after='<'): > Show that:$$\dfrac{ \text{d}y }{ \text{d}x } = 1 - \dfrac{ 4 }{ x } + \ln x$$<strong>(ii)
+  004792 [question_text] (before=':', after='<'): > Show that:$$f'(x) = (x^2 + 2x)\mathrm{e}^x$$<strong>(ii)
+  004793 [question_text] (before=':', after='<'): > Show that:$$g'(x) = \sin x + x \cos x$$<strong>(ii)
+  004794 [question_text] (before=':', after='<'): > Show that:$$h'(x) = \dfrac{ \mathrm{e}^x(x - 1) }{ x^2 }$$<strong>(ii)
+  004795 [question_text] (before=':', after='<'): he equation:$$\ln(x + 1) + x^2 - 3 = 0$$<strong>(ii)
+  004796 [question_text] (before=':', after='<'): trong> Find:$$\int x^{-1/3} \ln x \text{d}x$$<strong>(b)<
+  004796 [question_text] (before=':', after=' '): ct value of:$$\int_{ 0 }^{ 4 } \dfrac{ x^3 }{ \sqrt{x^2 + 9} } \text{d}x$$
+  004797 [question_text] (before=':', after='<'): trong> Find:$$\int 3x \cos 2x \text{d}x$$<strong>(b)<
+  004797 [question_text] (before=':', after=' '): ct value of:$$\int_{ 0 }^{ \pi/2 } \sin^3 x \cos^2 x \text{d}x$$
+  004798 [question_text] (before=':', after='<'): trong> Find:$$\int x^2 \ln 2x \text{d}x$$<strong>(b)<
+  004798 [question_text] (before=':', after=' '): ct value of:$$\int_{ 0 }^{ 4 } x \sqrt{2x + 1} \text{d}x$$
+  004799 [question_text] (before=':', after='<'): trong> Find:$$\int x^2 \sin x \text{d}x$$<strong>(b)<
+  004799 [question_text] (before=':', after=' '): ct value of:$$\int_{ 0 }^{ \ln 2 } \dfrac{ \mathrm{e}^{2x} }{ \mathrm{e}^x + 1 } \text{d}x$$
+  004800 [question_text] (before=':', after='<'): trong> Find:$$\int (\ln x)^2 \text{d}x$$<strong>(b)<
+  004800 [question_text] (before=':', after=' '): ct value of:$$\int_{ 0 }^{ \ln 3 } \dfrac{ 1 }{ \mathrm{e}^x + \mathrm{e}^{-x} } \text{d}x$$
+  004806 [question_text] (before=':', after='<'): term $l$ is:$$S_n = \dfrac{ 1 }{ 2 }n(a + l)$$<strong>(ii)
+  004807 [question_text] (before=':', after='<'): atio $r$ is:$$S_n = \dfrac{ a(1 - r^n) }{ 1 - r }$$<strong>(ii)
+  004808 [question_text] (before=':', after='<'): ence $d$ is:$$S_n = \dfrac{ n }{ 2 }[2a + (n - 1)d]$$<strong>(ii)
+  004808 [question_text] (before=':', after='<'): . Show that:$$3k^2 + 8k - 1220 = 0$$<strong>(iii
+  004810 [question_text] (before=':', after='a'): . Show that:$$2x^2 - 7x - 4 = 0$$and hence de
+  004810 [question_text] (before=':', after='<'): is given by:$$A_n = 24000 - 14000(1.05^n)$$<strong>(iii
+  009001 [question_text] (before=':', after='<'): c Mean, $H$:$$H = \dfrac{2xy}{x + y}$$</div>A moto
+  009002 [question_text] (before=':', after='E'): xpressed as:$$H = \dfrac{2xy}{x + y}$$Equivalently
+  009002 [question_text] (before=':', after='<'): reciprocals:$$\dfrac{1}{H} = \dfrac{1}{2}\left(\dfrac{1}{x} + \dfrac{1}{y}\right)$$</div>A deli
+  009003 [question_text] (before=':', after='f'): ically that:$$(x + y)^2 \ge 4xy$$for all real
+  009003 [question_text] (before=':', after='<'): deduce that:$$A \ge H$$<strong>(c)<
+  009004 [question_text] (before=':', after='F'): c Mean, $H$:$$\begin{aligned} H &= \dfrac{2 T_1 T_2}{T_1 + T_2} \cr T_{\text{total}} &= \dfrac{H}{2} \end{aligned}$$For three pa
+  009006 [question_text] (before=':', after='T'):  0$, giving:$$\phi = \dfrac{1 + \sqrt{5}}{2} \approx 1.618034$$The ratios o
+  009006 [question_text] (before=':', after=' '): tive ratios:$$R_4 = \dfrac{F_5}{F_4}$$ $$ R_5 = \d
+  009006 [question_text] (before=' ', after='e'): F_6}{F_5}$$ $$R_6= \dfrac{F_7}{F_6}$$expressing e
+  009007 [question_text] (before=':', after='<'):  part $(b)$:$$\dfrac{a + b}{a} = \dfrac{a}{b} = \phi$$</div><stron
+  009007 [question_text] (before=':', after='<'): ic equation:$$\phi^2 - \phi - 1 = 0$$<strong>(b)<
+  009008 [question_text] (before=':', after='<'): , show that:$$R_n = 1 + \dfrac{1}{R_{n-1}}$$<strong>(b)<
+  009011 [question_text] (before=':', after='W'): linear form:$$\begin{aligned}\log_{10} Y & = \log_{10} a \cr & \qquad + b \log_{10} X\end{aligned}$$When $\log_{
+  009012 [question_text] (before=':', after='T'): is given by:$$P(d) = \log_{10}\left(1 + \dfrac{1}{d}\right)$$This can be 
+  009013 [question_text] (before=':', after='<'): differences:$$\sum_{d=1}^{9} \big[ \log_{10}(d + 1) - \log_{10}(d) \big]$$<strong>(b)<
+  009014 [question_text] (before=':', after='F'): nford's Law:$$P(d) = \log_{10}\left(1 + \dfrac{1}{d}\right)$$For a sample
+  009015 [question_text] (before=':', after='A'): istribution:$$P(d) = \log_{10}\left(1 + \dfrac{1}{d}\right)$$A discrete u
+  009016 [question_text] (before=':', after=' '): dinate axes:$$d_T(P, Q)$$ $$= |x_1 - 
+  009016 [question_text] (before=' ', after='F'): d_T(P, Q)$$ $$= |x_1 - x_2| + |y_1 - y_2|$$For all poin
+  009017 [question_text] (before=':', after=' '):  defined as:$$d_T(P, Q)$$ $$= |x_1 - 
+  009017 [question_text] (before=' ', after='A'): d_T(P, Q)$$ $$= |x_1 - x_2| + |y_1 - y_2|$$A 'Taxicab C
+  009018 [question_text] (before=':', after=' '): lity states:$$d(P, R)$$ $$\le d(P, 
+  009018 [question_text] (before=' ', after='T'): $$d(P, R)$$ $$\le d(P, Q) + d(Q, R)$$The scalar m
+  009018 [question_text] (before=':', after=' '): uality that:$$|x_1 - x_3|$$ $$\le |x_1 
+  009018 [question_text] (before=':', after=' '):  prove that:$$d_T(P, R)$$ $$\le d_T(P
+  009020 [question_text] (before=' ', after='A'): d_T(P, Q)$$ $$= |x_1 - x_2| + |y_1 - y_2|$$A triangle $
+  009020 [question_text] (before=':', after=' '): s are equal:$$d_T(A, B)$$ $$= d_T(B,C
+  009021 [question_text] (before=':', after='w'): is given by:$$A = I + \dfrac{B}{2} - 1$$where $I$ is
+  009022 [question_text] (before=':', after='<'): oints ($B$):$$A = I + \dfrac{B}{2} - 1$$</div><stron
+  009023 [question_text] (before=':', after=' '): P_{1+2}$ is:$$B_{1+2} = B_1 + B_2 - 2k + 2$$
+  009024 [question_text] (before=':', after='w'): ice polygon:$$A = I + \dfrac{B}{2} - 1$$where $I$ is
+  009025 [question_text] (before=':', after='w'): bb{Z}^2$ is:$$A = I + \dfrac{B}{2} - 1$$where $I \in
+  012005 [question_text] (before=':', after='f'): is given by:$$v = \dfrac{ 3 }{ 2 }t^2 - 4t + 2$$for $t \ge 0
+  012015 [question_text] (before=':', after='w'): he equation:$$v = -\dfrac{ 1 }{ 2 }t^3 + 3t^2 + 8t$$where $t$ is
+  012022 [question_text] (before=':', after='<'): modelled by:$$a = 0.6t - 0.03t^2 \text{ } (0 \le t \le 20)$$<strong>(a)<
+  012023 [question_text] (before=':', after=' '): is given by:$$s = 2t^3 - 15t^2 + 24t + 10$$ $$(t \ge 0)
+  012024 [question_text] (before=':', after='w'): is given by:$$\mathbf{r} = (t^3 - 4t^2)\mathbf{i} + (2t^2 - 6t)\mathbf{j}$$where $\math
+  012025 [question_text] (before=':', after='A'): is given by:$$a = 12t - 8$$At time $t =
+  012030 [question_text] (before=':', after='<'): is given by:$$\mathbf{F} = 4\mathbf{i} - 12\mathbf{j} + 3\mathbf{k}$$<strong>(a)<
+  012051 [question_text] (before=':', after='<'): is given by:$$x = t^2(t^2 - 4t + 4)$$<strong>(a)<
+  012052 [question_text] (before=':', after='A'): is given by:$$v = 3t^2 - 12t + 9$$At $t = 0$, 
+  012053 [question_text] (before=':', after='<'): is given by:$$s = \dfrac{1}{3}t^3 - 3t^2 + 8t$$<strong>(a)<
+  012054 [question_text] (before=':', after='$'): modelled by:$$s_A = t^3 - 3t^2 + 5t$$$$s_B = 2t^2
+  012055 [question_text] (before=':', after='w'): the formula:$$v = 24 - 1.5t^2 \quad \text{for } 0 \le t \le T$$where $T$ is
+  012061 [question_text] (before=':', after='W'): is given by:$$\mathbf{v} = t^{-1/2}\mathbf{i} - 2t\mathbf{j}$$When $t = 1$
+  012062 [question_text] (before=':', after='A'): $, given by:$$\mathbf{a} = 6t\mathbf{i} + 2\mathbf{j}$$At the insta
+  012063 [question_text] (before=':', after='A'): the formula:$$\mathbf{v} = (3t^2 - 12)\mathbf{i} + (4t - 8)\mathbf{j}$$At $t = 0$, 
+  012064 [question_text] (before=':', after='<'): is given by:$$\mathbf{r} = (3\cos 2t)\mathbf{i} + (4\sin 2t)\mathbf{j}$$<strong>(a)<
+  012065 [question_text] (before=':', after='$'): modelled by:$$\mathbf{r}_A = (t^2 + t)\mathbf{i} + (3t^2 - 2)\mathbf{j}$$$$\mathbf{r}
+  012076 [question_text] (before=':', after='T'): is given by:$$T = \dfrac{13Mg(4x + 3a)}{30a}$$The magnitud
+  012077 [question_text] (before=':', after='F'): is given by:$$T = \dfrac{Mg\cot\theta(a + kx)}{2a}$$For the rema
+  012078 [question_text] (before=':', after='<'): is given by:$$T = \dfrac{5}{3}(M + 5)g$$<strong>(b)<
+  012079 [question_text] (before=':', after='<'): re given by:$$R_C = 4.8(3-d)g \quad \text{and} \quad R_D = 4.8(d-0.5)g$$<strong>(b)<
+  012080 [question_text] (before=':', after='T'): is given by:$$F = \dfrac{Mg(L + 3y)}{4L}$$The coeffici
+  012081 [question_text] (before=':', after='T'): > Show that:$$U^2 = \dfrac{4g}{\sin^2\alpha}$$The ball hit
+  012082 [question_text] (before=':', after='<'): > Show that:$$V^2 = \dfrac{144g}{11}$$<strong>(b)<
+  012083 [question_text] (before=':', after='<'): > Show that:$$U^2 = \dfrac{1125g}{28}$$<strong>(b)<
+  012084 [question_text] (before=':', after=' '): > Show that:$$U^2$$ $$= \dfrac{
+  012086 [question_text] (before=':', after='W'): is given by:$$\mathbf{a} = 2(3t - 7)\mathbf{i} + 8\mathbf{j}$$When $t = T$
+  012088 [question_text] (before=':', after='<'): is given by:$$\mathbf{r}_{AB} = (8 - 2t)\mathbf{i} + (3t - 6)\mathbf{j}$$<strong>(c)<
+  012089 [question_text] (before=':', after='$'): ntal forces:$$\mathbf{F}_1 = (3a\mathbf{i} + 4\mathbf{j})\text{ N}$$$$\mathbf{F}
+  012089 [question_text] (before='$', after='w'): )\text{ N}$$$$\mathbf{F}_3 = (15\mathbf{i} - 12\mathbf{j})\text{ N}$$where $a$ an
+  012090 [question_text] (before=':', after='<'): is given by:$$\mathbf{r} = (t^3 - 3t^2)\mathbf{i} + (2t^2 - 4t)\mathbf{j}$$<strong>(a)<
+  012101 [question_text] (before=':', after='$'): lied forces:$$\mathbf{F}_1 = (18\mathbf{i} - 6\mathbf{j})\text{ N}$$$$\mathbf{F}
+  012103 [question_text] (before=':', after='$'): ntal forces:$$\mathbf{F}_1 = (p\mathbf{i} + 14\mathbf{j})\text{ N}$$$$\mathbf{F}
+  012103 [question_text] (before='$', after='w'): )\text{ N}$$$$\mathbf{F}_3 = (-2\mathbf{i} - 5\mathbf{j})\text{ N}$$where $p$ an
+  012104 [question_text] (before=':', after='A'): }$ given by:$$\mathbf{F} = (6t - 4)\mathbf{i} + (12 - 9t^2)\mathbf{j}$$At time $t =
+  012105 [question_text] (before=':', after='<'):  seconds is:$$\mathbf{r}_{BA} = (15 + 2t - t^2)\mathbf{i} + (5 + 4t - t^2)\mathbf{j}$$<strong>(d)<
+  012116 [question_text] (before=':', after='w'): modelled by:$$v = ct + 0.06t^2$$where $c$ is
+  012117 [question_text] (before=':', after='A'): modelled by:$$a = 1.8 - 0.06t$$At $t = 20$,
+  012118 [question_text] (before=':', after='<'): is given by:$$v = 0.75t^2 - 0.05t^3$$<strong>(a)<
+  012119 [question_text] (before=':', after='w'): is given by:$$v(t) = \begin{cases} kt^2 & 0 \le t \le 4 \ A - 2t & 4 < t \le 10 \end{cases}$$where $k$ an
+  012120 [question_text] (before=':', after='P'): is given by:$$v_P = 6t - 0.5t^2$$Particle $Q$
+  012126 [question_text] (before=':', after='w'):  newtons by:$$\mathbf{F}_1 = \begin{pmatrix} 12 \ 0 \end{pmatrix}, \quad \mathbf{F}_2 = \begin{pmatrix} 3p \ -4p \end{pmatrix}, \quad \text{and} \quad \mathbf{F}_3 = \begin{pmatrix} 0 \ q \end{pmatrix}$$where $p$ an
+  012127 [question_text] (before=':', after='$'): anar forces:$$\mathbf{F}_1 = (p\mathbf{i} + 2q\mathbf{j})\text{ N}$$$$\mathbf{F}
+  012127 [question_text] (before='$', after='w'): )\text{ N}$$$$\mathbf{F}_3 = \big(-8\mathbf{i} + (q - 7)\mathbf{j}\big)\text{ N}$$where $p$ an
+  012128 [question_text] (before=':', after=' '): anar forces:$$\mathbf{F}_1 = \begin{pmatrix} 5 \ -1 \end{pmatrix}\text{ N}$$ $$ \mathbf{
+  012130 [question_text] (before=':', after='$'): anar forces:$$\mathbf{F}_1 = (5\mathbf{i} + 3\mathbf{j})\text{ N}$$$$\mathbf{F}
+  012130 [question_text] (before='$', after='w'): )\text{ N}$$$$\mathbf{F}_3 = (p\mathbf{i} + q\mathbf{j})\text{ N}$$where $p$ an
+  012159 [question_text] (before=':', after='W'): is given by:$$\mathbf{a} = (6t - 4)\mathbf{i} + 2\mathbf{j}$$When $t = 0$
+  012181 [question_text] (before=':', after='A'): is given by:$$v = 9t^2 - 4t - 7$$At time $t =
+  012182 [question_text] (before=':', after='W'): is given by:$$v = 12t^2 - 6t - 4$$When $t = 1\
+  012183 [question_text] (before=':', after='I'): is given by:$$v = 6\sqrt{t} - 2t$$Initially, w
+  012184 [question_text] (before=':', after='A'): $) given by:$$a = 6t - 10$$At time $t =
+  012185 [question_text] (before=':', after='A'): is given by:$$v = 3t^2 - 12t + 9$$At time $t =
+  012223 [question_text] (before=':', after='<'): is given by:$$y = x\tan\theta - \dfrac{gx^2}{2u^2}(1 + \tan^2\theta)$$<strong>(b)<
+  012227 [question_text] (before=':', after='$'): tant forces:$$\mathbf{F}_1 = (3\mathbf{i} - 5\mathbf{j} + 2\mathbf{k})\text{ N}$$$$\mathbf{F}
+  012227 [question_text] (before='$', after='w'): )\text{ N}$$$$\mathbf{F}_2 = (p\mathbf{i} + 6\mathbf{j} + q\mathbf{k})\text{ N}$$where $p$ an
+  012228 [question_text] (before=':', after='w'): ltant force:$$\mathbf{F}(t) = (18t\mathbf{i} - 36t^2\mathbf{j} + 12\mathbf{k})\text{ N}$$where $t \ge
+  012229 [question_text] (before=':', after='<'): is given by:$$D^2 = 9t^2 - 36t + 45$$<strong>(c)<
+  012230 [question_text] (before=':', after='$'): tant forces:$$\mathbf{F}_1 = (8\mathbf{i} - 14\mathbf{j} + 6\mathbf{k})\text{ N}$$$$\mathbf{F}
+  012232 [question_text] (before=':', after='<'): , show that:$$F = T\sqrt{3}$$<strong>(b)<
+  012233 [question_text] (before=':', after='<'): he relation:$$T_2 = T_1\sqrt{\dfrac{3}{2}}$$<strong>(b)<
+  012261 [question_text] (before=':', after='T'): is given by:$$v = 3t^2 - 12t + 9$$The particle
+  012262 [question_text] (before=':', after='<'): is given by:$$s = 2t^3 - 15t^2 + 24t + 10$$<strong>(a)<
+  012263 [question_text] (before=':', after='A'): econds}$ by:$$a = 6t - 18$$At time $t =
+  012264 [question_text] (before=':', after='<'): modelled by:$$v = 6\cos(2t) - 3$$<strong>(a)<
+  012265 [question_text] (before=':', after='<'): is given by:$$v = 16e^{-0.5t} - 4$$<strong>(a)<
+  012271 [question_text] (before=':', after='<'): of slipping:$$x = \dfrac{72\mu(m_1 + m_2) - 15m_1}{5m_2}$$<strong>(c)<
+  012275 [question_text] (before=':', after='<'): e ground by:$$R_B = 0.5R_A$$<strong>(c)<
+  050012 [question_text] (before=':', after='S'): coded using:$$y = \dfrac{R - 100}{10}$$Summary stat
+  050012 [question_text] (before=':', after='<'): ble $y$ are:$$\sum y = 36.0,\text{ } \sum y^2 = 114.8$$<strong>(a)<
+  050023 [question_text] (before=':', after='<'): ace satisfy:$$\text{P}(A) = 0.55 \qquad \text{P}(B) = 0.40 \qquad \text{P}(A \cup B) = 0.73$$<strong>(a)<
+  050028 [question_text] (before=':', after='C'): tistics are:$$S_{xx} = 128.5 \qquad S_{yy} = 312.0 \qquad S_{xy} = 168.4$$Critical val
+  050029 [question_text] (before=':', after='T'): coded using:$$u = \dfrac{x - 10}{2} \qquad v = 10y - 25$$The correlat
+  050042 [question_text] (before=':', after='<'): ard formula:$$\text{Var}(X) = \dfrac{n^2 - 1}{12}$$<strong>(c)<
+  050048 [question_text] (before=':', after='T'): coded using:$$u = \dfrac{d}{50} \qquad v = \dfrac{p - 10}{4}$$The correlat
+  050049 [question_text] (before=':', after='<'): 6$ hours is:$$\log_{10} P = 1.20 + 0.25t$$<strong>(b)<
+  050053 [question_text] (before=':', after='G'): progression:$$\text{P}(W = w) = a + (w - 1)d$$Given that $
+  050056 [question_text] (before=':', after=' '):  statistics:$$n = 90$$ $$ \sum x =
+  050058 [question_text] (before=':', after=' '): 2$ patients:$$11, \quad 14, \quad 18, \quad 21,$$ $$24, \quad
+  050058 [question_text] (before=' ', after='A'): \quad 33,$$ $$38, \quad 42, \quad 48, \quad 74$$An outlier l
+  050060 [question_text] (before=':', after='T'): $ commuters:$$\bar{c} = £14.20 \qquad s = £3.80$$Two entries 
+  050061 [question_text] (before=':', after='$'): f batteries:$$n = 25$$$$\bar{l} = 
+  050062 [question_text] (before=':', after='$'): ells yields:$$n = 36$$$$\bar{t} = 
+  050063 [question_text] (before=':', after='$'): ndom sample:$$n = 16$$$$\bar{x} = 
+  050063 [question_text] (before='$', after='A'): \text{ km}$$$$\sigma = 24\text{ km}$$Assume range
+  050064 [question_text] (before=':', after='$'): ng an audit:$$n = 36$$$$\bar{x} = 
+  050065 [question_text] (before=':', after='a'): ily to test:$$H_0: \mu = 500 \qquad H_1: \mu \neq 500$$at the $5\%$
+  050065 [question_text] (before=':', after='<'): ere sampled:$$\bar{v} = 496.4\text{ ml}$$<strong>(c)<
+  050101 [question_text] (before=':', after='S'): he sequence:$$25873914$$She forms $5
+  050101 [question_text] (before=':', after='<'): , obtaining:$$258 \quad 587 \quad 873 \quad 391 \quad 914$$<strong>(a)<
+  050105 [question_text] (before=':', after='$'): mmarised by:$$n = 45$$$$\sum x = 3
+  050107 [question_text] (before=':', after='$'): given below:$$n = 20$$$$\sum x = 4
+  050179 [question_text] (before='t', after='$'): re such that$$\text{P}(A) = p$$$$\text{P}(B
+  050179 [question_text] (before='$', after='w'): P}(B) = 2p$$$$\text{P}(A \cup B) = 0.72$$where $p$ is
+  050179 [question_text] (before='t', after='<'): s, show that$$2p^2 - 3p + 0.72 = 0$$<strong>(b)<
+  050180 [question_text] (before='s', after='$'): robabilities$$\text{P}(E) = 0.4$$$$\text{P}(F
+  050181 [question_text] (before='n', after='O'): distribution$$X \sim \text{N}(30, 16)$$Over an exte
+  050182 [question_text] (before='n', after='R'): distribution$$W \sim \text{N}(505, 25)$$Records show
+  050182 [question_text] (before='s', after='$'): h hypotheses$$H_0: \mu = 505$$$$H_1: \mu <
+  050182 [question_text] (before='$', after='a'):  \mu = 505$$$$H_1: \mu < 505$$assuming $\s
+  050183 [question_text] (before='s', after='$'): e hypotheses$$H_0: \mu = 450$$$$H_1: \mu >
+  050183 [question_text] (before='$', after='a'):  \mu = 450$$$$H_1: \mu > 450$$at the $2.5\
+  050184 [question_text] (before='r', after='$'): ce level for$$H_0: \mu = 25.0$$$$H_1: \mu \
+  050185 [question_text] (before=':', after='$'):  on average:$$H_0: \mu_B - \mu_A = 0$$$$H_1: \mu_B
+  050185 [question_text] (before='$', after='a'):  \mu_A = 0$$$$H_1: \mu_B - \mu_A > 0$$at the $5\%$
+  050189 [question_text] (before='s', after='T'): 2$ stores is$$y = 1.62x + 16.5$$The director
+  050190 [question_text] (before=':', after='<'): istribution:$$T \sim \text{N}(60, 11.7^2)$$<strong>(i)<
+  050194 [question_text] (before='y', after='$'): are given by$$\text{E}(W) = 7.2$$$$\text{Var}
+  050204 [question_text] (before='t', after='s'): > Given that$$\text{P}(X = 2) = 3\,\text{P}(X = 3)$$show that $\
+  050211 [question_text] (before='s', after='<'): hese data is$$y = 86.0 - 0.95x$$<strong>(i)<
+  050212 [question_text] (before='s', after='<'): y$ on $x$ is$$y = 2.5 + 0.07x$$<strong>(a)<
+  050213 [question_text] (before='s', after='E'): ta points is$$y = 11.2 + 3.9x$$Explain why 
+  050214 [question_text] (before='s', after='<'): y$ on $x$ is$$y = 26 + 2x$$<strong>(a)<
+  050215 [question_text] (before=':', after='T'): to the data:$$y = 1.74x - 26.3$$The data poi
+  050216 [question_text] (before=':', after='<'):  statistics:$$\begin{aligned} &\text{Min.} &&: 22.0 \cr &\text{1st Qu.} &&: 28.0 \cr &\text{Median} &&: 31.0 \cr &\text{Mean} &&: 33.5 \cr &\text{3rd Qu.} &&: 36.0 \cr &\text{Max.} &&: 58.0 \end{aligned}$$<strong>(a)<
+  050217 [question_text] (before=':', after='*'): table below:$$\begin{array}{lcc} \hline \textbf{Measure} & \textbf{  A  } & \textbf{  B  } \cr \hline \text{Min} & 18 & 20 \cr Q_1 & 26 & 28 \cr \text{Median} & 30 & 32 \cr Q_3 & 34 & 38 \cr \text{Max} & 42 & 54 \cr \hline \end{array}$$*(Note: A si
+  050220 [question_text] (before=':', after='<'): ear formula:$$P = 25x + 50$$<strong>(i)<
+  050243 [question_text] (before=':', after='w'): of the form:$$N = a b^t$$where $a$ an
+  050244 [question_text] (before=':', after='<'): $ on $x$ is:$$y = 10.5 + 0.710x$$<strong>(a)<
+  050251 [question_text] (before=':', after=' '): orded below:$$14, \quad 18, \quad 20, \quad 24,$$ $$ 27, \qua
+  050257 [question_text] (before=':', after='T'): sformations:$$u = \dfrac{x - 100}{10}, \quad v = y - 5$$The summary 
+  050265 [question_text] (before=':', after='T'): istribution:$$X \sim \text{B}(n, p)$$The expected
+  050267 [question_text] (before=':', after=' '): e such that:$$\text{P}(E) = 0.60 \quad \text{and}$$ $$\text{P}(
+  050268 [question_text] (before=':', after=' '):  threat are:$$\text{P}(F) = 0.90$$ $$\text{P}(
+  050268 [question_text] (before=' ', after='B'): A) = 0.85$$ $$\text{P}(D) = 0.70$$Because the 
+  050269 [question_text] (before=':', after=' '): e such that:$$\text{P}(A) = 0.50$$  $$\text{P}
+  004021 [step_3] (before='r', after='t'): e square for$g(x)$to find its 
+  004021 [step_4] (before='f', after='i'): he vertex of$g(x)$is at (1, 2)
+  004022 [step_3] (before='r', after='t'): e square for$g(x)$to find its 
+  004022 [step_4] (before='f', after='i'): he vertex of$g(x)$is at (1, 1)
+  004023 [step_3] (before='r', after='t'): e square for$g(x)$to find its 
+  004023 [step_4] (before='f', after='i'): he vertex of$g(x)$is at (2, 1)
+  004024 [step_3] (before='r', after='t'): e square for$g(x)$to find its 
+  004024 [step_4] (before='f', after='i'): he vertex of$g(x)$is at (1, 2)
+  004025 [step_3] (before='r', after='t'): e square for$g(x)$to find its 
+  004025 [step_4] (before='f', after='i'): he vertex of$g(x)$is at (2, 1)
+  004051 [step_5] (before=' ', after='t'): al, for the $r$th kilometre
+  004051 [step_5] (before=' ', after='t'): ime for the $r$th kilometre
+  004052 [step_5] (before=' ', after='t'): al, for the $r$th metre, th
+  004052 [step_5] (before=' ', after='t'): ime for the $r$th metre is:
+  004053 [step_5] (before=' ', after='t'): al, for the $r$th kilometre
+  004053 [step_5] (before=' ', after='t'): ime for the $r$th kilometre
+  004054 [step_5] (before=' ', after='t'): al, for the $r$th kilometre
+  004054 [step_5] (before=' ', after='t'): ime for the $r$th kilometre
+  004055 [step_5] (before=' ', after='t'): al, for the $r$th kilometre
+  004055 [step_5] (before=' ', after='t'): ime for the $r$th kilometre
+  004065 [step_9] (before=' ', after='x'): in{aligned} $x &= 3\cr \implies 18 - 3(3) &= 2A(3 + 2)\cr \implies 9 &= 10A\cr \implies A &= \frac{9}{10}\end{aligned}<br>2. \begin{aligned} $x &= -2\cr \
+  004271 [step_3] (before=':', after=' '): if required:$$4x^{3/2} + \dfrac{2}{x^2} + C$$
+  004273 [step_1] (before=':', after=' '): integration:$$\dfrac{\text{d}y}{\text{d}x} = 2x^{1/2} + 3x^{-2}$$
+  004273 [step_4] (before=':', after=' '): f the curve:$$y = \dfrac{4}{3}x^{3/2} - \dfrac{3}{x} + \dfrac{20}{3}$$
+  004274 [step_4] (before=':', after=' '): if required:$$x^3 - 4\sqrt{x} + C$$
+  004275 [step_2] (before=':', after=' '):  boundaries:$$A = \int_{0}^{9} \left( 3x^{1/2} - x \right) \text{d}x$$
+  004281 [step_2] (before=':', after=' '): el equation:$$s = 80 - 5(t - 3)^2$$
+  004286 [step_3] (before=':', after=' '): pression is:$$f(x) = \dfrac{2}{x - 2} + \dfrac{2 - x}{x^2 + 4}$$
+  004287 [step_2] (before=':', after=' '): l fractions:$$f(x) = \dfrac{2}{x} - \dfrac{1}{x - 1} + \dfrac{2}{(x - 1)^2}$$
+  004288 [step_2] (before=':', after=' '): actions are:$$f(x) = -\dfrac{2}{x - 1} + \dfrac{6}{x - 2} - \dfrac{3}{x - 3}$$
+  004289 [step_6] (before=':', after=' '): f the curve:$$y = x\ln x + 2x$$
+  004290 [step_5] (before=':', after=' '): ume formula:$$V = (10 - 0.1t)^2$$
+  004307 [step_1] (before=':', after=' '):  principles:$$\dfrac{\text{d}y}{\text{d}x} = \lim_{h \to 0} \dfrac{f(x + h) - f(x)}{h}$$
+  004309 [step_1] (before=':', after=' '): ary $x = 3$:$$\text{Area} = \int_{1}^{3} \left( 3x^2 + 2x \right) \text{d}x$$
+  004339 [step_2] (before=':', after=' '): xpansion is:$$(1 + 2x)^5 \approx 1 + 10x + 40x^2 + 80x^3$$
+  004346 [step_3] (before=':', after=' '): ical values:$$0 < k < 12$$
+  004351 [step_4] (before=':', after='U'): g point) at:$$(0, 0) \quad \text{and} \quad (6, 0)$$Using these 
+  004400 [step_5] (before=':', after=' '): inal Answer:$$ x = 4 $$
+  004402 [step_4] (before=':', after='E'): ard form is:$$(x - 3)^2 + (y + 2)^2 = 25$$Expand the s
+  004404 [step_3] (before=':', after='M'): m all parts:$$-9 < -m < -1$$Multiply by 
+  004404 [step_3] (before=':', after=' '): ality signs:$$1 < m < 9$$
+  004404 [step_5] (before=':', after=' '): e circle is:$$(x - 3)^2 + (y - 2)^2 = 25$$
+  004405 [step_2] (before=':', after='S'): iscriminant:$$\Delta = (k + 2)^2$$Since any re
+  004405 [step_2] (before=':', after='B'): ve, we have:$$(k + 2)^2 \ge 0 \quad \text{for all real } k$$Because $\De
+  004406 [step_6] (before=':', after='F'): \theta = 1$:$$\theta = 0^\circ$$For $\cos \t
+  004407 [step_6] (before=':', after='F'): \theta = 1$:$$\theta = 90.0^\circ$$For $\sin \t
+  004409 [step_4] (before=':', after=' '): olute value:$$\text{Area} = \dfrac{32}{3}$$
+  004409 [step_6] (before=':', after='N'):  angles are:$$\phi = 120^\circ, 240^\circ$$Now calculat
+  004410 [step_5] (before=':', after='F'): theta = -1$:$$\theta = 180.0^\circ$$For $\cos \t
+  004416 [step_3] (before=':', after='U'): other roots:$$2x^2 - 4x - 1 = 0$$Using the qu
+  004417 [step_3] (before=':', after='A'): ual to zero:$$3x^2 - 2x - 2 = 0$$Apply the qu
+  004418 [step_3] (before=':', after='T'): ual to zero:$$x^2 - x - 6 = 0$$This quadrat
+  004419 [step_3] (before=':', after='U'): ual to zero:$$x^2 - 4x + 1 = 0$$Using the qu
+  004420 [step_3] (before=':', after='U'): ual to zero:$$2x^2 - 6x + 3 = 0$$Using the qu
+  004429 [step_4] (before=':', after=' '): olve to get:$$\theta = 60^\circ$$
+  004430 [step_1] (before=':', after=' '): er, we have:$$\angle ACB = 90^\circ$$
+  004430 [step_4] (before=':', after=' '): cipal angle:$$\theta = 30^\circ$$
+  004431 [step_3] (before=':', after=' '): stricted to:$$3 < g(x) \le 5$$
+  004431 [step_5] (before=':', after=' '):  $x$ yields:$$g^{-1}(x) = \dfrac{x + 1}{x - 3}$$
+  004431 [step_6] (before=':', after=' '): d in Step 3:$$\text{Domain: } 3 < x \le 5$$
+  004432 [step_3] (before=':', after=' '): stricted to:$$4 < h(x) \le 14$$
+  004432 [step_5] (before=':', after=' '): h $x$ gives:$$h^{-1}(x) = \dfrac{2x + 2}{x - 4}$$
+  004432 [step_6] (before=':', after=' '): d in Step 3:$$\text{Domain: } 4 < x \le 14$$
+  004433 [step_3] (before=':', after=' '): e of $f$ is:$$f(x) > 0$$
+  004433 [step_5] (before=':', after=' '): h $x$ gives:$$f^{-1}(x) = \mathrm{e}^x + 2$$
+  004433 [step_6] (before=':', after=' '): d in Step 3:$$\text{Domain: } x > 0$$
+  004434 [step_3] (before=':', after=' '): e of $f$ is:$$f(x) \ge 5$$
+  004434 [step_5] (before=':', after=' '):  $x$ yields:$$f^{-1}(x) = 2 + \sqrt{x - 5}$$
+  004434 [step_6] (before=':', after=' '): d in Step 3:$$\text{Domain: } x \ge 5$$
+  004435 [step_3] (before=':', after=' '): e of $g$ is:$$g(x) \ge 1$$
+  004435 [step_5] (before=':', after=' '):  $x$ yields:$$g^{-1}(x) = (x - 1)^2 + 3$$
+  004435 [step_6] (before=':', after=' '): d in Step 3:$$\text{Domain: } x \ge 1$$
+  004436 [step_5] (before=':', after=' '): ing us with:$$p = 3 - \sqrt{15}$$
+  004437 [step_5] (before=':', after=' '):  -3$ to get:$$q = 5$$
+  004438 [step_2] (before=':', after=' '): ual to zero:$$\vec{AB} \cdot \mathbf{u} = 0$$
+  004439 [step_2] (before=':', after=' '): $ such that:$$\vec{AC} = k\vec{AB}$$
+  004439 [step_5] (before=':', after=' '): des $AC$ is:$$AB : BC = 3 : 4$$
+  004442 [step_4] (before=':', after=' '): ed interval:$$-3 < x < 3$$
+  004445 [step_3] (before=':', after=' '):  inequality:$$-2 < x - 3 < 2$$
+  004449 [step_1] (before=':', after='S'): is given by:$$S_n = \dfrac{n}{2}(2a + (n - 1)d)$$Substitute $
+  004450 [step_1] (before=':', after='S'): is given by:$$S_n = \dfrac{a(r^n - 1)}{r - 1}$$Substitute $
+  004450 [step_4] (before=':', after=' '): qual to $0$:$$u_r = 0 \quad \text{for all } r \ge 2$$
+  004456 [step_3] (before=':', after='L'): olutions to:$$-2y^6 + 8y^4 - 9y^2 + 9 = 0$$Let $x = y^2
+  004456 [step_3] (before=':', after='W'): uation into:$$-2x^3 + 8x^2 - 9x + 9 = 0$$Which is exa
+  004456 [step_3] (before=':', after=' '): l solutions:$$y = \pm\sqrt{3}$$
+  004456 [step_4] (before=':', after='W'): . Therefore:$$\tan\theta = 3$$We need to f
+  004457 [step_3] (before=':', after='L'): br>We solve:$$2y^{12} + y^8 + y^4 - 4 = 0$$Let $x = y^4
+  004457 [step_3] (before=':', after='T'): ion becomes:$$2x^3 + x^2 + x - 4 = 0$$This is exac
+  004458 [step_3] (before=':', after='L'): br>We solve:$$y^9 + y^6 + y^3 + 6 = 0$$Let $x = y^3
+  004458 [step_3] (before=':', after='T'): ion becomes:$$x^3 + x^2 + x + 6 = 0$$This is $f(x
+  004458 [step_4] (before=':', after='H'): ch requires:$$\cos\theta = -2$$However, the
+  004459 [step_3] (before=':', after='L'): br>We solve:$$2y^6 + 3y^4 + 2y^2 - 2 = 0$$Let $x = y^2
+  004460 [step_3] (before=':', after='L'): br>We solve:$$4\mathrm{e}^{3y} - 2\mathrm{e}^{2y} + \mathrm{e}^y - 3 = 0$$Let $x = \ma
+  004460 [step_4] (before=':', after='W'):  = 1$. Thus:$$\tan(2\theta) = 1$$We search fo
+  004460 [step_4] (before=':', after='T'):  the domain:$$0 \le 2\theta < 2\pi$$The tangent 
+  004463 [step_1] (before=':', after='T'): in for $2x$:$$0 \le 2x < 2\pi$$The solution
+  004466 [step_1] (before=':', after='w'): ctored form:$$H = kx(48 - x)$$where $k$ is
+  004466 [step_2] (before=':', after=' '): ajectory is:$$H = -\dfrac{1}{36}x^2 + \dfrac{4}{3}x$$
+  004466 [step_3] (before=':', after='M'): lve for $x$:$$-\dfrac{1}{36}x^2 + \dfrac{4}{3}x = 3$$Multiplying 
+  004467 [step_1] (before=':', after='w'): ctored form:$$H = kx(200 - x)$$where $k$ is
+  004467 [step_2] (before=':', after=' '): ajectory is:$$H = -\dfrac{1}{400}x^2 + \dfrac{1}{2}x$$
+  004467 [step_3] (before=':', after='M'): lve for $x$:$$-\dfrac{1}{400}x^2 + \dfrac{1}{2}x = 16$$Multiplying 
+  004467 [step_5] (before=':', after=' '):  trajectory:$$x = 160\text{ m}$$
+  004468 [step_1] (before=':', after='w'): ctored form:$$H = kx(120 - x)$$where $k$ is
+  004468 [step_2] (before=':', after=' '): ajectory is:$$H = -\dfrac{1}{200}x^2 + \dfrac{3}{5}x$$
+  004468 [step_3] (before=':', after='M'): lve for $x$:$$-\dfrac{1}{200}x^2 + \dfrac{3}{5}x = 10$$Multiplying 
+  004468 [step_5] (before=':', after=' '):  trajectory:$$x = 100\text{ m}$$
+  004469 [step_1] (before=':', after='w'): ctored form:$$H = kx(24 - x)$$where $k$ is
+  004469 [step_2] (before=':', after=' '): ajectory is:$$H = -\dfrac{1}{16}x^2 + \dfrac{3}{2}x$$
+  004469 [step_3] (before=':', after='M'): lve for $x$:$$-\dfrac{1}{16}x^2 + \dfrac{3}{2}x = 5$$Multiplying 
+  004469 [step_5] (before=':', after=' '):  trajectory:$$x = 20\text{ m}$$
+  004470 [step_1] (before=':', after='w'): ctored form:$$H = kx(80 - x)$$where $k$ is
+  004470 [step_2] (before=':', after=' '): ajectory is:$$H = -\dfrac{1}{100}x^2 + \dfrac{4}{5}x$$
+  004470 [step_3] (before=':', after='M'): lve for $x$:$$-\dfrac{1}{100}x^2 + \dfrac{4}{5}x = 7$$Multiplying 
+  004470 [step_5] (before=':', after=' '):  trajectory:$$x = 70\text{ m}$$
+  004476 [step_1] (before=':', after='w'): $, we write:$$\dfrac{\text{d}r}{\text{d}t} = -\dfrac{k}{r^2}$$where $k$ is
+  004476 [step_2] (before=':', after=' '): he equation:$$r^3 = -Kt + c$$
+  004476 [step_3] (before=':', after='T'): he equation:$$r^3 = 216 - Kt$$Three minute
+  004476 [step_3] (before=':', after=' '): and time is:$$r^3 = 216 - 63t$$
+  004477 [step_1] (before=':', after='w'): f, we write:$$\dfrac{\text{d}M}{\text{d}t} = -kM$$where $k$ is
+  004477 [step_3] (before=':', after='T'): he equation:$$M = 80\mathrm{e}^{-kt}$$Ten hours la
+  004477 [step_3] (before=':', after=' '): and time is:$$M = 80\mathrm{e}^{-\left(\frac{\ln 2}{10}\right)t}$$
+  004478 [step_1] (before=':', after='w'): f, we write:$$\dfrac{\text{d}r}{\text{d}t} = -\dfrac{k}{r}$$where $k$ is
+  004478 [step_2] (before=':', after=' '): he equation:$$r^2 = -Kt + c$$
+  004478 [step_3] (before=':', after='A'): he equation:$$r^2 = 100 - Kt$$After $5$ ho
+  004478 [step_3] (before=':', after=' '): and time is:$$r^2 = 100 - 7.2t$$
+  004479 [step_1] (before=':', after='w'): $, we write:$$\dfrac{\text{d}h}{\text{d}t} = -k\sqrt{h}$$where $k$ is
+  004480 [step_1] (before=':', after='w'): f, we write:$$\dfrac{\text{d}r}{\text{d}t} = -kr$$where $k$ is
+  004480 [step_3] (before=':', after='T'): he equation:$$r = 4\mathrm{e}^{-kt}$$Ten minutes 
+  004480 [step_3] (before=':', after=' '): and time is:$$r = 4\mathrm{e}^{-\left(\frac{\ln 2}{10}\right)t}$$
+  004481 [step_4] (before=':', after='S'): erms of $B$:$$C = -4 - 2B$$Substituting
+  004482 [step_2] (before=':', after=' '):  both sides:$$A = 2$$
+  004482 [step_4] (before=':', after='S'): erms of $B$:$$C = -3 - B$$Substituting
+  004483 [step_4] (before=':', after='S'): erms of $C$:$$B = 1 + C$$Substituting
+  004484 [step_4] (before=':', after='S'): erms of $B$:$$C = 5 - 3B$$Substituting
+  004485 [step_4] (before=':', after='S'): erms of $B$:$$C = -3B$$Substituting
+  004486 [step_2] (before=':', after=' '):  x \sin 2x$:$$\csc^2 x - 4 = 2\cot x$$
+  004487 [step_3] (before=':', after='T'): hich yields:$$x = 0\text{ radians}$$This solutio
+  004488 [step_2] (before=':', after=' '):  x \sin 2x$:$$\csc^2 x - 5 = 2\cot x$$
+  004489 [step_3] (before=':', after='T'): hich yields:$$x = 0\text{ radians}$$This solutio
+  004490 [step_2] (before=':', after=' '):  x \sin 2x$:$$\csc^2 x - 3 = 3\cot x$$
+  004491 [step_1] (before=':', after='U'): line $l$ is:$$m_N = -\dfrac{1}{4}$$Using the po
+  004491 [step_3] (before=':', after='<'): \mathrm{e}$:$$\text{Area}_1 = \int_1^{\mathrm{e}} 2x \ln x \text{d}x$$<strong>Area
+  004492 [step_1] (before=':', after='T'): line $l$ is:$$m_N = -\dfrac{1}{3\mathrm{e}}$$The equation
+  004492 [step_3] (before=':', after='<'): \mathrm{e}$:$$\text{Area}_1 = \int_1^{\mathrm{e}} x^2 \ln x \text{d}x$$<strong>Area
+  004493 [step_1] (before=':', after='T'): line $l$ is:$$m_N = -\dfrac{2\sqrt{\mathrm{e}}}{9}$$The equation
+  004493 [step_3] (before=':', after='<'): \mathrm{e}$:$$\text{Area}_1 = \int_1^{\mathrm{e}} 3\sqrt{x} \ln x \text{d}x$$<strong>Area
+  004494 [step_1] (before=':', after='T'): line $l$ is:$$m_N = -2\mathrm{e}^{3/2}$$The equation
+  004494 [step_3] (before=':', after='<'): \mathrm{e}$:$$\text{Area}_1 = \int_1^{\mathrm{e}} \dfrac{\ln x}{\sqrt{x}} \text{d}x$$<strong>Area
+  004495 [step_1] (before=':', after='T'): line $l$ is:$$m_N = -\dfrac{1}{4\mathrm{e}^2}$$The equation
+  004495 [step_3] (before=':', after='<'): \mathrm{e}$:$$\text{Area}_1 = \int_1^{\mathrm{e}} x^3 \ln x \text{d}x$$<strong>Area
+  004506 [step_2] (before=':', after=' '): frac{1}{2}$:$$\left( x^{\frac{13}{12}} \right)^{\frac{1}{2}}$$
+  004506 [step_3] (before=':', after='T'):  expression:$$x^{\frac{13}{24}}$$Therefore, t
+  004507 [step_2] (before=':', after=' '):  This gives:$$\left( y^{\frac{9}{10}} \right)^{\frac{1}{3}}$$
+  004507 [step_3] (before=':', after='T'): lified term:$$y^{\frac{3}{10}}$$Therefore, t
+  004508 [step_2] (before=':', after=' '): pression to:$$\left( w^{\frac{7}{12}} \right)^{\frac{1}{2}}$$
+  004508 [step_3] (before=':', after='T'): ied term is:$$w^{\frac{7}{24}}$$Therefore, t
+  004509 [step_2] (before=':', after=' '): frac{1}{2}$:$$\left( z^{\frac{5}{6}} \right)^{\frac{1}{2}}$$
+  004509 [step_3] (before=':', after='T'): lified term:$$z^{\frac{5}{12}}$$Therefore, t
+  004510 [step_2] (before=':', after=' '): frac{1}{4}$:$$\left( x^{\frac{7}{6}} \right)^{\frac{1}{4}}$$
+  004510 [step_3] (before=':', after='T'): lified term:$$x^{\frac{7}{24}}$$Therefore, t
+  004576 [step_1] (before=':', after=' '): d $y$ terms:$$x^2 + y^2 + 6x - 10y - 2 = 0$$
+  004576 [step_2] (before=':', after=' '): ms together:$$(x^2 + 6x) + (y^2 - 10y) - 2 = 0$$
+  004577 [step_1] (before=':', after=' '):  the square:$$(x^2 - 4x) + (y^2 + 12y) + k = 0$$
+  004580 [step_3] (before=':', after=' '):  $r^2 = 25$:$$ (x - 2)^2 + (y - 4)^2 = 25 $$
+  004583 [step_1] (before=':', after=' '): ue brackets:$$(2x - 3)^2 < (x + 2)^2$$
+  004584 [step_1] (before=':', after=' '): ms of $|x|$:$$|x|^2 - 3|x| - 10 = 0$$
+  004584 [step_2] (before=':', after=' '): e $y \ge 0$:$$y^2 - 3y - 10 = 0$$
+  004585 [step_1] (before=':', after=' '): ng equation:$$|2x - 1| = 5 - x$$
+  004779 [step_1] (before=':', after=' '): n), we find:$$A = 2$$
+  004780 [step_2] (before=':', after=' '): entation is:$$\dfrac{ 3 }{ 1 - x } + \dfrac{ 2 }{ 1 + x }$$
+  004786 [step_1] (before=':', after='I'): n the right:$$\dfrac{ 1 }{ P } \text{d}P = k \text{d}t$$Integrate bo
+  004786 [step_2] (before=':', after=' '): ed solution:$$P = P_0 \mathrm{e}^{ kt }$$
+  004787 [step_1] (before=':', after='I'): n the right:$$\dfrac{ 1 }{ M } \text{d}M = -k \text{d}t$$Integrate bo
+  004787 [step_2] (before=':', after=' '): ur solution:$$M = M_0 \mathrm{e}^{ -kt }$$
+  004788 [step_1] (before=':', after='I'): ngle entity:$$\dfrac{ 1 }{ \theta - 20 } \text{d}\theta = -k \text{d}t$$Integrate bo
+  004788 [step_2] (before=':', after=' '): solution is:$$\theta = 20 + A \mathrm{e}^{ -kt }$$
+  004788 [step_3] (before=':', after=' '): oling model:$$\theta = 20 + 65\mathrm{e}^{ -kt }$$
+  004788 [step_6] (before=':', after='T'): . Therefore:$$\theta \to 20$$The limiting
+  004789 [step_1] (before=':', after='I'): g variables:$$V^{ -1/2 } \text{d}V = -k \text{d}t$$Integrate bo
+  004789 [step_2] (before=':', after='A'): \sqrt{ V }$:$$\sqrt{ V } = -\dfrac{ 1 }{ 2 }kt + \dfrac{ C }{ 2 }$$Apply the in
+  004790 [step_1] (before=':', after='I'): n the right:$$\dfrac{ 1 }{ P } \text{d}P = \dfrac{ k }{ 2t + 3 } \text{d}t$$Integrate bo
+  004791 [step_3] (before=':', after='W'):  formula is:$$x_{n+1} = x_n - \dfrac{ g(x_n) }{ g'(x_n) }$$We first dif
+  004791 [step_3] (before=':', after=' '): ind $g'(x)$:$$g'(x) = \dfrac{ 4 }{ x^2 } + \dfrac{ 1 }{ x }$$
+  004792 [step_3] (before=':', after='U'): proximation:$$x_{n+1} = x_n - \dfrac{ f(x_n) }{ f'(x_n) }$$Using $x_0 =
+  004793 [step_3] (before=':', after='U'): proximation:$$x_{n+1} = x_n - \dfrac{ g(x_n) }{ g'(x_n) }$$Using $x_0 =
+  004794 [step_3] (before=':', after='U'): proximation:$$x_{n+1} = x_n - \dfrac{ h(x_n) }{ h'(x_n) }$$Using $x_0 =
+  004795 [step_3] (before=':', after='W'): proximation:$$x_{n+1} = x_n - \dfrac{ f(x_n) }{ f'(x_n) }$$We different
+  004795 [step_3] (before=':', after=' '): ind $f'(x)$:$$f'(x) = \dfrac{ 1 }{ x + 1 } + 2x$$
+  004796 [step_1] (before=':', after='L'): on by parts:$$\int u \text{d}v = uv - \int v \text{d}u$$Let $u = \ln
+  004797 [step_1] (before=':', after='L'): on by parts:$$\int u \text{d}v = uv - \int v \text{d}u$$Let $u = 3x$
+  004798 [step_1] (before=':', after='L'): on by parts:$$\int u \text{d}v = uv - \int v \text{d}u$$Let $u = \ln
+  004801 [step_4] (before=':', after='R'): erms of $x$:$$y^2 = 9 - x^2$$Rotate this 
+  004805 [step_4] (before=':', after='E'): le identity:$$\sin^2 x = \dfrac{ 1 - \cos 2x }{ 2 }$$Evaluate the
+  004808 [step_3] (before=':', after=' '):  root. Thus:$$k = 20$$
+  004809 [step_4] (before=':', after='•'): 5% interest:$$\text{Value} = 1000(1.05) = 1050$$• End of Yea
+  009008 [step_3] (before=':', after=' '): r><br>Hence:$$L = \dfrac{1 + \sqrt{5}}{2} = \phi$$
+  009011 [step_1] (before=':', after=' '): t $b$. Thus:$$b = 0.75$$
+  009011 [step_3] (before=':', after=' '): est integer:$$Y = 1057$$
+  012001 [step_3] (before=':', after=' '): a$, and $t$:$$v = u + at$$
+  012002 [step_3] (before=':', after=' '): t$, and $a$:$$v = u + at$$
+  012003 [step_4] (before=':', after=' '): tic formula:$$s = \left( \dfrac{ u + v }{ 2 } \right) t_2$$
+  012004 [step_2] (before=':', after=' '): ic equation:$$s = ut + \dfrac{ 1 }{ 2 } at^2$$
+  012004 [step_4] (before=':', after=' '): be positive:$$H = 19.6$$
+  012005 [step_1] (before=':', after=' '): o ($v = 0$):$$\dfrac{ 3 }{ 2 } t^2 - 4t + 2 = 0$$
+  012005 [step_3] (before=':', after=' '): lue of time:$$t = \dfrac{ 2 }{ 3 }\text{ s}$$
+  012005 [step_6] (before=':', after=' '): leration is:$$|a| = 2\text{ m s}^{ -2 }$$
+  012007 [step_1] (before=':', after=' '): $ to $B$ is:$$6 - 2 = 4\text{ m}$$
+  012007 [step_2] (before=':', after='T'): midpoint is:$$3 - 2 = 1\text{ m}$$This weight 
+  012010 [step_3] (before=':', after=' '): f $\bar{x}$:$$\text{Clockwise Moment} = 10g\bar{x}\text{ N m}$$
+  012011 [step_1] (before=':', after='•'):  t \le 10$):$$a = 0\text{ m s}^{ -2 }$$• Segment 4 
+  012011 [step_1] (before=':', after='•'):  t \le 15$):$$a = 0\text{ m s}^{ -2 }$$• Segment 6 
+  012011 [step_2] (before=':', after=' '): leration is:$$a_{\text{max}} = 3\text{ m s}^{ -2 }$$
+  012016 [step_7] (before=':', after=' '): ate forward:$$P_x = 100\cos 20^\circ \approx 93.97\text{ N}$$
+  012017 [step_7] (before=':', after=' '): ate forward:$$P_x = 130\cos 30^\circ \approx 112.58\text{ N}$$
+  012018 [step_8] (before=':', after='•'): p the plane:$$P_x = 50\cos 15^\circ \approx 48.30\text{ N}$$• Weight com
+  012018 [step_8] (before=':', after=' '): n the plane:$$W_x \approx 25.36\text{ N}$$
+  012019 [step_6] (before=':', after=' '): c = \mu R$):$$T\cos 40^\circ = 0.5(78.4 - T\sin 40^\circ)$$
+  012020 [step_5] (before=':', after=' '): ext{max}}$):$$Mg \le \mu R_A$$
+  012023 [step_5] (before=':', after=' '):  inequality:$$6t^2 - 30t + 24 < 0$$
+  012023 [step_7] (before=':', after=' '): g the range:$$1 < t < 4$$
+  012025 [step_2] (before=':', after=' '): pression is:$$v = 6t^2 - 8t + 3$$
+  012025 [step_4] (before=':', after=' '): pression is:$$s = 2t^3 - 4t^2 + 3t + 4$$
+  012030 [step_3] (before=':', after=' '): ine formula:$$\cos \theta_y = \dfrac{ F_y }{ |\mathbf{F}| }$$
+  012030 [step_4] (before=':', after=' '): {F}| = 13$):$$\cos \theta_y = -\dfrac{ 12 }{ 13 }$$
+  012058 [step_5] (before=' ', after='A'): • Distance, $s = 1.5\text{ m}$Apply $v^2 =
+  012060 [step_4] (before=' ', after='A'): • Distance, $s = 5\text{ m}$Apply $v^2 =
+  012070 [step_6] (before=':', after=' '): equilibrium:$$19.6 \le P \le 98$$
+  012079 [step_4] (before=':', after=' '): f masses is:$$0 \le m \le 26\text{ kg}$$
+  012128 [step_5] (before='}', after='6'): t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  050068 [step_1] (before=' ', after='t'): ed by every $40$th packet th
+  050068 [step_2] (before=' ', after='t'): rval (every $40$th packet), 
+  050079 [step_1] (before='>', after='w'): ong><br><br>$$C \sim B(12, 0.2)$$where $n = 1
+  050135 [step_1] (before=' ', after='t'): position is $\frac{7 + 1}{2} = 4$th value:\be
+  050135 [step_2] (before=' ', after='n'): position is $\frac{7 + 1}{4} = 2$nd value:\be
+  050135 [step_2] (before=' ', after='t'): position is $\frac{3(7 + 1)}{4} = 6$th value:\be
+  050141 [step_7] (before=' ', after='t'): elect every $4$th district 
+  050141 [step_8] (before=' ', after='t'): elect every $4$th
+  050142 [step_4] (before=' ', after='C'): timation at $32.0^\circ$C:</strong><
+  050142 [step_5] (before=' ', after='t'): elect every $12$th day there
+  050142 [step_6] (before=' ', after='t'): elect every $12$th
+  004021 [feedback_1282] (before='f', after='a'): he vertex of$g(x)$at $x = 1$ i
+  004022 [feedback_1286] (before='f', after='a'): he vertex of$g(x)$at $x = 1$ i
+  004023 [feedback_1290] (before='f', after='a'): he vertex of$g(x)$at $x = 2$ i
+  004024 [feedback_1294] (before='f', after='a'): he vertex of$g(x)$at $x = 1$ i
+  004025 [feedback_1298] (before='f', after='a'): he vertex of$g(x)$at $x = 2$ i
+  004699 [feedback_2394] (before=' ', after='t'): , so in the $n$th year ther
+  012128 [option_609] (before='}', after='6'): t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  012128 [option_610] (before='}', after='9'): t{ m s}^{-2}$, (c) $9\sqrt{5}\te
+  012128 [option_611] (before='}', after='6'): t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  012128 [option_612] (before='}', after='6'): t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  050068 [feedback_4712] (before=' ', after='t'): cting every $60$th packet wo
+  050069 [feedback_4715] (before=' ', after='t'): osing every $k$th item from
+  050141 [option_5001] (before=' ', after='t'): elect every $4$th
+  050141 [option_5002] (before=' ', after='t'): elect every $4$th
+  050141 [option_5003] (before=' ', after='t'): elect every $12$th
+  050141 [option_5004] (before=' ', after='t'): elect every $4$th
+  050142 [option_5005] (before=' ', after='t'): elect every $12$th
+  050142 [option_5006] (before=' ', after='t'): elect every $15$th
+  050142 [option_5007] (before=' ', after='t'): elect every $12$th
+  050142 [option_5008] (before=' ', after='t'): elect every $12$th
+  004788 [insight_content] (before=':', after='D'): raic entity:$$\int \dfrac{ 1 }{ \theta - 20 } \text{d}\theta = \ln(\theta - 20) + C$$Do not split
+  050068 [insight_content] (before=' ', after='t'): 'pick every $40$th item', yo
+
+========================================================================
+B. PROSE COMMA/PERIOD MISSING SPACE: 59
+========================================================================
+  004062 [question_text]: re constants,passes through 
+  004217 [step_5]: ext{ (to 2 d.p.)} \end{align
+  004362 [step_2]: ext{ (to 4 d.p.)} \end{align
+  004363 [step_2]: ext{ (to 4 d.p.)} \end{align
+  004453 [step_4]: ext{ (to 3 s.f.)} \end{align
+  004453 [step_4]: ext{ (to 3 s.f.)} \end{align
+  004454 [step_4]: text{(to 3 s.f.)} \end{align
+  004454 [step_4]: text{(to 3 s.f.)} \end{align
+  004455 [step_4]: text{(to 3 s.f.)} \end{align
+  004455 [step_4]: text{(to 3 s.f.)} \end{align
+  009011 [step_2]: ext{ (to 3 s.f.)} \end{align
+  012111 [step_1]: c\text{ (3 s.f.)} \end{align
+  012114 [step_2]: c\text{ (1 d.p.)} \end{align
+  012146 [step_4]: 0\text{ (3 s.f.)} \end{align
+  012146 [step_4]: 2\text{ (3 s.f.)} \end{align
+  012147 [step_3]: 0\text{ (3 s.f.)} \end{align
+  012147 [step_3]: 0\text{ (3 s.f.)} \end{align
+  012148 [step_3]: 3\text{ (3 s.f.)} \end{align
+  012148 [step_3]: 2\text{ (3 s.f.)} \end{align
+  012148 [step_4]: 3\text{ (3 d.p.)} \end{align
+  012148 [step_4]: 3\text{ (3 s.f.)} \end{align
+  012149 [step_3]: }\text{ (3 s.f.)} \end{align
+  012150 [step_3]: 2\text{ (3 s.f.)} \end{align
+  012150 [step_3]: 1\text{ (3 s.f.)} \end{align
+  012150 [step_4]: 0\text{ (3 s.f.)} \end{align
+  012153 [step_4]: text{ m (3 s.f.)} \end{align
+  012154 [step_2]: text{ N (3 s.f.)} \end{align
+  012154 [step_3]: text{ N (3 s.f.)} \end{align
+  050076 [step_2]: 3\text{ (3 s.f.)} \end{align
+  050076 [step_3]: 1\text{ (3 s.f.)} \end{align
+  050077 [step_2]: 5\text{ (3 s.f.)} \end{align
+  050077 [step_3]: 9\text{ (3 s.f.)} \end{align
+  050078 [step_2]: 8\text{ (3 s.f.)} \end{align
+  050079 [step_2]: 6\text{ (3 s.f.)} \end{align
+  050079 [step_3]: 9\text{ (3 s.f.)} \end{align
+  050080 [step_2]: 4\text{ (3 s.f.)} \end{align
+  050080 [step_3]: 8\text{ (3 s.f.)} \end{align
+  050090 [step_3]: 0\text{ (3 s.f.)} \end{align
+  050091 [step_2]: 5\text{ (2 d.p.)} \end{align
+  050091 [step_3]: 3\text{ (2 d.p.)} \end{align
+  050092 [step_2]: text{ g (1 d.p.)} \end{align
+  050092 [step_2]: text{ g (1 d.p.)} \end{align
+  050092 [step_3]: 5\text{ (3 s.f.)} \end{align
+  050093 [step_2]: 4\text{ (3 s.f.)} \end{align
+  050093 [step_3]: 7\text{ (3 s.f.)} \end{align
+  050094 [step_3]: 6\text{ (3 s.f.)} \end{align
+  050094 [step_4]: 3\text{ (3 s.f.)} \end{align
+  050107 [step_1]: 0\text{ (3 s.f.)} \end{align
+  050109 [step_4]: 1\text{ (3 s.f.)} \end{align
+  050111 [step_4]: 5\text{ (3 s.f.)} \end{align
+  050112 [step_4]: 3\text{ (3 s.f.)} \end{align
+  050113 [step_2]: 8\text{ (3 s.f.)} \end{align
+  050113 [step_3]: 4\text{ (3 s.f.)} \end{align
+  004217 [option_3505]: ext{ (to 2 d.p.)} \end{align
+  004217 [option_3506]: ext{ (to 2 d.p.)} \end{align
+  004217 [option_3508]: ext{ (to 2 d.p.)} \end{align
+  004220 [feedback_3520]:  rounded 4 d.p. value  __MAT
+  004218 [insight_content]:  rounded 4 d.p. values for s
+  004488 [insight_content]: urate to 3 d.p.
+
+========================================================================
+C. FULL DETAIL OF 004026 & 004027 (STEPS + OPTIONS)
+========================================================================
+  004026 [question_text]: <strong>(a)</strong> Solve, for $$-180^\circ \le \theta \le 180^\circ,$$ the equation:<br>$$4\sin 2\theta = 7\cos\theta.$$Give your answers, where necessary, to one decimal place. Solutions based entirely on graphical or numerical methods are not acceptable.<br><br><strong>(b)</strong> Hence deduce the smallest positive solution of:<br> \begin{aligned}4 & \sin(2x + 20^\circ)\cr & \quad \quad \quad = 7\cos(x + 10^\circ).\end{aligned}
+  004027 [question_text]: <strong>(a)</strong> Solve, for $$-180^\circ \le \theta \le 180^\circ,$$ the equation:<br>$$3\tan\theta = 2\sin 2\theta.$$Give answers to one decimal place where necessary.<br><br><strong>(b)</strong> Deduce the smallest positive solution of:<br>\begin{aligned} &3\tan(x - 15^\circ)\cr & \quad \quad \quad = 2\sin(2x - 30^\circ).\end{aligned}
+  004026 [step_1]: <strong>Part (a):</strong> Use the identity $$\sin 2\theta = 2\sin\theta\cos\theta.$$<br>$$4(2\sin\theta\cos\theta) = 7\cos\theta$$<br>$$8\sin\theta\cos\theta - 7\cos\theta = 0$$<br>Factorise:<br>$$\cos\theta(8\sin\theta - 7) = 0.$$<br>This gives two branches:<br><em>Branch 1:</em> \begin{aligned}\cos\theta &= 0 \cr \Rightarrow \theta &= -90^\circ\text{} 90^\circ.\end{aligned}<br><em>Branch 2:</em> \begin{aligned}\sin\theta &= \frac{7}{8}\cr \Rightarrow \theta &\approx 61.0^\circ\text{} 119.0^\circ.\end{aligned}
+  004026 [step_2]: <strong>Part (b):</strong> Note that $$2x + 20^\circ = 2(x + 10^\circ).$$ Let $$\theta = x + 10^\circ.$$ Then the equation becomes the same as in Part (a).<br>Thus the smallest positive solution is:<br>\begin{aligned}x &= 61.0^\circ - 10^\circ \cr&= 51.0^\circ.\end{aligned}
+  004026 [step_3]: Final Answer: \begin{aligned}\theta &= -90^\circ\text{} 61.0^\circ,\cr & \quad \quad 90^\circ\text{} 119.0^\circ; \cr x &= 51.0^\circ.\end{aligned}
+  004027 [step_1]: <strong>Part (a):</strong> Use \begin{aligned}&\tan\theta = \frac{\sin\theta}{\cos\theta}, \cr & \sin 2\theta \cr&= 2\sin\theta\cos\theta.\end{aligned}<br>Substitute:<br>$$3\frac{\sin\theta}{\cos\theta} = 4\sin\theta\cos\theta$$<br>Multiply by cosθ:<br>$$3\sin\theta = 4\sin\theta\cos^2\theta$$<br>Factorise:<br>$$\sin\theta(3 - 4\cos^2\theta) = 0.$$<br>Solutions:<br>• \begin{aligned}\sin\theta &= 0\cr \Rightarrow \theta &= -180^\circ\text{}0^\circ\text{} 180^\circ.\end{aligned}<br>• \begin{aligned}\cos^2\theta &= \frac{3}{4}\cr \Rightarrow \theta &= \pm 30^\circ\text{}\pm 150^\circ.\end{aligned}
+  004027 [step_2]: <strong>Part (b):</strong> Note that $$2x - 30^\circ = 2(x - 15^\circ).$$ Let $$\theta = x - 15^\circ.$$<br>Smallest positive solution:<br>\begin{aligned}x &= 0^\circ + 15^\circ \cr&= 15^\circ.\end{aligned}
+  004027 [step_3]: Final Answer: \begin{aligned}\theta &= -180^\circ, -150^\circ, -30^\circ,\cr &\quad \quad 0^\circ, 30^\circ, 150^\circ, 180^\circ; \cr\quad x &= 15^\circ.\end{aligned}
+  004026 [option_1301]: Smallest positive $x = 51.0^\circ$
+  004026 [feedback_1301]: Outstanding! That is spot on.
+  004026 [option_1302]: Smallest positive $x = 41.0^\circ$
+  004026 [feedback_1302]: You subtracted $20^\circ$ instead of $10^\circ$. Remember: $\theta = x + 10^\circ$, so $x = \theta - 10^\circ$.
+  004026 [option_1303]: Smallest positive $x = 80.0^\circ$
+  004026 [feedback_1303]: This corresponds to the $\theta = 90^\circ$ branch, but it is not the smallest positive solution.
+  004026 [option_1304]: Smallest positive $x = 260.0^\circ$
+  004026 [feedback_1304]: This comes from the negative $\theta$ branch. It is positive, but not the smallest positive solution.
+  004027 [option_1305]: $x = 15^\circ$
+  004027 [feedback_1305]: Outstanding! That is spot on.
+  004027 [option_1306]: $x = 45^\circ$
+  004027 [feedback_1306]: This corresponds to $\theta = 30^\circ$, but it is not the smallest positive solution.
+  004027 [option_1307]: $x = 345^\circ$
+  004027 [feedback_1307]: This comes from the negative $\theta$ branch. It is positive, but not the smallest positive solution.
+  004027 [option_1308]: $x = 0^\circ$
+  004027 [feedback_1308]: Remember to add $15^\circ$ because $\theta = x - 15^\circ$.
+  004026 [insight_title]: Factorisation First
+  004026 [insight_content]: When both sides contain products of trig functions, factorising early often reveals clean solution branches and prevents unnecessary algebra.
+  004027 [insight_title]: Watch for Restricted Domains
+  004027 [insight_content]: When tanθ appears, always check for excluded angles such as ±90°. They cannot be solutions even if they appear algebraically.

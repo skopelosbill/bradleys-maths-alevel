@@ -1,0 +1,153 @@
+========================================================================
+1. TARGET QUESTION (3x^2 + 6x + 8) & ITS SECTION
+========================================================================
+MATCH -> ID=004021 | group=004021 | topic=Coordinate Geometry | field=question_text
+  TEXT: $$f(x) = 3x^2 + 6x + 8\text{}  x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-2)^2 + 6x - 7\text{}$$ $$ x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{15}{ 3x^2 + 6x + 8 }\text{} x \in \mathbb{R}$$
+MATCH -> ID=004021 | group=004021 | topic=Coordinate Geometry | field=step_2
+  TEXT: <strong>Part (b):</strong> We sketch the quadratic using our key features:<br>1. <strong>Turning Point:</strong> From the completed square form, the minimum turning point is at (-1, 5).<br>2. <strong>y-int:</strong> Setting $x = 0$ gives $f(0) = 8$, so the curve crosses the y-axis at (0, 8).<br>3. <strong>x-ints:</strong> Setting $3x^2+6x+8 = 0$, the discriminant is $\Delta = 6^2 - 4(3)(8) = -60 < 0$. There are no real roots, so the curve does not cross the x-axis.<br><br>Here is the completed sketch showing these features:<br><img src='images/Pure_PNGs/004021_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>
+MATCH -> ID=004021 | group=004021 | topic=Coordinate Geometry | field=feedback_1283
+  TEXT: Check your inequality symbols in Part (c)(ii). The denominator $3x^2+6x+8$ has a minimum value of 5 and is always strictly positive. Because a fraction with a positive numerator and a strictly positive denominator can never equal zero, the lower bound must be a strict inequality: $0 < h(x) \le 3$, not $0 \le h(x) \le 3$.
+
+All questions in same topic(s) containing '\in':
+  004021 [question_text]: $$f(x) = 3x^2 + 6x + 8\text{}  x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-2)^2 + 6x - 7\text{}$$ $$ x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{15}{ 3x^2 + 6x + 8 }\text{} x \in \mathbb{R}$$
+  004022 [question_text]: $$f(x) = 2x^2 + 8x + 12\text{} x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 8x - 15\text{}$$ $$x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{12}{ 2x^2 + 8x + 12 }\text{} x \in \mathbb{R}$$
+  004023 [question_text]: $$f(x) = 4x^2 + 8x + 7\text{} x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 4(x-3)^2 + 8x - 19\text{}$$ $$ x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{15}{ 4x^2 + 8x + 7 }\text{} x \in \mathbb{R}$$
+  004024 [question_text]: $$f(x) = 3x^2 + 12x + 18\text{} x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 3(x-3)^2 + 12x - 22\text{}$$ $$ x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{24}{ 3x^2 + 12x + 18 }\text{}$$ $$x \in \mathbb{R}$$
+  004025 [question_text]: $$f(x) = 2x^2 + 4x + 7\text{} x \in \mathbb{R}$$<br><strong>(a)</strong> Write $f(x)$ in the form $a(x + b)^2 + c$, where a, b, and c are integers to be found.<br><strong>(b)</strong> Sketch the curve with equation $y = f(x)$, showing any points of intersection with the coordinate axes and the coordinates of the turning point.<br><strong>(c)(i)</strong> Describe fully the transformation that maps the curve with equation $y = f(x)$ onto the curve with equation $y = g(x)$ where:<br>$$g(x) = 2(x-3)^2 + 4x - 9\text{}$$ $$ x \in \mathbb{R}$$<br><strong>(c)(ii)</strong> Find the range of the function:<br>$$h(x) = \dfrac{10}{ 2x^2 + 4x + 7 }\text{} x \in \mathbb{R}$$
+  004021 [step_5]: <strong>Part (c)(ii):</strong> We rewrite $h(x)$   using our completed square form of the denominator:<br>$$h(x) = \dfrac{15}{ 3(x+1)^2 + 5 }$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\frac{15}{5} = 3$. As $x \to \pm\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \le 3$</strong>.
+  004022 [step_5]: <strong>Part (c)(ii):</strong> We rewrite $h(x)$   using our completed square form of the denominator:<br>$$h(x) = \dfrac{12}{ 2(x+2)^2 + 4 }$$<br>Since the minimum value of the denominator is 4 (when $x = -2$), the maximum value of the fraction is $\frac{12}{4} = 3$. As $x \to \pm\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \le 3$</strong>.
+  004023 [step_5]: <strong>Part (c)(ii):</strong> We rewrite $h(x)$   using our completed square form of the denominator:<br>$$h(x) = \dfrac{15}{ 4(x+1)^2 + 3 }$$<br>Since the minimum value of the denominator is 3 (when $x = -1$), the maximum value of the fraction is $\frac{15}{3} = 5$. As $x \to \pm\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \le 5$</strong>.
+  004024 [step_5]: <strong>Part (c)(ii):</strong> We rewrite $h(x)$   using our completed square form of the denominator:<br>$$h(x) = \dfrac{24}{ 3(x+2)^2 + 6 }$$<br>Since the minimum value of the denominator is 6 (when $x = -2$), the maximum value of the fraction is $\frac{24}{6} = 4$. As $x \to \pm\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \le 4$</strong>.
+  004025 [step_5]: <strong>Part (c)(ii):</strong> We rewrite $h(x)$   using our completed square form of the denominator:<br>$$h(x) = \dfrac{10}{ 2(x+1)^2 + 5 }$$<br>Since the minimum value of the denominator is 5 (when $x = -1$), the maximum value of the fraction is $\frac{10}{5} = 2$. As $x \to \pm\infty$, the denominator grows infinitely large, so the fraction approaches 0 from above.<br>Therefore, the range is <strong>$0 < h(x) \le 2$</strong>.
+
+========================================================================
+2. 'SYNTHETIC' / 'SYNTHETIC DIVISION' HITS
+========================================================================
+Total occurrences of 'synthetic': 5
+  004171 (Algebraic Methods) [step_1]: Since $(x - 3)$ is a factor of $f(x)$, we divide $2x^3 - 5x^2 - 4x + 3$ by $(x - 3)$ using algebraic long division or synthetic division to find the quadratic factor:<br>\begin{aligned}2x^3 - 5x^2 &- 4x + 3 \cr &= (x - 3)(2x^2 + x - 1)\end{aligned}<br><br>Base factors can be checked by expansion.
+  004126 (Algebraic Methods) [insight_title]: The Head Teacher's Eye: Synthetic Division of Fractional Roots
+  004126 (Algebraic Methods) [insight_content]: When using synthetic division with a fractional root like $-\frac{1}{3}$, the resulting quotient coefficients must be divided by the denominator $3$ to find the true quotient polynomial. Forgetting this step is probably the most common way students introduce incorrect constant factors into their final factorisations.
+  004129 (Algebraic Methods) [insight_content]: When dividing a polynomial by $(2x+3)$ using synthetic division with root $-1.5$, your raw coefficients will be $(2, -12, 16)$, which represents $2x^2 - 12x + 16$. You must divide these coefficients by the leading coefficient $2$ to find the true quotient $x^2 - 6x + 8$. Forgetting this division step is a classic error that leads to an extra factor of $2$ in your final product.
+  004214 (Algebraic Methods) [insight_content]: For factorising cubic polynomials once a root is known, equating coefficients is much faster than running a full synthetic or polynomial division. Since $2x^3$ requires the lead quadratic term to be $2x^2$, and $-6$ requires the constant term to be $+2$ when divided by $-3$, you only need a single comparison to find the middle coefficient $a$.
+
+========================================================================
+3. SQUISHED DOMAINS (missing comma/space before \in) & \textbb
+========================================================================
+\textbb hits: 0
+Suspicious squished domain hits: 16
+  004061 (Integration) [question_text]: $$\text{Where: }\left\{ \begin{aligned} x &\in \mathbb{R}, \cr x &\ne -2, \cr x &\ne 3 \end{aligned} \right.$$
+  004062 (Integration) [question_text]: $$\text{Where: }\left\{ \begin{aligned} x &\in \mathbb{R},  \cr x &\ne -2, \cr x &\ne 1\end{aligned} \right.$$
+  004063 (Integration) [question_text]: $$\text{Where: }\left\{ \begin{aligned} x &\in \mathbb{R}, \cr x &\ne -1, \cr x &\ne 2 \end{aligned} \right.$$
+  004064 (Integration) [question_text]: $$\text{Where: }\left\{ \begin{aligned} x &\in \mathbb{R},\cr x &\ne 2 \end{aligned} \right.$$
+  004065 (Integration) [question_text]: $$\text{Where: }\left\{ \begin{aligned} x &\in \mathbb{R}, \cr x &\ne -2, \cr x &\ne 3 \end{aligned} \right.$$
+  004718 (Functions) [step_4]: $gh(x) \in \mathbb{R}$
+  009025 (Pick's Theorem) [step_4]: $s^2 = (\Delta x)^2 + (\Delta y)^2 \in \mathbb{Z}$
+  009025 (Pick's Theorem) [step_4]: $\sqrt{3} = \dfrac{4A}{s^2} \in \mathbb{Q}$
+  009025 (Pick's Theorem) [option_97]: $s^2 = (\Delta x)^2 + (\Delta y)^2 \in \mathbb{Z}$
+  009025 (Pick's Theorem) [option_97]: $\sqrt{3} = \dfrac{4A}{s^2} \in \mathbb{Q}$
+  009025 (Pick's Theorem) [option_98]: $s^2 = (\Delta x)^2 + (\Delta y)^2 \in \mathbb{Z}$
+  009025 (Pick's Theorem) [option_98]: $\sqrt{3} \in \mathbb{Q}$
+  009025 (Pick's Theorem) [option_99]: $s^2 = (\Delta x)^2 + (\Delta y)^2 \in \mathbb{Z}$
+  009025 (Pick's Theorem) [option_99]: $\sqrt{3} = \dfrac{4A}{s^2} \in \mathbb{Q}$
+  009025 (Pick's Theorem) [option_100]: $\sqrt{3} = \dfrac{4A}{s^2} \in \mathbb{Q}$
+  050117 (Binomial Distribution & Normal Approximation) [insight_content]: $(n + 1)p = k \in \mathbb{Z}^+$
+
+========================================================================
+4. UNESCAPED TRIG/LOG (sin, cos, tan, sec, cosec, cot, log, ln)
+========================================================================
+Total fields with possible unescaped trig/log: 3
+  004107 [step_2]: $$\text{Area}_{sect OAB} = \dfrac{1}{2}r^2\theta$$
+  004108 [step_2]: $$\text{Area}_{sect OAB} = \dfrac{1}{2}r^2\theta$$
+  004110 [step_1]: $$\text{Area}_{sect OAB} = \dfrac{1}{2}r^2\theta$$
+
+========================================================================
+5. MISSING SPACES AROUND MATH, DOUBLE WORDS & PROSE PUNCTUATION
+========================================================================
+Missing space touching math delimiter: 547
+  ('004017', 'question_text', 'strong> Rewrite$g(x)$in the form $k(')
+  ('004026', 'question_text', 'e equation:<br>$$4\\sin 2\\theta = 7\\cos\\theta.$$Give your answe')
+  ('004027', 'question_text', 'e equation:<br>$$3\\tan\\theta = 2\\sin 2\\theta.$$Give answers to')
+  ('004028', 'question_text', 'e equation:<br>$$5\\cos 2\\theta = 8\\sin\\theta.$$Give answers to')
+  ('004030', 'question_text', 'e equation:<br>$$9\\sin 2\\theta = 4\\tan\\theta.$$Give answers to')
+  ('004050', 'question_text', 'or all $x > 0$,$$x + \\dfrac{1}{x} \\ge 2$$<br><strong>(ii')
+  ('004051', 'question_text', 's, to swim the $r$th kilometre, f')
+  ('004052', 'question_text', ', to drill the $r$th metre, for $')
+  ('004053', 'question_text', ', to cycle the $r$th kilometre, f')
+  ('004054', 'question_text', 's, to hike the $r$th kilometre, f')
+  ('004055', 'question_text', 'es, to row the $r$th kilometre, f')
+  ('004061', 'question_text', ' with equation:$$y = \\dfrac{p - 2x}{(2x - q)(x + 2)},$$ $$\\text{Where:')
+  ('004063', 'question_text', ' with equation:$$y = \\dfrac{p - 4x}{(2x - q)(x + 1)},$$ $$\\text{Where:')
+  ('004064', 'question_text', ' with equation:$$y = \\dfrac{p - 2x}{(3x - q)(x + 1)},$$ $$\\text{Where:')
+  ('004065', 'question_text', ' with equation:$$y = \\dfrac{p - 3x}{(2x - q)(x + 2)},$$ $$\\text{Where:')
+  ('004071', 'question_text', '$$y = \\dfrac{1}{x^3}$$Find an express')
+  ('004072', 'question_text', '$$y = \\dfrac{1}{x^4}$$Find an express')
+  ('004073', 'question_text', '$$y = \\dfrac{1}{x^5}$$Find an express')
+  ('004074', 'question_text', '$$y = \\dfrac{2}{x^3}$$Find an express')
+  ('004075', 'question_text', '$$y = \\dfrac{1}{2x^2}$$Find an express')
+  ('004127', 'question_text', 'o the equation:$$6\\csc x + \\sin x = 5$$')
+  ('004130', 'question_text', 'o the equation:$$12\\sec x + \\cos x = 8$$')
+  ('004271', 'question_text', 'inite integral:$$\\int \\left( 6\\sqrt{x} - \\dfrac{4}{x^3} \\right) \\text{d}x$$')
+  ('004272', 'question_text', 'inite integral:$$\\int_{1}^{4} \\left( \\dfrac{3}{\\sqrt{x}} + \\dfrac{2}{x^2} \\right) \\text{d}x$$')
+  ('004273', 'question_text', 'ction given by:$$\\dfrac{\\text{d}y}{\\text{d}x} = 2\\sqrt{x} + \\dfrac{3}{x^2}$$Given that the ')
+  ('004274', 'question_text', 'inite integral:$$\\int \\dfrac{3x^3 - 2\\sqrt{x}}{x} \\text{d}x$$')
+  ('004276', 'question_text', 've is given by:$$x^2 - xy^2 + y^3 = 13$$1. Find the coo')
+  ('004277', 'question_text', 's the equation:$$y\\text{e}^{2x} + y^2\\text{e}^x = 6$$1. Show that th')
+  ('004278', 'question_text', 'y the equation:$$x^2 - 2xy + 3y^2 = 8$$1. Find an expr')
+  ('004279', 'question_text', 's the equation:$$x^2y^2 - 3x + y^3 = 9$$1. Verify that ')
+  ('004280', 'question_text', ' of a curve is:$$2x^3 + y^3 = 6y$$1. Show that th')
+  ('004281', 'question_text', 'dratic formula:$$s = P - Q(t - R)^2, \\quad t \\ge 0$$where $P$, $Q$,')
+  ('004282', 'question_text', 'ific component:$$C = x^3 - 9x^2 + 24x + 10$$ $$\\text{for } ')
+  ('004283', 'question_text', 'y the equation:$$\\theta = T_R + (\\theta_0 - T_R)\\text{e}^{-kt}$$ $$\\text{for } ')
+  ('004284', 'question_text', 'by the formula:$$P = \\dfrac{1200}{1 + 5\\text{e}^{-0.4t}}, \\quad t \\ge 0$$1. Find the ini')
+  ('004285', 'question_text', 'ratic function:$$h = h_0 + ut - 5t^2, \\quad t \\ge 0$$where $h_0$ is ')
+  ('004286', 'question_text', 'ntial equation:$$\\dfrac{\\text{d}y}{\\text{d}x} = y f(x)$$giving your ans')
+  ('004287', 'question_text', 'ns of the form:$$\\dfrac{A}{x} + \\dfrac{B}{x - 1} + \\dfrac{C}{(x - 1)^2}$$where $A$, $B$,')
+  ('004288', 'question_text', 'ntial equation:$$y\\dfrac{\\text{d}y}{\\text{d}x} = f(x)$$expressing $y^2')
+  ('004289', 'question_text', 'on is given by:$$\\dfrac{\\text{d}y}{\\text{d}x} = \\dfrac{x + y}{x}, \\quad x > 0$$1. Use the subs')
+Double-word hits: 0
+Missing space after comma/period in prose: 50
+  ('004062', 'question_text', 'The curve  __MATH__  with equation:  __MATH__   __MATH__  and  __MATH__  and  __MATH__  are constants,passes through the point  __MATH__  an')
+  ('004217', 'step_5', 'Final Answer: \\begin{aligned} &0.655 < \\alpha < 0.66 \\cr &\\implies \\alpha \\approx 0.66 \\text{ (to 2 d.p.)} \\end{aligned}')
+  ('004362', 'step_2', 'Take the natural logarithm of both sides to solve for  __MATH__ : \\begin{aligned} -5k &= \\ln(0.625) \\cr k &= -\\dfrac{ 1 }{ 5 }\\ln(0.625) \\cr')
+  ('004363', 'step_2', ' Part (b): Finding  __MATH__    We are given that  __MATH__  when  __MATH__ . Substitute  __MATH__  and these values into the model: \\begin{')
+  ('004453', 'step_4', ' Step 4: Perform the iterations for part (b)  Substitute  __MATH__  into the formula to calculate  __MATH__ :\\begin{aligned} x_2 &= \\dfrac{2')
+  ('004454', 'step_4', ' Step 4: Perform the iterations for part (b)  Substitute  __MATH__  into the formula to calculate  __MATH__ :\\begin{aligned} x_2 &= \\dfrac{(')
+  ('004455', 'step_4', ' Step 4: Perform the iterations for part (b)  Substitute  __MATH__  into the formula to calculate  __MATH__ :\\begin{aligned} x_2 &= \\dfrac{2')
+  ('009011', 'step_2', ' (b) Intercept and Constant  __MATH__ :   Substitute the gradient  __MATH__  and the point  __MATH__  into the straight-line equation:\\begin')
+  ('012111', 'step_1', ' (a) Finding the angle  __MATH__ :   Resolving horizontally ( __MATH__ ):\\begin{aligned} &5\\sin 2\\theta = 8\\sin\\theta \\cr &5(2\\sin\\theta\\cos')
+  ('012114', 'step_2', ' (b) Finding angle  __MATH__ :   Evaluating  __MATH__ :\\begin{aligned} \\beta &= \\arcsin(0.3) \\cr &\\approx 17.4576^\\circ \\cr &= 17.5^\\circ\\te')
+  ('012146', 'step_4', ' (d) Calculating  __MATH__  and  __MATH__ :   Finding gradient  __MATH__  using unrounded values:\\begin{aligned} b &= \\dfrac{4.0218 - 9.5750')
+  ('012147', 'step_3', ' (c) Finding constants  __MATH__  and  __MATH__ :   Gradient  __MATH__ :\\begin{aligned} b &= \\dfrac{3.3830 - 0.6318}{2.2552 - 0.4213} \\cr &=')
+  ('012148', 'step_3', ' (c) Calculating  __MATH__  and  __MATH__ :   Gradient  __MATH__ :\\begin{aligned} m &= \\dfrac{5.8861 - 3.8067}{5.0 - 2.0} \\cr &= \\dfrac{2.07')
+  ('012148', 'step_4', ' (d) Evaluating  __MATH__  and  __MATH__ :   Since  __MATH__ :\\begin{aligned} k = 0.693\\text{ (3 d.p.)} \\end{aligned}  Finding  __MATH__ :\\b')
+  ('012149', 'step_3', ' (c) Finding  __MATH__  and  __MATH__ :   At  __MATH__ ,  __MATH__  directly:\\begin{aligned} P_0 = 101.3\\text{ kPa} \\end{aligned}  Finding t')
+  ('012150', 'step_3', ' (c) Calculating  __MATH__  and  __MATH__ :   Gradient  __MATH__ :\\begin{aligned} b &= \\dfrac{6.0039 - 2.0992}{6.1092 - 0.9163} \\cr &= \\dfra')
+  ('012150', 'step_4', ' (d) Determining  __MATH__  and verifying  __MATH__ :   Finding constant  __MATH__ :\\begin{aligned} k &= \\text{e}^a \\cr &= \\text{e}^{1.4102}')
+  ('012153', 'step_4', ' (d) Total distance travelled:   For Phase 2, using  __MATH__  with  __MATH__  and  __MATH__ :\\begin{aligned} &0 = 6.6^2 + 2(-3.43)s_2 \\cr &')
+  ('012154', 'step_2', ' (b) Total frictional force:   Total mass is  __MATH__ .  Total normal reaction:\\begin{aligned} R_{\\text{tot}} &= 8(9.8) \\cr &= 78.4\\text{ N')
+  ('012154', 'step_3', " (c) Pushing force  __MATH__ :   Applying Newton's second law to the combined system:\\begin{aligned} &P - F_{\\text{tot}} = M a \\cr &P - 15.6")
+  ('050076', 'step_2', ' (b) Probability of Exactly 3 Days:   With  __MATH__ :\\begin{aligned} &\\text{P}(X = 3) \\cr &\\quad = \\dbinom{7}{3}(0.25)^3(0.75)^4 \\cr &\\quad')
+  ('050076', 'step_3', ' (c) Multi-Week Binomial:   Let  __MATH__  be the number of weeks where a squirrel is spotted on exactly  __MATH__  days. Then  __MATH__ .  ')
+  ('050077', 'step_2', ' (b) Single-Week Probability:   With  __MATH__ , we find  __MATH__ :\\begin{aligned} &\\text{P}(T = 4) \\cr &\\quad = \\dbinom{5}{4}(0.85)^4(0.15')
+  ('050077', 'step_3', ' (c) 8-Week Term Probability:   Let  __MATH__  be the number of weeks where the train is on time on at least  __MATH__  days. Then  __MATH__')
+  ('050078', 'step_2', ' (b) Cumulative Probability Calculation:   With  __MATH__ , we find  __MATH__ :\\begin{aligned} &\\text{P}(4 \\le X \\le 7) \\cr &\\quad = \\text{P')
+  ('050079', 'step_2', ' (b) Interval Probability  __MATH__ :   Since  __MATH__  is a discrete variable,  __MATH__  corresponds to  __MATH__ :\\begin{aligned} &\\text')
+  ('050079', 'step_3', ' (c) Conditional Probability  __MATH__ :   Using the conditional probability definition:\\begin{aligned} &\\text{P}(C < 4 \\mid C \\ge 1) \\cr &\\')
+  ('050080', 'step_2', ' (b) Probability of at Least 5 Occasions:   With  __MATH__ :\\begin{aligned} &\\text{P}(R \\ge 5) \\cr &\\quad = 1 - \\text{P}(R \\le 4) \\cr &\\quad')
+  ('050080', 'step_3', ' (c) First Bonus on Fourth Turn:   Let  __MATH__  be the probability of earning a bonus on a single turn, and  __MATH__  be the probability ')
+  ('050090', 'step_3', ' (b) Median for District B via Linear Interpolation:   Calculate the frequencies for District B:\\begin{aligned} &\\text{Class } [0, 10): \\qua')
+  ('050091', 'step_2', ' (a)(ii) Finding the Value of  __MATH__ :   We are given  __MATH__ . The corresponding  __MATH__ -score is negative:\\begin{aligned} Z &= -1.')
+  ('050091', 'step_3', ' (a)(iii) Finding the Value of  __MATH__ :   The interval  __MATH__  is symmetrical about the mean  __MATH__ , containing  __MATH__  of the ')
+  ('050092', 'step_2', ' Solving for  __MATH__  and  __MATH__ :   Subtract equation (1) from equation (2):\\begin{aligned} 25 &= 3.7107\\sigma \\cr \\sigma &= \\dfrac{25')
+  ('050092', 'step_3', ' (b) Proportion of Bags Accepted:   A bag is accepted if its mass deviates by at most  __MATH__  from the mean:\\begin{aligned} &\\text{P}(|X ')
+  ('050093', 'step_2', ' (b) Conditional Probability:   Using the definition of conditional probability:\\begin{aligned} &\\text{P}(T > 13000 \\mid T > 11500) \\cr &\\qu')
+  ('050093', 'step_3', ' (c) Binomial Probability for 8 Bulbs:   Let  __MATH__  be the number of bulbs lasting over  __MATH__ . Then  __MATH__ .  Calculate  __MATH_')
+  ('050094', 'step_3', ' (c)(i) Between 95 and 115 Inclusive:   Apply the continuity correction to include discrete values  __MATH__  to  __MATH__ :\\begin{aligned} ')
+  ('050094', 'step_4', ' (c)(ii) Strictly Fewer Than 90:   Because  __MATH__  is discrete, strictly fewer than  __MATH__  means  __MATH__ .  Apply the continuity co')
+  ('050107', 'step_1', ' (a)(i) Calculating the PMCC  __MATH__ :   Using the summary statistics for the  __MATH__  standard vehicles:\\begin{aligned} r &= \\dfrac{S_{')
+  ('050109', 'step_4', ' (c)(ii) Value of PMCC  __MATH__ :   Since the gradient  __MATH__ ,  __MATH__  must be positive:\\begin{aligned} r &= +\\sqrt{0.84911} \\cr &= ')
+
+========================================================================
+6. OPTION KEY SANITY CHECK (must have >=2 options and exactly 1 correct)
+========================================================================
+Questions with abnormal option counts/correct flags: 0

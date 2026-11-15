@@ -1,0 +1,56 @@
+========================================================================
+1. FULL TEXT OF 004009
+========================================================================
+  [question_text]: The diagram shows a sketch of the curve $y = e^{ -x }$, where $x$ is measured in radians.<br>(a) Use the diagram to explain why the equation $$e^{ -x } - 1.5x - 0.8 = 0$$ has exactly one real root.<br>(b) Let the root be $\varepsilon$. Given that $\varepsilon$ is small, use the small-angle approximation for $e^{ -x }$ to estimate the value of $\varepsilon$ to 3 decimal places.
+  [step_1]: From the diagram, $y = e^{ -x }$ decreases from 1 as x increases, while the line $y = 1.5x + 0.8$ increases.
+  [step_2]: The two graphs cross once near the origin and do not meet again because the exponential decays while the line grows without bound.
+  [step_3]: Using the small-angle approximation $e^{ -x } \approx 1 - x$, substitute into the equation: $$1 - x - 1.5x - 0.8 = 0.$$
+  [step_4]: Simplifying gives \begin{aligned}0.2 - 2.5x &= 0 \cr x &= 0.08.\end{aligned}
+  [step_5]: Final Answer: $$\varepsilon \approx 0.080.$$ <img src='images/Pure_PNGs/004009_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>
+  [option_1233]: $$\varepsilon \approx 0.080.$$
+  [feedback_1233]: Outstanding! That is spot on.
+  [option_1234]: $$\varepsilon = 0.040$$
+  [feedback_1234]: You divided by 5 instead of 2.5 when rearranging the equation.
+  [option_1235]: $$\varepsilon = -0.080$$
+  [feedback_1235]: A negative root contradicts the diagram, where the line crosses the curve for positive x.
+  [option_1236]: $$\varepsilon = 0.200$$
+  [feedback_1236]: You forgot to combine the x terms correctly: $-x - 1.5x = -2.5x$.
+  [insight_title]: The Head Teacher's Eye: Exponentials Behave Nicely
+  [insight_content]: Near zero, $e^{ -x }$ is almost perfectly linear. This makes small-angle approximations extremely effective for estimating roots.
+
+========================================================================
+2. TRUE INLINE MATH SPACING COLLISIONS: 25
+========================================================================
+  004017 [question_text]: ong> Rewrite$g(x)$in the form 
+  004021 [step_3]: e square for$g(x)$to find its 
+  004021 [step_4]: he vertex of$g(x)$is at (1, 2)
+  004022 [step_3]: e square for$g(x)$to find its 
+  004022 [step_4]: he vertex of$g(x)$is at (1, 1)
+  004023 [step_3]: e square for$g(x)$to find its 
+  004023 [step_4]: he vertex of$g(x)$is at (2, 1)
+  004024 [step_3]: e square for$g(x)$to find its 
+  004024 [step_4]: he vertex of$g(x)$is at (1, 2)
+  004025 [step_3]: e square for$g(x)$to find its 
+  004025 [step_4]: he vertex of$g(x)$is at (2, 1)
+  004065 [step_9]: in{aligned} $x &= 3\cr \implies 18 - 3(3) &= 2A(3 + 2)\cr \implies 9 &= 10A\cr \implies A &= \frac{9}{10}\end{aligned}<br>2. \begin{aligned} $x &= -2\cr \
+  012058 [step_5]: • Distance, $s = 1.5\text{ m}$Apply $v^2 =
+  012060 [step_4]: • Distance, $s = 5\text{ m}$Apply $v^2 =
+  012128 [step_5]: t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  050142 [step_4]: timation at $32.0^\circ$C:</strong><
+  004021 [feedback_1282]: he vertex of$g(x)$at $x = 1$ i
+  004022 [feedback_1286]: he vertex of$g(x)$at $x = 1$ i
+  004023 [feedback_1290]: he vertex of$g(x)$at $x = 2$ i
+  004024 [feedback_1294]: he vertex of$g(x)$at $x = 1$ i
+  004025 [feedback_1298]: he vertex of$g(x)$at $x = 2$ i
+  012128 [option_609]: t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  012128 [option_610]: t{ m s}^{-2}$, (c) $9\sqrt{5}\te
+  012128 [option_611]: t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+  012128 [option_612]: t{ m s}^{-2}$, (c) $6\sqrt{5}\te
+
+========================================================================
+3. OUT-OF-ORDER / UNBALANCED ALIGNED BLOCKS: 0
+========================================================================
+
+========================================================================
+4. DUPLICATE STEPS WITHIN SAME QUESTION: 0
+========================================================================
