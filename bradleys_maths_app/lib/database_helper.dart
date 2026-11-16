@@ -9,30 +9,72 @@ import 'models/honour_item.dart';
 
 class DatabaseHelper {
   static Database? _db;
+  static Future<Database>? _dbInitFuture;
   static List<Map<String, dynamic>>? _jsonCache;
   static final List<Map<String, dynamic>> _webAttempts = [];
 
   Future<Database> get database async {
     if (_db != null && _db!.isOpen) return _db!;
-    
+    final f = _dbInitFuture ??= _initDatabase();
+    try {
+      return await f;
+    } finally {
+      if (identical(_dbInitFuture, f)) {
+        _dbInitFuture = null;
+      }
+    }
+  }
+
+  String _computeAssetSignature(Uint8List bytes) {
+    int s1 = 1;
+    int s2 = 0;
+    void mix(int start, int end) {
+      for (int i = start; i < end; i++) {
+        s1 = (s1 + bytes[i]) % 65521;
+        s2 = (s2 + s1) % 65521;
+      }
+    }
+
+    final int n = bytes.length;
+    if (n <= 16384) {
+      mix(0, n);
+    } else {
+      mix(0, 4096);
+      final int mid = n ~/ 2;
+      mix(mid - 2048, mid + 2048);
+      mix(n - 4096, n);
+    }
+    return '$n:${(s2 * 65536) + s1}';
+  }
+
+  Future<Database> _initDatabase() async {
+    if (_db != null && _db!.isOpen) return _db!;
+
     var databasesPath = await getDatabasesPath();
     var path = join(databasesPath, "bradleys_maths.db");
+    var metaFile = File("$path.asset_sig");
 
     bool shouldCopy = false;
     bool exists = await databaseExists(path);
 
-    // Read asset size to detect database updates
+    // Load bundled asset and compute a stable signature (size + header/sample checksum)
     ByteData assetData = await rootBundle.load("assets/bradleys_maths.db");
-    int assetLength = assetData.lengthInBytes;
+    Uint8List assetBytes = assetData.buffer.asUint8List(
+      assetData.offsetInBytes,
+      assetData.lengthInBytes,
+    );
+    String assetSig = _computeAssetSignature(assetBytes);
 
     if (!exists) {
       shouldCopy = true;
     } else {
       try {
-        final currentFile = File(path);
-        // If the local file size differs from the bundled asset, an update was made!
-        if (await currentFile.exists() && await currentFile.length() != assetLength) {
-          debugPrint("[DB REFRESH] Asset update detected (size difference). Refreshing database...");
+        String? savedSig;
+        if (await metaFile.exists()) {
+          savedSig = (await metaFile.readAsString()).trim();
+        }
+        if (savedSig != assetSig) {
+          debugPrint("[DB REFRESH] Bundled asset update detected. Refreshing database...");
           shouldCopy = true;
         } else {
           final testDb = await openDatabase(path, readOnly: true);
@@ -51,7 +93,7 @@ class DatabaseHelper {
 
     if (shouldCopy) {
       debugPrint("[DB INIT] Refreshing bradleys_maths.db from assets...");
-      
+
       // PRESERVE STUDENT ATTEMPTS BEFORE REPLACING DATABASE
       List<Map<String, dynamic>> savedAttempts = [];
       if (exists) {
@@ -74,16 +116,16 @@ class DatabaseHelper {
         await Directory(dirname(path)).create(recursive: true);
       } catch (_) {}
 
-      // Copy new asset
-      List<int> bytes = assetData.buffer.asUint8List(assetData.offsetInBytes, assetData.lengthInBytes);
-      await File(path).writeAsBytes(bytes, flush: true);
-      debugPrint("[DB INIT] Copy complete! Size: ${bytes.length} bytes.");
+      // Copy new asset and record its signature
+      await File(path).writeAsBytes(assetBytes, flush: true);
+      await metaFile.writeAsString(assetSig, flush: true);
+      debugPrint("[DB INIT] Copy complete! Size: ${assetBytes.length} bytes.");
 
       // RESTORE PRESERVED STUDENT ATTEMPTS INTO THE NEW DATABASE
       if (savedAttempts.isNotEmpty) {
         try {
           final freshDb = await openDatabase(path);
-          await freshDb.execute('''
+          await freshDb.execute("""
             CREATE TABLE IF NOT EXISTS user_attempts (
               id INTEGER PRIMARY KEY AUTOINCREMENT,
               user_id INTEGER DEFAULT 1,
@@ -96,13 +138,15 @@ class DatabaseHelper {
               viewed_model_answer INTEGER DEFAULT 0,
               attempted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
-          ''');
+          """);
 
-          for (var att in savedAttempts) {
-            final row = Map<String, dynamic>.from(att);
-            row.remove('id'); // let SQLite autoincrement ID
-            await freshDb.insert('user_attempts', row);
-          }
+          await freshDb.transaction((txn) async {
+            for (var att in savedAttempts) {
+              final row = Map<String, dynamic>.from(att);
+              row.remove('id'); // let SQLite autoincrement ID
+              await txn.insert('user_attempts', row);
+            }
+          });
           await freshDb.close();
           debugPrint("[DB RESTORE] Successfully restored ${savedAttempts.length} student attempts!");
         } catch (e) {
@@ -114,7 +158,7 @@ class DatabaseHelper {
     _db = await openDatabase(path);
 
     // Ensure the user_attempts table exists
-    await _db!.execute('''
+    await _db!.execute("""
       CREATE TABLE IF NOT EXISTS user_attempts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         user_id INTEGER DEFAULT 1,
@@ -127,7 +171,7 @@ class DatabaseHelper {
         viewed_model_answer INTEGER DEFAULT 0,
         attempted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
-    ''');
+    """);
 
     return _db!;
   }
@@ -271,6 +315,7 @@ class DatabaseHelper {
       final db = await database;
       int count = 0;
       await db.transaction((txn) async {
+        await txn.delete('user_attempts');
         for (var item in list) {
           final row = Map<String, dynamic>.from(item);
           row.remove('id');

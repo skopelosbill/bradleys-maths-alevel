@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../services/purchase_service.dart';
 
 class PaywallSheet extends StatefulWidget {
@@ -20,134 +19,37 @@ class PaywallSheet extends StatefulWidget {
 
 class _PaywallSheetState extends State<PaywallSheet> {
   final PurchaseService _purchaseService = PurchaseService();
+  bool _didPop = false;
 
-  Future<void> _showFounderKeyDialog(BuildContext context) async {
-    final controller = TextEditingController();
-    String? errorMsg;
+  @override
+  void initState() {
+    super.initState();
+    _purchaseService.isUnlocked.addListener(_onUnlockedChanged);
+  }
 
-    await showDialog(
-      context: context,
-      builder: (ctx) {
-        return StatefulBuilder(
-          builder: (context, setDialogState) {
-            return AlertDialog(
-              backgroundColor: const Color(0xFF1E293B),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-              title: const Row(
-                children: [
-                  Icon(Icons.key, color: Color(0xFFF59E0B), size: 22),
-                  SizedBox(width: 8),
-                  Text(
-                    "Founder & Master Access",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Text(
-                    "Enter confidential master passphrase to unlock lifetime access:",
-                    style: TextStyle(fontSize: 12, color: Color(0xFFCBD5E1)),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: controller,
-                    autofocus: true,
-                    obscureText: true,
-                    style: const TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
-                      hintText: "Enter master key...",
-                      hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 13),
-                      errorText: errorMsg,
-                      filled: true,
-                      fillColor: const Color(0xFF0F172A),
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFF334155)),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFF334155)),
-                      ),
-                    ),
-                    onSubmitted: (_) async {
-                      final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
-                      if (ok) {
-                        Navigator.of(ctx).pop();
-                        HapticFeedback.mediumImpact();
-                        if (mounted) {
-                          Navigator.pop(context); // Close Paywall
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
-                              backgroundColor: Color(0xFF16A34A),
-                              duration: Duration(seconds: 4),
-                            ),
-                          );
-                        }
-                      } else {
-                        HapticFeedback.heavyImpact();
-                        setDialogState(() => errorMsg = "Invalid master passphrase.");
-                      }
-                    },
-                  ),
-                ],
-              ),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.of(ctx).pop(),
-                  child: const Text(
-                    "Cancel",
-                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-                  ),
-                ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFF59E0B),
-                    foregroundColor: Colors.black87,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                  ),
-                  onPressed: () async {
-                    final ok = await _purchaseService.verifyAndUnlockWithMasterKey(controller.text);
-                    if (ok) {
-                      Navigator.of(ctx).pop();
-                      HapticFeedback.mediumImpact();
-                      if (mounted) {
-                        Navigator.pop(context); // Close Paywall
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text("Master Key Verified: Lifetime Edition Unlocked! Welcome, Bill."),
-                            backgroundColor: Color(0xFF16A34A),
-                            duration: Duration(seconds: 4),
-                          ),
-                        );
-                      }
-                    } else {
-                      HapticFeedback.heavyImpact();
-                      setDialogState(() => errorMsg = "Invalid master passphrase.");
-                    }
-                  },
-                  child: const Text("Verify & Unlock", style: TextStyle(fontWeight: FontWeight.bold)),
-                ),
-              ],
-            );
-          },
-        );
-      },
-    );
+  void _onUnlockedChanged() {
+    if (!_didPop && _purchaseService.isUnlocked.value && mounted) {
+      _didPop = true;
+      Navigator.of(context).pop();
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Full Lifetime Access Unlocked! Welcome to all 1,400 questions."),
+          backgroundColor: Color(0xFF16A34A),
+        ),
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _purchaseService.isUnlocked.removeListener(_onUnlockedChanged);
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final product = _purchaseService.productDetails.value;
-    final String priceText = product?.price ?? "£12.99";
+    final String priceText = product?.price ?? "£13.99";
 
     return Container(
       constraints: BoxConstraints(
@@ -177,21 +79,18 @@ class _PaywallSheetState extends State<PaywallSheet> {
           ),
           const SizedBox(height: 16),
 
-          // Header Emblem (Long press opens Founder key)
+          // Header Emblem
           Center(
-            child: GestureDetector(
-              onLongPress: () => _showFounderKeyDialog(context),
-              child: Container(
-                width: 56,
-                height: 56,
-                decoration: BoxDecoration(
-                  color: const Color(0xFF1E293B),
-                  shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFF59E0B), width: 2),
-                ),
-                child: const Center(
-                  child: Icon(Icons.workspace_premium, color: Color(0xFFF59E0B), size: 30),
-                ),
+            child: Container(
+              width: 56,
+              height: 56,
+              decoration: BoxDecoration(
+                color: const Color(0xFF1E293B),
+                shape: BoxShape.circle,
+                border: Border.all(color: const Color(0xFFF59E0B), width: 2),
+              ),
+              child: const Center(
+                child: Icon(Icons.workspace_premium, color: Color(0xFFF59E0B), size: 30),
               ),
             ),
           ),
@@ -221,7 +120,7 @@ class _PaywallSheetState extends State<PaywallSheet> {
               children: [
                 _buildFeatureRow(
                   icon: Icons.menu_book,
-                  title: "1,400 Cambridge-Standard Questions",
+                  title: "1,400 Examination-Standard Questions",
                   subtitle: "Pure, Mechanics, Statistics & Comprehension across all 6 UK Exam Boards.",
                 ),
                 _buildFeatureRow(
@@ -305,14 +204,7 @@ class _PaywallSheetState extends State<PaywallSheet> {
                     foregroundColor: Colors.black87,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                   ),
-                  onPressed: isBusy
-                      ? null
-                      : () async {
-                          final success = await _purchaseService.buyLifetimeUnlock();
-                          if (success && mounted) {
-                            Navigator.pop(context);
-                          }
-                        },
+                  onPressed: isBusy ? null : () => _purchaseService.buyLifetimeUnlock(),
                   child: isBusy
                       ? const SizedBox(
                           width: 22,
@@ -329,47 +221,31 @@ class _PaywallSheetState extends State<PaywallSheet> {
           ),
           const SizedBox(height: 10),
 
-          // Footer: Not Now, Enter Access Key, Restore Purchases
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text(
-                  "Not Now",
-                  style: TextStyle(color: Colors.grey, fontSize: 12),
-                ),
-              ),
-              // Founder / Access Key Button
-              TextButton.icon(
-                icon: const Icon(Icons.key, size: 14, color: Color(0xFFF59E0B)),
-                label: const Text(
-                  "Access Key",
-                  style: TextStyle(color: Color(0xFFF59E0B), fontSize: 12, fontWeight: FontWeight.bold),
-                ),
-                onPressed: () => _showFounderKeyDialog(context),
-              ),
-              // Restore Purchases
-              TextButton.icon(
-                icon: const Icon(Icons.restore, size: 14, color: Color(0xFF94A3B8)),
-                label: const Text(
-                  "Restore",
-                  style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12, fontWeight: FontWeight.bold),
-                ),
-                onPressed: () async {
-                  await _purchaseService.restorePurchases();
-                  if (_purchaseService.isUnlocked.value && mounted) {
-                    Navigator.pop(context);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text("Purchases successfully restored!"),
-                        backgroundColor: Color(0xFF16A34A),
-                      ),
-                    );
-                  }
-                },
-              ),
-            ],
+          // Footer: Not Now and Restore Purchases
+          ValueListenableBuilder<bool>(
+            valueListenable: _purchaseService.isPurchasing,
+            builder: (ctx, isBusy, _) {
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(context),
+                    child: const Text(
+                      "Not Now",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
+                  ),
+                  TextButton.icon(
+                    icon: const Icon(Icons.restore, size: 14, color: Color(0xFF94A3B8)),
+                    label: const Text(
+                      "Restore Purchase",
+                      style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12, fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: isBusy ? null : () => _purchaseService.restorePurchases(),
+                  ),
+                ],
+              );
+            },
           ),
         ],
       ),

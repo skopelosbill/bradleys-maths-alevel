@@ -44,7 +44,7 @@ class PurchaseService {
     await loadProductDetails();
   }
 
-  /// Query the store for live pricing (e.g. £12.99 or £14.99)
+  /// Query the store for live pricing (e.g. £13.99)
   Future<void> loadProductDetails() async {
     try {
       final bool available = await _iap.isAvailable();
@@ -86,6 +86,9 @@ class PurchaseService {
       isPurchasing.value = true;
       final PurchaseParam purchaseParam = PurchaseParam(productDetails: productDetails.value!);
       final bool success = await _iap.buyNonConsumable(purchaseParam: purchaseParam);
+      if (!success) {
+        isPurchasing.value = false;
+      }
       return success;
     } catch (e) {
       debugPrint("[PURCHASE INITIATION ERROR] $e");
@@ -101,6 +104,12 @@ class PurchaseService {
       isPurchasing.value = true;
       purchaseError.value = null;
       debugPrint("[PURCHASE] Restoring purchases...");
+
+      final bool available = await _iap.isAvailable();
+      if (!available) {
+        purchaseError.value = "Store connection unavailable. Please check your internet connection.";
+        return;
+      }
 
       await _iap.restorePurchases().timeout(const Duration(seconds: 4), onTimeout: () {
         debugPrint("[PURCHASE] Store check completed.");
@@ -161,32 +170,6 @@ class PurchaseService {
     await prefs.setBool(_prefKeyUnlocked, true);
     isUnlocked.value = true;
     debugPrint("[PURCHASE] Lifetime Unlock successfully saved to device storage!");
-  }
-
-  /// Secret Founder's Unlock: Verifies the confidential passphrase
-  Future<bool> verifyAndUnlockWithMasterKey(String candidateKey) async {
-    final clean = candidateKey.trim().toLowerCase();
-    if (clean == 'gemininoahsurewanderers') {
-      await _markAsUnlocked();
-      debugPrint("[PURCHASE] Master Key verified. Full lifetime access unlocked.");
-      return true;
-    }
-    debugPrint("[PURCHASE WARNING] Master Key verification failed.");
-    return false;
-  }
-
-  /// Debug helper for developer testing: resets purchase to locked
-  Future<void> debugResetPurchase() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_prefKeyUnlocked);
-    isUnlocked.value = false;
-    debugPrint("[PURCHASE DEBUG] Lifetime unlock reset to locked state.");
-  }
-
-  /// Debug helper for developer testing: instantly unlocks app for free
-  Future<void> debugSimulateUnlock() async {
-    await _markAsUnlocked();
-    debugPrint("[PURCHASE DEBUG] Simulated successful unlock.");
   }
 
   void dispose() {

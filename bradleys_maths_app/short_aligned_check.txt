@@ -1,0 +1,51 @@
+004332#3: \begin{aligned} &PB^2 \cr &\quad = PA^2 + AB^2 \cr &\qquad - 2(PA)(AB)\cos\angle PAB \cr &\quad = 12^2 + 15^2 \cr &\qquad - 2(12)(15)\cos(95^\circ) \end{aligned}
+004426#3: \begin{aligned} &AD^2 \cr &\quad = AO^2 + OD^2 \cr &\qquad - 2(AO)(OD)\cos(\angle AOD) \cr &\quad = r^2 + x^2 \cr &\qquad - 2rx\cos(180^\circ - \theta) \end{aligned}
+004427#3: \begin{aligned} &BD^2 \cr &\quad = BO^2 + OD^2 \cr &\qquad - 2(BO)(OD)\cos(\angle BOD) \cr &\quad = r^2 + x^2 \cr &\qquad - 2rx\cos(180^\circ - \theta) \end{aligned}
+004611#1: \begin{aligned} &BC^2 \cr &\quad = AB^2 + AC^2 \cr &\qquad - 2(AB)(AC)\cos(\angle BAC) \end{aligned}
+004611#2: \begin{aligned} &BC^2 \cr &\quad = 25^2 + 18^2 \cr &\qquad - 2(25)(18)\cos(72^\circ) \cr &\quad = 625 + 324 \cr &\qquad - 900\cos(72^\circ) \cr &\quad = 949 - 900(0.309017) \cr &\quad = 949 - 278.115 \cr &\quad = 670.885 \end{aligned}
+004615#2: \begin{aligned} &PB^2 \cr &\quad = PA^2 + AB^2 \cr &\qquad - 2(PA)(AB)\cos(\angle PAB) \end{aligned}
+004615#3: \begin{aligned} &PB^2 \cr &\quad = 15^2 + 12^2 \cr &\qquad - 2(15)(12)\cos(110^\circ) \cr &\quad = 225 + 144 \cr &\qquad - 360\cos(110^\circ) \cr &\quad = 369 - 360(-0.342020) \cr &\quad = 369 + 123.127 \cr &\quad = 492.127 \end{aligned}
+004699#2: \begin{aligned} &T_{10} \cr &\quad = a + 9d \cr &\quad = 24000 + 9(1200) \cr &\quad = 24000 + 10800 \cr &\quad = 34800 \end{aligned}
+004705#1: \begin{aligned} &d_n \cr &\quad = u_n - u_{n+1} \cr &\quad = ar^{n-1} - ar^n \cr &\quad = ar^{n-1}(1 - r) \end{aligned}
+004808#4: \begin{aligned} &u_{12} \cr &\quad = a + (12 - 1)d \cr &\quad = 50 + 11(5) \cr &\quad = 50 + 55 \cr &\quad = 105 \end{aligned}
+012031#2: \begin{aligned} &u_y \cr &\quad = u\sin 30^\circ \cr &\quad = 0.5u \end{aligned}
+012032#1: \begin{aligned} &u_y \cr &\quad = 20\sin 40^\circ \cr &\quad \approx 12.856\text{ m s}^{-1} \end{aligned}
+012032#5: \begin{aligned} &u_x \cr &\quad = 20\cos 40^\circ \cr &\quad \approx 15.321\text{ m s}^{-1} \end{aligned}
+012032#6: \begin{aligned} &s_x \cr &\quad = u_x \times t \cr &\quad = 15.321 \times 2.624 \cr &\quad \approx 40.2\text{ m} \end{aligned}
+012034#1: \begin{aligned} &R \cr &\quad = 2 \times 24 \cr &\quad = 48\text{ m} \end{aligned}
+012035#4: \begin{aligned} &y \cr &\quad = x\tan\theta \cr &\qquad - \dfrac{9.8x^2}{2(14^2)}(1 + \tan^2\theta) \cr &\quad = x\tan\theta \cr &\qquad - \dfrac{9.8x^2}{392}(1 + \tan^2\theta) \cr &\quad = x\tan\theta - \dfrac{1}{40}x^2(1 + \tan^2\theta) \end{aligned}
+012039#4: \begin{aligned} &F \cr &\quad = 2T \cr &\quad = 2(36.75) \cr &\quad = 73.5\text{ N} \end{aligned}
+012040#1: \begin{aligned} &R_A \cr &\quad = 8g\cos 30^\circ \cr &\quad = 78.4 \times 0.86603 \cr &\quad \approx 67.9\text{ N} \end{aligned}
+012051#1: \begin{aligned} &x \cr &\quad = t^2(t^2 - 4t + 4) \cr &\quad = t^4 - 4t^3 + 4t^2 \end{aligned}
+012051#5: \begin{aligned} &x \cr &\quad = t^2(t - 2)^2 \cr &\quad = (t(t - 2))^2 \end{aligned}
+012052#2: \begin{aligned} &s \cr &\quad = t^3 - 6t^2 + 9t \end{aligned}
+012052#5: \begin{aligned} &s \cr &\quad = t(t^2 - 6t + 9) \cr &\quad = t(t - 3)^2 \end{aligned}
+012056#2: \begin{aligned} &T \cr &\quad = 3mg - 1.5mg \cr &\quad = 1.5mg \end{aligned}
+012057#3: \begin{aligned} &T \cr &\quad = 3 \times 3.92 \cr &\quad = 11.76\text{ N} \end{aligned}
+012057#4: \begin{aligned} &F \cr &\quad = \sqrt{T^2 + T^2} \cr &\quad = T\sqrt{2} \end{aligned}
+012057#5: \begin{aligned} &F \cr &\quad = 11.76 \times \sqrt{2} \cr &\quad \approx 11.76 \times 1.414 \cr &\quad \approx 16.63\text{ N} \end{aligned}
+012058#2: \begin{aligned} &T \cr &\quad = 29.4 - 8.4 \cr &\quad = 21\text{ N} \end{aligned}
+012058#4: \begin{aligned} &R \cr &\quad = 4g \cr &\quad = 4(9.8) \cr &\quad = 39.2\text{ N} \end{aligned}
+012058#5: \begin{aligned} &v^2 \cr &\quad = 0 + 2(2.8)(1.5) \cr &\quad = 8.4 \cr &v \cr &\quad = \sqrt{8.4} \cr &\quad \approx 2.898\text{ m s}^{-1} \end{aligned}
+012060#4: \begin{aligned} &v^2 \cr &\quad = 0 + 2(4.9)(5) \cr &\quad = 49 \cr &v \cr &\quad = \sqrt{49} \cr &\quad = 7\text{ m s}^{-1} \end{aligned}
+012066#2: \begin{aligned} &T_x \cr &\quad = T\cos \alpha \cr &\quad = 30 \times 0.8 \cr &\quad = 24\text{ N} \end{aligned}
+012066#2: \begin{aligned} &T_y \cr &\quad = T\sin \alpha \cr &\quad = 30 \times 0.6 \cr &\quad = 18\text{ N} \end{aligned}
+012066#4: \begin{aligned} &F \cr &\quad = \mu R \cr &\quad = 0.2 \times 80 \cr &\quad = 16\text{ N} \end{aligned}
+012067#3: \begin{aligned} &F \cr &\quad = 0.5R \cr &\quad = 0.5(215.6 - 0.6T) \cr &\quad = 107.8 - 0.3T \end{aligned}
+012068#3: \begin{aligned} &F \cr &\quad = \mu R \cr &\quad = 0.25 \times 39.2 \cr &\quad = 9.8\text{ N} \end{aligned}
+012069#4: \begin{aligned} &F \cr &\quad = \mu R \cr &\quad = 0.3(78.4 + 0.6H) \cr &\quad = 23.52 + 0.18H \end{aligned}
+012073#4: \begin{aligned} &v_y \cr &\quad = -8 + 3(5) \cr &\quad = 7\text{ m s}^{-1} \end{aligned}
+012078#1: \begin{aligned} &CD \cr &\quad = \sqrt{3^2 + 4^2} \cr &\quad = 5\text{ m} \end{aligned}
+012079#1: \begin{aligned} &R_C \cr &\quad = 12g - 4.8(d - 0.5)g \cr &\quad = 12g - 4.8dg + 2.4g \cr &\quad = 14.4g - 4.8dg \cr &\quad = 4.8(3 - d)g \end{aligned}
+012079#3: \begin{aligned} &R_C \cr &\quad = 17g - 8.6g \cr &\quad = 8.4g \cr &\quad = 8.4(9.8) \cr &\quad = 82.32\text{ N} \cr &\quad \approx 82.3\text{ N} \end{aligned}
+012083#3: \begin{aligned} &v^2 \cr &\quad = 393.75 + 2(9.8)(25) \cr &\quad = 393.75 + 490 \cr &\quad = 883.75 \cr &v \cr &\quad = \sqrt{883.75} \cr &\quad \approx 29.7\text{ m s}^{-1} \end{aligned}
+012083#4: \begin{aligned} &v_x \cr &\quad = U\cos\theta \cr &\quad = 19.843 \times \dfrac{4}{5} \cr &\quad \approx 15.874\text{ m s}^{-1} \end{aligned}
+012090#3: \begin{aligned} &v^2 \cr &\quad = 9^2 + 8^2 \cr &\quad = 81 + 64 \cr &\quad = 145 \end{aligned}
+012091#2: \begin{aligned} &v^2 \cr &\quad = 0^2 + 2(3.92)(2) \cr &\quad = 15.68 \cr &v \cr &\quad = \sqrt{15.68} \cr &\quad \approx 3.96\text{ m s}^{-1} \end{aligned}
+012093#2: \begin{aligned} &v^2 \cr &\quad = 0^2 + 2(6.125)(1.6) \cr &\quad = 19.6 \cr &v \cr &\quad = \sqrt{19.6}\text{ m s}^{-1} \end{aligned}
+012094#1: \begin{aligned} &R \cr &\quad = m_P g\cos\theta \cr &\quad = 5(9.8)(0.8) \cr &\quad = 39.2\text{ N} \end{aligned}
+012094#1: \begin{aligned} &F \cr &\quad = \mu R \cr &\quad = 0.25 \times 39.2 \cr &\quad = 9.8\text{ N} \end{aligned}
+012094#3: \begin{aligned} &v^2 \cr &\quad = 0^2 + 2(0.98)(10) \cr &\quad = 19.6 \cr &v \cr &\quad = \sqrt{19.6}\text{ m s}^{-1} \end{aligned}
+012095#3: \begin{aligned} &v^2 \cr &\quad = 0^2 + 2(1.96)(2.5) \cr &\quad = 9.8 \end{aligned}
+050135#2: \begin{aligned} &Q_1 \cr &\quad = 41\text{ mins} \end{aligned}
+050135#2: \begin{aligned} &Q_3 \cr &\quad = 48\text{ mins} \end{aligned}

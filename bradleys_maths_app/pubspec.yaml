@@ -1,7 +1,7 @@
 name: bradleys_maths_app
 description: "A new Flutter project."
 publish_to: 'none'
-version: 1.0.0+3
+version: 1.0.0+4
 
 environment:
   sdk: '>=3.13.5 <4.0.0'
@@ -50,9 +50,6 @@ flutter:
     - assets/bradleys_maths.db
     - assets/questions.json
     - assets/icon/app_icon.png
-    - assets/images/Pure_SVGs/
-    - assets/images/Mechanics_SVGs/
-    - assets/images/Statistics_SVGs/
     - assets/images/Mechanics_PNGs/
     - assets/images/Pure_PNGs/
     - assets/images/Statistics_PNGs/
