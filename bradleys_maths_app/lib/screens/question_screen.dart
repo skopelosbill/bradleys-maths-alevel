@@ -1113,13 +1113,6 @@ class _MathWidgetFactory extends WidgetFactory {
 
     if (segments.length == 1 && !segments.first.isBlock) {
       if (_inlineMathPattern.hasMatch(text)) {
-        if (isOption) {
-          return FittedBox(
-            fit: BoxFit.scaleDown,
-            alignment: Alignment.centerLeft,
-            child: _renderInlineSpan(text, tsh),
-          );
-        }
         return _renderInlineSpan(text, tsh);
       }
       return super.buildText(meta, tsh, span);

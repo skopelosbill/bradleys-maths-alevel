@@ -48,7 +48,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/bradleys_maths.db
-    - assets/questions.json
     - assets/icon/app_icon.png
     - assets/images/Mechanics_PNGs/
     - assets/images/Pure_PNGs/

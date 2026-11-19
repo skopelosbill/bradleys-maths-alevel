@@ -731,15 +731,6 @@ class _SelectionDashboardState extends State<SelectionDashboard> {
       appBar: AppBar(
         backgroundColor: isDark ? const Color(0xFF0F172A) : Colors.white,
         elevation: 0,
-        centerTitle: true,
-        title: Text(
-          "Bradley's Maths",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-            color: isDark ? Colors.white : const Color(0xFF0F172A),
-          ),
-        ),
         leading: _currentStep > 0
             ? IconButton(
                 icon: Icon(Icons.arrow_back, color: isDark ? Colors.white : Colors.black87),
